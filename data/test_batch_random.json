@@ -1,0 +1,606 @@
+[
+  {
+    "id": 2620,
+    "primary_topic": "Arrays & Hashing",
+    "primary_subtopic": {
+      "name": "Frequency Counting / Hash Map Lookup",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 850,
+    "importance": 0.05,
+    "interview_plausibility": 0.08,
+    "company_plausibility": {
+      "quant": 0.02,
+      "faang": 0.05,
+      "mid": 0.05,
+      "startup": 0.05
+    }
+  },
+  {
+    "id": 457,
+    "primary_topic": "Two Pointers",
+    "primary_subtopic": {
+      "name": "Same-Direction (Fast/Slow on Arrays)",
+      "weight": 0.6
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Frequency Counting / Hash Map Lookup",
+        "weight": 0.25
+      },
+      {
+        "topic": "Graphs",
+        "name": "DFS Connected Components",
+        "weight": 0.15
+      }
+    ],
+    "difficulty": 1742,
+    "importance": 0.38,
+    "interview_plausibility": 0.42,
+    "company_plausibility": {
+      "quant": 0.25,
+      "faang": 0.35,
+      "mid": 0.3,
+      "startup": 0.2
+    }
+  },
+  {
+    "id": 103,
+    "primary_topic": "Trees",
+    "primary_subtopic": {
+      "name": "BFS / Level-Order Traversal",
+      "weight": 0.85
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Trees",
+        "name": "DFS Traversal (Inorder, Preorder, Postorder)",
+        "weight": 0.15
+      }
+    ],
+    "difficulty": 1294,
+    "importance": 0.78,
+    "interview_plausibility": 0.85,
+    "company_plausibility": {
+      "quant": 0.45,
+      "faang": 0.85,
+      "mid": 0.75,
+      "startup": 0.6
+    }
+  },
+  {
+    "id": 3038,
+    "primary_topic": "Arrays & Hashing",
+    "primary_subtopic": {
+      "name": "Frequency Counting / Hash Map Lookup",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1202,
+    "importance": 0.18,
+    "interview_plausibility": 0.3,
+    "company_plausibility": {
+      "quant": 0.1,
+      "faang": 0.15,
+      "mid": 0.2,
+      "startup": 0.15
+    }
+  },
+  {
+    "id": 1127,
+    "primary_topic": "Arrays & Hashing",
+    "primary_subtopic": {
+      "name": "Frequency Counting / Hash Map Lookup",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1850,
+    "importance": 0.12,
+    "interview_plausibility": 0.1,
+    "company_plausibility": {
+      "quant": 0.05,
+      "faang": 0.1,
+      "mid": 0.08,
+      "startup": 0.03
+    }
+  },
+  {
+    "id": 1004,
+    "primary_topic": "Sliding Window",
+    "primary_subtopic": {
+      "name": "Variable-Size Window (Expand/Contract)",
+      "weight": 0.85
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Frequency Counting / Hash Map Lookup",
+        "weight": 0.15
+      }
+    ],
+    "difficulty": 1656,
+    "importance": 0.88,
+    "interview_plausibility": 0.88,
+    "company_plausibility": {
+      "quant": 0.55,
+      "faang": 0.9,
+      "mid": 0.78,
+      "startup": 0.6
+    }
+  },
+  {
+    "id": 915,
+    "primary_topic": "Arrays & Hashing",
+    "primary_subtopic": {
+      "name": "Prefix Sums",
+      "weight": 0.65
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Sorting + Comparison",
+        "weight": 0.35
+      }
+    ],
+    "difficulty": 1501,
+    "importance": 0.52,
+    "interview_plausibility": 0.62,
+    "company_plausibility": {
+      "quant": 0.4,
+      "faang": 0.55,
+      "mid": 0.5,
+      "startup": 0.35
+    }
+  },
+  {
+    "id": 572,
+    "primary_topic": "Trees",
+    "primary_subtopic": {
+      "name": "DFS Traversal (Inorder, Preorder, Postorder)",
+      "weight": 0.85
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Trees",
+        "name": "BST Operations (Insert, Delete, Validate)",
+        "weight": 0.15
+      }
+    ],
+    "difficulty": 1207,
+    "importance": 0.82,
+    "interview_plausibility": 0.88,
+    "company_plausibility": {
+      "quant": 0.4,
+      "faang": 0.88,
+      "mid": 0.8,
+      "startup": 0.7
+    }
+  },
+  {
+    "id": 3017,
+    "primary_topic": "Graphs",
+    "primary_subtopic": {
+      "name": "BFS Shortest Path (Unweighted)",
+      "weight": 0.4
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Prefix Sums",
+        "weight": 0.35
+      },
+      {
+        "topic": "Math & Geometry",
+        "name": "General Math",
+        "weight": 0.25
+      }
+    ],
+    "difficulty": 2709,
+    "importance": 0.18,
+    "interview_plausibility": 0.08,
+    "company_plausibility": {
+      "quant": 0.15,
+      "faang": 0.05,
+      "mid": 0.03,
+      "startup": 0.02
+    }
+  },
+  {
+    "id": 420,
+    "primary_topic": "Greedy",
+    "primary_subtopic": {
+      "name": "General Greedy (Greedy is main insight)",
+      "weight": 0.7
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Frequency Counting / Hash Map Lookup",
+        "weight": 0.3
+      }
+    ],
+    "difficulty": 2287,
+    "importance": 0.22,
+    "interview_plausibility": 0.18,
+    "company_plausibility": {
+      "quant": 0.15,
+      "faang": 0.2,
+      "mid": 0.1,
+      "startup": 0.05
+    }
+  },
+  {
+    "id": 2772,
+    "primary_topic": "Arrays & Hashing",
+    "primary_subtopic": {
+      "name": "Prefix Sums",
+      "weight": 0.75
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Greedy",
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.25
+      }
+    ],
+    "difficulty": 2029,
+    "importance": 0.58,
+    "interview_plausibility": 0.55,
+    "company_plausibility": {
+      "quant": 0.45,
+      "faang": 0.5,
+      "mid": 0.35,
+      "startup": 0.25
+    }
+  },
+  {
+    "id": 3034,
+    "primary_topic": "Arrays & Hashing",
+    "primary_subtopic": {
+      "name": "Frequency Counting / Hash Map Lookup",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1384,
+    "importance": 0.22,
+    "interview_plausibility": 0.35,
+    "company_plausibility": {
+      "quant": 0.15,
+      "faang": 0.2,
+      "mid": 0.25,
+      "startup": 0.2
+    }
+  },
+  {
+    "id": 3655,
+    "primary_topic": "Arrays & Hashing",
+    "primary_subtopic": {
+      "name": "Prefix Sums",
+      "weight": 0.4
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Math & Geometry",
+        "name": "Modular Arithmetic",
+        "weight": 0.35
+      },
+      {
+        "topic": "Bit Manipulation",
+        "name": "General Bit Manipulation",
+        "weight": 0.25
+      }
+    ],
+    "difficulty": 2454,
+    "importance": 0.15,
+    "interview_plausibility": 0.1,
+    "company_plausibility": {
+      "quant": 0.2,
+      "faang": 0.08,
+      "mid": 0.05,
+      "startup": 0.03
+    }
+  },
+  {
+    "id": 2234,
+    "primary_topic": "Greedy",
+    "primary_subtopic": {
+      "name": "General Greedy (Greedy is main insight)",
+      "weight": 0.3
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Binary Search",
+        "name": "Binary Search on Answer Space",
+        "weight": 0.25
+      },
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Sorting + Comparison",
+        "weight": 0.2
+      },
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Prefix Sums",
+        "weight": 0.15
+      },
+      {
+        "topic": "Two Pointers",
+        "name": "Same-Direction (Fast/Slow on Arrays)",
+        "weight": 0.1
+      }
+    ],
+    "difficulty": 2562,
+    "importance": 0.35,
+    "interview_plausibility": 0.15,
+    "company_plausibility": {
+      "quant": 0.3,
+      "faang": 0.2,
+      "mid": 0.1,
+      "startup": 0.05
+    }
+  },
+  {
+    "id": 357,
+    "primary_topic": "Math & Geometry",
+    "primary_subtopic": {
+      "name": "Combinatorics",
+      "weight": 0.7
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Core DP",
+        "name": "Linear Recurrence DP",
+        "weight": 0.3
+      }
+    ],
+    "difficulty": 1318,
+    "importance": 0.28,
+    "interview_plausibility": 0.4,
+    "company_plausibility": {
+      "quant": 0.45,
+      "faang": 0.3,
+      "mid": 0.25,
+      "startup": 0.2
+    }
+  },
+  {
+    "id": 2419,
+    "primary_topic": "Arrays & Hashing",
+    "primary_subtopic": {
+      "name": "Frequency Counting / Hash Map Lookup",
+      "weight": 0.5
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Bit Manipulation",
+        "name": "General Bit Manipulation",
+        "weight": 0.5
+      }
+    ],
+    "difficulty": 1496,
+    "importance": 0.32,
+    "interview_plausibility": 0.45,
+    "company_plausibility": {
+      "quant": 0.3,
+      "faang": 0.35,
+      "mid": 0.3,
+      "startup": 0.2
+    }
+  },
+  {
+    "id": 1729,
+    "primary_topic": "Arrays & Hashing",
+    "primary_subtopic": {
+      "name": "Frequency Counting / Hash Map Lookup",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 950,
+    "importance": 0.08,
+    "interview_plausibility": 0.08,
+    "company_plausibility": {
+      "quant": 0.02,
+      "faang": 0.05,
+      "mid": 0.08,
+      "startup": 0.05
+    }
+  },
+  {
+    "id": 131,
+    "primary_topic": "Backtracking",
+    "primary_subtopic": {
+      "name": "String Partitioning (Palindrome Partitioning)",
+      "weight": 0.7
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Core DP",
+        "name": "Word Break / String DP",
+        "weight": 0.3
+      }
+    ],
+    "difficulty": 1548,
+    "importance": 0.85,
+    "interview_plausibility": 0.87,
+    "company_plausibility": {
+      "quant": 0.45,
+      "faang": 0.9,
+      "mid": 0.75,
+      "startup": 0.55
+    }
+  },
+  {
+    "id": 123,
+    "primary_topic": "Core DP",
+    "primary_subtopic": {
+      "name": "Linear Recurrence DP",
+      "weight": 0.85
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Prefix Sums",
+        "weight": 0.15
+      }
+    ],
+    "difficulty": 1803,
+    "importance": 0.82,
+    "interview_plausibility": 0.72,
+    "company_plausibility": {
+      "quant": 0.7,
+      "faang": 0.78,
+      "mid": 0.55,
+      "startup": 0.35
+    }
+  },
+  {
+    "id": 384,
+    "primary_topic": "Math & Geometry",
+    "primary_subtopic": {
+      "name": "General Math",
+      "weight": 0.6
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Sorting + Comparison",
+        "weight": 0.4
+      }
+    ],
+    "difficulty": 1326,
+    "importance": 0.42,
+    "interview_plausibility": 0.62,
+    "company_plausibility": {
+      "quant": 0.35,
+      "faang": 0.55,
+      "mid": 0.5,
+      "startup": 0.4
+    }
+  },
+  {
+    "id": 896,
+    "primary_topic": "Arrays & Hashing",
+    "primary_subtopic": {
+      "name": "Sorting + Comparison",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1259,
+    "importance": 0.3,
+    "interview_plausibility": 0.42,
+    "company_plausibility": {
+      "quant": 0.15,
+      "faang": 0.3,
+      "mid": 0.4,
+      "startup": 0.45
+    }
+  },
+  {
+    "id": 953,
+    "primary_topic": "Arrays & Hashing",
+    "primary_subtopic": {
+      "name": "Frequency Counting / Hash Map Lookup",
+      "weight": 0.55
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Sorting + Comparison",
+        "weight": 0.45
+      }
+    ],
+    "difficulty": 1300,
+    "importance": 0.72,
+    "interview_plausibility": 0.82,
+    "company_plausibility": {
+      "quant": 0.3,
+      "faang": 0.85,
+      "mid": 0.6,
+      "startup": 0.45
+    }
+  },
+  {
+    "id": 2070,
+    "primary_topic": "Binary Search",
+    "primary_subtopic": {
+      "name": "Boundary Finding (Bisect Left/Right)",
+      "weight": 0.55
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Sorting + Comparison",
+        "weight": 0.3
+      },
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Prefix Sums",
+        "weight": 0.15
+      }
+    ],
+    "difficulty": 1724,
+    "importance": 0.68,
+    "interview_plausibility": 0.78,
+    "company_plausibility": {
+      "quant": 0.55,
+      "faang": 0.72,
+      "mid": 0.62,
+      "startup": 0.45
+    }
+  },
+  {
+    "id": 2466,
+    "primary_topic": "Core DP",
+    "primary_subtopic": {
+      "name": "Linear Recurrence DP",
+      "weight": 0.75
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Core DP",
+        "name": "Unbounded Knapsack",
+        "weight": 0.25
+      }
+    ],
+    "difficulty": 1694,
+    "importance": 0.76,
+    "interview_plausibility": 0.75,
+    "company_plausibility": {
+      "quant": 0.55,
+      "faang": 0.72,
+      "mid": 0.6,
+      "startup": 0.4
+    }
+  },
+  {
+    "id": 109,
+    "primary_topic": "Trees",
+    "primary_subtopic": {
+      "name": "BST Operations (Insert, Delete, Validate)",
+      "weight": 0.5
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Linked List",
+        "name": "Fast/Slow Pointers (Cycle, Middle)",
+        "weight": 0.3
+      },
+      {
+        "topic": "Trees",
+        "name": "DFS Traversal (Inorder, Preorder, Postorder)",
+        "weight": 0.2
+      }
+    ],
+    "difficulty": 1450,
+    "importance": 0.62,
+    "interview_plausibility": 0.75,
+    "company_plausibility": {
+      "quant": 0.4,
+      "faang": 0.72,
+      "mid": 0.65,
+      "startup": 0.5
+    }
+  }
+]

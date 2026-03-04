@@ -49,14 +49,17 @@ You MUST use these exact subtopic names when tagging. Each problem gets a primar
 ## Output format
 For each problem, return a JSON object with these fields:
 - "id": the problem's LeetCode ID (integer)
-- "primary_subtopic": {{"name": "<exact subtopic name>", "weight": <float>}}
-- "secondary_subtopics": [{{"name": "<exact subtopic name>", "weight": <float>}}, ...] (can be empty)
-- "difficulty": integer on the Zerotrac contest rating scale (~800 = trivial, ~1200 = easy, ~1600 = medium, ~2000 = hard, ~2400+ = elite)
-- "importance": float 0-1, how generalizable/transferable the problem is
-- "interview_plausibility": float 0-1, likelihood of appearing in a real interview
-- "company_plausibility": {{"quant": <float>, "faang": <float>, "mid": <float>, "startup": <float>}}
+- "primary_topic": "<exact topic name from taxonomy>" (e.g. "Arrays & Hashing", "Trees", "Core DP")
+- "primary_subtopic": {{"name": "<exact subtopic name>", "weight": <float to 2 decimal places>}}
+- "secondary_subtopics": [{{"topic": "<topic name>", "name": "<subtopic name>", "weight": <float to 2 decimal places>}}, ...] (can be empty)
+- "difficulty": integer on the Zerotrac contest rating scale. Use precise values, NOT rounded to 50s or 100s. Examples: 1137, 1283, 1574, 1842, 2163, 2487. The full range is ~800 to ~3500.
+- "importance": float 0-1 to 2 decimal places (e.g. 0.73, 0.42, 0.88 — be precise, avoid rounding to 0.5, 0.7, 0.8 etc.)
+- "interview_plausibility": float 0-1 to 2 decimal places. This is INDEPENDENT of importance. It measures: would an interviewer realistically give this problem? A niche problem (low importance) CAN have high interview plausibility if it has a clean problem statement, is solvable in 30-45 min, and tests coding ability. A highly generalizable problem (high importance) CAN have low interview plausibility if it's too long, requires obscure knowledge, or has complex I/O. Use good judgment.
+- "company_plausibility": {{"quant": <float 2dp>, "faang": <float 2dp>, "mid": <float 2dp>, "startup": <float 2dp>}}
 
-All subtopic weights (primary + secondary) must sum to 1.0.
+PRECISION IS CRITICAL. Use 2 decimal places for all float scores. Do NOT cluster scores at round numbers. Difficulty should be precise integers (1347, not 1350).
+
+All subtopic weights (primary + secondary) must sum to 1.00.
 
 ## Difficulty calibration anchors
 These problems have known contest ratings. Use them to calibrate your difficulty estimates:
@@ -99,11 +102,24 @@ Importance anchors:
 ## NeetCode 250 problems (high importance signal):
 {chr(10).join(nc250_titles)}
 
+## Interview plausibility guidance
+Interview plausibility is about whether this problem would REALISTICALLY show up in an interview. Consider:
+- Clean, concise problem statement? Higher plausibility.
+- Solvable in 30-45 minutes? Higher plausibility.
+- Tests core coding/problem-solving ability? Higher plausibility.
+- Requires obscure math/theory knowledge? Lower plausibility.
+- Very long problem description or complex I/O? Lower plausibility.
+- Too easy (trivial implementation)? Lower plausibility for FAANG, fine for startup.
+- Contest-style with tricky edge cases? Lower plausibility.
+A problem with 0.5 importance can easily have 0.85 interview plausibility. These are independent dimensions.
+
 ## Instructions
 - Return ONLY a JSON array of objects, no other text
-- Use EXACT subtopic names from the taxonomy
-- Every problem must have exactly one primary_subtopic
-- Weights must sum to 1.0
+- Use EXACT topic and subtopic names from the taxonomy
+- Every problem must have exactly one primary_topic and primary_subtopic
+- Weights must sum to 1.00
+- All float scores must be to 2 decimal places
+- Difficulty must be a precise integer, not rounded to nearest 50
 """
 
 
@@ -170,7 +186,8 @@ def run_pass1():
         try:
             response = client.messages.create(
                 model=PASS1_MODEL,
-                max_tokens=8192,
+                max_tokens=16384,
+                cache_control={"type": "ephemeral"},
                 system=system_prompt,
                 messages=[{"role": "user", "content": user_prompt}],
             )
@@ -185,8 +202,15 @@ def run_pass1():
 
             results = json.loads(text)
 
+            # Build elo lookup from source problems
+            elo_lookup = {p["id"]: p["elo"] for p in batch if p.get("elo")}
+
             for r in results:
-                tagged[r["id"]] = r
+                pid = r["id"]
+                if pid in elo_lookup:
+                    r["difficulty_llm"] = r["difficulty"]
+                    r["difficulty"] = elo_lookup[pid]
+                tagged[pid] = r
 
             # Save checkpoint
             all_tagged = sorted(tagged.values(), key=lambda x: x["id"])

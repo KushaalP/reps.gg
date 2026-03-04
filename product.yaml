@@ -1,0 +1,249 @@
+# reps.gg — Adaptive DSA Learning System
+# Product Specification
+
+product:
+  name: reps.gg
+  tagline: Adaptive DSA learning through spaced repetition and pattern mastery
+  components:
+    - Chrome extension (lives on LeetCode)
+    - Web dashboard (mastery skill tree, ELO, stats)
+
+# ─── Content Pipeline ────────────────────────────────────────────────
+
+content_pipeline:
+  taxonomy:
+    status: done
+    description: 18 top-level topics, ~60 sub-patterns, each with an importance score
+    file: taxonomy.yaml
+
+  prerequisite_graph:
+    status: done
+    description: >
+      Hard and soft dependencies between sub-patterns.
+      Base tier (arrays/hashing, stack, linked list, bit manipulation, math/geometry) has no prerequisites.
+      Everything else branches from there.
+    file: prerequisites.yaml
+
+  problem_data:
+    status: done
+    description: >
+      3860 problems pulled from LeetCode GraphQL API with descriptions and solutions.
+      Zerotrac ratings mapped by problem ID (2417 matched).
+      HTML cleaned to plain text (content_clean, solution_clean).
+      NeetCode 250 list matched and stored separately.
+    files:
+      - data/problems.json
+      - data/nc250.json
+      - data/nc150.json
+
+  llm_tagging:
+    status: in_progress
+    description: >
+      Two-pass process.
+    pass_1:
+      model: claude-opus-4-6
+      batch_size: 25
+      description: >
+        All problems run through the LLM in batches with anchors
+        (Zerotrac-rated problems for difficulty calibration, NeetCode 250 as importance reference).
+      output_per_problem:
+        - primary_topic: exact topic name from taxonomy
+        - primary_subtopic: name + weight (single tag)
+        - secondary_subtopics: list of topic + name + weight (can be empty, weights sum to 1.0 with primary)
+        - difficulty: integer on Zerotrac scale (real Zerotrac elo used when available, LLM estimate otherwise)
+        - importance: float 0-1 (how transferable the core technique is)
+        - interview_plausibility: float 0-1 (independent of importance)
+        - company_plausibility: quant / faang / mid / startup (float 0-1 each)
+    pass_2:
+      model: gpt-5.2-mini
+      description: >
+        Groups pass 1 results by sub-pattern and score tier, sends back for relative comparison
+        to catch inconsistencies. Flags outliers for recalibration.
+    files:
+      - scripts/tag_problems.py
+      - tagging_schema.yaml
+
+  embeddings:
+    status: pending
+    description: >
+      After tagging, concatenate each problem's description + solution + all tags into a text blob,
+      run through embedding model (OpenAI text-embedding-3-small), store vectors.
+      One batch job, minutes to run.
+
+# ─── User Onboarding ────────────────────────────────────────────────
+
+onboarding:
+  steps:
+    - Sign up on website
+    - Connect LeetCode profile:
+        methods:
+          - Username (GraphQL pull)
+          - Chrome extension DOM reading
+          - Copy-paste fallback
+        outcome: Cross-reference solved problems against tagged database for initial mastery estimates
+    - Self-assessment questionnaire on top-level patterns (covers gaps LeetCode history doesn't)
+    - Pick goal:
+        options:
+          - Interview prep with timeline
+          - Building foundations
+          - General improvement
+    - See mastery dashboard (mostly empty skill tree), install Chrome extension, start solving
+  calibration: >
+    System calibrates quickly from real usage.
+    Initial estimates get overwritten within days.
+
+# ─── Two Modes ───────────────────────────────────────────────────────
+
+modes:
+  build_patterns:
+    driven_by: LLM
+    description: >
+      Adaptive learning mode. LLM receives user's mastery object (sub-pattern scores, problems solved
+      per sub-pattern), recent problem history, and prerequisite graph.
+    selection_philosophy: >
+      Prioritize low mastery + high importance sub-patterns, respect prerequisites, progress difficulty
+      with mastery, mix in review for decaying patterns, introduce variety, be somewhat random.
+    recommendation_flow:
+      - LLM outputs a target problem profile as text
+      - Profile text gets embedded
+      - Cosine similarity against all problem embedding vectors
+      - Filter out seen problems and prerequisite-gated problems
+      - Pick from top candidates with randomness
+    optional_topic_filter: User can scope to a specific area and the LLM works within that constraint
+
+  interview_practice:
+    driven_by: Formula (no LLM)
+    description: >
+      Simulates real interview randomness. No adaptation to weaknesses.
+    flow:
+      - User selects company type (quant, FAANG, mid-level, startup, all)
+      - Filter unseen problems to the ELO band for that company type
+      - Weight by interview plausibility and company type plausibility
+      - Pull top candidates, random pick
+    premium_additions:
+      - Timer
+      - AI follow-up questions
+
+  shared: Both modes update mastery and ELO from results
+
+# ─── Chrome Extension ────────────────────────────────────────────────
+
+chrome_extension:
+  always_active: true
+  description: Always active on LeetCode regardless of mode
+
+  post_solve_report:
+    trigger: After any problem submission
+    questions:
+      - Did you solve it?
+      - Did you use hints?
+      - Did you look at the solution?
+      - Rate perceived difficulty
+    interaction: Four taps
+
+  build_patterns_mode:
+    next_problem: >
+      Presents the next recommended problem with a link to it on LeetCode.
+      Recommendation is precomputed during the progress animation screen (no perceived wait).
+
+  progress_animation:
+    description: >
+      Post-solve dopamine loop — XP gains per sub-pattern, tier promotions, ELO movement.
+
+  skip:
+    available: true
+    daily_limit: Past a certain number of daily skips, requires premium
+    feedback: Skip data feeds back into the LLM context for next recommendation
+
+  shaky_solves:
+    description: >
+      Problems self-reported as shaky (used hints or looked at solution) get flagged for re-serving
+      after a cooldown period. They re-enter the unseen pool after the cooldown expires.
+
+# ─── Mastery Model ───────────────────────────────────────────────────
+
+mastery_model:
+  internal_score:
+    range: 0-100
+    per: sub-pattern
+
+  user_facing:
+    display: XP and tiers
+    tiers:
+      - Bronze
+      - Silver
+      - Gold
+      - Platinum
+      - Diamond
+
+  gain_formula:
+    mastery_gain: quality_score * difficulty_multiplier * generalizability_factor
+    quality_score:
+      solved_clean: full credit
+      solved_with_hints: moderate credit
+      solved_after_solution: minimal credit
+      unsolved: zero
+    perceived_difficulty_adjustment: >
+      Solved clean but rated hard gives more credit than solved clean rated easy.
+    generalizability_factor:
+      formula: generalizability + (1 - generalizability) * (current_mastery / 100)
+      description: >
+        At low mastery, generalizability matters a lot — niche problems give little.
+        At high mastery, it flattens out so niche problems give meaningful gains.
+    applies_to: Problem's single primary sub-pattern
+
+  score_type: Recency-weighted rolling average (recent attempts count more, older ones fade)
+
+  decay:
+    mechanism: Half-life function
+    half_life_extension: More volume and consistency extends half-life
+    scope: Only affects recommendation engine for spaced repetition
+    visual: Dashboard tiers never visually downgrade
+
+  manual_override: >
+    Users can manually override mastery levels at any time.
+    Override sets a starting point that real performance adjusts from.
+
+# ─── ELO System ──────────────────────────────────────────────────────
+
+elo_system:
+  type: Passive metric updating across both modes
+  math: Standard ELO — user ELO vs problem difficulty rating, adjust on solve or fail
+  problem_ratings:
+    initialization: Zerotrac contest ratings
+    refinement: Over time from aggregate user data
+  open_decisions:
+    - True fluctuating rating vs never-decreasing progress metric vs true rating with a floor
+  visibility:
+    default: private
+    opt_in: share with friends
+
+# ─── Dashboard ───────────────────────────────────────────────────────
+
+dashboard:
+  skill_tree:
+    description: >
+      Visualization of all sub-patterns with tier badges.
+      Shows unlocked, locked (behind prerequisites), and close to unlocking.
+      Tiers never visually decay.
+  elo_graph: ELO over time
+  stats:
+    - Problems solved
+    - Quality scores
+    - Strongest and weakest patterns
+    - Total time practiced
+  social:
+    friends_list: true
+    visibility: Opt-in ELO and tier sharing
+
+# ─── Monetization ────────────────────────────────────────────────────
+
+monetization:
+  free_tier:
+    limits: TBD (possibly daily problem cap or skip limit)
+  premium:
+    pricing: TBD (subscription)
+    features:
+      - Company-specific interview practice
+      - AI interview simulation with timer and follow-ups
+      - Unlimited skips
