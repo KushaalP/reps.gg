@@ -1,0 +1,218 @@
+topics:
+  - name: Arrays & Hashing
+    importance: 0.95
+    subtopics:
+      - name: Frequency Counting / Hash Map Lookup
+        importance: 0.95
+      - name: Prefix Sums
+        importance: 0.90
+      - name: Kadane's Algorithm (Max Subarray)
+        importance: 0.70
+      - name: Sorting + Comparison
+        importance: 0.75
+      - name: Complement Search (Two Sum Pattern)
+        importance: 0.85
+      - name: Matrix Traversal (Diagonal, Valid Sudoku, etc)
+        importance: 0.60
+
+  - name: Two Pointers
+    importance: 0.90
+    subtopics:
+      - name: Opposite-Direction (Converging)
+        importance: 0.90
+      - name: Same-Direction (Fast/Slow on Arrays)
+        importance: 0.75
+      - name: K-Sum Pattern (3Sum, 4Sum)
+        importance: 0.70
+      - name: Partitioning (Dutch National Flag)
+        importance: 0.50
+      - name: Merging Sorted Arrays
+        importance: 0.65
+
+  - name: Stack
+    importance: 0.80
+    subtopics:
+      - name: Monotonic Stack
+        importance: 0.80
+      - name: Stack-Based Simulation
+        importance: 0.80
+      - name: Min/Max Stack
+        importance: 0.60
+
+  - name: Binary Search
+    importance: 0.90
+    subtopics:
+      - name: Standard Binary Search
+        importance: 0.95
+      - name: Binary Search on Answer Space
+        importance: 0.85
+      - name: Boundary Finding (Bisect Left/Right)
+        importance: 0.85
+      - name: Search in Rotated/Modified Array
+        importance: 0.70
+      - name: Binary Search on Matrix
+        importance: 0.45
+
+  - name: Sliding Window
+    importance: 0.875
+    subtopics:
+      - name: Fixed-Size Window
+        importance: 0.80
+      - name: Variable-Size Window (Expand/Contract)
+        importance: 0.90
+      - name: Window with Monotonic Deque
+        importance: 0.55
+
+  - name: Linked List
+    importance: 0.70
+    subtopics:
+      - name: Fast/Slow Pointers (Cycle, Middle)
+        importance: 0.75
+      - name: Reversal (Full and Partial)
+        importance: 0.80
+      - name: Merge Linked Lists
+        importance: 0.65
+
+
+
+  - name: Trees
+    importance: 0.90
+    subtopics:
+      - name: DFS Traversal (Inorder, Preorder, Postorder)
+        importance: 0.95
+      - name: BFS / Level-Order Traversal
+        importance: 0.90
+      - name: BST Operations (Insert, Delete, Validate)
+        importance: 0.80
+      - name: Lowest Common Ancestor
+        importance: 0.65
+      - name: Path Sum Problems
+        importance: 0.65
+
+  - name: Tries
+    importance: 0.50
+    subtopics:
+      - name: Trie Construction / Prefix Search
+        importance: 0.60
+      - name: Trie + Backtracking
+        importance: 0.50
+
+
+  - name: Backtracking
+    importance: 0.80
+    subtopics:
+      - name: Permutations
+        importance: 0.85
+      - name: Combinations / Subsets
+        importance: 0.90
+      - name: Constraint Satisfaction (N-Queens)
+        importance: 0.70
+      - name: String Partitioning (Palindrome Partitioning)
+        importance: 0.65
+      - name: Path Finding with Backtracking
+        importance: 0.55
+
+  - name: Heap / Priority Queue
+    importance: 0.80
+    subtopics:
+      - name: Top-K Elements
+        importance: 0.85
+      - name: Merge K Sorted Structures
+        importance: 0.50
+      - name: Running Median (Two Heaps)
+        importance: 0.50
+      - name: Heap Simulation
+        importance: 0.75
+
+
+  - name: Graphs
+    importance: 0.90
+    subtopics:
+      - name: BFS Shortest Path (Unweighted)
+        importance: 0.90
+      - name: Multi-Source BFS
+        importance: 0.75
+      - name: DFS Connected Components
+        importance: 0.80
+      - name: DFS Path Finding
+        importance: 0.65
+      - name: Union-Find
+        importance: 0.65
+      - name: Topological Sort
+        importance: 0.80
+
+  - name: Core DP
+    importance: 0.85
+    subtopics:
+      - name: Linear Recurrence DP
+        importance: 0.90
+      - name: Longest Increasing Subsequence
+        importance: 0.75
+      - name: Word Break / String DP
+        importance: 0.75
+      - name: Unbounded Knapsack
+        importance: 0.80
+      - name: 0/1 Knapsack 
+        importance: 0.80
+      - name: Two Sequence DP (LCS, Edit distance)
+        importance: 0.75
+      - name: Grid Path Problems
+        importance: 0.75
+
+  - name: Intervals
+    importance: 0.70
+    subtopics:
+      - name: Interval Merging
+        importance: 0.80
+      - name: Interval Scheduling (Non-Overlapping)
+        importance: 0.55
+      - name: Sweep Line / Meeting Rooms
+        importance: 0.75
+
+  - name: Greedy
+    importance: 0.75
+    subtopics:
+      - name: General Greedy (Greedy is main insight)
+        importance: 0.75
+
+  - name: Advanced Graphs
+    importance: 0.50
+    subtopics:
+      - name: Dijkstra's (Weighted Shortest Path)
+        importance: 0.75
+      - name: Bellman-Ford
+        importance: 0.30
+      - name: Minimum Spanning Tree (Prim's / Kruskal's)
+        importance: 0.50
+      - name: Bipartite Checking
+        importance: 0.55
+
+  - name: Advanced DP
+    importance: 0.40
+    subtopics:
+      - name: Bitmask DP
+        importance: 0.40
+      - name: Interval DP
+        importance: 0.40
+
+  - name: Bit Manipulation
+    importance: 0.45
+    subtopics:
+      - name: General Bit Manipulation
+        importance: 0.50
+
+  - name: Math & Geometry
+    importance: 0.40
+    subtopics:
+      - name: General Math
+        importance: 0.45
+      - name: Modular Arithmetic
+        importance: 0.55
+      - name: Matrix Math (Rotation, Transpose)
+        importance: 0.45
+      - name: GCD / LCM
+        importance: 0.50
+      - name: Primes / Sieve of Eratosthenes
+        importance: 0.35
+      - name: Combinatorics
+        importance: 0.45

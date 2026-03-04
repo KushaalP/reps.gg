@@ -1,0 +1,350 @@
+# Prerequisite Graph
+# hard: must be met before the system serves problems in this subtopic
+# soft: factored into recommendations but doesn't gate access
+#
+# Base tier (no prerequisites): Arrays & Hashing, Stack, Linked List, Bit Manipulation, Math & Geometry
+# These are entry points for new users.
+
+prerequisites:
+
+  # ============================================================
+  # TWO POINTERS — requires basic array/sorting comfort
+  # ============================================================
+  Opposite-Direction (Converging):
+    hard:
+      - Sorting + Comparison
+    soft:
+      - Frequency Counting / Hash Map Lookup
+
+  Same-Direction (Fast/Slow on Arrays):
+    hard:
+      - Sorting + Comparison
+    soft: []
+
+  K-Sum Pattern (3Sum, 4Sum):
+    hard:
+      - Opposite-Direction (Converging)
+      - Sorting + Comparison
+    soft:
+      - Complement Search (Two Sum Pattern)
+
+  Partitioning (Dutch National Flag):
+    hard:
+      - Opposite-Direction (Converging)
+    soft: []
+
+  Merging Sorted Arrays:
+    hard:
+      - Same-Direction (Fast/Slow on Arrays)
+      - Sorting + Comparison
+    soft: []
+
+  # ============================================================
+  # BINARY SEARCH — requires sorting understanding
+  # ============================================================
+  Standard Binary Search:
+    hard: []
+    soft:
+      - Sorting + Comparison
+
+  Binary Search on Answer Space:
+    hard:
+      - Standard Binary Search
+    soft: []
+
+  Boundary Finding (Bisect Left/Right):
+    hard:
+      - Standard Binary Search
+    soft: []
+
+  Search in Rotated/Modified Array:
+    hard:
+      - Standard Binary Search
+    soft:
+      - Boundary Finding (Bisect Left/Right)
+
+  Binary Search on Matrix:
+    hard:
+      - Standard Binary Search
+    soft:
+      - Matrix Traversal (Diagonal, Valid Sudoku, etc)
+
+  # ============================================================
+  # SLIDING WINDOW — requires two pointers foundation
+  # ============================================================
+  Fixed-Size Window:
+    hard:
+      - Same-Direction (Fast/Slow on Arrays)
+    soft:
+      - Frequency Counting / Hash Map Lookup
+
+  Variable-Size Window (Expand/Contract):
+    hard:
+      - Fixed-Size Window
+    soft:
+      - Frequency Counting / Hash Map Lookup
+
+  Window with Monotonic Deque:
+    hard:
+      - Variable-Size Window (Expand/Contract)
+      - Monotonic Stack
+    soft: []
+
+  # ============================================================
+  # TREES — requires recursion comfort (via stack/linked list)
+  # ============================================================
+  DFS Traversal (Inorder, Preorder, Postorder):
+    hard: []
+    soft:
+      - Stack-Based Simulation
+      - Fast/Slow Pointers (Cycle, Middle)
+
+  BFS / Level-Order Traversal:
+    hard: []
+    soft:
+      - Fast/Slow Pointers (Cycle, Middle)
+
+  BST Operations (Insert, Delete, Validate):
+    hard:
+      - DFS Traversal (Inorder, Preorder, Postorder)
+      - Standard Binary Search
+    soft: []
+
+  Lowest Common Ancestor:
+    hard:
+      - DFS Traversal (Inorder, Preorder, Postorder)
+    soft:
+      - BST Operations (Insert, Delete, Validate)
+
+  Path Sum Problems:
+    hard:
+      - DFS Traversal (Inorder, Preorder, Postorder)
+    soft:
+      - BFS / Level-Order Traversal
+
+  # ============================================================
+  # TRIES — requires trees foundation
+  # ============================================================
+  Trie Construction / Prefix Search:
+    hard:
+      - DFS Traversal (Inorder, Preorder, Postorder)
+    soft:
+      - Frequency Counting / Hash Map Lookup
+
+  Trie + Backtracking:
+    hard:
+      - Trie Construction / Prefix Search
+      - Combinations / Subsets
+    soft: []
+
+  # ============================================================
+  # BACKTRACKING — requires recursion via trees
+  # ============================================================
+  Permutations:
+    hard:
+      - DFS Traversal (Inorder, Preorder, Postorder)
+    soft: []
+
+  Combinations / Subsets:
+    hard:
+      - DFS Traversal (Inorder, Preorder, Postorder)
+    soft:
+      - Permutations
+
+  Constraint Satisfaction (N-Queens):
+    hard:
+      - Combinations / Subsets
+    soft:
+      - Matrix Traversal (Diagonal, Valid Sudoku, etc)
+
+  String Partitioning (Palindrome Partitioning):
+    hard:
+      - Combinations / Subsets
+    soft: []
+
+  Path Finding with Backtracking:
+    hard:
+      - Combinations / Subsets
+    soft:
+      - DFS Path Finding
+
+  # ============================================================
+  # HEAP / PRIORITY QUEUE — requires sorting + trees intuition
+  # ============================================================
+  Top-K Elements:
+    hard:
+      - Sorting + Comparison
+    soft:
+      - Frequency Counting / Hash Map Lookup
+
+  Merge K Sorted Structures:
+    hard:
+      - Top-K Elements
+      - Merging Sorted Arrays
+    soft:
+      - Merge Linked Lists
+
+  Running Median (Two Heaps):
+    hard:
+      - Top-K Elements
+    soft:
+      - Standard Binary Search
+
+  Heap Simulation:
+    hard:
+      - Top-K Elements
+    soft: []
+
+  # ============================================================
+  # GRAPHS — requires BFS/DFS from trees
+  # ============================================================
+  BFS Shortest Path (Unweighted):
+    hard:
+      - BFS / Level-Order Traversal
+    soft:
+      - Frequency Counting / Hash Map Lookup
+
+  Multi-Source BFS:
+    hard:
+      - BFS Shortest Path (Unweighted)
+    soft: []
+
+  DFS Connected Components:
+    hard:
+      - DFS Traversal (Inorder, Preorder, Postorder)
+    soft:
+      - BFS Shortest Path (Unweighted)
+
+  DFS Path Finding:
+    hard:
+      - DFS Connected Components
+    soft: []
+
+  Union-Find:
+    hard:
+      - DFS Connected Components
+    soft: []
+
+  Topological Sort:
+    hard:
+      - DFS Connected Components
+      - BFS Shortest Path (Unweighted)
+    soft: []
+
+  # ============================================================
+  # CORE DP — requires backtracking/recursion foundation
+  # ============================================================
+  Linear Recurrence DP:
+    hard:
+      - Combinations / Subsets
+    soft: []
+
+  Longest Increasing Subsequence:
+    hard:
+      - Linear Recurrence DP
+    soft:
+      - Standard Binary Search
+
+  Word Break / String DP:
+    hard:
+      - Linear Recurrence DP
+    soft:
+      - Frequency Counting / Hash Map Lookup
+
+  Unbounded Knapsack:
+    hard:
+      - Linear Recurrence DP
+    soft: []
+
+  0/1 Knapsack:
+    hard:
+      - Linear Recurrence DP
+    soft:
+      - Unbounded Knapsack
+
+  Two Sequence DP (LCS, Edit distance):
+    hard:
+      - Linear Recurrence DP
+    soft:
+      - 0/1 Knapsack
+
+  Grid Path Problems:
+    hard:
+      - Linear Recurrence DP
+    soft:
+      - Matrix Traversal (Diagonal, Valid Sudoku, etc)
+      - DFS Path Finding
+
+  # ============================================================
+  # INTERVALS — requires sorting
+  # ============================================================
+  Interval Merging:
+    hard:
+      - Sorting + Comparison
+    soft:
+      - Top-K Elements
+
+  Interval Scheduling (Non-Overlapping):
+    hard:
+      - Interval Merging
+    soft:
+      - Top-K Elements
+
+  Sweep Line / Meeting Rooms:
+    hard:
+      - Interval Merging
+      - Sorting + Comparison
+      - Top-K Elements
+    soft: []
+
+  # ============================================================
+  # GREEDY — requires sorting + some DP intuition
+  # ============================================================
+  General Greedy (Greedy is main insight):
+    hard:
+      - Sorting + Comparison
+    soft:
+      - Linear Recurrence DP
+
+  # ============================================================
+  # ADVANCED GRAPHS — requires core graph mastery
+  # ============================================================
+  Dijkstra's (Weighted Shortest Path):
+    hard:
+      - BFS Shortest Path (Unweighted)
+      - Top-K Elements
+    soft: []
+
+  Bellman-Ford:
+    hard:
+      - Dijkstra's (Weighted Shortest Path)
+    soft: []
+
+  Minimum Spanning Tree (Prim's / Kruskal's):
+    hard:
+      - Union-Find
+      - Top-K Elements
+    soft:
+      - Dijkstra's (Weighted Shortest Path)
+
+  Bipartite Checking:
+    hard:
+      - BFS Shortest Path (Unweighted)
+      - DFS Connected Components
+    soft: []
+
+  # ============================================================
+  # ADVANCED DP — requires core DP mastery
+  # ============================================================
+  Bitmask DP:
+    hard:
+      - 0/1 Knapsack
+      - General Bit Manipulation
+    soft:
+      - Combinations / Subsets
+
+  Interval DP:
+    hard:
+      - Two Sequence DP (LCS, Edit distance)
+    soft:
+      - Interval Merging

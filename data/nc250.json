@@ -1,0 +1,2002 @@
+[
+  {
+    "id": 1,
+    "title": "Two Sum",
+    "slug": "two-sum",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Arrays & Hashing"
+  },
+  {
+    "id": 2,
+    "title": "Add Two Numbers",
+    "slug": "add-two-numbers",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Linked List"
+  },
+  {
+    "id": 3,
+    "title": "Longest Substring Without Repeating Characters",
+    "slug": "longest-substring-without-repeating-characters",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Sliding Window"
+  },
+  {
+    "id": 4,
+    "title": "Median of Two Sorted Arrays",
+    "slug": "median-of-two-sorted-arrays",
+    "difficulty": "Hard",
+    "elo": null,
+    "nc_topic": "Binary Search"
+  },
+  {
+    "id": 5,
+    "title": "Longest Palindromic Substring",
+    "slug": "longest-palindromic-substring",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "1-D Dynamic Programming"
+  },
+  {
+    "id": 7,
+    "title": "Reverse Integer",
+    "slug": "reverse-integer",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Bit Manipulation"
+  },
+  {
+    "id": 10,
+    "title": "Regular Expression Matching",
+    "slug": "regular-expression-matching",
+    "difficulty": "Hard",
+    "elo": null,
+    "nc_topic": "2-D Dynamic Programming"
+  },
+  {
+    "id": 11,
+    "title": "Container With Most Water",
+    "slug": "container-with-most-water",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Two Pointers"
+  },
+  {
+    "id": 13,
+    "title": "Roman to Integer",
+    "slug": "roman-to-integer",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Math & Geometry"
+  },
+  {
+    "id": 14,
+    "title": "Longest Common Prefix",
+    "slug": "longest-common-prefix",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Arrays & Hashing"
+  },
+  {
+    "id": 15,
+    "title": "3Sum",
+    "slug": "3sum",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Two Pointers"
+  },
+  {
+    "id": 17,
+    "title": "Letter Combinations of a Phone Number",
+    "slug": "letter-combinations-of-a-phone-number",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Backtracking"
+  },
+  {
+    "id": 18,
+    "title": "4Sum",
+    "slug": "4sum",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Two Pointers"
+  },
+  {
+    "id": 19,
+    "title": "Remove Nth Node From End of List",
+    "slug": "remove-nth-node-from-end-of-list",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Linked List"
+  },
+  {
+    "id": 20,
+    "title": "Valid Parentheses",
+    "slug": "valid-parentheses",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Stack"
+  },
+  {
+    "id": 21,
+    "title": "Merge Two Sorted Lists",
+    "slug": "merge-two-sorted-lists",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Linked List"
+  },
+  {
+    "id": 22,
+    "title": "Generate Parentheses",
+    "slug": "generate-parentheses",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Backtracking"
+  },
+  {
+    "id": 23,
+    "title": "Merge k Sorted Lists",
+    "slug": "merge-k-sorted-lists",
+    "difficulty": "Hard",
+    "elo": null,
+    "nc_topic": "Linked List"
+  },
+  {
+    "id": 25,
+    "title": "Reverse Nodes in k-Group",
+    "slug": "reverse-nodes-in-k-group",
+    "difficulty": "Hard",
+    "elo": null,
+    "nc_topic": "Linked List"
+  },
+  {
+    "id": 26,
+    "title": "Remove Duplicates from Sorted Array",
+    "slug": "remove-duplicates-from-sorted-array",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Two Pointers"
+  },
+  {
+    "id": 27,
+    "title": "Remove Element",
+    "slug": "remove-element",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Arrays & Hashing"
+  },
+  {
+    "id": 33,
+    "title": "Search in Rotated Sorted Array",
+    "slug": "search-in-rotated-sorted-array",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Binary Search"
+  },
+  {
+    "id": 35,
+    "title": "Search Insert Position",
+    "slug": "search-insert-position",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Binary Search"
+  },
+  {
+    "id": 36,
+    "title": "Valid Sudoku",
+    "slug": "valid-sudoku",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Arrays & Hashing"
+  },
+  {
+    "id": 39,
+    "title": "Combination Sum",
+    "slug": "combination-sum",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Backtracking"
+  },
+  {
+    "id": 40,
+    "title": "Combination Sum II",
+    "slug": "combination-sum-ii",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Backtracking"
+  },
+  {
+    "id": 41,
+    "title": "First Missing Positive",
+    "slug": "first-missing-positive",
+    "difficulty": "Hard",
+    "elo": null,
+    "nc_topic": "Arrays & Hashing"
+  },
+  {
+    "id": 42,
+    "title": "Trapping Rain Water",
+    "slug": "trapping-rain-water",
+    "difficulty": "Hard",
+    "elo": null,
+    "nc_topic": "Two Pointers"
+  },
+  {
+    "id": 43,
+    "title": "Multiply Strings",
+    "slug": "multiply-strings",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Math & Geometry"
+  },
+  {
+    "id": 45,
+    "title": "Jump Game II",
+    "slug": "jump-game-ii",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Greedy"
+  },
+  {
+    "id": 46,
+    "title": "Permutations",
+    "slug": "permutations",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Backtracking"
+  },
+  {
+    "id": 47,
+    "title": "Permutations II",
+    "slug": "permutations-ii",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Backtracking"
+  },
+  {
+    "id": 48,
+    "title": "Rotate Image",
+    "slug": "rotate-image",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Math & Geometry"
+  },
+  {
+    "id": 49,
+    "title": "Group Anagrams",
+    "slug": "group-anagrams",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Arrays & Hashing"
+  },
+  {
+    "id": 50,
+    "title": "Pow(x, n)",
+    "slug": "powx-n",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Math & Geometry"
+  },
+  {
+    "id": 51,
+    "title": "N-Queens",
+    "slug": "n-queens",
+    "difficulty": "Hard",
+    "elo": null,
+    "nc_topic": "Backtracking"
+  },
+  {
+    "id": 52,
+    "title": "N-Queens II",
+    "slug": "n-queens-ii",
+    "difficulty": "Hard",
+    "elo": null,
+    "nc_topic": "Backtracking"
+  },
+  {
+    "id": 53,
+    "title": "Maximum Subarray",
+    "slug": "maximum-subarray",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Greedy"
+  },
+  {
+    "id": 54,
+    "title": "Spiral Matrix",
+    "slug": "spiral-matrix",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Math & Geometry"
+  },
+  {
+    "id": 55,
+    "title": "Jump Game",
+    "slug": "jump-game",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Greedy"
+  },
+  {
+    "id": 56,
+    "title": "Merge Intervals",
+    "slug": "merge-intervals",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Intervals"
+  },
+  {
+    "id": 57,
+    "title": "Insert Interval",
+    "slug": "insert-interval",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Intervals"
+  },
+  {
+    "id": 62,
+    "title": "Unique Paths",
+    "slug": "unique-paths",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "2-D Dynamic Programming"
+  },
+  {
+    "id": 63,
+    "title": "Unique Paths II",
+    "slug": "unique-paths-ii",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "2-D Dynamic Programming"
+  },
+  {
+    "id": 64,
+    "title": "Minimum Path Sum",
+    "slug": "minimum-path-sum",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "2-D Dynamic Programming"
+  },
+  {
+    "id": 66,
+    "title": "Plus One",
+    "slug": "plus-one",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Math & Geometry"
+  },
+  {
+    "id": 67,
+    "title": "Add Binary",
+    "slug": "add-binary",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Bit Manipulation"
+  },
+  {
+    "id": 69,
+    "title": "Sqrt(x)",
+    "slug": "sqrtx",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Binary Search"
+  },
+  {
+    "id": 70,
+    "title": "Climbing Stairs",
+    "slug": "climbing-stairs",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "1-D Dynamic Programming"
+  },
+  {
+    "id": 71,
+    "title": "Simplify Path",
+    "slug": "simplify-path",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Stack"
+  },
+  {
+    "id": 72,
+    "title": "Edit Distance",
+    "slug": "edit-distance",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "2-D Dynamic Programming"
+  },
+  {
+    "id": 73,
+    "title": "Set Matrix Zeroes",
+    "slug": "set-matrix-zeroes",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Math & Geometry"
+  },
+  {
+    "id": 74,
+    "title": "Search a 2D Matrix",
+    "slug": "search-a-2d-matrix",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Binary Search"
+  },
+  {
+    "id": 75,
+    "title": "Sort Colors",
+    "slug": "sort-colors",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Arrays & Hashing"
+  },
+  {
+    "id": 76,
+    "title": "Minimum Window Substring",
+    "slug": "minimum-window-substring",
+    "difficulty": "Hard",
+    "elo": null,
+    "nc_topic": "Sliding Window"
+  },
+  {
+    "id": 77,
+    "title": "Combinations",
+    "slug": "combinations",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Backtracking"
+  },
+  {
+    "id": 78,
+    "title": "Subsets",
+    "slug": "subsets",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Backtracking"
+  },
+  {
+    "id": 79,
+    "title": "Word Search",
+    "slug": "word-search",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Backtracking"
+  },
+  {
+    "id": 81,
+    "title": "Search in Rotated Sorted Array II",
+    "slug": "search-in-rotated-sorted-array-ii",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Binary Search"
+  },
+  {
+    "id": 84,
+    "title": "Largest Rectangle in Histogram",
+    "slug": "largest-rectangle-in-histogram",
+    "difficulty": "Hard",
+    "elo": null,
+    "nc_topic": "Stack"
+  },
+  {
+    "id": 88,
+    "title": "Merge Sorted Array",
+    "slug": "merge-sorted-array",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Two Pointers"
+  },
+  {
+    "id": 90,
+    "title": "Subsets II",
+    "slug": "subsets-ii",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Backtracking"
+  },
+  {
+    "id": 91,
+    "title": "Decode Ways",
+    "slug": "decode-ways",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "1-D Dynamic Programming"
+  },
+  {
+    "id": 92,
+    "title": "Reverse Linked List II",
+    "slug": "reverse-linked-list-ii",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Linked List"
+  },
+  {
+    "id": 94,
+    "title": "Binary Tree Inorder Traversal",
+    "slug": "binary-tree-inorder-traversal",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Trees"
+  },
+  {
+    "id": 97,
+    "title": "Interleaving String",
+    "slug": "interleaving-string",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "2-D Dynamic Programming"
+  },
+  {
+    "id": 98,
+    "title": "Validate Binary Search Tree",
+    "slug": "validate-binary-search-tree",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Trees"
+  },
+  {
+    "id": 100,
+    "title": "Same Tree",
+    "slug": "same-tree",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Trees"
+  },
+  {
+    "id": 102,
+    "title": "Binary Tree Level Order Traversal",
+    "slug": "binary-tree-level-order-traversal",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Trees"
+  },
+  {
+    "id": 104,
+    "title": "Maximum Depth of Binary Tree",
+    "slug": "maximum-depth-of-binary-tree",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Trees"
+  },
+  {
+    "id": 105,
+    "title": "Construct Binary Tree from Preorder and Inorder Traversal",
+    "slug": "construct-binary-tree-from-preorder-and-inorder-traversal",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Trees"
+  },
+  {
+    "id": 110,
+    "title": "Balanced Binary Tree",
+    "slug": "balanced-binary-tree",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Trees"
+  },
+  {
+    "id": 115,
+    "title": "Distinct Subsequences",
+    "slug": "distinct-subsequences",
+    "difficulty": "Hard",
+    "elo": null,
+    "nc_topic": "2-D Dynamic Programming"
+  },
+  {
+    "id": 121,
+    "title": "Best Time to Buy and Sell Stock",
+    "slug": "best-time-to-buy-and-sell-stock",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Sliding Window"
+  },
+  {
+    "id": 122,
+    "title": "Best Time to Buy and Sell Stock II",
+    "slug": "best-time-to-buy-and-sell-stock-ii",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Arrays & Hashing"
+  },
+  {
+    "id": 124,
+    "title": "Binary Tree Maximum Path Sum",
+    "slug": "binary-tree-maximum-path-sum",
+    "difficulty": "Hard",
+    "elo": null,
+    "nc_topic": "Trees"
+  },
+  {
+    "id": 125,
+    "title": "Valid Palindrome",
+    "slug": "valid-palindrome",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Two Pointers"
+  },
+  {
+    "id": 127,
+    "title": "Word Ladder",
+    "slug": "word-ladder",
+    "difficulty": "Hard",
+    "elo": null,
+    "nc_topic": "Graphs"
+  },
+  {
+    "id": 128,
+    "title": "Longest Consecutive Sequence",
+    "slug": "longest-consecutive-sequence",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Arrays & Hashing"
+  },
+  {
+    "id": 130,
+    "title": "Surrounded Regions",
+    "slug": "surrounded-regions",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Graphs"
+  },
+  {
+    "id": 131,
+    "title": "Palindrome Partitioning",
+    "slug": "palindrome-partitioning",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Backtracking"
+  },
+  {
+    "id": 133,
+    "title": "Clone Graph",
+    "slug": "clone-graph",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Graphs"
+  },
+  {
+    "id": 134,
+    "title": "Gas Station",
+    "slug": "gas-station",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Greedy"
+  },
+  {
+    "id": 135,
+    "title": "Candy",
+    "slug": "candy",
+    "difficulty": "Hard",
+    "elo": null,
+    "nc_topic": "Greedy"
+  },
+  {
+    "id": 136,
+    "title": "Single Number",
+    "slug": "single-number",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Bit Manipulation"
+  },
+  {
+    "id": 138,
+    "title": "Copy List with Random Pointer",
+    "slug": "copy-list-with-random-pointer",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Linked List"
+  },
+  {
+    "id": 139,
+    "title": "Word Break",
+    "slug": "word-break",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "1-D Dynamic Programming"
+  },
+  {
+    "id": 140,
+    "title": "Word Break II",
+    "slug": "word-break-ii",
+    "difficulty": "Hard",
+    "elo": null,
+    "nc_topic": "Backtracking"
+  },
+  {
+    "id": 141,
+    "title": "Linked List Cycle",
+    "slug": "linked-list-cycle",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Linked List"
+  },
+  {
+    "id": 143,
+    "title": "Reorder List",
+    "slug": "reorder-list",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Linked List"
+  },
+  {
+    "id": 144,
+    "title": "Binary Tree Preorder Traversal",
+    "slug": "binary-tree-preorder-traversal",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Trees"
+  },
+  {
+    "id": 145,
+    "title": "Binary Tree Postorder Traversal",
+    "slug": "binary-tree-postorder-traversal",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Trees"
+  },
+  {
+    "id": 146,
+    "title": "LRU Cache",
+    "slug": "lru-cache",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Linked List"
+  },
+  {
+    "id": 150,
+    "title": "Evaluate Reverse Polish Notation",
+    "slug": "evaluate-reverse-polish-notation",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Stack"
+  },
+  {
+    "id": 152,
+    "title": "Maximum Product Subarray",
+    "slug": "maximum-product-subarray",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "1-D Dynamic Programming"
+  },
+  {
+    "id": 153,
+    "title": "Find Minimum in Rotated Sorted Array",
+    "slug": "find-minimum-in-rotated-sorted-array",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Binary Search"
+  },
+  {
+    "id": 155,
+    "title": "Min Stack",
+    "slug": "min-stack",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Stack"
+  },
+  {
+    "id": 167,
+    "title": "Two Sum II - Input Array Is Sorted",
+    "slug": "two-sum-ii-input-array-is-sorted",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Two Pointers"
+  },
+  {
+    "id": 168,
+    "title": "Excel Sheet Column Title",
+    "slug": "excel-sheet-column-title",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Math & Geometry"
+  },
+  {
+    "id": 169,
+    "title": "Majority Element",
+    "slug": "majority-element",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Arrays & Hashing"
+  },
+  {
+    "id": 189,
+    "title": "Rotate Array",
+    "slug": "rotate-array",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Two Pointers"
+  },
+  {
+    "id": 190,
+    "title": "Reverse Bits",
+    "slug": "reverse-bits",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Bit Manipulation"
+  },
+  {
+    "id": 191,
+    "title": "Number of 1 Bits",
+    "slug": "number-of-1-bits",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Bit Manipulation"
+  },
+  {
+    "id": 198,
+    "title": "House Robber",
+    "slug": "house-robber",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "1-D Dynamic Programming"
+  },
+  {
+    "id": 199,
+    "title": "Binary Tree Right Side View",
+    "slug": "binary-tree-right-side-view",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Trees"
+  },
+  {
+    "id": 200,
+    "title": "Number of Islands",
+    "slug": "number-of-islands",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Graphs"
+  },
+  {
+    "id": 201,
+    "title": "Bitwise AND of Numbers Range",
+    "slug": "bitwise-and-of-numbers-range",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Bit Manipulation"
+  },
+  {
+    "id": 202,
+    "title": "Happy Number",
+    "slug": "happy-number",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Math & Geometry"
+  },
+  {
+    "id": 206,
+    "title": "Reverse Linked List",
+    "slug": "reverse-linked-list",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Linked List"
+  },
+  {
+    "id": 207,
+    "title": "Course Schedule",
+    "slug": "course-schedule",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Graphs"
+  },
+  {
+    "id": 208,
+    "title": "Implement Trie (Prefix Tree)",
+    "slug": "implement-trie-prefix-tree",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Tries"
+  },
+  {
+    "id": 209,
+    "title": "Minimum Size Subarray Sum",
+    "slug": "minimum-size-subarray-sum",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Sliding Window"
+  },
+  {
+    "id": 210,
+    "title": "Course Schedule II",
+    "slug": "course-schedule-ii",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Graphs"
+  },
+  {
+    "id": 211,
+    "title": "Design Add and Search Words Data Structure",
+    "slug": "design-add-and-search-words-data-structure",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Tries"
+  },
+  {
+    "id": 212,
+    "title": "Word Search II",
+    "slug": "word-search-ii",
+    "difficulty": "Hard",
+    "elo": null,
+    "nc_topic": "Tries"
+  },
+  {
+    "id": 213,
+    "title": "House Robber II",
+    "slug": "house-robber-ii",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "1-D Dynamic Programming"
+  },
+  {
+    "id": 215,
+    "title": "Kth Largest Element in an Array",
+    "slug": "kth-largest-element-in-an-array",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Heap / Priority Queue"
+  },
+  {
+    "id": 217,
+    "title": "Contains Duplicate",
+    "slug": "contains-duplicate",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Arrays & Hashing"
+  },
+  {
+    "id": 219,
+    "title": "Contains Duplicate II",
+    "slug": "contains-duplicate-ii",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Sliding Window"
+  },
+  {
+    "id": 225,
+    "title": "Implement Stack using Queues",
+    "slug": "implement-stack-using-queues",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Stack"
+  },
+  {
+    "id": 226,
+    "title": "Invert Binary Tree",
+    "slug": "invert-binary-tree",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Trees"
+  },
+  {
+    "id": 229,
+    "title": "Majority Element II",
+    "slug": "majority-element-ii",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Arrays & Hashing"
+  },
+  {
+    "id": 230,
+    "title": "Kth Smallest Element in a BST",
+    "slug": "kth-smallest-element-in-a-bst",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Trees"
+  },
+  {
+    "id": 232,
+    "title": "Implement Queue using Stacks",
+    "slug": "implement-queue-using-stacks",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Stack"
+  },
+  {
+    "id": 235,
+    "title": "Lowest Common Ancestor of a Binary Search Tree",
+    "slug": "lowest-common-ancestor-of-a-binary-search-tree",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Trees"
+  },
+  {
+    "id": 238,
+    "title": "Product of Array Except Self",
+    "slug": "product-of-array-except-self",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Arrays & Hashing"
+  },
+  {
+    "id": 239,
+    "title": "Sliding Window Maximum",
+    "slug": "sliding-window-maximum",
+    "difficulty": "Hard",
+    "elo": null,
+    "nc_topic": "Sliding Window"
+  },
+  {
+    "id": 242,
+    "title": "Valid Anagram",
+    "slug": "valid-anagram",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Arrays & Hashing"
+  },
+  {
+    "id": 252,
+    "title": "Meeting Rooms",
+    "slug": "meeting-rooms",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Intervals"
+  },
+  {
+    "id": 253,
+    "title": "Meeting Rooms II",
+    "slug": "meeting-rooms-ii",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Intervals"
+  },
+  {
+    "id": 261,
+    "title": "Graph Valid Tree",
+    "slug": "graph-valid-tree",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Graphs"
+  },
+  {
+    "id": 268,
+    "title": "Missing Number",
+    "slug": "missing-number",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Bit Manipulation"
+  },
+  {
+    "id": 269,
+    "title": "Alien Dictionary",
+    "slug": "alien-dictionary",
+    "difficulty": "Hard",
+    "elo": null,
+    "nc_topic": "Advanced Graphs"
+  },
+  {
+    "id": 271,
+    "title": "Encode and Decode Strings",
+    "slug": "encode-and-decode-strings",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Arrays & Hashing"
+  },
+  {
+    "id": 279,
+    "title": "Perfect Squares",
+    "slug": "perfect-squares",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "1-D Dynamic Programming"
+  },
+  {
+    "id": 286,
+    "title": "Walls and Gates",
+    "slug": "walls-and-gates",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Graphs"
+  },
+  {
+    "id": 287,
+    "title": "Find the Duplicate Number",
+    "slug": "find-the-duplicate-number",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Linked List"
+  },
+  {
+    "id": 295,
+    "title": "Find Median from Data Stream",
+    "slug": "find-median-from-data-stream",
+    "difficulty": "Hard",
+    "elo": null,
+    "nc_topic": "Heap / Priority Queue"
+  },
+  {
+    "id": 297,
+    "title": "Serialize and Deserialize Binary Tree",
+    "slug": "serialize-and-deserialize-binary-tree",
+    "difficulty": "Hard",
+    "elo": null,
+    "nc_topic": "Trees"
+  },
+  {
+    "id": 300,
+    "title": "Longest Increasing Subsequence",
+    "slug": "longest-increasing-subsequence",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "1-D Dynamic Programming"
+  },
+  {
+    "id": 304,
+    "title": "Range Sum Query 2D - Immutable",
+    "slug": "range-sum-query-2d-immutable",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Arrays & Hashing"
+  },
+  {
+    "id": 309,
+    "title": "Best Time to Buy and Sell Stock with Cooldown",
+    "slug": "best-time-to-buy-and-sell-stock-with-cooldown",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "2-D Dynamic Programming"
+  },
+  {
+    "id": 310,
+    "title": "Minimum Height Trees",
+    "slug": "minimum-height-trees",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Graphs"
+  },
+  {
+    "id": 312,
+    "title": "Burst Balloons",
+    "slug": "burst-balloons",
+    "difficulty": "Hard",
+    "elo": null,
+    "nc_topic": "2-D Dynamic Programming"
+  },
+  {
+    "id": 322,
+    "title": "Coin Change",
+    "slug": "coin-change",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "1-D Dynamic Programming"
+  },
+  {
+    "id": 323,
+    "title": "Number of Connected Components in an Undirected Graph",
+    "slug": "number-of-connected-components-in-an-undirected-graph",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Graphs"
+  },
+  {
+    "id": 329,
+    "title": "Longest Increasing Path in a Matrix",
+    "slug": "longest-increasing-path-in-a-matrix",
+    "difficulty": "Hard",
+    "elo": null,
+    "nc_topic": "2-D Dynamic Programming"
+  },
+  {
+    "id": 332,
+    "title": "Reconstruct Itinerary",
+    "slug": "reconstruct-itinerary",
+    "difficulty": "Hard",
+    "elo": null,
+    "nc_topic": "Advanced Graphs"
+  },
+  {
+    "id": 337,
+    "title": "House Robber III",
+    "slug": "house-robber-iii",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Trees"
+  },
+  {
+    "id": 338,
+    "title": "Counting Bits",
+    "slug": "counting-bits",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Bit Manipulation"
+  },
+  {
+    "id": 343,
+    "title": "Integer Break",
+    "slug": "integer-break",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "1-D Dynamic Programming"
+  },
+  {
+    "id": 344,
+    "title": "Reverse String",
+    "slug": "reverse-string",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Two Pointers"
+  },
+  {
+    "id": 347,
+    "title": "Top K Frequent Elements",
+    "slug": "top-k-frequent-elements",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Arrays & Hashing"
+  },
+  {
+    "id": 355,
+    "title": "Design Twitter",
+    "slug": "design-twitter",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Heap / Priority Queue"
+  },
+  {
+    "id": 371,
+    "title": "Sum of Two Integers",
+    "slug": "sum-of-two-integers",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Bit Manipulation"
+  },
+  {
+    "id": 374,
+    "title": "Guess Number Higher or Lower",
+    "slug": "guess-number-higher-or-lower",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Binary Search"
+  },
+  {
+    "id": 377,
+    "title": "Combination Sum IV",
+    "slug": "combination-sum-iv",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "1-D Dynamic Programming"
+  },
+  {
+    "id": 394,
+    "title": "Decode String",
+    "slug": "decode-string",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Stack"
+  },
+  {
+    "id": 399,
+    "title": "Evaluate Division",
+    "slug": "evaluate-division",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Graphs"
+  },
+  {
+    "id": 410,
+    "title": "Split Array Largest Sum",
+    "slug": "split-array-largest-sum",
+    "difficulty": "Hard",
+    "elo": null,
+    "nc_topic": "Binary Search"
+  },
+  {
+    "id": 416,
+    "title": "Partition Equal Subset Sum",
+    "slug": "partition-equal-subset-sum",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "1-D Dynamic Programming"
+  },
+  {
+    "id": 417,
+    "title": "Pacific Atlantic Water Flow",
+    "slug": "pacific-atlantic-water-flow",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Graphs"
+  },
+  {
+    "id": 424,
+    "title": "Longest Repeating Character Replacement",
+    "slug": "longest-repeating-character-replacement",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Sliding Window"
+  },
+  {
+    "id": 427,
+    "title": "Construct Quad Tree",
+    "slug": "construct-quad-tree",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Trees"
+  },
+  {
+    "id": 435,
+    "title": "Non-overlapping Intervals",
+    "slug": "non-overlapping-intervals",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Intervals"
+  },
+  {
+    "id": 450,
+    "title": "Delete Node in a BST",
+    "slug": "delete-node-in-a-bst",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Trees"
+  },
+  {
+    "id": 460,
+    "title": "LFU Cache",
+    "slug": "lfu-cache",
+    "difficulty": "Hard",
+    "elo": null,
+    "nc_topic": "Linked List"
+  },
+  {
+    "id": 463,
+    "title": "Island Perimeter",
+    "slug": "island-perimeter",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Graphs"
+  },
+  {
+    "id": 473,
+    "title": "Matchsticks to Square",
+    "slug": "matchsticks-to-square",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Backtracking"
+  },
+  {
+    "id": 494,
+    "title": "Target Sum",
+    "slug": "target-sum",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "2-D Dynamic Programming"
+  },
+  {
+    "id": 502,
+    "title": "IPO",
+    "slug": "ipo",
+    "difficulty": "Hard",
+    "elo": null,
+    "nc_topic": "Heap / Priority Queue"
+  },
+  {
+    "id": 518,
+    "title": "Coin Change II",
+    "slug": "coin-change-ii",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "2-D Dynamic Programming"
+  },
+  {
+    "id": 543,
+    "title": "Diameter of Binary Tree",
+    "slug": "diameter-of-binary-tree",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Trees"
+  },
+  {
+    "id": 560,
+    "title": "Subarray Sum Equals K",
+    "slug": "subarray-sum-equals-k",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Arrays & Hashing"
+  },
+  {
+    "id": 567,
+    "title": "Permutation in String",
+    "slug": "permutation-in-string",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Sliding Window"
+  },
+  {
+    "id": 572,
+    "title": "Subtree of Another Tree",
+    "slug": "subtree-of-another-tree",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Trees"
+  },
+  {
+    "id": 621,
+    "title": "Task Scheduler",
+    "slug": "task-scheduler",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Heap / Priority Queue"
+  },
+  {
+    "id": 622,
+    "title": "Design Circular Queue",
+    "slug": "design-circular-queue",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Linked List"
+  },
+  {
+    "id": 647,
+    "title": "Palindromic Substrings",
+    "slug": "palindromic-substrings",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "1-D Dynamic Programming"
+  },
+  {
+    "id": 649,
+    "title": "Dota2 Senate",
+    "slug": "dota2-senate",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Greedy"
+  },
+  {
+    "id": 658,
+    "title": "Find K Closest Elements",
+    "slug": "find-k-closest-elements",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Sliding Window"
+  },
+  {
+    "id": 678,
+    "title": "Valid Parenthesis String",
+    "slug": "valid-parenthesis-string",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Greedy"
+  },
+  {
+    "id": 680,
+    "title": "Valid Palindrome II",
+    "slug": "valid-palindrome-ii",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Two Pointers"
+  },
+  {
+    "id": 682,
+    "title": "Baseball Game",
+    "slug": "baseball-game",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Stack"
+  },
+  {
+    "id": 684,
+    "title": "Redundant Connection",
+    "slug": "redundant-connection",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Graphs"
+  },
+  {
+    "id": 695,
+    "title": "Max Area of Island",
+    "slug": "max-area-of-island",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Graphs"
+  },
+  {
+    "id": 698,
+    "title": "Partition to K Equal Sum Subsets",
+    "slug": "partition-to-k-equal-sum-subsets",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Backtracking"
+  },
+  {
+    "id": 701,
+    "title": "Insert into a Binary Search Tree",
+    "slug": "insert-into-a-binary-search-tree",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Trees"
+  },
+  {
+    "id": 703,
+    "title": "Kth Largest Element in a Stream",
+    "slug": "kth-largest-element-in-a-stream",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Heap / Priority Queue"
+  },
+  {
+    "id": 704,
+    "title": "Binary Search",
+    "slug": "binary-search",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Binary Search"
+  },
+  {
+    "id": 705,
+    "title": "Design HashSet",
+    "slug": "design-hashset",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Arrays & Hashing"
+  },
+  {
+    "id": 706,
+    "title": "Design HashMap",
+    "slug": "design-hashmap",
+    "difficulty": "Easy",
+    "elo": null,
+    "nc_topic": "Arrays & Hashing"
+  },
+  {
+    "id": 721,
+    "title": "Accounts Merge",
+    "slug": "accounts-merge",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Graphs"
+  },
+  {
+    "id": 735,
+    "title": "Asteroid Collision",
+    "slug": "asteroid-collision",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Stack"
+  },
+  {
+    "id": 739,
+    "title": "Daily Temperatures",
+    "slug": "daily-temperatures",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Stack"
+  },
+  {
+    "id": 743,
+    "title": "Network Delay Time",
+    "slug": "network-delay-time",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Advanced Graphs"
+  },
+  {
+    "id": 746,
+    "title": "Min Cost Climbing Stairs",
+    "slug": "min-cost-climbing-stairs",
+    "difficulty": "Easy",
+    "elo": 1358.36,
+    "nc_topic": "1-D Dynamic Programming"
+  },
+  {
+    "id": 752,
+    "title": "Open the Lock",
+    "slug": "open-the-lock",
+    "difficulty": "Medium",
+    "elo": 1877.56,
+    "nc_topic": "Graphs"
+  },
+  {
+    "id": 763,
+    "title": "Partition Labels",
+    "slug": "partition-labels",
+    "difficulty": "Medium",
+    "elo": 1443.07,
+    "nc_topic": "Greedy"
+  },
+  {
+    "id": 767,
+    "title": "Reorganize String",
+    "slug": "reorganize-string",
+    "difficulty": "Medium",
+    "elo": 1681.33,
+    "nc_topic": "Heap / Priority Queue"
+  },
+  {
+    "id": 778,
+    "title": "Swim in Rising Water",
+    "slug": "swim-in-rising-water",
+    "difficulty": "Hard",
+    "elo": 2096.62,
+    "nc_topic": "Advanced Graphs"
+  },
+  {
+    "id": 787,
+    "title": "Cheapest Flights Within K Stops",
+    "slug": "cheapest-flights-within-k-stops",
+    "difficulty": "Medium",
+    "elo": 1786.48,
+    "nc_topic": "Advanced Graphs"
+  },
+  {
+    "id": 846,
+    "title": "Hand of Straights",
+    "slug": "hand-of-straights",
+    "difficulty": "Medium",
+    "elo": 1565.25,
+    "nc_topic": "Greedy"
+  },
+  {
+    "id": 853,
+    "title": "Car Fleet",
+    "slug": "car-fleet",
+    "difficulty": "Medium",
+    "elo": 1678.11,
+    "nc_topic": "Stack"
+  },
+  {
+    "id": 860,
+    "title": "Lemonade Change",
+    "slug": "lemonade-change",
+    "difficulty": "Easy",
+    "elo": 1285.73,
+    "nc_topic": "Greedy"
+  },
+  {
+    "id": 867,
+    "title": "Transpose Matrix",
+    "slug": "transpose-matrix",
+    "difficulty": "Easy",
+    "elo": 1258.84,
+    "nc_topic": "Math & Geometry"
+  },
+  {
+    "id": 875,
+    "title": "Koko Eating Bananas",
+    "slug": "koko-eating-bananas",
+    "difficulty": "Medium",
+    "elo": 1765.57,
+    "nc_topic": "Binary Search"
+  },
+  {
+    "id": 877,
+    "title": "Stone Game",
+    "slug": "stone-game",
+    "difficulty": "Medium",
+    "elo": 1590.05,
+    "nc_topic": "2-D Dynamic Programming"
+  },
+  {
+    "id": 881,
+    "title": "Boats to Save People",
+    "slug": "boats-to-save-people",
+    "difficulty": "Medium",
+    "elo": 1529.76,
+    "nc_topic": "Two Pointers"
+  },
+  {
+    "id": 895,
+    "title": "Maximum Frequency Stack",
+    "slug": "maximum-frequency-stack",
+    "difficulty": "Hard",
+    "elo": 2027.88,
+    "nc_topic": "Stack"
+  },
+  {
+    "id": 901,
+    "title": "Online Stock Span",
+    "slug": "online-stock-span",
+    "difficulty": "Medium",
+    "elo": 1708.87,
+    "nc_topic": "Stack"
+  },
+  {
+    "id": 912,
+    "title": "Sort an Array",
+    "slug": "sort-an-array",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "Arrays & Hashing"
+  },
+  {
+    "id": 918,
+    "title": "Maximum Sum Circular Subarray",
+    "slug": "maximum-sum-circular-subarray",
+    "difficulty": "Medium",
+    "elo": 1777.38,
+    "nc_topic": "Greedy"
+  },
+  {
+    "id": 953,
+    "title": "Verifying an Alien Dictionary",
+    "slug": "verifying-an-alien-dictionary",
+    "difficulty": "Easy",
+    "elo": 1299.6,
+    "nc_topic": "Graphs"
+  },
+  {
+    "id": 973,
+    "title": "K Closest Points to Origin",
+    "slug": "k-closest-points-to-origin",
+    "difficulty": "Medium",
+    "elo": 1213.81,
+    "nc_topic": "Heap / Priority Queue"
+  },
+  {
+    "id": 978,
+    "title": "Longest Turbulent Subarray",
+    "slug": "longest-turbulent-subarray",
+    "difficulty": "Medium",
+    "elo": 1393.41,
+    "nc_topic": "Greedy"
+  },
+  {
+    "id": 981,
+    "title": "Time Based Key-Value Store",
+    "slug": "time-based-key-value-store",
+    "difficulty": "Medium",
+    "elo": 1574.75,
+    "nc_topic": "Binary Search"
+  },
+  {
+    "id": 994,
+    "title": "Rotting Oranges",
+    "slug": "rotting-oranges",
+    "difficulty": "Medium",
+    "elo": 1432.91,
+    "nc_topic": "Graphs"
+  },
+  {
+    "id": 997,
+    "title": "Find the Town Judge",
+    "slug": "find-the-town-judge",
+    "difficulty": "Easy",
+    "elo": 1201.61,
+    "nc_topic": "Graphs"
+  },
+  {
+    "id": 1011,
+    "title": "Capacity To Ship Packages Within D Days",
+    "slug": "capacity-to-ship-packages-within-d-days",
+    "difficulty": "Medium",
+    "elo": 1725.45,
+    "nc_topic": "Binary Search"
+  },
+  {
+    "id": 1046,
+    "title": "Last Stone Weight",
+    "slug": "last-stone-weight",
+    "difficulty": "Easy",
+    "elo": 1172.68,
+    "nc_topic": "Heap / Priority Queue"
+  },
+  {
+    "id": 1049,
+    "title": "Last Stone Weight II",
+    "slug": "last-stone-weight-ii",
+    "difficulty": "Medium",
+    "elo": 2092.49,
+    "nc_topic": "2-D Dynamic Programming"
+  },
+  {
+    "id": 1071,
+    "title": "Greatest Common Divisor of Strings",
+    "slug": "greatest-common-divisor-of-strings",
+    "difficulty": "Easy",
+    "elo": 1397.89,
+    "nc_topic": "Math & Geometry"
+  },
+  {
+    "id": 1094,
+    "title": "Car Pooling",
+    "slug": "car-pooling",
+    "difficulty": "Medium",
+    "elo": 1441.43,
+    "nc_topic": "Heap / Priority Queue"
+  },
+  {
+    "id": 1095,
+    "title": "Find in Mountain Array",
+    "slug": "find-in-mountain-array",
+    "difficulty": "Hard",
+    "elo": 1827.09,
+    "nc_topic": "Binary Search"
+  },
+  {
+    "id": 1137,
+    "title": "N-th Tribonacci Number",
+    "slug": "n-th-tribonacci-number",
+    "difficulty": "Easy",
+    "elo": 1142.87,
+    "nc_topic": "1-D Dynamic Programming"
+  },
+  {
+    "id": 1140,
+    "title": "Stone Game II",
+    "slug": "stone-game-ii",
+    "difficulty": "Medium",
+    "elo": 2034.97,
+    "nc_topic": "2-D Dynamic Programming"
+  },
+  {
+    "id": 1143,
+    "title": "Longest Common Subsequence",
+    "slug": "longest-common-subsequence",
+    "difficulty": "Medium",
+    "elo": null,
+    "nc_topic": "2-D Dynamic Programming"
+  },
+  {
+    "id": 1325,
+    "title": "Delete Leaves With a Given Value",
+    "slug": "delete-leaves-with-a-given-value",
+    "difficulty": "Medium",
+    "elo": 1407.13,
+    "nc_topic": "Trees"
+  },
+  {
+    "id": 1405,
+    "title": "Longest Happy String",
+    "slug": "longest-happy-string",
+    "difficulty": "Medium",
+    "elo": 1820.59,
+    "nc_topic": "Heap / Priority Queue"
+  },
+  {
+    "id": 1406,
+    "title": "Stone Game III",
+    "slug": "stone-game-iii",
+    "difficulty": "Hard",
+    "elo": 2026.9,
+    "nc_topic": "1-D Dynamic Programming"
+  },
+  {
+    "id": 1448,
+    "title": "Count Good Nodes in Binary Tree",
+    "slug": "count-good-nodes-in-binary-tree",
+    "difficulty": "Medium",
+    "elo": 1360.22,
+    "nc_topic": "Trees"
+  },
+  {
+    "id": 1462,
+    "title": "Course Schedule IV",
+    "slug": "course-schedule-iv",
+    "difficulty": "Medium",
+    "elo": 1692.59,
+    "nc_topic": "Graphs"
+  },
+  {
+    "id": 1489,
+    "title": "Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree",
+    "slug": "find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree",
+    "difficulty": "Hard",
+    "elo": 2571.55,
+    "nc_topic": "Advanced Graphs"
+  },
+  {
+    "id": 1584,
+    "title": "Min Cost to Connect All Points",
+    "slug": "min-cost-to-connect-all-points",
+    "difficulty": "Medium",
+    "elo": 1857.64,
+    "nc_topic": "Advanced Graphs"
+  },
+  {
+    "id": 1631,
+    "title": "Path With Minimum Effort",
+    "slug": "path-with-minimum-effort",
+    "difficulty": "Medium",
+    "elo": 1947.5,
+    "nc_topic": "Advanced Graphs"
+  },
+  {
+    "id": 1768,
+    "title": "Merge Strings Alternately",
+    "slug": "merge-strings-alternately",
+    "difficulty": "Easy",
+    "elo": 1166.53,
+    "nc_topic": "Two Pointers"
+  },
+  {
+    "id": 1834,
+    "title": "Single-Threaded CPU",
+    "slug": "single-threaded-cpu",
+    "difficulty": "Medium",
+    "elo": 1797.75,
+    "nc_topic": "Heap / Priority Queue"
+  },
+  {
+    "id": 1851,
+    "title": "Minimum Interval to Include Each Query",
+    "slug": "minimum-interval-to-include-each-query",
+    "difficulty": "Hard",
+    "elo": 2286.14,
+    "nc_topic": "Intervals"
+  },
+  {
+    "id": 1863,
+    "title": "Sum of All Subset XOR Totals",
+    "slug": "sum-of-all-subset-xor-totals",
+    "difficulty": "Easy",
+    "elo": 1372.12,
+    "nc_topic": "Backtracking"
+  },
+  {
+    "id": 1871,
+    "title": "Jump Game VII",
+    "slug": "jump-game-vii",
+    "difficulty": "Medium",
+    "elo": 1896.14,
+    "nc_topic": "Greedy"
+  },
+  {
+    "id": 1899,
+    "title": "Merge Triplets to Form Target Triplet",
+    "slug": "merge-triplets-to-form-target-triplet",
+    "difficulty": "Medium",
+    "elo": 1635.69,
+    "nc_topic": "Greedy"
+  },
+  {
+    "id": 1929,
+    "title": "Concatenation of Array",
+    "slug": "concatenation-of-array",
+    "difficulty": "Easy",
+    "elo": 1132.68,
+    "nc_topic": "Arrays & Hashing"
+  },
+  {
+    "id": 2013,
+    "title": "Detect Squares",
+    "slug": "detect-squares",
+    "difficulty": "Medium",
+    "elo": 1841.41,
+    "nc_topic": "Math & Geometry"
+  },
+  {
+    "id": 2392,
+    "title": "Build a Matrix With Conditions",
+    "slug": "build-a-matrix-with-conditions",
+    "difficulty": "Hard",
+    "elo": 1960.55,
+    "nc_topic": "Advanced Graphs"
+  },
+  {
+    "id": 2402,
+    "title": "Meeting Rooms III",
+    "slug": "meeting-rooms-iii",
+    "difficulty": "Hard",
+    "elo": 2092.89,
+    "nc_topic": "Intervals"
+  },
+  {
+    "id": 2707,
+    "title": "Extra Characters in a String",
+    "slug": "extra-characters-in-a-string",
+    "difficulty": "Medium",
+    "elo": 1735.85,
+    "nc_topic": "Tries"
+  },
+  {
+    "id": 2709,
+    "title": "Greatest Common Divisor Traversal",
+    "slug": "greatest-common-divisor-traversal",
+    "difficulty": "Hard",
+    "elo": 2171.96,
+    "nc_topic": "Advanced Graphs"
+  },
+  {
+    "id": 2807,
+    "title": "Insert Greatest Common Divisors in Linked List",
+    "slug": "insert-greatest-common-divisors-in-linked-list",
+    "difficulty": "Medium",
+    "elo": 1279.03,
+    "nc_topic": "Math & Geometry"
+  },
+  {
+    "id": 3133,
+    "title": "Minimum Array End",
+    "slug": "minimum-array-end",
+    "difficulty": "Medium",
+    "elo": 1934.78,
+    "nc_topic": "Bit Manipulation"
+  }
+]

@@ -1,0 +1,59 @@
+# LLM Tagging Schema
+# Defines the output format for each problem during LLM tagging passes
+
+output_per_problem:
+  id: int                          # LeetCode problem ID
+
+  # Pattern tagging — must use exact subtopic names from taxonomy.yaml
+  # All weights sum to 1.0
+  primary_subtopic:
+    name: string                   # e.g. "Complement Search (Two Sum Pattern)"
+    weight: float                  # e.g. 0.85
+
+  secondary_subtopics:             # can be empty
+    - name: string
+      weight: float
+
+  # Difficulty — numerical rating on Zerotrac scale
+  # ~800 = trivial, ~1200 = easy, ~1600 = medium, ~2000 = hard, ~2400+ = elite
+  # Calibrated against Zerotrac anchor problems included in each batch
+  difficulty: int
+
+  # Importance — how generalizable this specific problem is (0-1)
+  # High: teaches a broadly applicable pattern/technique
+  # Low: tests a niche trick or very specific variant
+  importance: float
+
+  # Interview plausibility — likelihood of appearing in a real interview (0-1)
+  # High: classic interview problem, clean problem statement, tests core skills
+  # Low: contest-style, obscure edge cases, unlikely to be asked
+  interview_plausibility: float
+
+  # Company type plausibility — how likely each company type asks this (0-1 each)
+  company_plausibility:
+    quant: float                   # trading firms, hedge funds
+    faang: float                   # big tech
+    mid: float                     # mid-size tech companies
+    startup: float                 # startups, smaller companies
+
+# Batch configuration
+batching:
+  batch_size: 25                   # problems per batch
+  anchors_per_batch: 6             # Zerotrac-rated problems included for calibration
+  anchor_spread:                   # one anchor near each difficulty tier
+    - 800
+    - 1200
+    - 1600
+    - 2000
+    - 2400
+    - 2800
+
+# Pass 1 — Batch tagging
+# System prompt: full taxonomy, subtopic names, scoring definitions, output format
+# User message: batch of problems (content_clean + solution_clean + topics) + anchors
+# Output: structured JSON array of tagged problems
+
+# Pass 2 — Consistency check
+# Group pass 1 results by subtopic, send each group back
+# LLM checks: are difficulty ratings consistent within this subtopic?
+# Are weights reasonable? Flag outliers for recalibration.
