@@ -1,0 +1,3146 @@
+[
+  {
+    "id": 2291,
+    "field": "misclassification",
+    "current": "0/1 Knapsack",
+    "suggested": "Stock Trading",
+    "reason": "This problem is about trading stocks with buy/sell decisions, not a knapsack variant. It belongs in a stock trading subtopic, not 0/1 knapsack.",
+    "subtopic": "0/1 Knapsack"
+  },
+  {
+    "id": 3647,
+    "field": "misclassification",
+    "current": "0/1 Knapsack",
+    "suggested": "Partition/Distribution",
+    "reason": "This appears to be about distributing items into two bags to maximize weight, which is more of a partition problem than a classic 0/1 knapsack.",
+    "subtopic": "0/1 Knapsack"
+  },
+  {
+    "id": 3562,
+    "field": "misclassification",
+    "current": "0/1 Knapsack",
+    "suggested": "Stock Trading",
+    "reason": "This is explicitly a stock trading problem with discount mechanics, not a knapsack variant. Should be in stock trading subtopic.",
+    "subtopic": "0/1 Knapsack"
+  },
+  {
+    "id": 3509,
+    "field": "misclassification",
+    "current": "0/1 Knapsack",
+    "suggested": "Combinatorics/Math",
+    "reason": "Finding maximum product of subsequences with alternating sum constraint is primarily a combinatorial/mathematical problem, not a knapsack variant.",
+    "subtopic": "0/1 Knapsack"
+  },
+  {
+    "id": 3787,
+    "field": "misclassification",
+    "current": "BFS / Level-Order Traversal",
+    "suggested": "Tree Diameter / Graph Traversal",
+    "reason": "Finding diameter endpoints of a tree is fundamentally about graph traversal and tree diameter calculation, not level-order traversal. The problem doesn't involve processing nodes by level.",
+    "subtopic": "BFS / Level-Order Traversal"
+  },
+  {
+    "id": 742,
+    "field": "misclassification",
+    "current": "BFS / Level-Order Traversal",
+    "suggested": "Tree Path / DFS",
+    "reason": "Finding the closest leaf in a binary tree is primarily a path-finding problem that can be solved with DFS or a combination of tree traversal, not fundamentally a level-order problem.",
+    "subtopic": "BFS / Level-Order Traversal"
+  },
+  {
+    "id": 3203,
+    "field": "misclassification",
+    "current": "BFS / Level-Order Traversal",
+    "suggested": "Tree Diameter",
+    "reason": "This problem is about finding tree diameter after merging two trees. While it may use BFS as a subroutine, the core problem is tree diameter calculation, which is fundamentally different from level-order traversal problems.",
+    "subtopic": "BFS / Level-Order Traversal"
+  },
+  {
+    "id": 1236,
+    "field": "misclassification",
+    "current": "BFS Shortest Path (Unweighted)",
+    "suggested": "Graph Traversal / DFS",
+    "reason": "Web Crawler is fundamentally a graph traversal problem (visiting all reachable URLs), not a shortest path problem. While BFS can be used, it's not about finding shortest paths.",
+    "subtopic": "BFS Shortest Path (Unweighted)"
+  },
+  {
+    "id": 1242,
+    "field": "misclassification",
+    "current": "BFS Shortest Path (Unweighted)",
+    "suggested": "Concurrency / Threading",
+    "reason": "Web Crawler Multithreaded is a concurrency problem focused on thread synchronization and parallel web crawling, not shortest path finding.",
+    "subtopic": "BFS Shortest Path (Unweighted)"
+  },
+  {
+    "id": 886,
+    "field": "misclassification",
+    "current": "BFS Shortest Path (Unweighted)",
+    "suggested": "Graph Bipartiteness / Coloring",
+    "reason": "Possible Bipartition is about checking if a graph is bipartite using BFS/DFS coloring, not finding shortest paths.",
+    "subtopic": "BFS Shortest Path (Unweighted)"
+  },
+  {
+    "id": 1284,
+    "field": "misclassification",
+    "current": "BFS Shortest Path (Unweighted)",
+    "suggested": "State Space Search / BFS",
+    "reason": "Minimum Flips to Convert Binary Matrix uses BFS but is fundamentally a state space search problem, not a shortest path on a natural graph.",
+    "subtopic": "BFS Shortest Path (Unweighted)"
+  },
+  {
+    "id": 998,
+    "field": "misclassification",
+    "current": "BST Operations (Insert, Delete, Validate)",
+    "suggested": "Binary Tree Construction",
+    "reason": "Problem 998 is about constructing a maximum binary tree, not about BST-specific operations like insert, delete, or validate. It's a tree construction problem that doesn't rely on BST properties.",
+    "subtopic": "BST Operations (Insert, Delete, Validate)"
+  },
+  {
+    "id": 95,
+    "field": "misclassification",
+    "current": "BST Operations (Insert, Delete, Validate)",
+    "suggested": "Binary Tree Construction",
+    "reason": "Problem 95 is about generating all structurally unique BSTs, which is fundamentally a tree generation/construction problem, not about insert/delete/validate operations on existing BSTs.",
+    "subtopic": "BST Operations (Insert, Delete, Validate)"
+  },
+  {
+    "id": 1932,
+    "field": "misclassification",
+    "current": "BST Operations (Insert, Delete, Validate)",
+    "suggested": "Binary Tree Construction",
+    "reason": "Problem 1932 is about merging BSTs to create a new BST, which is more of a tree construction/combination problem rather than core BST insert/delete/validate operations.",
+    "subtopic": "BST Operations (Insert, Delete, Validate)"
+  },
+  {
+    "id": 1062,
+    "field": "misclassification",
+    "current": "Binary Search on Answer Space",
+    "suggested": "String/Binary Search (different subtopic)",
+    "reason": "This problem uses binary search on substring length combined with rolling hash to find the longest repeating substring. While it uses binary search on the answer space (substring length), the core challenge is string matching with hashing, not optimization via binary search. It belongs in a string-focused subtopic.",
+    "subtopic": "Binary Search on Answer Space"
+  },
+  {
+    "id": 2152,
+    "field": "misclassification",
+    "current": "Bitmask DP",
+    "suggested": "Geometry/Computational Geometry",
+    "reason": "This problem is primarily about finding the minimum number of lines to cover points (a geometry problem), not a bitmask DP problem. The bitmask is only a minor implementation detail for subset enumeration. This belongs in a geometry subtopic.",
+    "subtopic": "Bitmask DP"
+  },
+  {
+    "id": 1170,
+    "field": "misclassification",
+    "current": "Boundary Finding (Bisect Left/Right)",
+    "suggested": "String Processing / Frequency Analysis",
+    "reason": "This problem is about comparing strings by frequency of smallest character. While it may use binary search, the core problem is string/frequency analysis, not boundary finding in sorted arrays.",
+    "subtopic": "Boundary Finding (Bisect Left/Right)"
+  },
+  {
+    "id": 302,
+    "field": "misclassification",
+    "current": "Boundary Finding (Bisect Left/Right)",
+    "suggested": "Matrix Search / Image Processing",
+    "reason": "This is a 2D matrix search problem (find smallest enclosing rectangle around black pixels). While it uses binary search, the primary domain is 2D matrix traversal, not 1D boundary finding.",
+    "subtopic": "Boundary Finding (Bisect Left/Right)"
+  },
+  {
+    "id": 301,
+    "field": "misclassification",
+    "current": "Combinations / Subsets",
+    "suggested": "String / Parentheses",
+    "reason": "Remove Invalid Parentheses is fundamentally a string validation and filtering problem. While it uses backtracking to generate candidates, the core problem is about parentheses validity, not combinations or subsets. It should be classified under a String or Parentheses subtopic.",
+    "subtopic": "Combinations / Subsets"
+  },
+  {
+    "id": 473,
+    "field": "misclassification",
+    "current": "Combinations / Subsets",
+    "suggested": "Backtracking / Partition",
+    "reason": "Matchsticks to Square is a partition problem where you assign matchsticks to four sides. While it uses subset generation, the problem is fundamentally about partitioning a multiset to satisfy sum constraints, not about generating combinations or subsets themselves.",
+    "subtopic": "Combinations / Subsets"
+  },
+  {
+    "id": 3154,
+    "field": "misclassification",
+    "current": "Combinatorics",
+    "suggested": "Dynamic Programming",
+    "reason": "Problem is about reaching a stair with specific rules using DP approach (with memoization for states). While it uses some combinatorial counting, it's fundamentally a DP problem, not primarily combinatorics.",
+    "subtopic": "Combinatorics"
+  },
+  {
+    "id": 2539,
+    "field": "misclassification",
+    "current": "Combinatorics",
+    "suggested": "Dynamic Programming",
+    "reason": "This is a DP problem with modular arithmetic. The core approach is dynamic programming to count subsequences based on conditions, not combinatorial enumeration or formula-based counting.",
+    "subtopic": "Combinatorics"
+  },
+  {
+    "id": 294,
+    "field": "misclassification",
+    "current": "Constraint Satisfaction (N-Queens)",
+    "suggested": "Game Theory / Minimax",
+    "reason": "Flip Game II is a game theory problem using minimax/dynamic programming, not constraint satisfaction. It has no connection to N-Queens or CSP problems.",
+    "subtopic": "Constraint Satisfaction (N-Queens)"
+  },
+  {
+    "id": 756,
+    "field": "misclassification",
+    "current": "Constraint Satisfaction (N-Queens)",
+    "suggested": "Dynamic Programming / Memoization",
+    "reason": "Pyramid Transition Matrix is a DP problem with memoization, not a constraint satisfaction problem. While it involves constraints, it's fundamentally different from N-Queens style backtracking CSP.",
+    "subtopic": "Constraint Satisfaction (N-Queens)"
+  },
+  {
+    "id": 1240,
+    "field": "misclassification",
+    "current": "Constraint Satisfaction (N-Queens)",
+    "suggested": "Rectangle Packing / Optimization",
+    "reason": "Tiling a Rectangle with the Fewest Squares is a geometric/optimization problem, not a constraint satisfaction problem in the N-Queens sense. It doesn't fit the CSP pattern.",
+    "subtopic": "Constraint Satisfaction (N-Queens)"
+  },
+  {
+    "id": 1791,
+    "field": "misclassification",
+    "current": "DFS Connected Components",
+    "suggested": "Graph - Other",
+    "reason": "Finding the center of a star graph is a trivial O(1) or O(n) degree-counting problem. It does not involve DFS, connected components, or graph traversal. This is fundamentally different from the traversal-based problems in this category.",
+    "subtopic": "DFS Connected Components"
+  },
+  {
+    "id": 1615,
+    "field": "misclassification",
+    "current": "DFS Connected Components",
+    "suggested": "Graph - Other",
+    "reason": "Maximal Network Rank is purely a degree calculation problem (max degree of any node). It requires no DFS or connected components traversal. Should not be in this category.",
+    "subtopic": "DFS Connected Components"
+  },
+  {
+    "id": 1042,
+    "field": "misclassification",
+    "current": "DFS Connected Components",
+    "suggested": "Graph Coloring",
+    "reason": "This is a graph coloring problem using greedy assignment of 4 colors. While it uses a graph adjacency structure, the core problem is coloring and constraint satisfaction, not discovering connected components or traversal.",
+    "subtopic": "DFS Connected Components"
+  },
+  {
+    "id": 3528,
+    "field": "misclassification",
+    "current": "DFS Connected Components",
+    "suggested": "Graph - Other",
+    "reason": "Unit Conversion I is a unit conversion/graph relationship problem, not a connected components problem. Core logic involves understanding conversion ratios, not discovering or analyzing connected components through DFS.",
+    "subtopic": "DFS Connected Components"
+  },
+  {
+    "id": 3535,
+    "field": "misclassification",
+    "current": "DFS Connected Components",
+    "suggested": "Graph - Other",
+    "reason": "Unit Conversion II is a unit conversion problem, not fundamentally about connected components. Similar to 3528, the focus is on conversion relationships, not DFS-based component discovery.",
+    "subtopic": "DFS Connected Components"
+  },
+  {
+    "id": 3656,
+    "field": "misclassification",
+    "current": "DFS Connected Components",
+    "suggested": "Graph - Other",
+    "reason": "Determining if a simple graph exists is a graph validity/construction problem based on degree sequence. It does not involve DFS or connected components discovery.",
+    "subtopic": "DFS Connected Components"
+  },
+  {
+    "id": 3664,
+    "field": "misclassification",
+    "current": "DFS Connected Components",
+    "suggested": "Other",
+    "reason": "Two-Letter Card Game is a game/logic problem unrelated to graph traversal or connected components.",
+    "subtopic": "DFS Connected Components"
+  },
+  {
+    "id": 3660,
+    "field": "misclassification",
+    "current": "DFS Connected Components",
+    "suggested": "Dynamic Programming",
+    "reason": "Jump Game IX is a jump/path game problem, not a connected components problem. The core mechanics involve reachability within game rules, not discovering graph components.",
+    "subtopic": "DFS Connected Components"
+  },
+  {
+    "id": 2459,
+    "field": "misclassification",
+    "current": "DFS Connected Components",
+    "suggested": "Other",
+    "reason": "Sort Array by Moving Items to Empty Space is a sorting/puzzle problem. It does not involve graph traversal or connected components.",
+    "subtopic": "DFS Connected Components"
+  },
+  {
+    "id": 3401,
+    "field": "misclassification",
+    "current": "DFS Connected Components",
+    "suggested": "Cycle Detection",
+    "reason": "Finding circular gift exchange chains is cycle detection in a functional graph (each node has out-degree 1). While it may use DFS, the primary focus is cycle structure, not discovering connected components.",
+    "subtopic": "DFS Connected Components"
+  },
+  {
+    "id": 2242,
+    "field": "misclassification",
+    "current": "DFS Connected Components",
+    "suggested": "Graph - Other",
+    "reason": "Maximum Score of a Node Sequence is an optimization problem on graph paths. It does not involve discovering or analyzing connected components.",
+    "subtopic": "DFS Connected Components"
+  },
+  {
+    "id": 2123,
+    "field": "misclassification",
+    "current": "DFS Connected Components",
+    "suggested": "Other",
+    "reason": "Minimum Operations to Remove Adjacent Ones in Matrix is a grid/state manipulation problem, not fundamentally a connected components problem.",
+    "subtopic": "DFS Connected Components"
+  },
+  {
+    "id": 3311,
+    "field": "misclassification",
+    "current": "DFS Connected Components",
+    "suggested": "Graph Construction",
+    "reason": "Constructing a 2D grid from a graph layout is a graph reconstruction problem, not a connected components discovery problem.",
+    "subtopic": "DFS Connected Components"
+  },
+  {
+    "id": 1820,
+    "field": "misclassification",
+    "current": "DFS Path Finding",
+    "suggested": "Bipartite Matching / Maximum Matching",
+    "reason": "This problem is fundamentally about finding maximum bipartite matching (Hungarian algorithm / augmenting paths), not general DFS path finding. While it uses DFS internally, it belongs in a matching/graph algorithms subtopic.",
+    "subtopic": "DFS Path Finding"
+  },
+  {
+    "id": 753,
+    "field": "misclassification",
+    "current": "DFS Path Finding",
+    "suggested": "Eulerian Path / Graph Construction",
+    "reason": "This problem is about finding an Eulerian path in a de Bruijn graph, which is a specific graph theory problem fundamentally different from general DFS path finding.",
+    "subtopic": "DFS Path Finding"
+  },
+  {
+    "id": 3385,
+    "field": "misclassification",
+    "current": "DFS Path Finding",
+    "suggested": "Dynamic Programming / Bitmask DP",
+    "reason": "This is a state-space search problem with bitmask DP, not a DFS path finding problem in a graph. The primary technique is DP optimization, not path finding.",
+    "subtopic": "DFS Path Finding"
+  },
+  {
+    "id": 386,
+    "field": "misclassification",
+    "current": "DFS Traversal (Inorder, Preorder, Postorder)",
+    "suggested": "Different subtopic",
+    "reason": "Lexicographical Numbers is not a tree/binary tree problem\u2014it's about generating numbers in lexicographical order. It has no connection to DFS tree traversal patterns.",
+    "subtopic": "DFS Traversal (Inorder, Preorder, Postorder)"
+  },
+  {
+    "id": 558,
+    "field": "misclassification",
+    "current": "DFS Traversal (Inorder, Preorder, Postorder)",
+    "suggested": "Different subtopic",
+    "reason": "Logical OR of Two Binary Grids Represented as Quad-Trees is about quad-tree operations, not about traversing trees using inorder/preorder/postorder patterns.",
+    "subtopic": "DFS Traversal (Inorder, Preorder, Postorder)"
+  },
+  {
+    "id": 2649,
+    "field": "misclassification",
+    "current": "DFS Traversal (Inorder, Preorder, Postorder)",
+    "suggested": "Different subtopic",
+    "reason": "This is a JavaScript generator/iterator problem for nested arrays, not a tree DFS traversal problem. It doesn't involve tree traversal patterns.",
+    "subtopic": "DFS Traversal (Inorder, Preorder, Postorder)"
+  },
+  {
+    "id": 2775,
+    "field": "misclassification",
+    "current": "DFS Traversal (Inorder, Preorder, Postorder)",
+    "suggested": "Different subtopic",
+    "reason": "This is a JavaScript object transformation problem (undefined to null conversion), not a tree DFS traversal problem.",
+    "subtopic": "DFS Traversal (Inorder, Preorder, Postorder)"
+  },
+  {
+    "id": 2823,
+    "field": "misclassification",
+    "current": "DFS Traversal (Inorder, Preorder, Postorder)",
+    "suggested": "Different subtopic",
+    "reason": "This is a JavaScript object filtering problem, not a tree DFS traversal problem. While it uses DFS recursively, it's fundamentally about object manipulation, not tree traversal.",
+    "subtopic": "DFS Traversal (Inorder, Preorder, Postorder)"
+  },
+  {
+    "id": 2628,
+    "field": "misclassification",
+    "current": "DFS Traversal (Inorder, Preorder, Postorder)",
+    "suggested": "Different subtopic",
+    "reason": "This is a JavaScript deep equality comparison problem for JSON objects, not a tree DFS traversal problem.",
+    "subtopic": "DFS Traversal (Inorder, Preorder, Postorder)"
+  },
+  {
+    "id": 2755,
+    "field": "misclassification",
+    "current": "DFS Traversal (Inorder, Preorder, Postorder)",
+    "suggested": "Different subtopic",
+    "reason": "This is a JavaScript object merging problem, not a tree DFS traversal problem. While recursive, it's about object manipulation rather than tree structures.",
+    "subtopic": "DFS Traversal (Inorder, Preorder, Postorder)"
+  },
+  {
+    "id": 2633,
+    "field": "misclassification",
+    "current": "DFS Traversal (Inorder, Preorder, Postorder)",
+    "suggested": "Different subtopic",
+    "reason": "This is a JavaScript JSON serialization problem, not a tree DFS traversal problem.",
+    "subtopic": "DFS Traversal (Inorder, Preorder, Postorder)"
+  },
+  {
+    "id": 3236,
+    "field": "misclassification",
+    "current": "DFS Traversal (Inorder, Preorder, Postorder)",
+    "suggested": "Different subtopic",
+    "reason": "This is an organizational hierarchy/graph problem, not a standard tree DFS traversal problem. It involves constructing and querying hierarchical relationships that differ from typical DFS tree traversals.",
+    "subtopic": "DFS Traversal (Inorder, Preorder, Postorder)"
+  },
+  {
+    "id": 3482,
+    "field": "misclassification",
+    "current": "DFS Traversal (Inorder, Preorder, Postorder)",
+    "suggested": "Different subtopic",
+    "reason": "This is an organizational hierarchy analysis problem that differs fundamentally from standard tree DFS traversal patterns.",
+    "subtopic": "DFS Traversal (Inorder, Preorder, Postorder)"
+  },
+  {
+    "id": 3187,
+    "field": "misclassification",
+    "current": "DFS Traversal (Inorder, Preorder, Postorder)",
+    "suggested": "Different subtopic",
+    "reason": "This is an array peak-finding problem, not a tree DFS traversal problem. There is no tree structure involved.",
+    "subtopic": "DFS Traversal (Inorder, Preorder, Postorder)"
+  },
+  {
+    "id": 3526,
+    "field": "misclassification",
+    "current": "DFS Traversal (Inorder, Preorder, Postorder)",
+    "suggested": "Different subtopic",
+    "reason": "This is a range query problem with subarray reversals, not a tree DFS traversal problem.",
+    "subtopic": "DFS Traversal (Inorder, Preorder, Postorder)"
+  },
+  {
+    "id": 3590,
+    "field": "misclassification",
+    "current": "DFS Traversal (Inorder, Preorder, Postorder)",
+    "suggested": "Different subtopic",
+    "reason": "This is a Kth smallest XOR path problem that involves heap/priority queue more fundamentally than standard DFS tree traversal.",
+    "subtopic": "DFS Traversal (Inorder, Preorder, Postorder)"
+  },
+  {
+    "id": 1290,
+    "field": "misclassification",
+    "current": "Fast/Slow Pointers (Cycle, Middle)",
+    "suggested": "Different subtopic",
+    "reason": "Converting a binary linked list to an integer is fundamentally about number conversion/bit manipulation, not about fast/slow pointers or cycle/middle detection. This doesn't use the core technique of the subtopic.",
+    "subtopic": "Fast/Slow Pointers (Cycle, Middle)"
+  },
+  {
+    "id": 3062,
+    "field": "misclassification",
+    "current": "Fast/Slow Pointers (Cycle, Middle)",
+    "suggested": "Different subtopic",
+    "reason": "Winner of Linked List Game involves game logic and comparison between nodes, not cycle detection or finding the middle. While it may traverse a linked list, it doesn't employ fast/slow pointer techniques.",
+    "subtopic": "Fast/Slow Pointers (Cycle, Middle)"
+  },
+  {
+    "id": 1474,
+    "field": "misclassification",
+    "current": "Fast/Slow Pointers (Cycle, Middle)",
+    "suggested": "Different subtopic",
+    "reason": "Deleting N nodes after M nodes is a straightforward linked list deletion problem that doesn't require or fundamentally rely on fast/slow pointer techniques. It's standard linked list manipulation.",
+    "subtopic": "Fast/Slow Pointers (Cycle, Middle)"
+  },
+  {
+    "id": 1291,
+    "field": "misclassification",
+    "current": "Fixed-Size Window",
+    "suggested": "Math/Digit Manipulation",
+    "reason": "Sequential Digits is fundamentally about generating numbers with sequential digits, not about sliding windows. The fixed-size window aspect is incidental; the core problem is mathematical digit generation/checking.",
+    "subtopic": "Fixed-Size Window"
+  },
+  {
+    "id": 220,
+    "field": "misclassification",
+    "current": "Fixed-Size Window",
+    "suggested": "Binary Search Tree or Two Pointers",
+    "reason": "Contains Duplicate III is typically solved with BSTs, hash tables with arithmetic constraints, or other techniques. While it can involve a window, it's not fundamentally a fixed-size window problem\u2014the window size varies based on the constraint.",
+    "subtopic": "Fixed-Size Window"
+  },
+  {
+    "id": 195,
+    "field": "misclassification",
+    "current": "Tenth Line",
+    "suggested": "Remove from Frequency Counting / Hash Map Lookup",
+    "reason": "This is a shell scripting problem that has nothing to do with frequency counting or hash maps. It should be in a different category entirely.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 193,
+    "field": "misclassification",
+    "current": "Valid Phone Numbers",
+    "suggested": "Remove from Frequency Counting / Hash Map Lookup",
+    "reason": "This is a regex/string matching problem, not a frequency counting or hash map problem.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 192,
+    "field": "misclassification",
+    "current": "Word Frequency",
+    "suggested": "Remove from Frequency Counting / Hash Map Lookup",
+    "reason": "This is a shell scripting problem, not a frequency counting algorithmic problem.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 58,
+    "field": "misclassification",
+    "current": "Length of Last Word",
+    "suggested": "Remove from Frequency Counting / Hash Map Lookup",
+    "reason": "This is a basic string manipulation problem that does not involve frequency counting or hash map lookups.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 482,
+    "field": "misclassification",
+    "current": "License Key Formatting",
+    "suggested": "Remove from Frequency Counting / Hash Map Lookup",
+    "reason": "This is a string formatting problem, not fundamentally about frequency counting or hash maps.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 13,
+    "field": "misclassification",
+    "current": "Roman to Integer",
+    "suggested": "Remove from Frequency Counting / Hash Map Lookup",
+    "reason": "While this uses a hash map, it's fundamentally about number conversion logic, not frequency counting or general hash map lookup problems.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 38,
+    "field": "misclassification",
+    "current": "Count and Say",
+    "suggested": "Remove from Frequency Counting / Hash Map Lookup",
+    "reason": "This is primarily a string generation/sequence problem. While it involves counting characters, it's not a hash map or general frequency counting problem.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 641,
+    "field": "misclassification",
+    "current": "Design Circular Deque",
+    "suggested": "Data Structure Design / Queue",
+    "reason": "This problem is fundamentally about implementing a deque data structure, not about frequency counting or hash map lookup. While it may use some counting internally, the core concept and problem category should be data structure design.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 1114,
+    "field": "misclassification",
+    "current": "Print in Order",
+    "suggested": "Concurrency / Synchronization",
+    "reason": "This is a concurrency/threading problem about coordinating execution order between threads, not a frequency counting or hash map lookup problem. It doesn't involve counting frequencies or looking up values in hash maps as its core mechanism.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 1115,
+    "field": "misclassification",
+    "current": "Print FooBar Alternately",
+    "suggested": "Concurrency / Synchronization",
+    "reason": "This is a concurrency/threading problem about alternating thread execution, not a frequency counting or hash map lookup problem.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 1116,
+    "field": "misclassification",
+    "current": "Print Zero Even Odd",
+    "suggested": "Concurrency / Synchronization",
+    "reason": "This is a concurrency/threading problem about coordinating output between threads, not a frequency counting or hash map lookup problem.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 1117,
+    "field": "misclassification",
+    "current": "Building H2O",
+    "suggested": "Concurrency / Synchronization",
+    "reason": "This is a concurrency/threading problem about synchronizing molecule formation, not a frequency counting or hash map lookup problem.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 717,
+    "field": "misclassification",
+    "current": "1-bit and 2-bit Characters",
+    "suggested": "String / Array Parsing",
+    "reason": "This problem is about parsing an encoding scheme and finding the last character, not about frequency counting or hash map lookup. It uses a linear scan algorithm, not hash maps or frequency counting.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 824,
+    "field": "misclassification",
+    "current": "Goat Latin",
+    "suggested": "String Manipulation",
+    "reason": "This problem is about string transformation and pattern application, not about frequency counting or hash map lookup.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 1929,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Array Manipulation / Basic Operations",
+    "reason": "Problem is about concatenating an array with itself, not about frequency counting or hash map lookups. This is a pure array manipulation problem.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 1920,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Array Indexing / Basic Operations",
+    "reason": "Problem is about building an array based on indices and permutations, not frequency counting or hash map lookups.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 1784,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "String Validation / Pattern Recognition",
+    "reason": "Problem checks if a binary string has at most one segment of ones - this is string validation/pattern checking, not frequency counting.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 1844,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "String Transformation / Character Mapping",
+    "reason": "Problem is about replacing digits with characters based on a mapping rule, not frequency counting or hash map lookups.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 1957,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "String Compression / Pattern Detection",
+    "reason": "Problem is about removing consecutive duplicate characters, which is string compression/pattern detection, not frequency counting.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 1779,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Coordinate Geometry / Distance Calculation",
+    "reason": "Problem is about finding the nearest point by Manhattan/coordinate distance, not frequency counting.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 1880,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "String-to-Integer Conversion / Basic Operations",
+    "reason": "Problem is about converting words to numbers and checking equality, not frequency counting or hash map lookups.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 1848,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Array Search / Linear Search",
+    "reason": "Problem is about finding minimum distance to a target element in an array, which is a search/distance problem, not frequency counting.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 1767,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Tree Traversal / Task Execution Order",
+    "reason": "Problem is about identifying missing tasks in a dependency tree/DAG, which is more about tree/graph traversal than frequency counting.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2011,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic",
+    "reason": "Problem is about tracking variable state through operations, not about frequency counting or hash map lookups. Should be in a basic simulation/string parsing subtopic.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2124,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic",
+    "reason": "Problem is about checking string character ordering, not about frequency counting or hash lookups. Should be in string validation/traversal subtopic.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2114,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic",
+    "reason": "Problem is about counting words in sentences (basic string splitting), not about frequency counting or hash map lookups as a core concept.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2299,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic",
+    "reason": "Problem is about password validation rules, not about frequency counting or hash lookups. Should be in string validation subtopic.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2138,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic",
+    "reason": "Problem is about string manipulation and grouping by size, not about frequency counting or hash map lookups.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2129,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic",
+    "reason": "Problem is about string capitalization rules, not about frequency counting or hash lookups.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2243,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic",
+    "reason": "Problem is about string digit processing and basic arithmetic, not about frequency counting or hash lookups.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2120,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic",
+    "reason": "Problem is about grid navigation and simulation, not about frequency counting or hash map lookups.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2118,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic",
+    "reason": "Problem involves building equations from expressions, which is more about string/expression manipulation than frequency counting.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2703,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "JavaScript Fundamentals / Language Features",
+    "reason": "This problem is about JavaScript function arguments (rest parameters), not frequency counting or hash map lookup. It's purely a language feature demonstration.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2704,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "JavaScript Fundamentals / Language Features",
+    "reason": "This is a ternary operator exercise, not related to frequency counting or hash maps.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2727,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "JavaScript Fundamentals / Object Iteration",
+    "reason": "This problem is about checking if an object is empty, not frequency counting or hash map lookup patterns.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2723,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Asynchronous Programming / Promises",
+    "reason": "This is about Promise operations and async/await, not frequency counting or hash map lookup.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2629,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "JavaScript Fundamentals / Higher-Order Functions",
+    "reason": "This is about function composition, not frequency counting or hash maps.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2634,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "JavaScript Fundamentals / Array Methods",
+    "reason": "This is about array filter operations, not frequency counting or hash maps.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2635,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "JavaScript Fundamentals / Array Methods",
+    "reason": "This is about array map operations, not frequency counting or hash maps.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2715,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Asynchronous Programming / Timers",
+    "reason": "This is about timeout cancellation and async operations, not frequency counting or hash maps.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2725,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Asynchronous Programming / Timers",
+    "reason": "This is about interval cancellation and async operations, not frequency counting or hash maps.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2667,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "JavaScript Fundamentals / Basic Syntax",
+    "reason": "This is a trivial hello world function exercise, not related to frequency counting or hash maps.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2666,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "JavaScript Fundamentals / Closures",
+    "reason": "This is about function call limiting using closures, not frequency counting or hash maps.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2720,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "SQL / Database Queries",
+    "reason": "This is a SQL problem about popularity percentage calculation, not a JavaScript hash map problem.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2752,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "SQL / Database Queries",
+    "reason": "This is a SQL problem about consecutive transactions, not a frequency counting or hash map problem.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2362,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "SQL / Database Queries",
+    "reason": "This is a SQL problem about generating invoices, not a JavaScript frequency counting or hash map problem.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2631,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "JavaScript Fundamentals / Object/Array Grouping",
+    "reason": "While this involves grouping logic (which could use hash maps), the problem is primarily about implementing a JavaScript grouping function, not a hash map/frequency counting algorithm.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2618,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "JavaScript Fundamentals / Object-Oriented Programming",
+    "reason": "This is about prototype checking and OOP concepts, not frequency counting or hash maps.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2877,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (Pandas/DataFrame basics)",
+    "reason": "This is a pandas DataFrame creation problem with no frequency counting or hash map lookup involved.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2878,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (Pandas/DataFrame basics)",
+    "reason": "Getting DataFrame size has no relation to frequency counting or hash map lookups.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2879,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (Pandas/DataFrame basics)",
+    "reason": "Displaying rows from a DataFrame is not frequency counting or hash map related.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2880,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (Pandas/DataFrame basics)",
+    "reason": "Data selection from DataFrames does not involve frequency counting or hash map lookups.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2881,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (Pandas/DataFrame basics)",
+    "reason": "Creating new columns in DataFrames is not related to frequency counting or hash maps.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2882,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (Pandas/DataFrame basics)",
+    "reason": "Dropping duplicates uses set operations but is fundamentally a DataFrame operation, not frequency counting.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2883,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (Pandas/DataFrame basics)",
+    "reason": "Handling missing data is a pandas DataFrame operation unrelated to frequency counting.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2884,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (Pandas/DataFrame basics)",
+    "reason": "Modifying DataFrame columns is not a frequency counting or hash map problem.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2885,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (Pandas/DataFrame basics)",
+    "reason": "Renaming columns in DataFrames is not related to frequency counting.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2886,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (Pandas/DataFrame basics)",
+    "reason": "Changing data types in DataFrames is not a frequency counting problem.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2887,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (Pandas/DataFrame basics)",
+    "reason": "Filling missing data is a DataFrame operation unrelated to frequency counting.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2888,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (Pandas/DataFrame basics)",
+    "reason": "Concatenating DataFrames is not a frequency counting or hash map problem.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2889,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (Pandas/DataFrame basics)",
+    "reason": "Pivoting DataFrames is not related to frequency counting or hash maps.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2890,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (Pandas/DataFrame basics)",
+    "reason": "Melting DataFrames is not a frequency counting or hash map operation.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2804,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (JavaScript/Array methods)",
+    "reason": "Array forEach is a functional programming construct, not frequency counting or hash map lookup.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2796,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (String manipulation)",
+    "reason": "String repetition is not related to frequency counting or hash map lookups.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2794,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (Object/HashMap basics)",
+    "reason": "Creating objects from arrays is a basic data structure problem, not frequency counting.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2797,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (JavaScript/Function composition)",
+    "reason": "Partial function application with placeholders is not related to frequency counting or hash maps.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 3051,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (SQL queries)",
+    "reason": "This is a SQL database query problem, not a frequency counting or hash map problem.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 3053,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (SQL queries)",
+    "reason": "This is a SQL geometry/classification problem, not related to frequency counting.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 3059,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (SQL queries)",
+    "reason": "This is a SQL string extraction problem, not a frequency counting problem.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2777,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (Date/Time manipulation)",
+    "reason": "Date range generation is not a frequency counting or hash map problem.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2754,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (JavaScript/Function binding)",
+    "reason": "Function binding to context is not related to frequency counting or hash maps.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2776,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (JavaScript/Async programming)",
+    "reason": "Converting callbacks to promises is not a frequency counting or hash map problem.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2757,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (JavaScript/Generator functions)",
+    "reason": "Generating circular array values is about generator functions, not frequency counting.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2795,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (JavaScript/Promises)",
+    "reason": "Promise execution is not related to frequency counting or hash map lookups.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 3054,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (SQL/Tree queries)",
+    "reason": "This is a SQL binary tree problem, not a frequency counting problem.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2783,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (SQL queries)",
+    "reason": "This is a SQL flight occupancy analysis problem, not a frequency counting problem.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2984,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (SQL queries)",
+    "reason": "This is a SQL data aggregation problem, not directly a frequency counting problem.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2820,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (SQL queries)",
+    "reason": "This is a SQL election results query, not a frequency counting algorithm problem.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2988,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (SQL queries)",
+    "reason": "This is a SQL department query, not a frequency counting algorithm problem.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2993,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (SQL queries)",
+    "reason": "This is a SQL purchase analysis query, not a frequency counting algorithm problem.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 3056,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (SQL queries)",
+    "reason": "This is a SQL Snaps data analysis query, not a frequency counting algorithm problem.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 3087,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (SQL queries)",
+    "reason": "This is a SQL hashtag trending query, not purely a frequency counting algorithm problem.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 3055,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (SQL queries)",
+    "reason": "This is a SQL fraud detection query, not a frequency counting algorithm problem.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 3089,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (SQL queries)",
+    "reason": "This is a SQL bursty behavior analysis query, not a frequency counting algorithm problem.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2978,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (SQL queries)",
+    "reason": "This is a SQL coordinate geometry query, not a frequency counting problem.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2986,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (SQL queries)",
+    "reason": "This is a SQL transaction analysis query, not a frequency counting algorithm problem.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2994,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (SQL queries)",
+    "reason": "This is a SQL purchase analysis query, not a frequency counting algorithm problem.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 3058,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (SQL queries)",
+    "reason": "This is a SQL friend relationship query, not a frequency counting algorithm problem.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2922,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (SQL queries)",
+    "reason": "This is a SQL market analysis query, not a frequency counting algorithm problem.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2995,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (SQL queries)",
+    "reason": "This is a SQL role transition query, not a frequency counting algorithm problem.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 3057,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (SQL queries)",
+    "reason": "This is a SQL employee allocation query, not a frequency counting algorithm problem.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 3103,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (SQL queries)",
+    "reason": "This is a SQL hashtag trending query, not a frequency counting algorithm problem.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2991,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (SQL queries)",
+    "reason": "This is a SQL winery ranking query, not a frequency counting algorithm problem.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 3060,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (SQL queries)",
+    "reason": "This is a SQL activity time bounds query, not a frequency counting algorithm problem.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2793,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (SQL queries)",
+    "reason": "This is a SQL flight ticket status query, not a frequency counting algorithm problem.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 3052,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (SQL queries)",
+    "reason": "This is a SQL item optimization query, not a frequency counting algorithm problem.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 3029,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (String algorithms)",
+    "reason": "This is a string reversion problem (likely KMP/pattern matching related), not frequency counting.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 3071,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (Grid/Matrix operations)",
+    "reason": "This is a grid coloring problem, not a frequency counting or hash map lookup problem.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2756,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (JavaScript/Async batching)",
+    "reason": "Query batching is an async/concurrency pattern, not a frequency counting problem.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2753,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Different subtopic (Graph/Circular traversal)",
+    "reason": "Circular street house counting is a graph/circular structure problem, not pure frequency counting.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 3624,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Bit Manipulation / Math",
+    "reason": "Problem focuses on popcount depth calculation and binary properties, not frequency counting or hash map lookup fundamentals.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 3303,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "String Matching / Pattern Matching",
+    "reason": "Finding occurrence of 'almost equal' substrings is primarily a string matching problem, not a frequency counting problem.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 3267,
+    "field": "misclassification",
+    "current": "Frequency Counting / Hash Map Lookup",
+    "suggested": "Bit Manipulation / Bit Comparison",
+    "reason": "Counting 'almost equal pairs' by bit differences is fundamentally about bit comparison, not frequency counting.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 3671,
+    "field": "misclassification",
+    "current": "GCD / LCM",
+    "suggested": "Different subtopic",
+    "reason": "Sum of Beautiful Subsequences appears to be primarily a DP/subsequence problem with GCD as only a constraint metric. The core algorithmic challenge is subsequence optimization, not GCD computation itself.",
+    "subtopic": "GCD / LCM"
+  },
+  {
+    "id": 3204,
+    "field": "misclassification",
+    "current": "General Bit Manipulation",
+    "suggested": "Access Control / Permissions",
+    "reason": "Problem is about analyzing user permissions through bitwise operations, but the core domain is access control/permissions management, not general bit manipulation techniques. This is a domain-specific application rather than a bit manipulation fundamentals problem.",
+    "subtopic": "General Bit Manipulation"
+  },
+  {
+    "id": 1908,
+    "field": "misclassification",
+    "current": "General Bit Manipulation",
+    "suggested": "Game Theory",
+    "reason": "Game of Nim is a classic game theory problem. While it uses bitwise XOR as a solution technique, the primary classification should be game theory, not bit manipulation. This is similar to how backtracking problems aren't classified as recursion problems.",
+    "subtopic": "General Bit Manipulation"
+  },
+  {
+    "id": 3677,
+    "field": "misclassification",
+    "current": "General Bit Manipulation",
+    "suggested": "Math/Number Theory",
+    "reason": "Counting binary palindromic numbers in a range is primarily a digit DP / mathematical counting problem, not a general bit manipulation problem. While it involves binary representation, the core problem is combinatorial counting.",
+    "subtopic": "General Bit Manipulation"
+  },
+  {
+    "id": 555,
+    "field": "misclassification",
+    "current": "General Greedy",
+    "suggested": "String Manipulation or Different Subtopic",
+    "reason": "Split Concatenated Strings is primarily about string manipulation and lexicographic comparison, not about a greedy algorithmic strategy. The greedy insight is minimal compared to string logic.",
+    "subtopic": "General Greedy (Greedy is main insight)"
+  },
+  {
+    "id": 1927,
+    "field": "misclassification",
+    "current": "General Greedy",
+    "suggested": "Math/Game Theory",
+    "reason": "This is a game theory problem (sum game with optimal play), not a pure greedy problem. The solution involves mathematical analysis of game states rather than greedy choice-making.",
+    "subtopic": "General Greedy (Greedy is main insight)"
+  },
+  {
+    "id": 2029,
+    "field": "misclassification",
+    "current": "General Greedy",
+    "suggested": "Math/Game Theory",
+    "reason": "Stone Game IX is a game theory problem about optimal play and winning strategies, not a greedy algorithm problem. It requires analyzing game states, not making locally optimal choices.",
+    "subtopic": "General Greedy (Greedy is main insight)"
+  },
+  {
+    "id": 1753,
+    "field": "misclassification",
+    "current": "General Greedy",
+    "suggested": "Graph Theory/Game Theory",
+    "reason": "Maximum Score From Removing Stones is fundamentally a graph connectivity problem (finding connected components) or game theory problem, not primarily a greedy problem. The greedy insight is minimal.",
+    "subtopic": "General Greedy (Greedy is main insight)"
+  },
+  {
+    "id": 2571,
+    "field": "misclassification",
+    "current": "General Greedy",
+    "suggested": "Different subtopic (likely BFS/Dynamic Programming)",
+    "reason": "Problem 2571 'Minimum Operations to Reduce an Integer to 0' involves finding the minimum number of operations to reduce an integer to 0 by subtracting powers of submasks. This is fundamentally a shortest path / BFS problem or dynamic programming problem, not primarily a greedy problem. The greedy insight (if any) is not the main solution approach.",
+    "subtopic": "General Greedy (Greedy is main insight)"
+  },
+  {
+    "id": 3680,
+    "field": "misclassification",
+    "current": "General Greedy",
+    "suggested": "Different subtopic",
+    "reason": "Problem appears to be primarily about scheduling/graph algorithms rather than greedy optimization. The extremely low interview_plausibility (0.12) and importance (0.18) suggest this may not belong in a greedy-focused group.",
+    "subtopic": "General Greedy (Greedy is main insight)"
+  },
+  {
+    "id": 384,
+    "field": "misclassification",
+    "current": "General Math",
+    "suggested": "Not General Math",
+    "reason": "Shuffle an Array is fundamentally a randomization/algorithm problem (Fisher-Yates shuffle), not a math problem. It belongs in a different subtopic.",
+    "subtopic": "General Math"
+  },
+  {
+    "id": 612,
+    "field": "misclassification",
+    "current": "General Math",
+    "suggested": "Not General Math",
+    "reason": "Shortest Distance in a Plane is a geometry/computational geometry problem (finding minimum Euclidean distance), not general math.",
+    "subtopic": "General Math"
+  },
+  {
+    "id": 6,
+    "field": "misclassification",
+    "current": "General Math",
+    "suggested": "Not General Math",
+    "reason": "Zigzag Conversion is fundamentally a string manipulation problem, not a math problem.",
+    "subtopic": "General Math"
+  },
+  {
+    "id": 459,
+    "field": "misclassification",
+    "current": "General Math",
+    "suggested": "Not General Math",
+    "reason": "Repeated Substring Pattern is primarily a string pattern matching problem, not a math problem.",
+    "subtopic": "General Math"
+  },
+  {
+    "id": 2803,
+    "field": "misclassification",
+    "current": "General Math",
+    "suggested": "Different subtopic",
+    "reason": "This is fundamentally a generator/iterator pattern problem (ES6 generators), not a math problem. It belongs in functional programming or language features, not general math.",
+    "subtopic": "General Math"
+  },
+  {
+    "id": 2821,
+    "field": "misclassification",
+    "current": "General Math",
+    "suggested": "Different subtopic",
+    "reason": "This is a Promise/async programming problem, not a math problem. It tests understanding of Promise delay mechanisms, not mathematical concepts.",
+    "subtopic": "General Math"
+  },
+  {
+    "id": 2805,
+    "field": "misclassification",
+    "current": "General Math",
+    "suggested": "Different subtopic",
+    "reason": "This is a JavaScript setInterval/timer problem, not a math problem. It tests understanding of interval-based scheduling.",
+    "subtopic": "General Math"
+  },
+  {
+    "id": 2989,
+    "field": "misclassification",
+    "current": "General Math",
+    "suggested": "Different subtopic",
+    "reason": "This appears to be a data analysis/statistics problem involving class performance metrics, not core general math.",
+    "subtopic": "General Math"
+  },
+  {
+    "id": 1513,
+    "field": "misclassification",
+    "current": "General Math",
+    "suggested": "Different subtopic",
+    "reason": "This is a string/substring enumeration problem (counting substrings with specific properties), not a general math problem. While it may involve digit counting, the primary focus is substring pattern matching.",
+    "subtopic": "General Math"
+  },
+  {
+    "id": 2128,
+    "field": "misclassification",
+    "current": "General Math",
+    "suggested": "Different subtopic",
+    "reason": "This is a matrix manipulation/game theory problem about row and column flips, not a general math problem. It involves logical deduction about grid operations.",
+    "subtopic": "General Math"
+  },
+  {
+    "id": 3492,
+    "field": "misclassification",
+    "current": "General Math",
+    "suggested": "Different subtopic",
+    "reason": "This is a physics/geometry problem about container packing optimization on a ship, not a general math problem. It involves constraints and optimization logic that doesn't fit the mathematical computation focus of this subtopic.",
+    "subtopic": "General Math"
+  },
+  {
+    "id": 3246,
+    "field": "misclassification",
+    "current": "General Math",
+    "suggested": "Different subtopic",
+    "reason": "This is a sports league table ranking problem with sorting/comparison logic, not a general math problem. It's more aligned with data organization/sorting subtopics.",
+    "subtopic": "General Math"
+  },
+  {
+    "id": 3648,
+    "field": "misclassification",
+    "current": "General Math",
+    "suggested": "Different subtopic",
+    "reason": "This is a geometric coverage/grid problem requiring spatial reasoning and optimization algorithms, not a general math computation problem.",
+    "subtopic": "General Math"
+  },
+  {
+    "id": 3596,
+    "field": "misclassification",
+    "current": "General Math",
+    "suggested": "Graph/Path Finding",
+    "reason": "This is explicitly a pathfinding problem with cost minimization and directional constraints. It belongs in graph/BFS/dynamic programming subtopics, not general math.",
+    "subtopic": "General Math"
+  },
+  {
+    "id": 3380,
+    "field": "misclassification",
+    "current": "General Math",
+    "suggested": "Geometry/Computational Geometry",
+    "reason": "This is a computational geometry problem about finding maximum rectangle area with point constraints. While it uses math, it's fundamentally a geometry problem, not general math computation.",
+    "subtopic": "General Math"
+  },
+  {
+    "id": 3102,
+    "field": "misclassification",
+    "current": "General Math",
+    "suggested": "Different subtopic",
+    "reason": "This problem about minimizing Manhattan distances appears to be a complex optimization/geometry problem that doesn't fit the general math computation focus of this subtopic.",
+    "subtopic": "General Math"
+  },
+  {
+    "id": 2267,
+    "field": "misclassification",
+    "current": "Grid Path Problems",
+    "suggested": "String Matching / Parentheses Validation",
+    "reason": "This problem is fundamentally about validating parentheses strings along a path, not about grid path optimization. The core challenge is parentheses matching, not pathfinding. It belongs in a string/parentheses subtopic.",
+    "subtopic": "Grid Path Problems"
+  },
+  {
+    "id": 1444,
+    "field": "misclassification",
+    "current": "Grid Path Problems",
+    "suggested": "Prefix Sum / 2D Range Sum",
+    "reason": "This problem is primarily about cutting a pizza optimally using prefix sums and 2D range queries, not about finding paths through a grid. The grid structure is incidental to the core algorithmic technique.",
+    "subtopic": "Grid Path Problems"
+  },
+  {
+    "id": 546,
+    "field": "misclassification",
+    "current": "Interval DP",
+    "suggested": "DP with Memoization or Advanced DP",
+    "reason": "Remove Boxes is fundamentally a DP problem with an extra dimension (k parameter tracking consecutive boxes), not a classic interval DP problem. It requires a different DP state structure than typical interval problems which solve subproblems on contiguous ranges.",
+    "subtopic": "Interval DP"
+  },
+  {
+    "id": 2019,
+    "field": "misclassification",
+    "current": "Interval DP",
+    "suggested": "Parse Tree / Expression Evaluation DP",
+    "reason": "This problem is primarily about parsing and evaluating expressions with different operator precedences, not interval DP. The DP is on parse states/expression evaluation, not on solving optimally over intervals.",
+    "subtopic": "Interval DP"
+  },
+  {
+    "id": 3410,
+    "field": "misclassification",
+    "current": "Kadane's Algorithm",
+    "suggested": "Different subtopic",
+    "reason": "This problem is primarily about removing occurrences of an element and optimizing subarrays, which requires a different algorithmic approach (DP with state tracking for which element was removed). While it can use Kadane's, the core challenge is not about max subarray finding but about the removal operation constraint. It doesn't fit cleanly in a Kadane's subtopic.",
+    "subtopic": "Kadane's Algorithm (Max Subarray)"
+  },
+  {
+    "id": 1395,
+    "field": "misclassification",
+    "current": "Linear Recurrence DP",
+    "suggested": "Other DP",
+    "reason": "Count Number of Teams is a combinatorial counting problem with no linear recurrence relation. It's a coordinate DP problem, fundamentally different from the recurrence-based problems in this group.",
+    "subtopic": "Linear Recurrence DP"
+  },
+  {
+    "id": 241,
+    "field": "misclassification",
+    "current": "Linear Recurrence DP",
+    "suggested": "Other DP",
+    "reason": "Different Ways to Add Parentheses is a divide-and-conquer DP problem (memo-ization with recursion on expression structure), not a linear recurrence problem.",
+    "subtopic": "Linear Recurrence DP"
+  },
+  {
+    "id": 2648,
+    "field": "misclassification",
+    "current": "Linear Recurrence DP",
+    "suggested": "Basic DP or Sequences",
+    "reason": "Generate Fibonacci Sequence is a basic sequence generation problem, not a DP problem requiring recurrence relations. It's a fundamental programming exercise, not a linear recurrence DP problem.",
+    "subtopic": "Linear Recurrence DP"
+  },
+  {
+    "id": 2189,
+    "field": "misclassification",
+    "current": "Linear Recurrence DP",
+    "suggested": "Combinatorics or Pattern Recognition",
+    "reason": "Number of Ways to Build House of Cards is primarily a combinatorial/pattern recognition problem about card structures, not a linear recurrence DP problem.",
+    "subtopic": "Linear Recurrence DP"
+  },
+  {
+    "id": 2184,
+    "field": "misclassification",
+    "current": "Linear Recurrence DP",
+    "suggested": "Partition/Tiling DP",
+    "reason": "Number of Ways to Build Sturdy Brick Wall is about brick partitioning patterns, which is more related to tiling/partition problems than linear recurrence DP.",
+    "subtopic": "Linear Recurrence DP"
+  },
+  {
+    "id": 3256,
+    "field": "misclassification",
+    "current": "Linear Recurrence DP",
+    "suggested": "Optimization/Greedy or Matrix Problems",
+    "reason": "Maximum Value Sum by Placing Three Rooks I is a combinatorial optimization problem about placing rooks, not a linear recurrence DP problem.",
+    "subtopic": "Linear Recurrence DP"
+  },
+  {
+    "id": 3257,
+    "field": "misclassification",
+    "current": "Linear Recurrence DP",
+    "suggested": "Optimization/Greedy or Matrix Problems",
+    "reason": "Maximum Value Sum by Placing Three Rooks II is a combinatorial optimization problem about placing rooks, not a linear recurrence DP problem.",
+    "subtopic": "Linear Recurrence DP"
+  },
+  {
+    "id": 3269,
+    "field": "misclassification",
+    "current": "Linear Recurrence DP",
+    "suggested": "Greedy or Array Construction",
+    "reason": "Constructing Two Increasing Arrays is an array construction/greedy problem, not fundamentally a linear recurrence DP problem.",
+    "subtopic": "Linear Recurrence DP"
+  },
+  {
+    "id": 3751,
+    "field": "misclassification",
+    "current": "Linear Recurrence DP",
+    "suggested": "Digit DP",
+    "reason": "Problem involves 'Numbers in Range' which is a classic digit DP pattern, not a linear recurrence DP problem. The waviness constraint is applied within a range, not a linear recurrence state transition.",
+    "subtopic": "Linear Recurrence DP"
+  },
+  {
+    "id": 3753,
+    "field": "misclassification",
+    "current": "Linear Recurrence DP",
+    "suggested": "Digit DP",
+    "reason": "Sequel to 3751 with same characteristics - 'Numbers in Range II' is a digit DP problem involving range constraints and digit-by-digit processing, not linear recurrence.",
+    "subtopic": "Linear Recurrence DP"
+  },
+  {
+    "id": 3747,
+    "field": "misclassification",
+    "current": "Linear Recurrence DP",
+    "suggested": "Different subtopic",
+    "reason": "Problem about removing zeros from integers and counting distinct results - this is a number manipulation/digit processing problem, not linear recurrence DP.",
+    "subtopic": "Linear Recurrence DP"
+  },
+  {
+    "id": 3704,
+    "field": "misclassification",
+    "current": "Linear Recurrence DP",
+    "suggested": "Digit DP",
+    "reason": "'Count No-Zero Pairs That Sum to N' involves range constraints and digit properties. This is fundamentally a digit DP problem, not linear recurrence.",
+    "subtopic": "Linear Recurrence DP"
+  },
+  {
+    "id": 3389,
+    "field": "misclassification",
+    "current": "Linear Recurrence DP",
+    "suggested": "Different subtopic",
+    "reason": "'Minimum Operations to Make Character Frequencies Equal' is about character frequency manipulation and greedy/optimization strategies, not linear recurrence DP.",
+    "subtopic": "Linear Recurrence DP"
+  },
+  {
+    "id": 960,
+    "field": "misclassification",
+    "current": "Delete Columns to Make Sorted III",
+    "suggested": "Move to String/Array subtopic or reconsider",
+    "reason": "This problem is fundamentally about deleting columns from a grid of strings to maintain sorted order. While it uses LIS logic, the core problem is about string manipulation and column operations, not subsequence selection. It's a weak fit for this subtopic.",
+    "subtopic": "Longest Increasing Subsequence"
+  },
+  {
+    "id": 2277,
+    "field": "misclassification",
+    "current": "Lowest Common Ancestor",
+    "suggested": "Tree Traversal or Graph Algorithms",
+    "reason": "This problem is about finding the closest node to a path in a tree, which is fundamentally different from LCA problems. It requires path analysis and distance computation rather than finding a common ancestor.",
+    "subtopic": "Lowest Common Ancestor"
+  },
+  {
+    "id": 2509,
+    "field": "misclassification",
+    "current": "Lowest Common Ancestor",
+    "suggested": "Tree Structure or Graph Algorithms",
+    "reason": "This problem focuses on cycle length queries in a tree using binary lifting, which is more related to tree structure and query algorithms rather than finding lowest common ancestors.",
+    "subtopic": "Lowest Common Ancestor"
+  },
+  {
+    "id": 3559,
+    "field": "misclassification",
+    "current": "Lowest Common Ancestor",
+    "suggested": "Graph Algorithms or Dynamic Programming",
+    "reason": "This problem about assigning edge weights in a graph is unrelated to LCA. It belongs in a different algorithmic domain entirely.",
+    "subtopic": "Lowest Common Ancestor"
+  },
+  {
+    "id": 3553,
+    "field": "misclassification",
+    "current": "Lowest Common Ancestor",
+    "suggested": "Shortest Path or Graph Algorithms",
+    "reason": "This problem about minimum weighted subgraphs with required paths is a graph algorithm problem (likely shortest path variant), not an LCA problem.",
+    "subtopic": "Lowest Common Ancestor"
+  },
+  {
+    "id": 2846,
+    "field": "misclassification",
+    "current": "Lowest Common Ancestor",
+    "suggested": "Tree Queries or Dynamic Programming on Trees",
+    "reason": "This problem about minimum edge weight equilibrium queries in a tree is about edge weight queries and optimization, not about finding lowest common ancestors.",
+    "subtopic": "Lowest Common Ancestor"
+  },
+  {
+    "id": 2624,
+    "field": "misclassification",
+    "current": "Snail Traversal",
+    "suggested": "Different subtopic",
+    "reason": "This is a JavaScript array method problem about implementing reduce/functional programming patterns, not a matrix traversal problem. It shouldn't be in this subtopic.",
+    "subtopic": "Matrix Traversal (Diagonal, Valid Sudoku, etc)"
+  },
+  {
+    "id": 194,
+    "field": "misclassification",
+    "current": "Transpose File",
+    "suggested": "Different subtopic",
+    "reason": "This is a shell scripting problem (awk/sed), not a matrix traversal problem. It doesn't belong in this data structures subtopic.",
+    "subtopic": "Matrix Traversal (Diagonal, Valid Sudoku, etc)"
+  },
+  {
+    "id": 355,
+    "field": "misclassification",
+    "current": "Merge K Sorted Structures",
+    "suggested": "System Design / Data Structure Design",
+    "reason": "Design Twitter is a system design problem focused on building a data structure with follow/tweet functionality. While it may use a heap internally for merging feeds, the core problem is designing a Twitter system, not merging k sorted structures. It doesn't belong in this subtopic.",
+    "subtopic": "Merge K Sorted Structures"
+  },
+  {
+    "id": 3263,
+    "field": "misclassification",
+    "current": "Merge Linked Lists",
+    "suggested": "Linked List Basics or Array Conversion",
+    "reason": "Converting a doubly linked list to an array is not about merging linked lists. This is a basic conversion/traversal operation that doesn't fit the 'Merge Linked Lists' subtopic at all.",
+    "subtopic": "Merge Linked Lists"
+  },
+  {
+    "id": 1670,
+    "field": "misclassification",
+    "current": "Merge Linked Lists",
+    "suggested": "Queue Design or Data Structure Design",
+    "reason": "Design Front Middle Back Queue is about queue data structure design, not about merging linked lists. While it may use a linked list internally, the problem is fundamentally about queue operations, not merging.",
+    "subtopic": "Merge Linked Lists"
+  },
+  {
+    "id": 1206,
+    "field": "misclassification",
+    "current": "Merge Linked Lists",
+    "suggested": "Advanced Data Structures or Skip List Design",
+    "reason": "Design Skiplist is about designing a skip list data structure with search/insertion/deletion operations. This has nothing to do with merging linked lists.",
+    "subtopic": "Merge Linked Lists"
+  },
+  {
+    "id": 2570,
+    "field": "misclassification",
+    "current": "Merging Sorted Arrays",
+    "suggested": "Hash Map / Array Manipulation",
+    "reason": "This problem is about merging 2D arrays by summing values at matching keys. While it involves merging, it's fundamentally a key-value aggregation problem, not about merging sorted sequences. The 'sorted array merging' technique (two pointers) is incidental to the core logic. This belongs in a different subtopic.",
+    "subtopic": "Merging Sorted Arrays"
+  },
+  {
+    "id": 3600,
+    "field": "misclassification",
+    "current": "Minimum Spanning Tree (Prim's / Kruskal's)",
+    "suggested": "Different subtopic",
+    "reason": "This problem is about maximizing spanning tree stability with upgrades, which is fundamentally different from classic MST construction. It's an optimization problem layered on top of MST concepts, not a core MST algorithm problem.",
+    "subtopic": "Minimum Spanning Tree (Prim's / Kruskal's)"
+  },
+  {
+    "id": 2147,
+    "field": "misclassification",
+    "current": "modular_arithmetic",
+    "suggested": "combinatorics_or_counting",
+    "reason": "While this problem involves modulo operations, it is fundamentally a combinatorics problem about counting arrangements with constraints. The modular arithmetic is incidental (just taking the final answer mod 10^9+7), not the core technique.",
+    "subtopic": "Modular Arithmetic"
+  },
+  {
+    "id": 891,
+    "field": "misclassification",
+    "current": "modular_arithmetic",
+    "suggested": "array_manipulation_or_sorting",
+    "reason": "This is a sorting + math problem (sum of products of sorted arrays). Modular arithmetic is just used for the final answer. The core technique is not modular arithmetic.",
+    "subtopic": "Modular Arithmetic"
+  },
+  {
+    "id": 255,
+    "field": "misclassification",
+    "current": "Verify Preorder Sequence in Binary Search Tree",
+    "suggested": "Binary Search Tree validation problem",
+    "reason": "This is fundamentally a BST validation problem that uses a monotonic stack as an implementation detail. It should be tagged under 'Binary Search Trees' or 'Tree Validation', not as a primary 'Monotonic Stack' problem. The stack is a tool, not the core algorithmic concept.",
+    "subtopic": "Monotonic Stack"
+  },
+  {
+    "id": 1504,
+    "field": "misclassification",
+    "current": "Count Submatrices With All Ones",
+    "suggested": "Dynamic Programming / Matrix",
+    "reason": "While this problem can use a monotonic stack approach via the 'largest rectangle in histogram' technique, it is fundamentally a 2D DP problem about counting submatrices. The primary algorithmic focus is DP/matrix traversal, not the monotonic stack pattern itself.",
+    "subtopic": "Monotonic Stack"
+  },
+  {
+    "id": 3141,
+    "field": "misclassification",
+    "current": "Multi-Source BFS",
+    "suggested": "Different subtopic",
+    "reason": "Maximum Hamming Distances is a combinatorics/bit manipulation problem, not a multi-source BFS problem. It doesn't involve graph traversal or queue-based shortest path finding from multiple sources.",
+    "subtopic": "Multi-Source BFS"
+  },
+  {
+    "id": 189,
+    "field": "misclassification",
+    "current": "Rotate Array",
+    "suggested": "Should be in Two-Pointer or Array Manipulation subtopic",
+    "reason": "Rotate Array uses two-pointer approach for rotating arrays, but the core algorithm (reversing subarrays) is not fundamentally about converging pointers from opposite directions in the typical sense. It's more about array manipulation. This is borderline but leans toward misclassification.",
+    "subtopic": "Opposite-Direction (Converging)"
+  },
+  {
+    "id": 905,
+    "field": "misclassification",
+    "current": "Partitioning (Dutch National Flag)",
+    "suggested": "Array Partitioning or Two-Pointer Techniques",
+    "reason": "Sort Array By Parity is a simple two-pointer partitioning problem but does not involve the Dutch National Flag algorithm. Dutch National Flag specifically addresses three-way partitioning (like problem 75 with 3 colors). Problem 905 only partitions into 2 groups (odd/even), making it fundamentally different from the classic DNF pattern.",
+    "subtopic": "Partitioning (Dutch National Flag)"
+  },
+  {
+    "id": 488,
+    "field": "misclassification",
+    "current": "Path Finding with Backtracking",
+    "suggested": "Different subtopic",
+    "reason": "Zuma Game is primarily a puzzle/game simulation problem with BFS/dynamic programming, not a path-finding problem. The core challenge is game state simulation and matching mechanics, not finding paths through space.",
+    "subtopic": "Path Finding with Backtracking"
+  },
+  {
+    "id": 3309,
+    "field": "misclassification",
+    "current": "Permutations",
+    "suggested": "Sorting or Comparators",
+    "reason": "This problem is about sorting numbers by binary representation to find the maximum concatenation. It's fundamentally a sorting/comparator problem, not a permutations problem. While it may involve rearranging elements, the core algorithm is custom sorting, not generating or exploring permutations.",
+    "subtopic": "Permutations"
+  },
+  {
+    "id": 949,
+    "field": "misclassification",
+    "current": "Permutations",
+    "suggested": "Brute Force or Search",
+    "reason": "This problem generates all permutations of 4 digits and checks which form valid times. While permutations are generated as a step, the problem is fundamentally about constraint satisfaction (finding valid times), not about permutation generation itself. The focus is on the validation logic, not permutation algorithms.",
+    "subtopic": "Permutations"
+  },
+  {
+    "id": 2850,
+    "field": "misclassification",
+    "current": "Permutations",
+    "suggested": "Dynamic Programming or Search",
+    "reason": "This is a stone-spreading grid problem that requires finding minimum cost matching/assignment with search. It's not fundamentally about generating permutations. The problem involves optimization and state-space search, not permutation enumeration.",
+    "subtopic": "Permutations"
+  },
+  {
+    "id": 674,
+    "field": "misclassification",
+    "current": "Prefix Sums",
+    "suggested": "Different subtopic",
+    "reason": "Longest Continuous Increasing Subsequence is fundamentally a sliding window/greedy problem, not a prefix sum problem. It doesn't use cumulative sums or range queries.",
+    "subtopic": "Prefix Sums"
+  },
+  {
+    "id": 1299,
+    "field": "misclassification",
+    "current": "Prefix Sums",
+    "suggested": "Different subtopic",
+    "reason": "Replace Elements with Greatest Element on Right Side is a right-to-left traversal problem, not a prefix sum problem. It solves by tracking maximum on the right, not using cumulative sums.",
+    "subtopic": "Prefix Sums"
+  },
+  {
+    "id": 1308,
+    "field": "misclassification",
+    "current": "Prefix Sums",
+    "suggested": "SQL/Database subtopic",
+    "reason": "Running Total for Different Genders is an SQL problem, not an algorithmic prefix sum problem.",
+    "subtopic": "Prefix Sums"
+  },
+  {
+    "id": 534,
+    "field": "misclassification",
+    "current": "Prefix Sums",
+    "suggested": "SQL/Database subtopic",
+    "reason": "Game Play Analysis III is an SQL problem, not an algorithmic prefix sum problem.",
+    "subtopic": "Prefix Sums"
+  },
+  {
+    "id": 1321,
+    "field": "misclassification",
+    "current": "Prefix Sums",
+    "suggested": "SQL/Database subtopic",
+    "reason": "Restaurant Growth is an SQL problem, not an algorithmic prefix sum problem.",
+    "subtopic": "Prefix Sums"
+  },
+  {
+    "id": 1204,
+    "field": "misclassification",
+    "current": "Prefix Sums",
+    "suggested": "SQL/Database subtopic",
+    "reason": "Last Person to Fit in the Bus is an SQL problem, not an algorithmic prefix sum problem.",
+    "subtopic": "Prefix Sums"
+  },
+  {
+    "id": 2066,
+    "field": "misclassification",
+    "current": "Prefix Sums",
+    "suggested": "SQL/Database subtopic",
+    "reason": "Account Balance is an SQL problem, not an algorithmic prefix sum problem.",
+    "subtopic": "Prefix Sums"
+  },
+  {
+    "id": 579,
+    "field": "misclassification",
+    "current": "Prefix Sums",
+    "suggested": "SQL/Database subtopic",
+    "reason": "Find Cumulative Salary of an Employee is an SQL problem, not an algorithmic prefix sum problem.",
+    "subtopic": "Prefix Sums"
+  },
+  {
+    "id": 571,
+    "field": "misclassification",
+    "current": "Prefix Sums",
+    "suggested": "SQL/Database subtopic",
+    "reason": "Find Median Given Frequency of Numbers is an SQL problem, not an algorithmic prefix sum problem.",
+    "subtopic": "Prefix Sums"
+  },
+  {
+    "id": 1651,
+    "field": "misclassification",
+    "current": "Prefix Sums",
+    "suggested": "SQL/Database subtopic",
+    "reason": "Hopper Company Queries III is an SQL problem, not an algorithmic prefix sum problem.",
+    "subtopic": "Prefix Sums"
+  },
+  {
+    "id": 2004,
+    "field": "misclassification",
+    "current": "Prefix Sums",
+    "suggested": "SQL/Database subtopic",
+    "reason": "The Number of Seniors and Juniors to Join the Company is an SQL problem, not an algorithmic prefix sum problem.",
+    "subtopic": "Prefix Sums"
+  },
+  {
+    "id": 1225,
+    "field": "misclassification",
+    "current": "Prefix Sums",
+    "suggested": "SQL/Database subtopic",
+    "reason": "Report Contiguous Dates is an SQL problem, not an algorithmic prefix sum problem.",
+    "subtopic": "Prefix Sums"
+  },
+  {
+    "id": 2010,
+    "field": "misclassification",
+    "current": "Prefix Sums",
+    "suggested": "SQL/Database subtopic",
+    "reason": "The Number of Seniors and Juniors to Join the Company II is an SQL problem, not an algorithmic prefix sum problem.",
+    "subtopic": "Prefix Sums"
+  },
+  {
+    "id": 2173,
+    "field": "misclassification",
+    "current": "Prefix Sums",
+    "suggested": "SQL/Database subtopic",
+    "reason": "Longest Winning Streak is an SQL problem, not an algorithmic prefix sum problem.",
+    "subtopic": "Prefix Sums"
+  },
+  {
+    "id": 1788,
+    "field": "misclassification",
+    "current": "Prefix Sums",
+    "suggested": "Different subtopic",
+    "reason": "Maximize the Beauty of the Garden is primarily a greedy optimization problem with constraints, not fundamentally a prefix sum problem.",
+    "subtopic": "Prefix Sums"
+  },
+  {
+    "id": 2626,
+    "field": "misclassification",
+    "current": "Prefix Sums",
+    "suggested": "Different subtopic",
+    "reason": "This is a JavaScript Array reduce transformation problem - a functional programming exercise, not a prefix sums algorithm problem. It doesn't involve computing prefix sums or solving problems based on prefix sum logic.",
+    "subtopic": "Prefix Sums"
+  },
+  {
+    "id": 3234,
+    "field": "misclassification",
+    "current": "Prefix Sums",
+    "suggested": "Different subtopic",
+    "reason": "This problem is primarily about string/substring pattern analysis (counting substrings with dominant ones). While it may use prefix sums as a helper technique, the core logic is pattern-based, not fundamentally about prefix sums.",
+    "subtopic": "Prefix Sums"
+  },
+  {
+    "id": 237,
+    "field": "misclassification",
+    "current": "Delete Node in a Linked List",
+    "suggested": "Different subtopic (Node Manipulation/Basic Operations)",
+    "reason": "This problem doesn't involve reversal at all. It's about deleting a specific node by modifying its value, which is fundamentally different from reversal operations. Should not be in this subtopic.",
+    "subtopic": "Reversal (Full and Partial)"
+  },
+  {
+    "id": 3294,
+    "field": "misclassification",
+    "current": "Convert Doubly Linked List to Array II",
+    "suggested": "Different subtopic (Array Conversion/Traversal)",
+    "reason": "Converting a linked list to an array doesn't involve reversal. This is a traversal/conversion problem, not a reversal problem.",
+    "subtopic": "Reversal (Full and Partial)"
+  },
+  {
+    "id": 707,
+    "field": "misclassification",
+    "current": "Design Linked List",
+    "suggested": "Different subtopic (Linked List Design/Implementation)",
+    "reason": "This is a design problem about implementing basic linked list operations (insert, delete, get). It's not specifically about reversal operations.",
+    "subtopic": "Reversal (Full and Partial)"
+  },
+  {
+    "id": 369,
+    "field": "misclassification",
+    "current": "Plus One Linked List",
+    "suggested": "Different subtopic (Arithmetic Operations on Linked Lists)",
+    "reason": "This problem is about incrementing a number represented as a linked list. While it may involve some reversal in the solution, the core problem is arithmetic operation, not reversal.",
+    "subtopic": "Reversal (Full and Partial)"
+  },
+  {
+    "id": 2046,
+    "field": "misclassification",
+    "current": "Sort Linked List Already Sorted Using Absolute Values",
+    "suggested": "Different subtopic (Sorting/Reordering)",
+    "reason": "This is primarily a sorting problem, not a reversal problem. While reversal might be a technique used, the problem is fundamentally about sorting a list by absolute values.",
+    "subtopic": "Reversal (Full and Partial)"
+  },
+  {
+    "id": 430,
+    "field": "misclassification",
+    "current": "Flatten a Multilevel Doubly Linked List",
+    "suggested": "Different subtopic (Tree/Graph Flattening or Traversal)",
+    "reason": "This problem is about flattening a multilevel structure, not about reversing lists. The core operation is traversal and structural reorganization, not reversal.",
+    "subtopic": "Reversal (Full and Partial)"
+  },
+  {
+    "id": 434,
+    "field": "misclassification",
+    "current": "Same-Direction (Fast/Slow on Arrays)",
+    "suggested": "String Manipulation or Basic Array Operations",
+    "reason": "This problem is about counting segments in a string by iterating through it once. It doesn't use a two-pointer or fast/slow pointer technique at all\u2014it's a basic string parsing problem.",
+    "subtopic": "Same-Direction (Fast/Slow on Arrays)"
+  },
+  {
+    "id": 28,
+    "field": "misclassification",
+    "current": "Same-Direction (Fast/Slow on Arrays)",
+    "suggested": "String Matching or Pattern Searching",
+    "reason": "This is the classic string matching problem (finding first occurrence of substring). While it can use two pointers, it's fundamentally a string matching problem, not a same-direction fast/slow pointer problem.",
+    "subtopic": "Same-Direction (Fast/Slow on Arrays)"
+  },
+  {
+    "id": 1455,
+    "field": "misclassification",
+    "current": "Same-Direction (Fast/Slow on Arrays)",
+    "suggested": "String Matching or Basic String Operations",
+    "reason": "This is a simple prefix matching problem on words in a sentence. It doesn't employ a fast/slow pointer technique; it's basic string searching.",
+    "subtopic": "Same-Direction (Fast/Slow on Arrays)"
+  },
+  {
+    "id": 1446,
+    "field": "misclassification",
+    "current": "Same-Direction (Fast/Slow on Arrays)",
+    "suggested": "String Manipulation or Basic Iteration",
+    "reason": "This problem counts consecutive duplicate characters in a string. It's a single-pass string iteration problem, not a same-direction two-pointer technique.",
+    "subtopic": "Same-Direction (Fast/Slow on Arrays)"
+  },
+  {
+    "id": 830,
+    "field": "misclassification",
+    "current": "Same-Direction (Fast/Slow on Arrays)",
+    "suggested": "String Manipulation or Basic Array Operations",
+    "reason": "This problem finds groups of consecutive identical characters and returns their positions. While it uses iteration, it's not leveraging a fast/slow pointer pattern.",
+    "subtopic": "Same-Direction (Fast/Slow on Arrays)"
+  },
+  {
+    "id": 2200,
+    "field": "misclassification",
+    "current": "Same-Direction (Fast/Slow on Arrays)",
+    "suggested": "Array Operations or Brute Force",
+    "reason": "This problem finds all indices k such that |x-y| <= k for given indices. While a two-pointer approach can optimize it, the core problem isn't fundamentally about same-direction fast/slow pointers.",
+    "subtopic": "Same-Direction (Fast/Slow on Arrays)"
+  },
+  {
+    "id": 1095,
+    "field": "misclassification",
+    "current": "Search in Rotated/Modified Array",
+    "suggested": "Binary Search on Answer / Advanced Binary Search",
+    "reason": "Problem 1095 is fundamentally about binary search on the answer (finding the peak in a mountain array), not about searching in rotated sorted arrays. While it uses binary search, the core technique and problem type are distinctly different from the rotated array problems (33, 81, 153, 154) which involve handling rotation discontinuities.",
+    "subtopic": "Search in Rotated/Modified Array"
+  },
+  {
+    "id": 761,
+    "field": "misclassification",
+    "current": "Sorting + Comparison",
+    "suggested": "String Manipulation or Recursion",
+    "reason": "This problem is about parsing and balancing special binary strings with recursive patterns, not fundamentally about sorting or comparison. It doesn't fit the core theme of this subtopic.",
+    "subtopic": "Sorting + Comparison"
+  },
+  {
+    "id": 3491,
+    "field": "misclassification",
+    "current": "Phone Number Prefix",
+    "suggested": "String Matching / Trie",
+    "reason": "This is a phone number prefix matching problem (likely similar to phone directory/autocomplete), not fundamentally about sorting or comparison. It belongs in string matching or trie subtopic.",
+    "subtopic": "Sorting + Comparison"
+  },
+  {
+    "id": 2627,
+    "field": "misclassification",
+    "current": "2627",
+    "suggested": "different subtopic",
+    "reason": "Debounce is a JavaScript/async pattern problem, not a stack-based simulation problem. It doesn't involve stack operations or simulation logic.",
+    "subtopic": "Stack-Based Simulation"
+  },
+  {
+    "id": 2637,
+    "field": "misclassification",
+    "current": "2637",
+    "suggested": "different subtopic",
+    "reason": "Promise Pool is an async concurrency pattern problem in JavaScript, not a stack-based simulation problem.",
+    "subtopic": "Stack-Based Simulation"
+  },
+  {
+    "id": 1195,
+    "field": "misclassification",
+    "current": "1195",
+    "suggested": "different subtopic",
+    "reason": "Fizz Buzz Multithreaded is a multithreading/concurrency problem, not a stack-based simulation problem.",
+    "subtopic": "Stack-Based Simulation"
+  },
+  {
+    "id": 1226,
+    "field": "misclassification",
+    "current": "1226",
+    "suggested": "different subtopic",
+    "reason": "The Dining Philosophers is a classic concurrency/deadlock problem, not a stack-based simulation problem.",
+    "subtopic": "Stack-Based Simulation"
+  },
+  {
+    "id": 2759,
+    "field": "misclassification",
+    "current": "2759",
+    "suggested": "different subtopic",
+    "reason": "Convert JSON String to Object is a parsing problem that could use stacks, but it's fundamentally about JSON parsing and object construction, not stack-based simulation of a process.",
+    "subtopic": "Stack-Based Simulation"
+  },
+  {
+    "id": 68,
+    "field": "misclassification",
+    "current": "68",
+    "suggested": "different subtopic",
+    "reason": "Text Justification is a string formatting problem, not fundamentally a stack-based simulation problem.",
+    "subtopic": "Stack-Based Simulation"
+  },
+  {
+    "id": 222,
+    "field": "misclassification",
+    "current": "Count Complete Tree Nodes",
+    "suggested": "Tree Traversal or Binary Tree subtopic",
+    "reason": "While this problem can be solved with binary search, it's fundamentally a tree problem requiring tree structure knowledge and tree traversal. It doesn't fit naturally in a 'Standard Binary Search' subtopic focused on sorted arrays and sequences.",
+    "subtopic": "Standard Binary Search"
+  },
+  {
+    "id": 3231,
+    "field": "misclassification",
+    "current": "Minimum Number of Increasing Subsequence to Be Removed",
+    "suggested": "Greedy or Dynamic Programming subtopic",
+    "reason": "This problem is about subsequence construction and removal, not binary search. While binary search might be used as an auxiliary technique, the core problem is fundamentally about greedy/DP approaches, not standard binary search.",
+    "subtopic": "Standard Binary Search"
+  },
+  {
+    "id": 3735,
+    "field": "misclassification",
+    "current": "Lexicographically Smallest String After Reverse II",
+    "suggested": "String Manipulation or other subtopic",
+    "reason": "This appears to be a string manipulation problem, not a standard binary search problem. It doesn't belong in a binary search subtopic regardless of whether binary search might be tangentially involved.",
+    "subtopic": "Standard Binary Search"
+  },
+  {
+    "id": 1274,
+    "field": "misclassification",
+    "current": "Number of Ships in a Rectangle",
+    "suggested": "2D Search or Divide and Conquer subtopic",
+    "reason": "This is a 2D geometric problem involving rectangle queries and recursion, not a standard 1D binary search problem on sorted arrays or sequences.",
+    "subtopic": "Standard Binary Search"
+  },
+  {
+    "id": 93,
+    "field": "misclassification",
+    "current": "String Partitioning (Palindrome Partitioning)",
+    "suggested": "IP Address Validation/Parsing",
+    "reason": "Restore IP Addresses is fundamentally about validating and formatting IP addresses through backtracking, not about palindrome partitioning. It doesn't involve checking for palindromes and is only tangentially related to string partitioning.",
+    "subtopic": "String Partitioning (Palindrome Partitioning)"
+  },
+  {
+    "id": 306,
+    "field": "misclassification",
+    "current": "String Partitioning (Palindrome Partitioning)",
+    "suggested": "Numeric Sequences/Additive Sequences",
+    "reason": "Additive Number is about validating numeric additive sequences (like Fibonacci), not about palindrome partitioning. The string partitioning aspect is incidental to the core problem of validating number sequences.",
+    "subtopic": "String Partitioning (Palindrome Partitioning)"
+  },
+  {
+    "id": 291,
+    "field": "misclassification",
+    "current": "String Partitioning (Palindrome Partitioning)",
+    "suggested": "Pattern Matching/String Mapping",
+    "reason": "Word Pattern II is primarily about character-to-word mapping and pattern matching, not palindrome partitioning. It uses backtracking to partition strings, but the core logic is about validating bijective mappings, not palindrome properties.",
+    "subtopic": "String Partitioning (Palindrome Partitioning)"
+  },
+  {
+    "id": 1809,
+    "field": "misclassification",
+    "current": "Sweep Line / Meeting Rooms",
+    "suggested": "Different subtopic",
+    "reason": "Ad-Free Sessions is about interval merging/removal, not sweep line algorithms or meeting room scheduling. While it involves intervals, it doesn't use sweep line technique and doesn't fit the meeting rooms pattern.",
+    "subtopic": "Sweep Line / Meeting Rooms"
+  },
+  {
+    "id": 3268,
+    "field": "misclassification",
+    "current": "Sweep Line / Meeting Rooms",
+    "suggested": "Different subtopic",
+    "reason": "Find Overlapping Shifts II appears to be a specialized shift scheduling problem. With very low importance (0.14) and interview_plausibility (0.1), it seems misclassified in a core sweep line/meeting rooms group which typically covers classic algorithms.",
+    "subtopic": "Sweep Line / Meeting Rooms"
+  },
+  {
+    "id": 3009,
+    "field": "misclassification",
+    "current": "Sweep Line / Meeting Rooms",
+    "suggested": "Different subtopic",
+    "reason": "Maximum Number of Intersections on the Chart is about counting line intersections, not sweep line algorithm for interval scheduling. This is a geometry/counting problem, not a meeting rooms variant.",
+    "subtopic": "Sweep Line / Meeting Rooms"
+  },
+  {
+    "id": 1086,
+    "field": "misclassification",
+    "current": "Top-K Elements",
+    "suggested": "Different subtopic",
+    "reason": "High Five is primarily about grouping and aggregation (finding top 5 scores per student), not about selecting top-k elements. It's more of a data structure/grouping problem than a classic top-k problem.",
+    "subtopic": "Top-K Elements"
+  },
+  {
+    "id": 631,
+    "field": "misclassification",
+    "current": "Topological Sort",
+    "suggested": "System Design / OOP",
+    "reason": "This is primarily a system design problem about implementing Excel formulas with cell references and sum operations. While it involves dependency tracking, it's fundamentally about designing a data structure and API, not about topological sorting as the core algorithmic challenge.",
+    "subtopic": "Topological Sort"
+  },
+  {
+    "id": 913,
+    "field": "misclassification",
+    "current": "Topological Sort",
+    "suggested": "Game Theory / Minimax",
+    "reason": "Cat and Mouse is a game theory problem solved with minimax/dynamic programming on game states, not topological sorting. It involves backward induction through game states, not DAG traversal.",
+    "subtopic": "Topological Sort"
+  },
+  {
+    "id": 1728,
+    "field": "misclassification",
+    "current": "Topological Sort",
+    "suggested": "Game Theory / Minimax",
+    "reason": "Cat and Mouse II is similarly a game theory problem using minimax strategies, not a topological sort problem. The game state transitions don't form a DAG suitable for topological ordering.",
+    "subtopic": "Topological Sort"
+  },
+  {
+    "id": 2630,
+    "field": "misclassification",
+    "current": "Trie Construction / Prefix Search",
+    "suggested": "Function Memoization / Caching",
+    "reason": "Memoize II is about implementing a memoization decorator for functions. It has no connection to Tries, prefix trees, or prefix search. This is a fundamental misclassification.",
+    "subtopic": "Trie Construction / Prefix Search"
+  },
+  {
+    "id": 440,
+    "field": "misclassification",
+    "current": "Trie Construction / Prefix Search",
+    "suggested": "Binary Search / Lexicographical Ordering",
+    "reason": "K-th Smallest in Lexicographical Order is primarily a binary search problem on the lexicographic ordering of numbers. While it may use Trie-like concepts internally, the core problem is not about trie construction or prefix search.",
+    "subtopic": "Trie Construction / Prefix Search"
+  },
+  {
+    "id": 3632,
+    "field": "misclassification",
+    "current": "Trie Construction / Prefix Search",
+    "suggested": "Bit Manipulation / XOR",
+    "reason": "Subarrays with XOR at Least K is a subarray XOR problem, not fundamentally about tries or prefix search. It belongs in bit manipulation/XOR problems.",
+    "subtopic": "Trie Construction / Prefix Search"
+  },
+  {
+    "id": 2479,
+    "field": "misclassification",
+    "current": "Trie Construction / Prefix Search",
+    "suggested": "Tree DP / XOR",
+    "reason": "Maximum XOR of Two Non-Overlapping Subtrees is a tree dynamic programming problem with XOR calculations, not a trie/prefix search problem.",
+    "subtopic": "Trie Construction / Prefix Search"
+  },
+  {
+    "id": 44,
+    "field": "misclassification",
+    "current": "Wildcard Matching",
+    "suggested": "String Pattern Matching / DP",
+    "reason": "Problem 44 is primarily about wildcard pattern matching with '*' and '?' wildcards, not about comparing two sequences for LCS or edit distance. It's more aligned with pattern matching/regex problems (like problem 10) than the core two-sequence comparison problems in this group.",
+    "subtopic": "Two Sequence DP (LCS, Edit distance)"
+  },
+  {
+    "id": 10,
+    "field": "misclassification",
+    "current": "Regular Expression Matching",
+    "suggested": "String Pattern Matching / DP",
+    "reason": "Problem 10 is about regex matching with '.' and '*' metacharacters, not about LCS or edit distance between two sequences. Like problem 44, this is pattern matching rather than sequence comparison and should not be in this subtopic.",
+    "subtopic": "Two Sequence DP (LCS, Edit distance)"
+  },
+  {
+    "id": 2902,
+    "field": "misclassification",
+    "current": "Unbounded Knapsack",
+    "suggested": "Different subtopic",
+    "reason": "This is a combinatorial counting problem on multisets with sum constraints. While it uses DP, it's fundamentally about subset/sub-multiset enumeration, not unbounded knapsack optimization. Should be in a combinatorics or counting subtopic.",
+    "subtopic": "Unbounded Knapsack"
+  },
+  {
+    "id": 1724,
+    "field": "misclassification",
+    "current": "Union-Find",
+    "suggested": "Graph Algorithms or BFS/Dijkstra",
+    "reason": "This problem is about edge-weight-limited path queries, which is fundamentally a graph connectivity problem typically solved with offline Kruskal's + binary search or DFS, not union-find. It's conceptually different from standard union-find applications.",
+    "subtopic": "Union-Find"
+  },
+  {
+    "id": 1632,
+    "field": "misclassification",
+    "current": "Union-Find",
+    "suggested": "Graph Algorithms or Advanced Data Structures",
+    "reason": "Rank Transform of a Matrix is primarily a sorting and rank assignment problem with graph connectivity as a secondary concern. It doesn't primarily rely on union-find as the core technique.",
+    "subtopic": "Union-Find"
+  },
+  {
+    "id": 765,
+    "field": "misclassification",
+    "current": "Union-Find",
+    "suggested": "Graph Algorithms or Cycle Detection",
+    "reason": "Couples Holding Hands is fundamentally a permutation cycle problem better classified under cycle detection or permutation analysis, not union-find. While union-find can be applied, it's not the primary or most natural approach.",
+    "subtopic": "Union-Find"
+  },
+  {
+    "id": 1610,
+    "field": "misclassification",
+    "current": "Variable-Size Window (Expand/Contract)",
+    "suggested": "Different subtopic (Geometry/Angle sorting)",
+    "reason": "This problem requires sorting points by angle and is fundamentally a geometry problem, not a sliding window problem. It doesn't use the expand/contract window technique.",
+    "subtopic": "Variable-Size Window (Expand/Contract)"
+  },
+  {
+    "id": 3023,
+    "field": "misclassification",
+    "current": "Variable-Size Window (Expand/Contract)",
+    "suggested": "Different subtopic (Stream processing/State machine)",
+    "reason": "This is a stream processing problem requiring pattern matching in infinite sequences. It's not a sliding window problem and doesn't use expand/contract techniques.",
+    "subtopic": "Variable-Size Window (Expand/Contract)"
+  },
+  {
+    "id": 3037,
+    "field": "misclassification",
+    "current": "Variable-Size Window (Expand/Contract)",
+    "suggested": "Different subtopic (Stream processing/State machine)",
+    "reason": "Similar to ID 3023, this is a stream pattern matching problem, not a sliding window problem.",
+    "subtopic": "Variable-Size Window (Expand/Contract)"
+  },
+  {
+    "id": 1040,
+    "field": "misclassification",
+    "current": "Variable-Size Window (Expand/Contract)",
+    "suggested": "Different subtopic (Greedy/Math)",
+    "reason": "This problem involves moving stones to form consecutive sequences. It's a math/greedy problem, not fundamentally a sliding window problem.",
+    "subtopic": "Variable-Size Window (Expand/Contract)"
+  },
+  {
+    "id": 683,
+    "field": "misclassification",
+    "current": "Window with Monotonic Deque",
+    "suggested": "Different subtopic",
+    "reason": "K Empty Slots is primarily a problem about finding patterns in binary arrays/sets. While a monotonic deque solution exists, the problem's core concept and typical approaches (sorting + two pointers, or set-based tracking) don't center on monotonic deque patterns like the other two problems do.",
+    "subtopic": "Window with Monotonic Deque"
+  },
+  {
+    "id": 3036,
+    "field": "misclassification",
+    "current": "Word Break / String DP",
+    "suggested": "Pattern Matching / KMP",
+    "reason": "Problem 3036 is fundamentally about pattern matching in arrays using KMP or similar algorithms, not about string DP or word breaking. The title references pattern matching, which is a different algorithmic domain.",
+    "subtopic": "Word Break / String DP"
+  },
+  {
+    "id": 1392,
+    "field": "misclassification",
+    "current": "Word Break / String DP",
+    "suggested": "String Matching / KMP",
+    "reason": "Longest Happy Prefix is a classic KMP/string matching problem (finding the longest prefix that is also a suffix), not a word break/string DP problem. While it uses DP concepts internally (KMP failure function), the core problem category is string matching.",
+    "subtopic": "Word Break / String DP"
+  },
+  {
+    "id": 2223,
+    "field": "misclassification",
+    "current": "Word Break / String DP",
+    "suggested": "String Matching / Z-Algorithm",
+    "reason": "Sum of Scores of Built Strings is primarily a string matching problem that uses the Z-algorithm or KMP, not a word break or general string DP problem. The problem is about computing string matching scores, not about partitioning strings by dictionary or similar DP patterns.",
+    "subtopic": "Word Break / String DP"
+  },
+  {
+    "id": 3031,
+    "field": "misclassification",
+    "current": "Word Break / String DP",
+    "suggested": "String Matching / Hashing",
+    "reason": "Minimum Time to Revert Word to Initial State II is primarily about pattern matching and string comparison, not word break or string DP. It's fundamentally a string matching/rolling hash problem.",
+    "subtopic": "Word Break / String DP"
+  },
+  {
+    "id": 3061,
+    "field": "importance",
+    "current": 0.05,
+    "suggested": 0.7,
+    "reason": "Trapping Rain Water is a classic, very well-known interview problem (appears in many interview prep guides). Importance should be much higher than 0.05.",
+    "subtopic": "Prefix Sums"
+  },
+  {
+    "id": 2494,
+    "field": "importance",
+    "current": 0.15,
+    "suggested": 0.5,
+    "reason": "This is a Hard interval merging problem with event scheduling context. Importance of 0.15 seems significantly undervalued for a Hard problem in this core subtopic.",
+    "subtopic": "Interval Merging"
+  },
+  {
+    "id": 3262,
+    "field": "importance",
+    "current": 0.13,
+    "suggested": 0.45,
+    "reason": "This is a medium difficulty interval merging problem with legitimate real-world application (shift overlap detection). Importance of 0.13 is unusually low for a Medium problem in this subtopic and appears to undervalue the problem's relevance.",
+    "subtopic": "Interval Merging"
+  },
+  {
+    "id": 1810,
+    "field": "importance",
+    "current": 0.45,
+    "suggested": 0.65,
+    "reason": "This is a classic hidden grid problem requiring Dijkstra's with state-space search. It's a well-established problem type with moderate-to-high importance for interviews, not a niche problem. 0.45 is too low.",
+    "subtopic": "Dijkstra's (Weighted Shortest Path)"
+  },
+  {
+    "id": 710,
+    "field": "importance",
+    "current": 0.37,
+    "suggested": 0.55,
+    "reason": "Random Pick with Blacklist is a well-known interview problem that teaches important concepts about rejection sampling and hash mapping for random selection. Importance should be higher.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 716,
+    "field": "importance",
+    "current": 0.48,
+    "suggested": 0.65,
+    "reason": "Max Stack is a direct variant of the classic Min Stack problem (ID 155). It should have comparable importance as it teaches the same core technique with a minor twist. Current score of 0.48 seems too low for a problem that's fundamentally about the same data structure pattern.",
+    "subtopic": "Min/Max Stack"
+  },
+  {
+    "id": 843,
+    "field": "importance",
+    "current": 0.28,
+    "suggested": 0.45,
+    "reason": "Guess the Word is a classic interactive problem that teaches strategic elimination and information theory concepts. It's a solid interview problem with higher importance than current rating.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 499,
+    "field": "importance",
+    "current": 0.42,
+    "suggested": 0.58,
+    "reason": "Hard problem (Maze III) that is a classic extension of a well-known problem. Importance of 0.42 and interview_plausibility of 0.38 are both unusually low for a Hard-tier problem in this category.",
+    "subtopic": "Dijkstra's (Weighted Shortest Path)"
+  },
+  {
+    "id": 481,
+    "field": "importance",
+    "current": 0.19,
+    "suggested": 0.35,
+    "reason": "This is a somewhat known coding problem with algorithmic interest (state machine / counting pattern). An importance of 0.19 seems too low for a LeetCode Medium problem with algorithmic content.",
+    "subtopic": "Same-Direction (Fast/Slow on Arrays)"
+  },
+  {
+    "id": 2367,
+    "field": "importance",
+    "current": 0.3,
+    "suggested": 0.45,
+    "reason": "This is a straightforward application of the two-sum pattern with a fixed difference constraint. While simpler than some problems in the group, it's not trivial enough to warrant importance as low as 0.3, especially compared to similar easy problems like ID 2006 (0.48) and ID 1346 (0.45).",
+    "subtopic": "Complement Search (Two Sum Pattern)"
+  },
+  {
+    "id": 2269,
+    "field": "importance",
+    "current": 0.25,
+    "suggested": 0.4,
+    "reason": "This is a straightforward fixed-size window problem used in teaching and interviews. An importance of 0.25 is too low for a legitimate interview-level problem; it should be closer to the median for this subtopic.",
+    "subtopic": "Fixed-Size Window"
+  },
+  {
+    "id": 3600,
+    "field": "importance",
+    "current": 0.4,
+    "suggested": 0.25,
+    "reason": "This is a niche problem combining upgrades/modifications with MST. It lacks the broad applicability of core MST problems and is more of a specialized variant.",
+    "subtopic": "Minimum Spanning Tree (Prim's / Kruskal's)"
+  },
+  {
+    "id": 425,
+    "field": "importance",
+    "current": 0.45,
+    "suggested": 0.6,
+    "reason": "Word Squares is a classic backtracking + trie problem frequently used in technical interviews. It requires sophisticated pruning strategies and is substantially more important than the score suggests for this subtopic.",
+    "subtopic": "Trie + Backtracking"
+  },
+  {
+    "id": 3620,
+    "field": "importance",
+    "current": 0.48,
+    "suggested": 0.62,
+    "reason": "A Hard problem with decent company coverage (F=0.4, Q=0.45). Importance of 0.48 is unusually low for a Hard-difficulty Dijkstra problem. Should be closer to the median Hard problem importance (~0.60+).",
+    "subtopic": "Dijkstra's (Weighted Shortest Path)"
+  },
+  {
+    "id": 2202,
+    "field": "importance",
+    "current": 0.33,
+    "suggested": 0.2,
+    "reason": "This is a niche simulation problem with very limited real-world applicability or interview relevance. The low interview_plausibility (0.42) and low practical importance suggest it should be rated even lower.",
+    "subtopic": "General Greedy (Greedy is main insight)"
+  },
+  {
+    "id": 1489,
+    "field": "importance",
+    "current": 0.62,
+    "suggested": 0.75,
+    "reason": "Finding critical and pseudo-critical edges in MST is a classic and important problem that tests deep understanding of MST properties. It's more fundamental than the current score suggests.",
+    "subtopic": "Minimum Spanning Tree (Prim's / Kruskal's)"
+  },
+  {
+    "id": 1467,
+    "field": "importance",
+    "current": 0.22,
+    "suggested": 0.35,
+    "reason": "This is a classic hard combinatorics problem requiring backtracking with pruning to count valid distributions. It's more important than the current score suggests for understanding complex counting problems.",
+    "subtopic": "Combinatorics"
+  },
+  {
+    "id": 1351,
+    "field": "importance",
+    "current": 0.38,
+    "suggested": 0.5,
+    "reason": "A straightforward binary search on matrix problem that teaches fundamental concepts. 0.38 seems undervalued for a problem that clearly demonstrates the subtopic application, even if it's easier than others in the group.",
+    "subtopic": "Binary Search on Matrix"
+  },
+  {
+    "id": 1062,
+    "field": "importance",
+    "current": 0.47,
+    "suggested": 0.58,
+    "reason": "Longest Repeating Substring with rolling hash is a classic interview pattern combining string algorithms with binary search, more important than the current score suggests.",
+    "subtopic": "Binary Search on Answer Space"
+  },
+  {
+    "id": 1886,
+    "field": "importance",
+    "current": 0.45,
+    "suggested": 0.55,
+    "reason": "Problem involves matrix rotation operations which is core to this subtopic. Despite being labeled Easy on LC, its difficulty score (1407.06) is highest in the group and requires understanding of rotation mechanics. Importance should reflect its conceptual weight in the subtopic.",
+    "subtopic": "Matrix Math (Rotation, Transpose)"
+  },
+  {
+    "id": 550,
+    "field": "importance",
+    "current": 0.22,
+    "suggested": 0.12,
+    "reason": "Game Play Analysis IV is a database/SQL problem with limited algorithmic importance for interviews; importance seems inflated relative to similar SQL problems in this group.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 1941,
+    "field": "importance",
+    "current": 0.28,
+    "suggested": 0.35,
+    "reason": "This is a classic interview problem testing character frequency counting and equality checking - importance should be higher.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 2402,
+    "field": "importance",
+    "current": 0.82,
+    "suggested": 0.75,
+    "reason": "While solid, this is a simulation problem with high interview_plausibility (0.78), but importance of 0.82 seems slightly elevated for a problem that's primarily about simulation logistics rather than core algorithmic insight.",
+    "subtopic": "Heap Simulation"
+  },
+  {
+    "id": 767,
+    "field": "importance",
+    "current": 0.8,
+    "suggested": 0.75,
+    "reason": "Reorganize String is a well-known interview problem (0.85 interview_plausibility), but importance of 0.8 is slightly high for a pattern that's primarily a greedy heap application without deep algorithmic fundamentals.",
+    "subtopic": "Heap Simulation"
+  },
+  {
+    "id": 277,
+    "field": "interview_plausibility",
+    "current": 0.82,
+    "suggested": 0.55,
+    "reason": "Find the Celebrity is more of a system design / interview observation problem than a pure greedy algorithmic problem. Interview plausibility seems inflated for a problem primarily testing clever observation (linear scan approach) rather than greedy strategy.",
+    "subtopic": "General Greedy (Greedy is main insight)"
+  },
+  {
+    "id": 1782,
+    "field": "interview_plausibility",
+    "current": 0.22,
+    "suggested": 0.45,
+    "reason": "Count Pairs Of Nodes is a hard problem testing two-pointer and graph understanding. Interview plausibility of 0.22 is suspiciously low for a hard problem in this category; it should be significantly higher even if less common than others.",
+    "subtopic": "Opposite-Direction (Converging)"
+  },
+  {
+    "id": 3808,
+    "field": "interview_plausibility",
+    "current": 0.12,
+    "suggested": 0.35,
+    "reason": "Finding emotionally consistent users is a hash map/frequency counting problem. Interview plausibility of 0.12 is too low for this problem type; should be in the 0.3-0.4 range like similar medium problems.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 3716,
+    "field": "interview_plausibility",
+    "current": 0.12,
+    "suggested": 0.35,
+    "reason": "Finding churn risk customers is a hash map filtering problem. Interview plausibility of 0.12 is inconsistently low for a medium difficulty problem in this subtopic.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 3569,
+    "field": "interview_plausibility",
+    "current": 0.12,
+    "suggested": 0.35,
+    "reason": "Hard problem (Diff:2697.38) with importance 0.28 and quizzing score 0.3 has interview_plausibility of only 0.12, which is suspiciously low for a hard problem in this subtopic. Even niche hard problems typically score 0.25+.",
+    "subtopic": "Primes / Sieve of Eratosthenes"
+  },
+  {
+    "id": 1819,
+    "field": "interview_plausibility",
+    "current": 0.18,
+    "suggested": 0.4,
+    "reason": "Number of Different Subsequences GCDs is a well-known hard problem combining subsequences with GCD. 0.18 is too low; this type of problem appears in technical interviews regularly.",
+    "subtopic": "GCD / LCM"
+  },
+  {
+    "id": 1377,
+    "field": "interview_plausibility",
+    "current": 0.55,
+    "suggested": 0.35,
+    "reason": "This is a probability/simulation problem on a tree that requires careful reasoning about random walks. It's less commonly asked in interviews compared to standard BFS tree problems, and the mechanics are quite specialized.",
+    "subtopic": "BFS / Level-Order Traversal"
+  },
+  {
+    "id": 2272,
+    "field": "interview_plausibility",
+    "current": 0.35,
+    "suggested": 0.55,
+    "reason": "This is a well-known hard Kadane's variant problem that appears in interviews. Interview_plausibility of 0.35 is too low for a classic algorithmic problem at this difficulty level. Company scores (F=0.45, Q=0.55) suggest moderate interview relevance.",
+    "subtopic": "Kadane's Algorithm (Max Subarray)"
+  },
+  {
+    "id": 1786,
+    "field": "interview_plausibility",
+    "current": 0.42,
+    "suggested": 0.62,
+    "reason": "This is a Medium-difficulty Dijkstra problem with reasonable importance (0.62). Interview plausibility of 0.42 is notably lower than similar problems in the group, suggesting underestimation.",
+    "subtopic": "Dijkstra's (Weighted Shortest Path)"
+  },
+  {
+    "id": 2674,
+    "field": "interview_plausibility",
+    "current": 0.65,
+    "suggested": 0.45,
+    "reason": "Splitting a circular linked list is a niche problem that rarely appears in interviews compared to classic fast/slow pointer problems. The interview plausibility seems inflated.",
+    "subtopic": "Fast/Slow Pointers (Cycle, Middle)"
+  },
+  {
+    "id": 3642,
+    "field": "interview_plausibility",
+    "current": 0.05,
+    "suggested": 0.25,
+    "reason": "Problem involves finding books with polarized opinions using frequency counting. This is a reasonable interview problem testing hash map usage and filtering logic, not something with 0.05 plausibility.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 1250,
+    "field": "interview_plausibility",
+    "current": 0.3,
+    "suggested": 0.5,
+    "reason": "Check If It Is a Good Array is a classic number theory problem (B\u00e9zout's identity / Chicken McNugget theorem) commonly asked in interviews. Interview plausibility of 0.3 is too low for such a well-known algorithmic concept.",
+    "subtopic": "GCD / LCM"
+  },
+  {
+    "id": 3806,
+    "field": "interview_plausibility",
+    "current": 0.3,
+    "suggested": 0.5,
+    "reason": "Hard difficulty problem with greedy insight on bitwise operations is more likely to appear in interviews than 0.3 suggests. The problem involves greedy choice of increment operations, which is a legitimate interview topic.",
+    "subtopic": "General Greedy (Greedy is main insight)"
+  },
+  {
+    "id": 2407,
+    "field": "interview_plausibility",
+    "current": 0.3,
+    "suggested": 0.5,
+    "reason": "A hard LIS variant with constraint on value ranges. Despite being a contest problem, it's a legitimate LIS extension and should have higher interview plausibility as it tests both LIS understanding and optimization techniques (segment tree/BIT).",
+    "subtopic": "Longest Increasing Subsequence"
+  },
+  {
+    "id": 3657,
+    "field": "interview_plausibility",
+    "current": 0.15,
+    "suggested": 0.35,
+    "reason": "Finding loyal customers likely involves frequency/hash map analysis. With importance at 0.12, interview plausibility of 0.15 seems reasonable, but the problem type suggests it should be slightly higher for a frequency-counting interview scenario.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 3705,
+    "field": "interview_plausibility",
+    "current": 0.15,
+    "suggested": 0.35,
+    "reason": "Finding golden hour customers uses frequency counting. Interview plausibility of 0.15 is too low; similar medium difficulty frequency problems in this group range from 0.35-0.65.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 481,
+    "field": "interview_plausibility",
+    "current": 0.22,
+    "suggested": 0.42,
+    "reason": "While niche, this problem tests interesting pattern recognition and state tracking. 0.22 is too low; it should be closer to other Medium problems in the group.",
+    "subtopic": "Same-Direction (Fast/Slow on Arrays)"
+  },
+  {
+    "id": 3764,
+    "field": "interview_plausibility",
+    "current": 0.15,
+    "suggested": 0.35,
+    "reason": "A Hard problem about finding common course pairs with importance 0.25 should have higher interview plausibility. 0.15 is too low for this difficulty level.",
+    "subtopic": "Sorting + Comparison"
+  },
+  {
+    "id": 1634,
+    "field": "interview_plausibility",
+    "current": 0.6,
+    "suggested": 0.4,
+    "reason": "Adding polynomials represented as linked lists is a niche problem with very low interview frequency. While it involves linked list operations, it's a specialized mathematical problem that rarely appears in interviews.",
+    "subtopic": "Merge Linked Lists"
+  },
+  {
+    "id": 644,
+    "field": "interview_plausibility",
+    "current": 0.3,
+    "suggested": 0.48,
+    "reason": "Maximum Average Subarray II is a well-known binary search optimization problem frequently asked in technical interviews. 0.3 seems too low for a classic interview problem.",
+    "subtopic": "Binary Search on Answer Space"
+  },
+  {
+    "id": 882,
+    "field": "interview_plausibility",
+    "current": 0.32,
+    "suggested": 0.5,
+    "reason": "A Hard problem with moderate importance (0.53). Interview plausibility of 0.32 is unusually low for this tier, especially compared to other Hard problems in the group with similar difficulty ranges.",
+    "subtopic": "Dijkstra's (Weighted Shortest Path)"
+  },
+  {
+    "id": 3673,
+    "field": "interview_plausibility",
+    "current": 0.12,
+    "suggested": 0.3,
+    "reason": "Finding zombie sessions is a hard difficulty frequency counting problem. Interview plausibility of 0.12 is too low for a hard problem; should be at least 0.25-0.35.",
+    "subtopic": "Frequency Counting / Hash Map Lookup"
+  },
+  {
+    "id": 30,
+    "field": "interview_plausibility",
+    "current": 0.42,
+    "suggested": 0.6,
+    "reason": "Substring with Concatenation of All Words is a well-known interview problem with sliding window technique. Should have higher interview plausibility.",
+    "subtopic": "Variable-Size Window (Expand/Contract)"
+  },
+  {
+    "id": 2203,
+    "field": "interview_plausibility",
+    "current": 0.38,
+    "suggested": 0.55,
+    "reason": "Hard problem with importance 0.62, but interview plausibility of only 0.38 seems inconsistent. For a problem rated this important, interview likelihood should be higher.",
+    "subtopic": "Dijkstra's (Weighted Shortest Path)"
+  },
+  {
+    "id": 807,
+    "field": "interview_plausibility",
+    "current": 0.52,
+    "suggested": 0.35,
+    "reason": "Max Increase to Keep City Skyline is an obscure constraint problem with minimal interview relevance. The greedy insight is straightforward but the problem is rarely asked in interviews.",
+    "subtopic": "General Greedy (Greedy is main insight)"
+  },
+  {
+    "id": 639,
+    "field": "interview_plausibility",
+    "current": 0.35,
+    "suggested": 0.52,
+    "reason": "Decode Ways II is a natural follow-up to the classic Decode Ways (0.87) and should have much higher interview plausibility than 0.35. The large gap is unjustified.",
+    "subtopic": "Linear Recurrence DP"
+  },
+  {
+    "id": 1473,
+    "field": "interview_plausibility",
+    "current": 0.38,
+    "suggested": 0.55,
+    "reason": "Paint House III is the logical progression of Paint House (0.85) and Paint House II (0.68). An interview_plausibility of 0.38 is inconsistent with the series and too low for this problem type.",
+    "subtopic": "Linear Recurrence DP"
+  },
+  {
+    "id": 2812,
+    "field": "interview_plausibility",
+    "current": 0.48,
+    "suggested": 0.65,
+    "reason": "This is a classic multi-source BFS problem (finding safest path via binary search + BFS) that appears in technical interviews. The plausibility should be higher given it's a well-known interview pattern.",
+    "subtopic": "Multi-Source BFS"
+  },
+  {
+    "id": 1755,
+    "field": "interview_plausibility",
+    "current": 0.38,
+    "suggested": 0.55,
+    "reason": "Closest Subsequence Sum is a classic hard two-pointer problem that appears frequently in interviews. Interview plausibility of 0.38 seems too low for a well-known LeetCode hard problem testing fundamental two-pointer + meet-in-middle techniques.",
+    "subtopic": "Opposite-Direction (Converging)"
+  },
+  {
+    "id": 2426,
+    "field": "interview_plausibility",
+    "current": 0.38,
+    "suggested": 0.55,
+    "reason": "This is a classic counting inversions variant (similar to reverse pairs). Interview problems involving counting relationships in sorted arrays are well-established interview questions with much higher interview likelihood than 0.38.",
+    "subtopic": "Sorting + Comparison"
+  },
+  {
+    "id": 1449,
+    "field": "interview_plausibility",
+    "current": 0.38,
+    "suggested": 0.55,
+    "reason": "This is a classic unbounded knapsack problem with a greedy component. Despite being Hard difficulty, it's a solid interview problem with moderate interview relevance, not as low as 0.38.",
+    "subtopic": "Unbounded Knapsack"
+  },
+  {
+    "id": 3362,
+    "field": "interview_plausibility",
+    "current": 0.32,
+    "suggested": 0.15,
+    "reason": "Problem 3362 'Zero Array Transformation III' has an interview_plausibility of 0.32 but a very high difficulty (2423.86) and medium importance (0.55), suggesting this is a niche/specialized problem unlikely to appear in interviews despite its relevance as a greedy problem. The score seems inflated given the context.",
+    "subtopic": "General Greedy (Greedy is main insight)"
+  },
+  {
+    "id": 126,
+    "field": "interview_plausibility",
+    "current": 0.28,
+    "suggested": 0.45,
+    "reason": "Word Ladder II is a classic interview problem at major tech companies (Google, Facebook, Amazon). Interview plausibility of 0.28 is too low for such a well-known problem.",
+    "subtopic": "BFS Shortest Path (Unweighted)"
+  },
+  {
+    "id": 2941,
+    "field": "interview_plausibility",
+    "current": 0.18,
+    "suggested": 0.35,
+    "reason": "Maximum GCD-Sum of a Subarray combines GCD computation with subarray optimization, a reasonable interview pattern. 0.18 seems too low for a medium-hard problem with solid algorithmic content.",
+    "subtopic": "GCD / LCM"
+  },
+  {
+    "id": 3312,
+    "field": "interview_plausibility",
+    "current": 0.18,
+    "suggested": 0.35,
+    "reason": "Hard problem involving GCD pair queries. Interview plausibility of 0.18 is suspiciously low for a hard-difficulty problem with substantial algorithmic content.",
+    "subtopic": "GCD / LCM"
+  },
+  {
+    "id": 625,
+    "field": "interview_plausibility",
+    "current": 0.42,
+    "suggested": 0.25,
+    "reason": "Minimum Factorization is a rarely-seen problem with limited real-world application and very low interview likelihood.",
+    "subtopic": "General Greedy (Greedy is main insight)"
+  },
+  {
+    "id": 552,
+    "field": "interview_plausibility",
+    "current": 0.45,
+    "suggested": 0.62,
+    "reason": "Student Attendance Record II is a well-known state machine DP problem often used in interviews. The score is notably lower than similar state-based DP problems in this group.",
+    "subtopic": "Linear Recurrence DP"
+  },
+  {
+    "id": 3197,
+    "field": "interview_plausibility",
+    "current": 0.18,
+    "suggested": 0.35,
+    "reason": "A hard problem with relatively high importance (0.28) should have higher interview plausibility. This is a complex optimization problem that tests significant algorithmic thinking.",
+    "subtopic": "Matrix Traversal (Diagonal, Valid Sudoku, etc)"
+  },
+  {
+    "id": 2818,
+    "field": "interview_plausibility",
+    "current": 0.18,
+    "suggested": 0.35,
+    "reason": "This is a hard LeetCode problem that combines monotonic stack with a number theory concept (coprime optimization). While niche, it's a legitimate interview problem with non-trivial application of monotonic stack reasoning. 0.18 seems too low for a problem at this difficulty level with substantive algorithmic content.",
+    "subtopic": "Monotonic Stack"
+  },
+  {
+    "id": 3322,
+    "field": "interview_plausibility",
+    "current": 0.08,
+    "suggested": 0.25,
+    "reason": "Premier League table ranking is a classic sorting/ranking problem with real-world context. Interview plausibility of 0.08 is suspiciously low for a medium problem with reasonable importance (0.1). Should be higher.",
+    "subtopic": "Sorting + Comparison"
+  },
+  {
+    "id": 3072,
+    "field": "interview_plausibility",
+    "current": 0.28,
+    "suggested": 0.45,
+    "reason": "A Hard problem with importance 0.34 should have significantly higher interview plausibility. 0.28 is inconsistent with the difficulty and importance level.",
+    "subtopic": "Sorting + Comparison"
+  },
+  {
+    "id": 1721,
+    "field": "interview_plausibility",
+    "current": 0.72,
+    "suggested": 0.55,
+    "reason": "Swapping nodes in a linked list is a less common interview question compared to core fast/slow pointer problems like cycle detection or finding the middle. The high interview plausibility seems overstated for this specific problem.",
+    "subtopic": "Fast/Slow Pointers (Cycle, Middle)"
+  },
+  {
+    "id": 877,
+    "field": "interview_plausibility",
+    "current": 0.55,
+    "suggested": 0.72,
+    "reason": "Stone Game is a classic game theory DP problem frequently asked in interviews. The interview_plausibility is significantly lower than similar game DP problems (e.g., 486 at 0.72, 1406 at 0.62).",
+    "subtopic": "Linear Recurrence DP"
+  },
+  {
+    "id": 188,
+    "field": "interview_plausibility",
+    "current": 0.52,
+    "suggested": 0.68,
+    "reason": "Best Time to Buy and Sell Stock IV is the hard variant of a classic interview series. It should have higher interview_plausibility, comparable to problem 123 (0.72) and problem 309 (0.8).",
+    "subtopic": "Linear Recurrence DP"
+  },
+  {
+    "id": 2071,
+    "field": "interview_plausibility",
+    "current": 0.22,
+    "suggested": 0.38,
+    "reason": "Maximum Number of Tasks combines binary search with sorting/greedy, a classic interview technique. Score of 0.22 is too low for this problem type.",
+    "subtopic": "Binary Search on Answer Space"
+  },
+  {
+    "id": 3681,
+    "field": "interview_plausibility",
+    "current": 0.3,
+    "suggested": 0.45,
+    "reason": "Maximum XOR of Subsequences is a classic bit manipulation problem testing Gaussian elimination on XOR basis, a well-known interview topic. Interview score of 0.3 is too low for this fundamental concept.",
+    "subtopic": "General Bit Manipulation"
+  },
+  {
+    "id": 1622,
+    "field": "interview_plausibility",
+    "current": 0.3,
+    "suggested": 0.45,
+    "reason": "This is a well-known hard problem combining modular arithmetic with segment trees/fenwick trees. It's a legitimate interview problem for senior positions, and the current score seems underestimated.",
+    "subtopic": "Modular Arithmetic"
+  },
+  {
+    "id": 2584,
+    "field": "interview_plausibility",
+    "current": 0.35,
+    "suggested": 0.5,
+    "reason": "Hard problem with importance 0.38 and strong quizzing score (0.5) should have higher interview plausibility. Hard problems with this profile are typically interview-relevant.",
+    "subtopic": "Primes / Sieve of Eratosthenes"
+  },
+  {
+    "id": 2528,
+    "field": "interview_plausibility",
+    "current": 0.48,
+    "suggested": 0.62,
+    "reason": "Maximize the Minimum Powered City combines binary search with greedy validation, a solid interview pattern. Current score seems low relative to similar problems in this category.",
+    "subtopic": "Binary Search on Answer Space"
+  },
+  {
+    "id": 1505,
+    "field": "interview_plausibility",
+    "current": 0.22,
+    "suggested": 0.08,
+    "reason": "Minimum Possible Integer After Swaps is an extremely niche problem with very low interview plausibility. The score of 0.22 is still too high.",
+    "subtopic": "General Greedy (Greedy is main insight)"
+  },
+  {
+    "id": 834,
+    "field": "interview_plausibility",
+    "current": 0.42,
+    "suggested": 0.55,
+    "reason": "Sum of Distances in Tree is a classic tree problem appearing in major interviews (Google, Meta, etc.). Interview plausibility of 0.42 is too low for such a well-known problem.",
+    "subtopic": "DFS Traversal (Inorder, Preorder, Postorder)"
+  },
+  {
+    "id": 351,
+    "field": "interview_plausibility",
+    "current": 0.42,
+    "suggested": 0.55,
+    "reason": "Android Unlock Patterns is a classic backtracking problem that appears frequently in interviews. Despite lower importance, it's a well-known problem with clear backtracking patterns that interviewers favor.",
+    "subtopic": "Path Finding with Backtracking"
+  },
+  {
+    "id": 995,
+    "field": "interview_plausibility",
+    "current": 0.42,
+    "suggested": 0.55,
+    "reason": "This is a classic bit manipulation + sliding window problem that appears frequently in interviews. Interview plausibility should be higher.",
+    "subtopic": "Variable-Size Window (Expand/Contract)"
+  },
+  {
+    "id": 1815,
+    "field": "interview_plausibility",
+    "current": 0.12,
+    "suggested": 0.25,
+    "reason": "This is a classic bitmask DP problem on modular arithmetic that appears frequently in interviews. Interview probability of 0.12 is too low for a well-known LeetCode Hard with this problem type.",
+    "subtopic": "Bitmask DP"
+  },
+  {
+    "id": 1467,
+    "field": "interview_plausibility",
+    "current": 0.12,
+    "suggested": 0.25,
+    "reason": "While very hard, this is a legitimate interview problem testing deep combinatorics and backtracking skills. Score of 0.12 is too low for a problem of this caliber.",
+    "subtopic": "Combinatorics"
+  },
+  {
+    "id": 1520,
+    "field": "interview_plausibility",
+    "current": 0.18,
+    "suggested": 0.05,
+    "reason": "Maximum Number of Non-Overlapping Substrings is an obscure hard problem with minimal interview likelihood.",
+    "subtopic": "General Greedy (Greedy is main insight)"
+  },
+  {
+    "id": 1851,
+    "field": "interview_plausibility",
+    "current": 0.62,
+    "suggested": 0.75,
+    "reason": "This is a classic hard problem combining sorting/binary search with heap simulation. High importance (0.88) and strong fundamentals (Q=0.55, F=0.72) suggest it should have higher interview_plausibility, especially given it's a well-known interview question pattern.",
+    "subtopic": "Heap Simulation"
+  },
+  {
+    "id": 2921,
+    "field": "interview_plausibility",
+    "current": 0.22,
+    "suggested": 0.35,
+    "reason": "Hard problem involving triplet selection with LIS-like constraints. While niche, it tests similar logic to LIS problems and should have slightly higher interview plausibility than current score suggests.",
+    "subtopic": "Longest Increasing Subsequence"
+  },
+  {
+    "id": 805,
+    "field": "interview_plausibility",
+    "current": 0.38,
+    "suggested": 0.5,
+    "reason": "Split Array With Same Average is a classic interview problem (appears frequently in FAANG interviews). 0.38 seems too low for a well-known interview question.",
+    "subtopic": "0/1 Knapsack"
+  },
+  {
+    "id": 1649,
+    "field": "interview_plausibility",
+    "current": 0.32,
+    "suggested": 0.2,
+    "reason": "A complex competitive programming problem combining binary search with range update structure. The relatively low importance (0.48) and specialized nature suggest lower interview likelihood.",
+    "subtopic": "Boundary Finding (Bisect Left/Right)"
+  },
+  {
+    "id": 3752,
+    "field": "interview_plausibility",
+    "current": 0.45,
+    "suggested": 0.55,
+    "reason": "Medium difficulty greedy problem about constructing a negated permutation should have higher interview plausibility. The problem involves greedy construction choices which are common interview patterns.",
+    "subtopic": "General Greedy (Greedy is main insight)"
+  },
+  {
+    "id": 1157,
+    "field": "interview_plausibility",
+    "current": 0.25,
+    "suggested": 0.15,
+    "reason": "An extremely niche problem combining majority element queries with subarray constraints and binary search. The low importance (0.28) suggests this is not a typical interview problem, and interview_plausibility should be lower.",
+    "subtopic": "Boundary Finding (Bisect Left/Right)"
+  },
+  {
+    "id": 3529,
+    "field": "interview_plausibility",
+    "current": 0.25,
+    "suggested": 0.15,
+    "reason": "A niche string-counting problem with very low interview relevance given its specificity and lack of foundational concepts.",
+    "subtopic": "Matrix Traversal (Diagonal, Valid Sudoku, etc)"
+  },
+  {
+    "id": 3594,
+    "field": "interview_plausibility",
+    "current": 0.08,
+    "suggested": 0.18,
+    "reason": "While more niche, this is a legitimate bitmask DP optimization problem. Interview probability of 0.08 seems underestimated for a Hard difficulty problem in this category.",
+    "subtopic": "Bitmask DP"
+  },
+  {
+    "id": 2542,
+    "field": "interview_plausibility",
+    "current": 0.72,
+    "suggested": 0.82,
+    "reason": "Maximum Subsequence Score is a well-known interview problem combining sorting, greedy, and heap concepts. It's more challenging and commonly asked than the score reflects, given its difficulty rating of 2056 and importance of 0.78.",
+    "subtopic": "Top-K Elements"
+  },
+  {
+    "id": 1659,
+    "field": "interview_plausibility",
+    "current": 0.08,
+    "suggested": 0.15,
+    "reason": "Despite high difficulty, this is a grid optimization problem with bitmask DP. Interview probability of 0.08 is too low; should be slightly higher given it's a legitimate interview-style optimization problem.",
+    "subtopic": "Bitmask DP"
+  },
+  {
+    "id": 420,
+    "field": "interview_plausibility",
+    "current": 0.12,
+    "suggested": 0.05,
+    "reason": "Strong Password Checker is notoriously complex and rarely asked despite being a classic LeetCode problem. Interview plausibility should be lower.",
+    "subtopic": "General Greedy (Greedy is main insight)"
+  }
+]
