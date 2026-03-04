@@ -1,0 +1,380 @@
+
+======================================================================
+Q1: Topic: Arrays & Hashing. Primary subtopic: Prefix Sums. Secondary subtopics: none.
+======================================================================
+  1.000 | Find Cumulative Salary of an Employee
+         topic: Arrays & Hashing > Prefix Sums | sec: none
+         diff: medium-easy (1478) | imp: negligible (0.09)
+  1.000 | Distance Between Bus Stops
+         topic: Arrays & Hashing > Prefix Sums | sec: none
+         diff: easy (1234.41) | imp: below average (0.35)
+  1.000 | Replace Elements with Greatest Element on Right Side
+         topic: Arrays & Hashing > Prefix Sums | sec: none
+         diff: easy (1219.43) | imp: low (0.25)
+  1.000 | Running Sum of 1d Array
+         topic: Arrays & Hashing > Prefix Sums | sec: none
+         diff: very easy (1104.74) | imp: high (0.72)
+  1.000 | Zero Array Transformation I
+         topic: Arrays & Hashing > Prefix Sums | sec: none
+         diff: medium (1591.45) | imp: high (0.72)
+
+======================================================================
+Q2: Topic: Stack. Primary subtopic: Monotonic Stack. Secondary subtopics: none.
+======================================================================
+  1.000 | Largest Rectangle in Histogram
+         topic: Stack > Monotonic Stack | sec: none
+         diff: hard (1886) | imp: essential (0.92)
+  1.000 | Maximal Range That Each Element Is Maximum in It
+         topic: Stack > Monotonic Stack | sec: none
+         diff: medium (1578) | imp: high (0.72)
+  1.000 | Buildings With an Ocean View
+         topic: Stack > Monotonic Stack | sec: none
+         diff: easy (1318) | imp: above average (0.58)
+  0.999 | Number of Visible People in a Queue
+         topic: Stack > Monotonic Stack | sec: none
+         diff: very hard (2104.95) | imp: high (0.72)
+  0.999 | Daily Temperatures
+         topic: Stack > Monotonic Stack | sec: none
+         diff: medium-easy (1370) | imp: essential (0.91)
+
+======================================================================
+Q3: Topic: Greedy. Primary subtopic: General Greedy (Greedy is main insight). Secondary subtopics: none.
+======================================================================
+  1.000 | Decrease Elements To Make Array Zigzag
+         topic: Greedy > General Greedy (Greedy is main insight) | sec: none
+         diff: medium (1558.72) | imp: moderate (0.4)
+  1.000 | Smallest String With A Given Numeric Value
+         topic: Greedy > General Greedy (Greedy is main insight) | sec: none
+         diff: medium-easy (1460.59) | imp: above average (0.52)
+  1.000 | Latest Time You Can Obtain After Replacing Characters
+         topic: Greedy > General Greedy (Greedy is main insight) | sec: none
+         diff: easy (1290.85) | imp: low (0.22)
+  1.000 | Minimum Number of Changes to Make Binary String Beautiful
+         topic: Greedy > General Greedy (Greedy is main insight) | sec: none
+         diff: medium-easy (1479.69) | imp: moderate (0.47)
+  1.000 | Candy
+         topic: Greedy > General Greedy (Greedy is main insight) | sec: none
+         diff: medium-hard (1700) | imp: high (0.78)
+
+======================================================================
+Q4: Topic: Core DP. Primary subtopic: Grid Path Problems. Secondary subtopics: DFS Path Finding.
+======================================================================
+  0.925 | Disconnect Path in a Binary Matrix by at Most One Flip
+         topic: Core DP > Grid Path Problems | sec: DFS Path Finding, General Greedy (Greedy is main insight)
+         diff: extremely hard (2368.67) | imp: moderate (0.42)
+  0.922 | Cherry Pickup II
+         topic: Core DP > Grid Path Problems | sec: none
+         diff: hard (1956.71) | imp: fairly high (0.67)
+  0.922 | Knight Probability in Chessboard
+         topic: Core DP > Grid Path Problems | sec: none
+         diff: medium (1538) | imp: above average (0.58)
+  0.922 | Minimum Falling Path Sum II
+         topic: Core DP > Grid Path Problems | sec: none
+         diff: medium-hard (1697.24) | imp: fairly high (0.63)
+  0.922 | Triangle
+         topic: Core DP > Grid Path Problems | sec: none
+         diff: easy (1324) | imp: high (0.76)
+
+======================================================================
+Q5: Topic: Graphs. Primary subtopic: BFS Shortest Path (Unweighted). Secondary subtopics: DFS Connected Components.
+======================================================================
+  1.000 | Shortest Cycle in a Graph
+         topic: Graphs > BFS Shortest Path (Unweighted) | sec: DFS Connected Components
+         diff: hard (1904.23) | imp: fairly high (0.62)
+  0.976 | Reorder Routes to Make All Paths Lead to the City Zero
+         topic: Graphs > DFS Connected Components | sec: BFS Shortest Path (Unweighted)
+         diff: medium (1633.62) | imp: fairly high (0.68)
+  0.976 | Keys and Rooms
+         topic: Graphs > DFS Connected Components | sec: BFS Shortest Path (Unweighted)
+         diff: medium-easy (1412.28) | imp: fairly high (0.62)
+  0.976 | Flood Fill
+         topic: Graphs > DFS Connected Components | sec: BFS Shortest Path (Unweighted)
+         diff: very easy (1087) | imp: very high (0.82)
+  0.976 | Remove Methods From Project
+         topic: Graphs > DFS Connected Components | sec: BFS Shortest Path (Unweighted)
+         diff: medium-hard (1710.52) | imp: above average (0.55)
+
+======================================================================
+Q6: Topic: Linked List. Primary subtopic: Reversal (Full and Partial). Secondary subtopics: Merge Linked Lists.
+======================================================================
+  1.000 | Design Linked List
+         topic: Linked List > Reversal (Full and Partial) | sec: Merge Linked Lists
+         diff: easy (1312) | imp: above average (0.58)
+  0.970 | Design Front Middle Back Queue
+         topic: Linked List > Merge Linked Lists | sec: Reversal (Full and Partial)
+         diff: medium (1610.19) | imp: below average (0.38)
+  0.955 | Split Linked List in Parts
+         topic: Linked List > Reversal (Full and Partial) | sec: General Math, Merge Linked Lists
+         diff: easy (1326) | imp: moderate (0.45)
+  0.953 | Reorder List
+         topic: Linked List > Reversal (Full and Partial) | sec: Fast/Slow Pointers (Cycle, Middle), Merge Linked Lists
+         diff: medium-easy (1487) | imp: very high (0.85)
+  0.923 | Delete Node in a Linked List
+         topic: Linked List > Reversal (Full and Partial) | sec: none
+         diff: very easy (1148) | imp: below average (0.3)
+
+======================================================================
+Q7: Topic: Trees. Primary subtopic: BST Operations (Insert, Delete, Validate). Secondary subtopics: DFS Traversal (Inorder, Preorder, Postorder), Frequency Counting / Hash Map Lookup.
+======================================================================
+  0.993 | Merge BSTs to Create Single BST
+         topic: Trees > BST Operations (Insert, Delete, Validate) | sec: Frequency Counting / Hash Map Lookup, DFS Traversal (Inorder, Preorder, Postorder)
+         diff: extremely hard (2483.94) | imp: low (0.28)
+  0.972 | Find Mode in Binary Search Tree
+         topic: Trees > DFS Traversal (Inorder, Preorder, Postorder) | sec: BST Operations (Insert, Delete, Validate), Frequency Counting / Hash Map Lookup
+         diff: easy (1287) | imp: moderate (0.42)
+  0.936 | Inorder Successor in BST
+         topic: Trees > BST Operations (Insert, Delete, Validate) | sec: DFS Traversal (Inorder, Preorder, Postorder)
+         diff: medium-easy (1378) | imp: high (0.71)
+  0.936 | Validate Binary Search Tree
+         topic: Trees > BST Operations (Insert, Delete, Validate) | sec: DFS Traversal (Inorder, Preorder, Postorder)
+         diff: easy (1342) | imp: essential (0.9)
+  0.936 | Split BST
+         topic: Trees > BST Operations (Insert, Delete, Validate) | sec: DFS Traversal (Inorder, Preorder, Postorder)
+         diff: hard (1809.56) | imp: above average (0.52)
+
+======================================================================
+Q8: Topic: Backtracking. Primary subtopic: Permutations. Secondary subtopics: Constraint Satisfaction (N-Queens), Frequency Counting / Hash Map Lookup.
+======================================================================
+  0.931 | Letter Tile Possibilities
+         topic: Backtracking > Permutations | sec: Frequency Counting / Hash Map Lookup
+         diff: medium-hard (1740.5) | imp: high (0.72)
+  0.931 | Palindrome Permutation II
+         topic: Backtracking > Permutations | sec: Frequency Counting / Hash Map Lookup
+         diff: medium (1558) | imp: above average (0.5)
+  0.931 | Permutations
+         topic: Backtracking > Permutations | sec: Frequency Counting / Hash Map Lookup
+         diff: easy (1244) | imp: essential (0.92)
+  0.923 | Permutations III
+         topic: Backtracking > Permutations | sec: Constraint Satisfaction (N-Queens)
+         diff: medium-easy (1380) | imp: above average (0.58)
+  0.922 | Pyramid Transition Matrix
+         topic: Backtracking > Constraint Satisfaction (N-Queens) | sec: Frequency Counting / Hash Map Lookup, General Bit Manipulation
+         diff: hard (1990.28) | imp: below average (0.3)
+
+======================================================================
+Q9: Topic: Heap / Priority Queue. Primary subtopic: Merge K Sorted Structures. Secondary subtopics: Top-K Elements, Sorting + Comparison.
+======================================================================
+  1.000 | Find K Pairs with Smallest Sums
+         topic: Heap / Priority Queue > Merge K Sorted Structures | sec: Top-K Elements, Sorting + Comparison
+         diff: medium (1598) | imp: high (0.71)
+  0.954 | Design Twitter
+         topic: Heap / Priority Queue > Merge K Sorted Structures | sec: Frequency Counting / Hash Map Lookup, Top-K Elements
+         diff: medium (1533) | imp: very high (0.82)
+  0.931 | Merge k Sorted Lists
+         topic: Heap / Priority Queue > Merge K Sorted Structures | sec: Merge Linked Lists
+         diff: medium (1594) | imp: essential (0.9)
+  0.913 | K Closest Points to Origin
+         topic: Heap / Priority Queue > Top-K Elements | sec: Sorting + Comparison
+         diff: easy (1213.81) | imp: very high (0.82)
+  0.913 | Kth Largest Element in an Array
+         topic: Heap / Priority Queue > Top-K Elements | sec: Sorting + Comparison
+         diff: medium-easy (1356) | imp: essential (0.91)
+
+======================================================================
+Q10: Topic: Core DP. Primary subtopic: Linear Recurrence DP. Secondary subtopics: General Greedy (Greedy is main insight).
+======================================================================
+  1.000 | Minimum Sideway Jumps
+         topic: Core DP > Linear Recurrence DP | sec: General Greedy (Greedy is main insight)
+         diff: medium-hard (1778.49) | imp: above average (0.52)
+  1.000 | Best Time to Buy and Sell Stock with Transaction Fee
+         topic: Core DP > Linear Recurrence DP | sec: General Greedy (Greedy is main insight)
+         diff: medium (1530) | imp: high (0.72)
+  1.000 | Minimum Cost to Separate Sentence Into Rows
+         topic: Core DP > Linear Recurrence DP | sec: General Greedy (Greedy is main insight)
+         diff: medium-hard (1712) | imp: fairly high (0.62)
+  1.000 | Maximum Alternating Subsequence Sum
+         topic: Core DP > Linear Recurrence DP | sec: General Greedy (Greedy is main insight)
+         diff: medium-hard (1785.69) | imp: fairly high (0.68)
+  1.000 | Visit Array Positions to Maximize Score
+         topic: Core DP > Linear Recurrence DP | sec: General Greedy (Greedy is main insight)
+         diff: medium-hard (1732.51) | imp: fairly high (0.68)
+
+======================================================================
+Q11: Topic: Binary Search. Primary subtopic: Boundary Finding (Bisect Left/Right). Secondary subtopics: Variable-Size Window (Expand/Contract).
+======================================================================
+  0.980 | Find K Closest Elements
+         topic: Binary Search > Boundary Finding (Bisect Left/Right) | sec: Opposite-Direction (Converging), Variable-Size Window (Expand/Contract)
+         diff: medium-easy (1478) | imp: high (0.78)
+  0.967 | Minimum Absolute Difference Between Elements With Constraint
+         topic: Binary Search > Boundary Finding (Bisect Left/Right) | sec: Sorting + Comparison, Variable-Size Window (Expand/Contract)
+         diff: hard (1889.46) | imp: above average (0.56)
+  0.960 | Minimize Connected Groups by Inserting Interval
+         topic: Binary Search > Boundary Finding (Bisect Left/Right) | sec: Variable-Size Window (Expand/Contract), Interval Merging, Sorting + Comparison
+         diff: hard (1950) | imp: moderate (0.47)
+  0.953 | Maximum Frequency of an Element After Performing Operations II
+         topic: Binary Search > Boundary Finding (Bisect Left/Right) | sec: Variable-Size Window (Expand/Contract), Sorting + Comparison, Prefix Sums
+         diff: very hard (2155.6) | imp: moderate (0.48)
+  0.935 | Maximum Frequency of an Element After Performing Operations I
+         topic: Binary Search > Boundary Finding (Bisect Left/Right) | sec: Variable-Size Window (Expand/Contract), Sorting + Comparison, Frequency Counting / Hash Map Lookup
+         diff: hard (1864.93) | imp: above average (0.55)
+
+======================================================================
+Q12: Topic: Arrays & Hashing. Primary subtopic: Frequency Counting / Hash Map Lookup. Secondary subtopics: Opposite-Direction (Converging).
+======================================================================
+  0.973 | Number of Ways Where Square of Number Is Equal to Product of Two Numbers
+         topic: Arrays & Hashing > Frequency Counting / Hash Map Lookup | sec: Opposite-Direction (Converging), General Math
+         diff: medium (1593.89) | imp: below average (0.35)
+  0.905 | Three Equal Parts
+         topic: Arrays & Hashing > Frequency Counting / Hash Map Lookup | sec: General Math, Same-Direction (Fast/Slow on Arrays)
+         diff: hard (1994.36) | imp: below average (0.32)
+  0.902 | Happy Number
+         topic: Arrays & Hashing > Frequency Counting / Hash Map Lookup | sec: Same-Direction (Fast/Slow on Arrays), General Math
+         diff: very easy (1076) | imp: above average (0.58)
+  0.898 | Shortest Word Distance III
+         topic: Arrays & Hashing > Frequency Counting / Hash Map Lookup | sec: Same-Direction (Fast/Slow on Arrays)
+         diff: medium-easy (1395) | imp: below average (0.38)
+  0.898 | Make Three Strings Equal
+         topic: Arrays & Hashing > Frequency Counting / Hash Map Lookup | sec: Same-Direction (Fast/Slow on Arrays)
+         diff: easy (1347.59) | imp: below average (0.32)
+
+======================================================================
+Q13: Topic: Math & Geometry. Primary subtopic: Primes / Sieve of Eratosthenes. Secondary subtopics: none.
+======================================================================
+  1.000 | Count Primes
+         topic: Math & Geometry > Primes / Sieve of Eratosthenes | sec: none
+         diff: easy (1253) | imp: moderate (0.48)
+  0.971 | Prime Palindrome
+         topic: Math & Geometry > Primes / Sieve of Eratosthenes | sec: General Math
+         diff: hard (1938.22) | imp: low (0.22)
+  0.971 | Smallest Value After Replacing With Sum of Prime Factors
+         topic: Math & Geometry > Primes / Sieve of Eratosthenes | sec: General Math
+         diff: medium-easy (1499.59) | imp: low (0.28)
+  0.971 | Three Divisors
+         topic: Math & Geometry > Primes / Sieve of Eratosthenes | sec: General Math
+         diff: easy (1203.75) | imp: low (0.22)
+  0.969 | Find the Count of Numbers Which Are Not Special
+         topic: Math & Geometry > Primes / Sieve of Eratosthenes | sec: General Math
+         diff: medium (1509.44) | imp: below average (0.37)
+
+======================================================================
+Q14: Topic: Intervals. Primary subtopic: Sweep Line / Meeting Rooms. Secondary subtopics: Sorting + Comparison.
+======================================================================
+  1.000 | Meeting Rooms
+         topic: Intervals > Sweep Line / Meeting Rooms | sec: Sorting + Comparison
+         diff: very easy (1124) | imp: very high (0.82)
+  0.982 | Maximum Number of Intersections on the Chart
+         topic: Intervals > Sweep Line / Meeting Rooms | sec: Sorting + Comparison, General Math
+         diff: elite (2650) | imp: low (0.28)
+  0.970 | Divide Intervals Into Minimum Number of Groups
+         topic: Intervals > Sweep Line / Meeting Rooms | sec: Sorting + Comparison, Heap Simulation
+         diff: medium-hard (1713.4) | imp: high (0.79)
+  0.968 | My Calendar III
+         topic: Intervals > Sweep Line / Meeting Rooms | sec: Sorting + Comparison, Prefix Sums
+         diff: hard (1847) | imp: above average (0.55)
+  0.968 | Brightest Position on Street
+         topic: Intervals > Sweep Line / Meeting Rooms | sec: Sorting + Comparison, Prefix Sums
+         diff: medium (1520) | imp: above average (0.58)
+
+======================================================================
+Q15: Topic: Advanced Graphs. Primary subtopic: Dijkstra's (Weighted Shortest Path). Secondary subtopics: Heap Simulation, Frequency Counting / Hash Map Lookup, Binary Search on Answer Space.
+======================================================================
+  0.949 | Swim in Rising Water
+         topic: Advanced Graphs > Dijkstra's (Weighted Shortest Path) | sec: Binary Search on Answer Space, Union-Find, Heap Simulation
+         diff: very hard (2096.62) | imp: high (0.78)
+  0.935 | Minimum Cost to Convert String I
+         topic: Advanced Graphs > Dijkstra's (Weighted Shortest Path) | sec: Frequency Counting / Hash Map Lookup, BFS Shortest Path (Unweighted)
+         diff: hard (1882.08) | imp: fairly high (0.68)
+  0.925 | Minimum Time to Visit a Cell In a Grid
+         topic: Advanced Graphs > Dijkstra's (Weighted Shortest Path) | sec: Heap Simulation, BFS Shortest Path (Unweighted)
+         diff: extremely hard (2381.63) | imp: fairly high (0.68)
+  0.924 | Find Minimum Time to Reach Last Room I
+         topic: Advanced Graphs > Dijkstra's (Weighted Shortest Path) | sec: Heap Simulation
+         diff: medium-hard (1721.48) | imp: high (0.72)
+  0.924 | Find Minimum Time to Reach Last Room II
+         topic: Advanced Graphs > Dijkstra's (Weighted Shortest Path) | sec: Heap Simulation
+         diff: hard (1861.74) | imp: fairly high (0.62)
+
+======================================================================
+Q16: Topic: Backtracking. Primary subtopic: Path Finding with Backtracking. Secondary subtopics: DFS Traversal (Inorder, Preorder, Postorder), Matrix Traversal (Diagonal, Valid Sudoku, etc), Constraint Satisfaction (N-Queens).
+======================================================================
+  0.928 | Sequential Grid Path Cover
+         topic: Backtracking > Path Finding with Backtracking | sec: Matrix Traversal (Diagonal, Valid Sudoku, etc)
+         diff: hard (1900) | imp: below average (0.35)
+  0.928 | Word Search
+         topic: Backtracking > Path Finding with Backtracking | sec: Matrix Traversal (Diagonal, Valid Sudoku, etc)
+         diff: medium-easy (1457) | imp: very high (0.87)
+  0.927 | Path with Maximum Gold
+         topic: Backtracking > Path Finding with Backtracking | sec: Matrix Traversal (Diagonal, Valid Sudoku, etc)
+         diff: medium-hard (1663.26) | imp: fairly high (0.68)
+  0.897 | Number of Valid Move Combinations On Chessboard
+         topic: Backtracking > Constraint Satisfaction (N-Queens) | sec: Matrix Traversal (Diagonal, Valid Sudoku, etc)
+         diff: elite (2610.99) | imp: low (0.22)
+  0.897 | N-Queens
+         topic: Backtracking > Constraint Satisfaction (N-Queens) | sec: Matrix Traversal (Diagonal, Valid Sudoku, etc)
+         diff: medium-hard (1697) | imp: very high (0.82)
+
+======================================================================
+Q17: Topic: Sliding Window. Primary subtopic: Fixed-Size Window. Secondary subtopics: Frequency Counting / Hash Map Lookup.
+======================================================================
+  1.000 | Find K-Length Substrings With No Repeated Characters
+         topic: Sliding Window > Fixed-Size Window | sec: Frequency Counting / Hash Map Lookup
+         diff: easy (1348.67) | imp: fairly high (0.62)
+  1.000 | Minimum Swaps to Group All 1's Together
+         topic: Sliding Window > Fixed-Size Window | sec: Frequency Counting / Hash Map Lookup
+         diff: medium (1508.12) | imp: high (0.72)
+  1.000 | Permutation in String
+         topic: Sliding Window > Fixed-Size Window | sec: Frequency Counting / Hash Map Lookup
+         diff: medium-easy (1368) | imp: very high (0.86)
+  1.000 | Sliding Subarray Beauty
+         topic: Sliding Window > Fixed-Size Window | sec: Frequency Counting / Hash Map Lookup
+         diff: medium-hard (1785.6) | imp: fairly high (0.62)
+  1.000 | Number of Equal Count Substrings
+         topic: Sliding Window > Fixed-Size Window | sec: Frequency Counting / Hash Map Lookup
+         diff: medium-hard (1725) | imp: above average (0.53)
+
+======================================================================
+Q18: Topic: Two Pointers. Primary subtopic: Opposite-Direction (Converging). Secondary subtopics: Sorting + Comparison.
+======================================================================
+  1.000 | Minimum Average of Smallest and Largest Elements
+         topic: Two Pointers > Opposite-Direction (Converging) | sec: Sorting + Comparison
+         diff: very easy (1194.63) | imp: moderate (0.42)
+  1.000 | Squares of a Sorted Array
+         topic: Two Pointers > Opposite-Direction (Converging) | sec: Sorting + Comparison
+         diff: very easy (1129.95) | imp: fairly high (0.68)
+  1.000 | Count Pairs Whose Sum is Less than Target
+         topic: Two Pointers > Opposite-Direction (Converging) | sec: Sorting + Comparison
+         diff: very easy (1165.88) | imp: above average (0.52)
+  1.000 | Sentence Similarity III
+         topic: Two Pointers > Opposite-Direction (Converging) | sec: Sorting + Comparison
+         diff: medium (1588.97) | imp: above average (0.58)
+  0.973 | Number of Perfect Pairs
+         topic: Two Pointers > Opposite-Direction (Converging) | sec: General Math, Sorting + Comparison
+         diff: medium-hard (1715.64) | imp: below average (0.33)
+
+======================================================================
+Q19: Topic: Advanced DP. Primary subtopic: Bitmask DP. Secondary subtopics: Combinatorics.
+======================================================================
+  0.964 | Maximum Product of the Length of Two Palindromic Subsequences
+         topic: Advanced DP > Bitmask DP | sec: Combinations / Subsets, General Bit Manipulation
+         diff: hard (1869.4) | imp: above average (0.53)
+  0.963 | Minimum Number of Work Sessions to Finish the Tasks
+         topic: Advanced DP > Bitmask DP | sec: Combinations / Subsets
+         diff: hard (1995.29) | imp: above average (0.58)
+  0.963 | Campus Bikes II
+         topic: Advanced DP > Bitmask DP | sec: Combinations / Subsets
+         diff: hard (1885.11) | imp: above average (0.58)
+  0.960 | Minimum Number of Lines to Cover Points
+         topic: Advanced DP > Bitmask DP | sec: General Math, Combinations / Subsets
+         diff: very hard (2150) | imp: below average (0.35)
+  0.951 | Can I Win
+         topic: Advanced DP > Bitmask DP | sec: General Math
+         diff: hard (1927) | imp: moderate (0.47)
+
+======================================================================
+Q20: Topic: Bit Manipulation. Primary subtopic: General Bit Manipulation. Secondary subtopics: Frequency Counting / Hash Map Lookup.
+======================================================================
+  1.000 | Binary String With Substrings Representing 1 To N
+         topic: Bit Manipulation > General Bit Manipulation | sec: Frequency Counting / Hash Map Lookup
+         diff: medium-hard (1779.39) | imp: low (0.21)
+  1.000 | Find the K-or of an Array
+         topic: Bit Manipulation > General Bit Manipulation | sec: Frequency Counting / Hash Map Lookup
+         diff: medium-easy (1388.54) | imp: low (0.28)
+  1.000 | Sum of Values at Indices With K Set Bits
+         topic: Bit Manipulation > General Bit Manipulation | sec: Frequency Counting / Hash Map Lookup
+         diff: easy (1218.11) | imp: very low (0.18)
+  1.000 | Check if Bitwise OR Has Trailing Zeros
+         topic: Bit Manipulation > General Bit Manipulation | sec: Frequency Counting / Hash Map Lookup
+         diff: easy (1233.5) | imp: low (0.22)
+  1.000 | Single Number III
+         topic: Bit Manipulation > General Bit Manipulation | sec: Frequency Counting / Hash Map Lookup
+         diff: medium (1524) | imp: above average (0.58)
