@@ -476,25 +476,333 @@ for i in range(300):
 
 
 # ════════════════════════════════════════════════════════════════════
-# SIMULATION 8: Edge cases — floor and ceiling
+# SIMULATION 8: Easy grinder — 500 problems, only easies, broad coverage
+#   Someone who grinds tons of easy problems across all topics.
+#   Should progress but plateau — easy problems give diminishing returns
+#   at higher mastery due to difficulty multiplier.
 # ════════════════════════════════════════════════════════════════════
 
-sim8 = Simulation("Edge cases — floor (0) and ceiling (100)")
+sim8 = Simulation("Easy grinder — 500 easy problems, broad coverage")
+
+# Only pick easy problems (elo < 1300)
+easy_by_subtopic = {}
+for sub, probs in by_subtopic.items():
+    easy = [p for p in probs if p["difficulty"] < 1300]
+    if easy:
+        easy_by_subtopic[sub] = easy
+
+checkpoints_8 = [100, 200, 300, 400, 500]
+checkpoint_idx_8 = 0
+
+for i in range(500):
+    # Pick a random subtopic with available easy problems
+    available_subs = [s for s in ALL_SUBTOPICS
+                      if s in easy_by_subtopic
+                      and any(p["id"] not in sim8.seen for p in easy_by_subtopic[s])]
+    if not available_subs:
+        print(f"  Ran out of easy problems at attempt {i+1}")
+        break
+
+    # Spread across subtopics, slight importance weighting
+    imp_scores = [(s, subtopic_importance.get(s, 0.5) + random.random() * 0.3) for s in available_subs]
+    imp_scores.sort(key=lambda x: -x[1])
+    chosen_sub = random.choice(imp_scores[:6])[0]
+
+    unseen = [p for p in easy_by_subtopic[chosen_sub] if p["id"] not in sim8.seen]
+    if not unseen:
+        continue
+    problem = random.choice(unseen)
+
+    # Easy problems: mostly clean solves, perceived as easy
+    r = random.random()
+    if r < 0.7:
+        sim8.attempt(problem["id"], perceived="easy")
+    elif r < 0.9:
+        sim8.attempt(problem["id"], hints=True, perceived="easy")
+    else:
+        sim8.attempt(problem["id"], solution=True, perceived="easy")
+
+    if checkpoint_idx_8 < len(checkpoints_8) and (i + 1) == checkpoints_8[checkpoint_idx_8]:
+        attempted_subs = [s for s, d in sim8.state["subtopics"].items() if d["attempts_count"] > 0]
+        avg_mastery = sum(sim8.state["subtopics"][s]["score"] for s in attempted_subs) / len(attempted_subs) if attempted_subs else 0
+        print_subheader(f"Checkpoint at {i+1} problems (avg mastery: {avg_mastery:.1f})")
+        sim8.print_scores(limit=10)
+        sim8.print_topic_levels()
+        checkpoint_idx_8 += 1
+
+
+# ════════════════════════════════════════════════════════════════════
+# SIMULATION 9: Edge cases — floor and ceiling
+# ════════════════════════════════════════════════════════════════════
+
+sim9 = Simulation("Edge cases — floor (0) and ceiling (100)")
 
 floor_sub = "Primes / Sieve of Eratosthenes"
 print_subheader("Floor: struggling from 0 — should stay at 0")
 print_table_header()
 for p in by_subtopic.get(floor_sub, [])[:5]:
-    sim8.attempt(p["id"], struggled=True, perceived="hard")
+    sim9.attempt(p["id"], struggled=True, perceived="hard")
 
 ceil_sub = "Prefix Sums"
-sim8.set_mastery(ceil_sub, 97.0)
+sim9.set_mastery(ceil_sub, 97.0)
 print_subheader("Ceiling: near 100, clean solving hard problems — should cap at 100")
 print_table_header()
 for p in [pp for pp in by_subtopic.get(ceil_sub, []) if pp["difficulty"] > 1800][:8]:
-    sim8.attempt(p["id"], perceived="hard")
+    sim9.attempt(p["id"], perceived="hard")
 
-sim8.print_scores(only_nonzero=False)
+sim9.print_scores(only_nonzero=False)
+
+
+# ════════════════════════════════════════════════════════════════════
+# SIMULATION 10: Hard grinder — only hard problems (elo > 2000)
+#   Should struggle a lot early but difficulty multiplier rewards them.
+#   Compare progression to easy grinder.
+# ════════════════════════════════════════════════════════════════════
+
+sim10 = Simulation("Hard grinder — only hard problems (elo > 2000)")
+
+hard_by_subtopic = {}
+for sub, probs in by_subtopic.items():
+    hard = [p for p in probs if p["difficulty"] > 2000]
+    if hard:
+        hard_by_subtopic[sub] = hard
+
+checkpoints_10 = [25, 50, 100, 150]
+checkpoint_idx_10 = 0
+
+for i in range(150):
+    available_subs = [s for s in ALL_SUBTOPICS
+                      if s in hard_by_subtopic
+                      and any(p["id"] not in sim10.seen for p in hard_by_subtopic[s])]
+    if not available_subs:
+        print(f"  Ran out of hard problems at attempt {i+1}")
+        break
+
+    imp_scores = [(s, subtopic_importance.get(s, 0.5) + random.random() * 0.3) for s in available_subs]
+    imp_scores.sort(key=lambda x: -x[1])
+    chosen_sub = random.choice(imp_scores[:6])[0]
+
+    unseen = [p for p in hard_by_subtopic[chosen_sub] if p["id"] not in sim10.seen]
+    if not unseen:
+        continue
+    problem = random.choice(unseen)
+
+    # Hard problems: lots of struggling and solution-peeking at low mastery
+    sim10.auto_attempt(problem)
+
+    if checkpoint_idx_10 < len(checkpoints_10) and (i + 1) == checkpoints_10[checkpoint_idx_10]:
+        attempted_subs = [s for s, d in sim10.state["subtopics"].items() if d["attempts_count"] > 0]
+        avg_mastery = sum(sim10.state["subtopics"][s]["score"] for s in attempted_subs) / len(attempted_subs) if attempted_subs else 0
+        print_subheader(f"Checkpoint at {i+1} problems (avg mastery: {avg_mastery:.1f})")
+        sim10.print_scores(limit=10)
+        sim10.print_topic_levels()
+        checkpoint_idx_10 += 1
+
+
+# ════════════════════════════════════════════════════════════════════
+# SIMULATION 11: Secondary subtopic gains — verify secondary gains
+#   are meaningful but clearly less than primary
+# ════════════════════════════════════════════════════════════════════
+
+sim11 = Simulation("Secondary subtopic gains — primary vs secondary comparison")
+
+# Find problems with strong secondary subtopics (weight >= 0.3)
+problems_with_secondaries = [t for t in tagged
+                             if t.get("secondary_subtopics")
+                             and any(s["weight"] >= 0.3 for s in t["secondary_subtopics"])]
+
+print(f"  Problems with strong secondaries (weight >= 0.3): {len(problems_with_secondaries)}")
+
+# Do 30 problems, tracking primary vs secondary gains
+primary_gains = []
+secondary_gains_all = []
+
+print_subheader("30 problems with strong secondary subtopics")
+print_table_header()
+for p in problems_with_secondaries[:30]:
+    primary = p["primary_subtopic"]["name"]
+    old_primary = sim11.state["subtopics"].get(primary, {}).get("score", 0.0)
+
+    # Track secondary scores before
+    sec_before = {}
+    for sec in p.get("secondary_subtopics", []):
+        sec_before[sec["name"]] = sim11.state["subtopics"].get(sec["name"], {}).get("score", 0.0)
+
+    sim11.attempt(p["id"], perceived="medium")
+
+    # Measure gains
+    new_primary = sim11.state["subtopics"][primary]["score"]
+    p_gain = new_primary - old_primary
+    primary_gains.append(p_gain)
+
+    for sec in p.get("secondary_subtopics", []):
+        sec_gain = sim11.state["subtopics"][sec["name"]]["score"] - sec_before[sec["name"]]
+        if sec_gain > 0:
+            secondary_gains_all.append((sec["name"], sec["weight"], sec_gain, p_gain))
+
+print_subheader("Primary vs Secondary gain comparison")
+print(f"  Avg primary gain:   {sum(primary_gains)/len(primary_gains):.3f}")
+if secondary_gains_all:
+    print(f"  Avg secondary gain: {sum(g[2] for g in secondary_gains_all)/len(secondary_gains_all):.3f}")
+    print(f"  Avg secondary/primary ratio: {sum(g[2]/g[3] for g in secondary_gains_all if g[3] > 0)/len([g for g in secondary_gains_all if g[3] > 0]):.3f}")
+    print(f"\n  Sample secondary gains:")
+    for name, weight, sec_gain, pri_gain in secondary_gains_all[:8]:
+        print(f"    {name[:40]:<42} weight:{weight:.1f}  gain:{sec_gain:.3f}  (primary gained {pri_gain:.3f})")
+
+
+# ════════════════════════════════════════════════════════════════════
+# SIMULATION 12: Solution-only learner vs clean solver
+#   Same problems, compare total mastery after 50 problems each.
+# ════════════════════════════════════════════════════════════════════
+
+sim12_clean = Simulation("Clean solver — 50 problems, all clean solves")
+sim12_solution = Simulation("Solution learner — same 50 problems, all solution-peeked")
+
+# Pick 50 diverse problems via reco engine
+problems_for_12 = []
+temp_state = new_user_state()
+temp_seen = set()
+for i in range(50):
+    p = recommend_problem(temp_state, temp_seen, mode="filling_gaps")
+    if p:
+        problems_for_12.append(p)
+        temp_seen.add(p["id"])
+        # Advance temp state minimally to get diverse recommendations
+        primary = p["primary_subtopic"]["name"]
+        if primary not in temp_state["subtopics"]:
+            temp_state["subtopics"][primary] = {"score": 5, "attempts_count": 1, "last_attempted": None}
+
+print_table_header()
+for p in problems_for_12:
+    sim12_clean.attempt(p["id"], perceived="medium")
+
+print_table_header()
+for p in problems_for_12:
+    sim12_solution.attempt(p["id"], solution=True, perceived="medium")
+
+overall_clean = get_overall_level(sim12_clean.state, taxonomy)
+overall_solution = get_overall_level(sim12_solution.state, taxonomy)
+
+print_subheader("Comparison: Clean vs Solution learner (50 identical problems)")
+print(f"  Clean solver overall:    {overall_clean:.1f} [{get_subtopic_tier(overall_clean)}]")
+print(f"  Solution learner overall: {overall_solution:.1f} [{get_subtopic_tier(overall_solution)}]")
+print(f"  Ratio: {overall_clean/overall_solution:.2f}x" if overall_solution > 0 else "")
+
+# Compare individual subtopics
+clean_subs = sim12_clean.state["subtopics"]
+sol_subs = sim12_solution.state["subtopics"]
+print(f"\n  {'Subtopic':<42} {'Clean':>6} {'Soln':>6} {'Ratio':>6}")
+print(f"  {'-'*42} {'-'*6} {'-'*6} {'-'*6}")
+for sub in sorted(clean_subs.keys(), key=lambda s: -clean_subs[s]["score"]):
+    c = clean_subs[sub]["score"]
+    s = sol_subs.get(sub, {}).get("score", 0)
+    ratio = f"{c/s:.2f}" if s > 0 else "inf"
+    print(f"  {sub[:41]:<42} {c:>6.1f} {s:>6.1f} {ratio:>6}")
+
+
+# ════════════════════════════════════════════════════════════════════
+# SIMULATION 13: Mastery rate variance — narrow vs broad subtopic
+#   Narrow (target=3) should reach Gold much faster than broad (target=18)
+# ════════════════════════════════════════════════════════════════════
+
+sim13 = Simulation("Mastery rate — narrow (target=3) vs broad (target=18) subtopic")
+
+# Find narrow and broad subtopics from config
+from lib.mastery import MASTERY_RATES, get_mastery_rate
+
+narrow_sub = "Partitioning (Dutch National Flag)"   # target=3
+broad_sub = "Frequency Counting / Hash Map Lookup"  # target=18
+
+print(f"  Narrow: {narrow_sub} (rate: {get_mastery_rate(narrow_sub):.3f})")
+print(f"  Broad:  {broad_sub} (rate: {get_mastery_rate(broad_sub):.3f})")
+
+print_subheader(f"Narrow subtopic: {narrow_sub}")
+print_table_header()
+for p in by_subtopic.get(narrow_sub, [])[:12]:
+    sim13.attempt(p["id"], perceived="medium")
+
+print_subheader(f"Broad subtopic: {broad_sub}")
+print_table_header()
+for p in by_subtopic.get(broad_sub, [])[:12]:
+    sim13.attempt(p["id"], perceived="medium")
+
+narrow_score = sim13.state["subtopics"].get(narrow_sub, {}).get("score", 0)
+broad_score = sim13.state["subtopics"].get(broad_sub, {}).get("score", 0)
+print_subheader("Comparison after 12 clean solves each")
+print(f"  {narrow_sub:<45} {narrow_score:>6.1f} [{get_subtopic_tier(narrow_score)}]")
+print(f"  {broad_sub:<45} {broad_score:>6.1f} [{get_subtopic_tier(broad_score)}]")
+
+
+# ════════════════════════════════════════════════════════════════════
+# SIMULATION 14: Diminishing returns verification
+#   Same clean solves at Bronze (5), Silver (25), Gold (45), Plat (65)
+#   Gains should taper noticeably after Gold.
+# ════════════════════════════════════════════════════════════════════
+
+sim14 = Simulation("Diminishing returns — same solves at different mastery levels")
+
+test_sub = "DFS Connected Components"
+test_problems = [p for p in by_subtopic.get(test_sub, [])
+                 if 1400 < p["difficulty"] < 1800][:20]
+
+starting_levels = [5, 25, 45, 65, 85]
+
+print_subheader(f"5 clean medium solves at each starting mastery in: {test_sub}")
+print(f"\n  {'Start':>7} {'End':>7} {'Total Gain':>10} {'Avg/Solve':>10} {'Tier Change'}")
+print(f"  {'-'*7} {'-'*7} {'-'*10} {'-'*10} {'-'*20}")
+
+for start in starting_levels:
+    # Fresh state for each starting level
+    dr_state = new_user_state()
+    dr_state["subtopics"][test_sub] = {"score": start, "attempts_count": 0, "last_attempted": None}
+    dr_seen = set()
+
+    old_tier = get_subtopic_tier(start)
+    for p in test_problems[:5]:
+        if p["id"] not in dr_seen:
+            update_mastery(dr_state, p["id"], p, False, False, False, "medium")
+            dr_seen.add(p["id"])
+
+    end_score = dr_state["subtopics"][test_sub]["score"]
+    total_gain = end_score - start
+    new_tier = get_subtopic_tier(end_score)
+    tier_change = f"{old_tier}->{new_tier}" if old_tier != new_tier else old_tier
+    print(f"  {start:>7.0f} {end_score:>7.1f} {total_gain:>10.2f} {total_gain/5:>10.2f} {tier_change}")
+
+
+# ════════════════════════════════════════════════════════════════════
+# SIMULATION 15: Single topic specialist — only Trees
+#   Should hit high mastery in Trees but low overall.
+#   Tests topic-level aggregation and overall score.
+# ════════════════════════════════════════════════════════════════════
+
+sim15 = Simulation("Single topic specialist — 80 problems, only Trees")
+
+tree_subtopics = []
+for topic in taxonomy["topics"]:
+    if topic["name"] == "Trees":
+        tree_subtopics = [s["name"] for s in topic["subtopics"]]
+        break
+
+print(f"  Tree subtopics: {tree_subtopics}")
+
+checkpoints_15 = [20, 40, 60, 80]
+checkpoint_idx_15 = 0
+
+for i in range(80):
+    p = recommend_problem(sim15.state, sim15.seen, subtopics=tree_subtopics, mode="filling_gaps")
+    if not p:
+        p = recommend_problem(sim15.state, sim15.seen, subtopics=tree_subtopics, mode="pushing")
+    if not p:
+        print(f"  Ran out of tree problems at attempt {i+1}")
+        break
+    sim15.auto_attempt(p)
+
+    if checkpoint_idx_15 < len(checkpoints_15) and (i + 1) == checkpoints_15[checkpoint_idx_15]:
+        print_subheader(f"Checkpoint at {i+1} problems")
+        sim15.print_scores()
+        sim15.print_topic_levels()
+        checkpoint_idx_15 += 1
 
 
 # ════════════════════════════════════════════════════════════════════
@@ -503,12 +811,19 @@ sim8.print_scores(only_nonzero=False)
 
 print_header("TEST SUITE SUMMARY")
 print("""
-  1. Realistic beginner:   Reco engine serves high-importance first, scales difficulty
-  2. Experienced user:     Pre-set mastery, pushing phase with harder/niche problems
-  3. Struggle + recovery:  Drop from struggling, reco adapts to rebuild
-  4. Importance contrast:  High-importance gains >> low-importance at low mastery
-  5. Breadth vs depth:     Single subtopic focus vs broad coverage
-  6. Full 150-problem journey: Mode transitions from filling_gaps to pushing
-  7. Extended 300-problem journey: Coverage tracking, mode transitions
-  8. Edge cases:           Floor stays 0, ceiling caps at 100
+  1.  Realistic beginner:    Reco engine serves high-importance first, scales difficulty
+  2.  Experienced user:      Pre-set mastery, pushing phase with harder/niche problems
+  3.  Struggle + recovery:   Drop from struggling, reco adapts to rebuild
+  4.  Importance contrast:   High-importance gains >> low-importance at low mastery
+  5.  Breadth vs depth:      Single subtopic focus vs broad coverage
+  6.  Full 150-problem journey: Mode transitions from filling_gaps to pushing
+  7.  Extended 300-problem journey: Coverage tracking, mode transitions
+  8.  Easy grinder:          500 easy problems, broad coverage — should plateau
+  9.  Edge cases:            Floor stays 0, ceiling caps at 100
+  10. Hard grinder:          150 hard problems (elo>2000) — lots of struggling early
+  11. Secondary gains:       Verify secondary subtopics gain less than primary
+  12. Clean vs solution:     Same 50 problems, clean solver vs solution-peeker
+  13. Mastery rate variance: Narrow subtopic (target=3) vs broad (target=18)
+  14. Diminishing returns:   Same solves at Bronze/Silver/Gold/Plat/Diamond start
+  15. Topic specialist:      80 Tree problems only — high Trees, low overall
 """)

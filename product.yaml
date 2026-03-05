@@ -324,3 +324,7 @@ Personal Notes (CLAUDE WHATEVER CHANEGS U MAKE DO NOT TOUCH THIS)
 - for targeted practice, we may need to ignore prereq graph, but also warn users that they may ecounter new patterns
 - starting problem handpicked by me for each pattern if unseen
 - maybe we only do elo drop for spaced reptition (when reco randomly chooses, and u fail, then u drop significantly)
+- another mastery thing can be placement rounds for users with existing leetcode history, theyre given a problem at their level/below, and first few can bump them down (would probably only be for gold and above)
+- handle reco engine's specing into things like bitmask dp, dont handle in mastery weighting, thats fine how it is
+- come back to tests when reco engine is fully polished
+- will probably change instead of solve w hints blah blah, ill do sclae of ese 1-5, adjust mastery calc accordingly, need to tune with that

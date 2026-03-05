@@ -3,3 +3,6 @@ venv/
 __pycache__/
 *.pyc
 data/embeddings.json
+data/*_output.txt
+data/*_simulations.txt
+data/my_profile_mastery.txt
