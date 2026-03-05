@@ -15,7 +15,7 @@ for entry in zerotrac:
 print(f"Zerotrac ratings: {len(ratings)} problems")
 
 # Load our problems
-with open("data/problems.json") as f:
+with open("data/core/problems.json") as f:
     problems = json.load(f)
 
 print(f"Our problems: {len(problems)}")
@@ -29,9 +29,9 @@ for p in problems:
         matched += 1
 
 # Save
-with open("data/problems.json", "w") as f:
+with open("data/core/problems.json", "w") as f:
     json.dump(problems, f, indent=2)
 
 print(f"Matched: {matched}/{len(problems)}")
 print(f"Unmatched: {len(problems) - matched}")
-print(f"Saved to data/problems.json")
+print(f"Saved to data/core/problems.json")

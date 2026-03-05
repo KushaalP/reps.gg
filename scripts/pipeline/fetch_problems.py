@@ -91,7 +91,7 @@ def clean_problem(raw):
 
 
 if __name__ == "__main__":
-    os.makedirs("data", exist_ok=True)
+    os.makedirs("data/core", exist_ok=True)
 
     # Fetch all slugs first
     print("Fetching problem list...")
@@ -112,7 +112,7 @@ if __name__ == "__main__":
     print(f"\nFetching details for {len(all_questions)} problems...")
 
     # Load existing progress if resuming
-    output_path = "data/problems.json"
+    output_path = "data/core/problems.json"
     done = {}
     if os.path.exists(output_path):
         with open(output_path) as f:
@@ -153,5 +153,5 @@ if __name__ == "__main__":
     print(f"\nDone. Saved {len(problems)} problems to {output_path}")
     if errors:
         print(f"Errors: {len(errors)}")
-        with open("data/fetch_errors.json", "w") as f:
+        with open("data/output/fetch_errors.json", "w") as f:
             json.dump(errors, f, indent=2)

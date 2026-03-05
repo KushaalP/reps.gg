@@ -32,9 +32,9 @@ content_pipeline:
       HTML cleaned to plain text (content_clean, solution_clean).
       NeetCode 250 list matched and stored separately.
     files:
-      - data/problems.json
-      - data/nc250.json
-      - data/nc150.json
+      - data/core/problems.json
+      - data/core/nc250.json
+      - data/core/nc150.json
 
   llm_tagging:
     status: done
@@ -65,10 +65,10 @@ content_pipeline:
         validate_tags.py checks weight ordering, weight sums, invalid subtopics, topic mismatches.
         fix_tags.py auto-corrected 47 structural issues.
     files:
-      - scripts/tag_problems.py
-      - scripts/corrective_pass.py
-      - scripts/validate_tags.py
-      - scripts/fix_tags.py
+      - scripts/pipeline/tag_problems.py
+      - scripts/pipeline/corrective_pass.py
+      - scripts/pipeline/validate_tags.py
+      - scripts/pipeline/fix_tags.py
       - tagging_schema.yaml
 
   embeddings:
@@ -81,9 +81,9 @@ content_pipeline:
     vector_count: 3860
     file_size: 253.7 MB
     files:
-      - scripts/generate_embeddings.py
-      - scripts/test_embeddings.py
-      - data/embeddings.json (gitignored, regenerate with generate_embeddings.py)
+      - scripts/pipeline/generate_embeddings.py
+      - scripts/testing/test_embeddings.py
+      - data/core/embeddings.json (gitignored, regenerate with generate_embeddings.py)
 
 # ─── User Onboarding ────────────────────────────────────────────────
 

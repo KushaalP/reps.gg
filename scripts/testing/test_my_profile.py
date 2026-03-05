@@ -9,7 +9,7 @@ import yaml
 import os
 import sys
 
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
 from dotenv import load_dotenv
 from lib.mastery import (
@@ -116,10 +116,10 @@ def fetch_all_solved_slugs(username="KushaalP"):
 
 
 # ── Load tagged problems ──────────────────────────────────────────
-with open("data/tagged_problems.json") as f:
+with open("data/core/tagged_problems.json") as f:
     tagged = json.load(f)
 
-with open("data/problems.json") as f:
+with open("data/core/problems.json") as f:
     problems = json.load(f)
 
 with open("taxonomy.yaml") as f:

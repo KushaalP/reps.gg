@@ -8,13 +8,13 @@ load_dotenv()
 # ── Config ──────────────────────────────────────────────────────────
 MODEL = "text-embedding-3-large"
 BATCH_SIZE = 100  # OpenAI supports up to 2048 inputs per call
-OUTPUT_PATH = "data/embeddings.json"
+OUTPUT_PATH = "data/core/embeddings.json"
 
 # ── Load data ───────────────────────────────────────────────────────
-with open("data/problems.json") as f:
+with open("data/core/problems.json") as f:
     problems = json.load(f)
 
-with open("data/tagged_problems.json") as f:
+with open("data/core/tagged_problems.json") as f:
     tagged = json.load(f)
 
 prob_lookup = {p["id"]: p for p in problems}

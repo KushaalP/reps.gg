@@ -8,11 +8,11 @@ client = OpenAI()
 
 # ── Load data ───────────────────────────────────────────────────────
 print("Loading...")
-with open("data/embeddings.json") as f:
+with open("data/core/embeddings.json") as f:
     emb_data = json.load(f)
-with open("data/tagged_problems.json") as f:
+with open("data/core/tagged_problems.json") as f:
     tagged = json.load(f)
-with open("data/problems.json") as f:
+with open("data/core/problems.json") as f:
     problems = json.load(f)
 
 tag_lookup = {t["id"]: t for t in tagged}
@@ -69,7 +69,7 @@ q_vecs = q_vecs / np.linalg.norm(q_vecs, axis=1, keepdims=True)
 import sys
 
 # Also write to file
-output_path = "data/test_embeddings_output.txt"
+output_path = "data/output/test_embeddings_output.txt"
 out_file = open(output_path, "w")
 
 def log(s=""):

@@ -7,13 +7,13 @@ load_dotenv()
 
 # ── Config ──────────────────────────────────────────────────────────
 MODEL = "claude-haiku-4-5-20251001"
-OUTPUT_PATH = "data/corrective_flags.json"
+OUTPUT_PATH = "data/core/corrective_flags.json"
 
 # ── Load data ───────────────────────────────────────────────────────
-with open("data/tagged_problems.json") as f:
+with open("data/core/tagged_problems.json") as f:
     tagged = json.load(f)
 
-with open("data/problems.json") as f:
+with open("data/core/problems.json") as f:
     problems = json.load(f)
 
 with open("taxonomy.yaml") as f:

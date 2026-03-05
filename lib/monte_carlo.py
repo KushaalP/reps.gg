@@ -21,10 +21,10 @@ from lib.mastery import (
 
 # ── Load data ─────────────────────────────────────────────────────
 
-with open("data/tagged_problems.json") as f:
+with open("data/core/tagged_problems.json") as f:
     tagged = json.load(f)
 
-with open("data/problems.json") as f:
+with open("data/core/problems.json") as f:
     problems = json.load(f)
 
 with open("taxonomy.yaml") as f:

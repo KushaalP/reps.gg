@@ -11,7 +11,7 @@ load_dotenv()
 PASS1_MODEL = "claude-opus-4-6"
 PASS2_MODEL = "gpt-5.2-mini"  # swap to whatever you want
 BATCH_SIZE = 25
-OUTPUT_PATH = "data/tagged_problems.json"
+OUTPUT_PATH = "data/core/tagged_problems.json"
 
 # ── Load data ───────────────────────────────────────────────────────
 def load_taxonomy():
@@ -19,11 +19,11 @@ def load_taxonomy():
         return yaml.safe_load(f)
 
 def load_nc250():
-    with open("data/nc250.json") as f:
+    with open("data/core/nc250.json") as f:
         return json.load(f)
 
 def load_problems():
-    with open("data/problems.json") as f:
+    with open("data/core/problems.json") as f:
         return json.load(f)
 
 # ── Build system prompt ─────────────────────────────────────────────

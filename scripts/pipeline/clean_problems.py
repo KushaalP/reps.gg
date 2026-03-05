@@ -44,7 +44,7 @@ def clean_html(html):
 
 
 if __name__ == "__main__":
-    with open("data/problems.json") as f:
+    with open("data/core/problems.json") as f:
         problems = json.load(f)
 
     print(f"Cleaning {len(problems)} problems...")
@@ -53,7 +53,7 @@ if __name__ == "__main__":
         p["content_clean"] = clean_html(p["content"])
         p["solution_clean"] = clean_html(p["solution"])
 
-    with open("data/problems.json", "w") as f:
+    with open("data/core/problems.json", "w") as f:
         json.dump(problems, f, indent=2)
 
     # Stats

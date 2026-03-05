@@ -1,7 +1,7 @@
 import json
 import yaml
 
-with open("data/tagged_problems.json") as f:
+with open("data/core/tagged_problems.json") as f:
     tagged = json.load(f)
 
 with open("taxonomy.yaml") as f:
@@ -64,7 +64,7 @@ for t in tagged:
         fixes += 1
 
 # Save
-with open("data/tagged_problems.json", "w") as f:
+with open("data/core/tagged_problems.json", "w") as f:
     json.dump(tagged, f, indent=2)
 
 print(f"\nApplied {fixes} fixes to {len(tagged)} problems")
