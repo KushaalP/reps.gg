@@ -1,0 +1,1381 @@
+
+==========================================================================================
+  SIMULATION: Realistic beginner — reco engine (60 problems)
+==========================================================================================
+
+  --- Phase A: Filling gaps — high importance focus (problems 1-25) ---
+
+  #    Problem                             Subtopic                   Imp Quality            Perc      Chg  Score Tier
+  ---- ----------------------------------- ------------------------- ---- ------------------ ------ ------ ------ ---------------
+  #1   Project Employees II                Frequency Counting / Has  0.08 solved_clean       medium + 0.44    0.4 [Bronze]
+  #2   Binary Tree Level Order Traversal   BFS / Level-Order Traver  0.42 solved_clean       hard   +10.79   10.8 [Bronze]
+  #3   Valid Palindrome                    Opposite-Direction (Conv  0.85 solved_after_solution hard   + 6.01    6.0 [Bronze]
+  #4   Binary Search                       Standard Binary Search    0.93 solved_clean       medium +14.58   14.6 [Bronze]
+  #5   Longest Substring with At Most K D  Variable-Size Window (Ex  0.82 struggled          hard   + 0.00    0.0 [Bronze]
+  #6   Subsets                             Combinations / Subsets    0.92 solved_after_solution hard   + 7.38    7.4 [Bronze]
+  #7   Count Number of Teams               Linear Recurrence DP      0.55 struggled          hard   + 0.00    0.0 [Bronze]
+  #8   Unique 3-Digit Even Numbers         Permutations              0.35 solved_clean       hard   +12.12   12.1 [Bronze]
+  #9   Minimum Size Subarray Sum           Variable-Size Window (Ex  0.87 solved_with_hints  hard   +12.25   12.2 [Bronze]
+  #10  Maximum Subarray Sum After One Ope  Linear Recurrence DP      0.56 struggled          hard   + 0.00    0.0 [Bronze]
+  #11  Find All The Lonely Nodes           DFS Traversal (Inorder,   0.38 solved_clean       medium + 2.55    2.6 [Bronze]
+  #12  Kth Largest Element in a Stream     Top-K Elements            0.82 solved_after_solution hard   +10.73   10.7 [Bronze]
+  #13  Count Ways To Build Good Strings    Linear Recurrence DP      0.74 struggled          hard   + 0.00    0.0 [Bronze]
+  #14  Existence of a Substring in a Stri  Frequency Counting / Has  0.15 solved_with_hints  medium + 0.70    1.5 [Bronze]
+  #15  Minimum Total Operations            Prefix Sums               0.38 solved_clean       medium + 4.67    5.3 [Bronze]
+  #16  The Maze                            BFS Shortest Path (Unwei  0.61 solved_with_hints  hard   +13.27   13.3 [Bronze]
+  #17  Generate Binary Strings Without Ad  Combinations / Subsets    0.42 struggled          hard   + 0.00    7.4 [Bronze]
+  #18  Ones and Zeroes                     0/1 Knapsack              0.72 solved_after_solution hard   +10.79   10.8 [Bronze]
+  #19  Binary Tree Tilt                    DFS Traversal (Inorder,   0.42 solved_clean       medium + 2.84    5.4 [Bronze]
+  #20  Find Smallest Letter Greater Than   Boundary Finding (Bisect  0.62 solved_after_solution hard   + 7.64    7.6 [Bronze]
+  #21  Sequence Reconstruction             Topological Sort          0.63 struggled          hard   + 0.00    0.0 [Bronze]
+  #22  Two Sum III - Data structure desig  Complement Search (Two S  0.45 solved_clean       medium +11.34   11.3 [Bronze]
+  #23  Best Time to Buy and Sell Stock wi  Linear Recurrence DP      0.72 struggled          hard   + 0.00    0.0 [Bronze]
+  #24  Minimum Costs Using the Train Line  Linear Recurrence DP      0.55 solved_after_solution hard   + 4.48    4.5 [Bronze]
+  #25  Kth Smallest Element in a Sorted M  Binary Search on Answer   0.72 struggled          hard   + 0.00    0.9 [Bronze]
+
+  --- Phase B: Still filling but mastery growing — mixed importance (problems 26-45) ---
+
+  #    Problem                             Subtopic                   Imp Quality            Perc      Chg  Score Tier
+  ---- ----------------------------------- ------------------------- ---- ------------------ ------ ------ ------ ---------------
+  #26  Clear Digits                        Stack-Based Simulation    0.38 solved_after_solution hard   + 3.14    3.1 [Bronze]
+  #27  Teemo Attacking                     Interval Merging          0.37 solved_clean       medium + 8.80    8.8 [Bronze]
+  #28  All Elements in Two Binary Search   DFS Traversal (Inorder,   0.63 solved_clean       medium + 4.28    9.7 [Bronze]
+  #29  Reverse String Prefix               Opposite-Direction (Conv  0.20 struggled          hard   + 0.00    6.0 [Bronze]
+  #30  Find Pivot Index                    Prefix Sums               0.78 solved_after_solution hard   + 6.56   11.8 [Bronze]
+  #31  Squares of a Sorted Array           Opposite-Direction (Conv  0.68 solved_after_solution hard   + 4.83   10.8 [Bronze]
+  #32  Delete Node in a Linked List        Reversal (Full and Parti  0.30 solved_clean       medium + 4.90    4.9 [Bronze]
+  #33  Letter Case Permutation             Combinations / Subsets    0.62 solved_clean       hard   + 8.26   15.6 [Bronze]
+  #34  Find if Path Exists in Graph        DFS Connected Components  0.72 solved_after_solution hard   + 7.41    7.4 [Bronze]
+  #35  JSON Deep Equal                     DFS Traversal (Inorder,   0.10 solved_after_solution hard   + 0.97   10.6 [Bronze]
+  #36  Closest Binary Search Tree Value    BST Operations (Insert,   0.62 solved_with_hints  medium + 9.84   10.8 [Bronze]
+  #37  Minimum Difference Between Highest  Fixed-Size Window         0.52 solved_after_solution hard   + 8.90    8.9 [Bronze]
+  #38  Search Insert Position              Boundary Finding (Bisect  0.85 struggled          hard   + 0.00    7.6 [Bronze]
+  #39  Minimum Speed to Arrive on Time     Binary Search on Answer   0.82 solved_with_hints  hard   +14.10   15.0 [Bronze]
+  #40  N-ary Tree Level Order Traversal    BFS / Level-Order Traver  0.73 solved_with_hints  medium +10.70   21.5 [Bronze->Silver!]
+  #41  Find the Shortest Superstring II    Word Break / String DP    0.38 struggled          hard   + 0.00    0.0 [Bronze]
+  #42  Walls and Gates                     Multi-Source BFS          0.88 solved_after_solution hard   +19.81   19.8 [Bronze]
+  #43  Binary Tree Preorder Traversal      DFS Traversal (Inorder,   0.82 solved_clean       medium + 4.17   14.8 [Bronze]
+  #44  Next Greater Node In Linked List    Monotonic Stack           0.68 struggled          hard   + 0.00    0.0 [Bronze]
+  #45  Perfect Squares                     Unbounded Knapsack        0.88 solved_with_hints  hard   +14.90   14.9 [Bronze]
+
+  --- Phase C: Pushing — harder problems, niche subtopics enter (problems 46-60) ---
+
+  #    Problem                             Subtopic                   Imp Quality            Perc      Chg  Score Tier
+  ---- ----------------------------------- ------------------------- ---- ------------------ ------ ------ ------ ---------------
+  #46  Design a Stack With Increment Oper  Stack-Based Simulation    0.58 solved_clean       hard   + 7.69   10.8 [Bronze]
+  #47  Next Greater Element II             Monotonic Stack           0.73 solved_after_solution hard   + 8.15    8.1 [Bronze]
+  #48  Flood Fill                          DFS Connected Components  0.82 solved_clean       medium + 8.68   16.1 [Bronze]
+  #49  H-Index II                          Boundary Finding (Bisect  0.61 solved_with_hints  hard   +11.40   19.0 [Bronze]
+  #50  Find the K-Beauty of a Number       Fixed-Size Window         0.25 solved_clean       medium + 6.04   14.9 [Bronze]
+  #51  Meeting Rooms II                    Sweep Line / Meeting Roo  0.91 solved_with_hints  hard   +18.34   18.3 [Bronze]
+  #52  Maximum Possible Number by Binary   Permutations              0.25 solved_with_hints  medium + 6.72   18.8 [Bronze]
+  #53  Maximum Weight in Two Bags          0/1 Knapsack              0.72 solved_after_solution hard   + 9.41   20.2 [Bronze->Silver!]
+  #54  Minimum Falling Path Sum            Grid Path Problems        0.74 struggled          hard   + 0.00    0.0 [Bronze]
+  #55  K Closest Points to Origin          Top-K Elements            0.82 solved_with_hints  medium +10.00   20.7 [Bronze->Silver!]
+  #56  Linked List Cycle                   Fast/Slow Pointers (Cycl  0.90 solved_with_hints  medium +16.86   16.9 [Bronze]
+  #57  Convert Sorted Array to Binary Sea  BST Operations (Insert,   0.70 solved_clean       medium +12.16   23.0 [Bronze->Silver!]
+  #58  Best Time to Buy and Sell Stock     Kadane's Algorithm (Max   0.92 solved_with_hints  medium +13.62   13.6 [Bronze]
+  #59  Equalize Strings by Adding or Remo  Two Sequence DP (LCS, Ed  0.55 solved_clean       hard   +14.58   14.6 [Bronze]
+  #60  Find All Possible Recipes from Giv  Topological Sort          0.72 solved_after_solution hard   + 9.61    9.6 [Bronze]
+
+  --- Subtopic Scores ---
+    BST Operations (Insert, Delete, Validate)       23.0 [Silver]  (imp:0.80, 3 attempts)
+    BFS / Level-Order Traversal                     21.5 [Silver]  (imp:0.90, 2 attempts)
+    Top-K Elements                                  20.7 [Silver]  (imp:0.85, 2 attempts)
+    0/1 Knapsack                                    20.2 [Silver]  (imp:0.80, 2 attempts)
+    Multi-Source BFS                                19.8 [Bronze]  (imp:0.75, 1 attempts)
+    Boundary Finding (Bisect Left/Right)            19.0 [Bronze]  (imp:0.85, 3 attempts)
+    Permutations                                    18.8 [Bronze]  (imp:0.85, 2 attempts)
+    BFS Shortest Path (Unweighted)                  18.6 [Bronze]  (imp:0.90, 5 attempts)
+    Sweep Line / Meeting Rooms                      18.3 [Bronze]  (imp:0.75, 1 attempts)
+    Fast/Slow Pointers (Cycle, Middle)              16.9 [Bronze]  (imp:0.75, 1 attempts)
+    DFS Connected Components                        16.1 [Bronze]  (imp:0.80, 2 attempts)
+    Standard Binary Search                          15.9 [Bronze]  (imp:0.95, 3 attempts)
+    Combinations / Subsets                          15.6 [Bronze]  (imp:0.90, 3 attempts)
+    DFS Traversal (Inorder, Preorder, Postorder)    15.5 [Bronze]  (imp:0.95, 6 attempts)
+    Binary Search on Answer Space                   15.0 [Bronze]  (imp:0.85, 3 attempts)
+    Fixed-Size Window                               14.9 [Bronze]  (imp:0.80, 2 attempts)
+    Unbounded Knapsack                              14.9 [Bronze]  (imp:0.80, 1 attempts)
+    Two Sequence DP (LCS, Edit distance)            14.6 [Bronze]  (imp:0.75, 1 attempts)
+    Variable-Size Window (Expand/Contract)          13.8 [Bronze]  (imp:0.90, 3 attempts)
+    Kadane's Algorithm (Max Subarray)               13.6 [Bronze]  (imp:0.70, 2 attempts)
+    Prefix Sums                                     13.2 [Bronze]  (imp:0.90, 4 attempts)
+    Complement Search (Two Sum Pattern)             11.3 [Bronze]  (imp:0.85, 1 attempts)
+    Opposite-Direction (Converging)                 10.8 [Bronze]  (imp:0.90, 3 attempts)
+    Stack-Based Simulation                          10.8 [Bronze]  (imp:0.80, 2 attempts)
+    Topological Sort                                 9.6 [Bronze]  (imp:0.80, 2 attempts)
+    Interval Merging                                 8.8 [Bronze]  (imp:0.80, 1 attempts)
+    Monotonic Stack                                  8.1 [Bronze]  (imp:0.80, 2 attempts)
+    Sorting + Comparison                             6.6 [Bronze]  (imp:0.75, 8 attempts)
+    Linear Recurrence DP                             5.4 [Bronze]  (imp:0.90, 7 attempts)
+    Reversal (Full and Partial)                      4.9 [Bronze]  (imp:0.80, 2 attempts)
+    Frequency Counting / Hash Map Lookup             3.4 [Bronze]  (imp:0.95, 12 attempts)
+    General Bit Manipulation                         2.9 [Bronze]  (imp:0.50, 4 attempts)
+    Merging Sorted Arrays                            2.5 [Bronze]  (imp:0.65, 1 attempts)
+    DFS Path Finding                                 2.4 [Bronze]  (imp:0.65, 1 attempts)
+    Matrix Traversal (Diagonal, Valid Sudoku, etc)    2.0 [Bronze]  (imp:0.60, 2 attempts)
+    Heap Simulation                                  1.7 [Bronze]  (imp:0.75, 1 attempts)
+    General Math                                     1.1 [Bronze]  (imp:0.45, 2 attempts)
+    Union-Find                                       1.0 [Bronze]  (imp:0.65, 1 attempts)
+    General Greedy (Greedy is main insight)          0.6 [Bronze]  (imp:0.75, 2 attempts)
+    Same-Direction (Fast/Slow on Arrays)             0.2 [Bronze]  (imp:0.75, 2 attempts)
+
+  --- Topic Levels ---
+    Arrays & Hashing                            8.5 [Bronze]
+    Two Pointers                                3.3 [Bronze]
+    Stack                                       6.9 [Bronze]
+    Binary Search                              11.6 [Bronze]
+    Sliding Window                             10.8 [Bronze]
+    Linked List                                 7.5 [Bronze]
+    Trees                                      13.3 [Bronze]
+    Backtracking                                8.2 [Bronze]
+    Heap / Priority Queue                       7.3 [Bronze]
+    Graphs                                     11.9 [Bronze]
+    Core DP                                     8.0 [Bronze]
+    Intervals                                   9.9 [Bronze]
+    Greedy                                      0.7 [Bronze]
+    Bit Manipulation                            2.9 [Bronze]
+    Math & Geometry                             0.2 [Bronze]
+
+    OVERALL                                     7.1 [Bronze]
+
+  Total attempts: 60
+
+==========================================================================================
+  SIMULATION: Experienced user — Silver/Gold baseline, pushing phase
+==========================================================================================
+
+  --- Pushing phase — 40 problems, harder difficulty, niche starts appearing ---
+
+  #    Problem                             Subtopic                   Imp Quality            Perc      Chg  Score Tier
+  ---- ----------------------------------- ------------------------- ---- ------------------ ------ ------ ------ ---------------
+  #1   Find First and Last Position of El  Boundary Finding (Bisect  0.88 solved_after_solution hard   +12.81   12.8 [Bronze]
+  #2   Missing Element in Sorted Array     Binary Search on Answer   0.62 solved_after_solution hard   + 7.57    7.6 [Bronze]
+  #3   Valid Perfect Square                Standard Binary Search    0.55 solved_after_solution hard   + 8.32    9.1 [Bronze]
+  #4   Two Sum III - Data structure desig  Complement Search (Two S  0.45 solved_with_hints  medium + 9.21    9.2 [Bronze]
+  #5   Longest Increasing Subsequence      Longest Increasing Subse  0.93 solved_after_solution hard   +21.23   21.2 [Bronze->Silver!]
+  #6   Get Equal Substrings Within Budget  Variable-Size Window (Ex  0.78 solved_after_solution hard   + 9.40    9.4 [Bronze]
+  #7   Ones and Zeroes                     0/1 Knapsack              0.72 solved_with_hints  hard   +14.03   14.0 [Bronze]
+  #8   Reverse Linked List                 Reversal (Full and Parti  0.93 solved_clean       medium +13.81   13.8 [Bronze]
+  #9   Guess Number Higher or Lower        Standard Binary Search    0.76 solved_clean       medium +12.46   21.5 [Bronze->Silver!]
+  #10  Minimum Cost to Reach City With Di  Dijkstra's (Weighted Sho  0.63 solved_clean       hard   +19.19   19.2 [Bronze]
+  #11  Determine if Two Events Have Confl  Interval Merging          0.35 struggled          hard   + 0.00    0.0 [Bronze]
+  #12  Max Area of Island                  DFS Connected Components  0.85 struggled          hard   + 0.00    0.0 [Bronze]
+  #13  Remove Element                      Same-Direction (Fast/Slo  0.78 struggled          hard   + 0.00    0.0 [Bronze]
+  #14  Best Time to Buy and Sell Stock     Kadane's Algorithm (Max   0.92 solved_clean       medium +16.77   16.8 [Bronze]
+  #15  Longest Semi-Repeating Subarray     Variable-Size Window (Ex  0.68 solved_with_hints  hard   + 9.48   18.9 [Bronze]
+  #16  Teemo Attacking                     Interval Merging          0.37 solved_clean       medium + 8.80    8.8 [Bronze]
+  #17  Linked List Cycle                   Fast/Slow Pointers (Cycl  0.90 struggled          hard   + 0.00    0.0 [Bronze]
+  #18  Cousins in Binary Tree              BFS / Level-Order Traver  0.42 struggled          hard   + 0.00    0.0 [Bronze]
+  #19  Remove Duplicates from Sorted List  Fast/Slow Pointers (Cycl  0.55 solved_clean       medium +12.78   12.8 [Bronze]
+  #20  Ad-Free Sessions                    Sweep Line / Meeting Roo  0.18 solved_after_solution hard   + 2.64    2.6 [Bronze]
+  #21  Apply Substitutions                 Topological Sort          0.43 solved_with_hints  hard   + 6.70    6.7 [Bronze]
+  #22  Triangle                            Grid Path Problems        0.76 struggled          hard   + 0.00    0.0 [Bronze]
+  #23  Combination Sum IV                  Unbounded Knapsack        0.82 solved_after_solution hard   +10.46   10.5 [Bronze]
+  #24  Rearrange Array Elements by Sign    Same-Direction (Fast/Slo  0.35 solved_after_solution hard   + 3.57    3.6 [Bronze]
+  #25  Longest Palindromic Subsequence     Two Sequence DP (LCS, Ed  0.76 struggled          hard   + 0.00    0.0 [Bronze]
+  #26  Rotting Oranges                     Multi-Source BFS          0.89 struggled          hard   + 0.00    0.0 [Bronze]
+  #27  Binary Tree Level Order Traversal   BFS / Level-Order Traver  0.42 solved_with_hints  hard   + 8.77    8.8 [Bronze]
+  #28  Flip Game II                        Constraint Satisfaction   0.38 solved_after_solution hard   +10.62   10.6 [Bronze]
+  #29  Unique 3-Digit Even Numbers         Permutations              0.35 struggled          hard   + 0.00    0.0 [Bronze]
+  #30  Assign Cookies                      General Greedy (Greedy i  0.52 solved_after_solution hard   + 2.88    2.9 [Bronze]
+  #31  Find the Power of K-Size Subarrays  Fixed-Size Window         0.48 solved_with_hints  hard   +10.40   10.4 [Bronze]
+  #32  Two Sum                             Complement Search (Two S  0.95 solved_clean       medium +20.25   29.5 [Bronze->Silver!]
+  #33  Maximum Weight in Two Bags          0/1 Knapsack              0.72 struggled          hard   + 0.00   14.0 [Bronze]
+  #34  Edit Distance                       Two Sequence DP (LCS, Ed  0.92 struggled          hard   + 0.00    0.0 [Bronze]
+  #35  Permutations                        Permutations              0.92 solved_after_solution hard   +18.87   18.9 [Bronze]
+  #36  Count Partitions with Even Sum Dif  Prefix Sums               0.40 solved_clean       medium + 5.10    6.9 [Bronze]
+  #37  3Sum Smaller                        K-Sum Pattern (3Sum, 4Su  0.62 struggled          hard   + 0.00    0.0 [Bronze]
+  #38  Number of Ways to Split Array       Prefix Sums               0.71 struggled          hard   + 0.00    6.9 [Bronze]
+  #39  As Far from Land as Possible        Multi-Source BFS          0.78 solved_clean       hard   +33.09   33.1 [Bronze->Silver!]
+  #40  Adjacent Increasing Subarrays Dete  Prefix Sums               0.33 solved_clean       medium + 4.68   11.6 [Bronze]
+
+  --- Subtopic Scores ---
+    DFS Traversal (Inorder, Preorder, Postorder)    40.0 [Gold]  (imp:0.95, 1 attempts)
+    Frequency Counting / Hash Map Lookup            37.8 [Silver]  (imp:0.95, 11 attempts)
+    Multi-Source BFS                                33.1 [Silver]  (imp:0.75, 2 attempts)
+    Monotonic Stack                                 30.0 [Silver]  (imp:0.80, 0 attempts)
+    Opposite-Direction (Converging)                 30.0 [Silver]  (imp:0.90, 0 attempts)
+    Complement Search (Two Sum Pattern)             29.5 [Silver]  (imp:0.85, 2 attempts)
+    BFS Shortest Path (Unweighted)                  25.0 [Silver]  (imp:0.90, 0 attempts)
+    Combinations / Subsets                          25.0 [Silver]  (imp:0.90, 0 attempts)
+    Linear Recurrence DP                            22.1 [Silver]  (imp:0.90, 3 attempts)
+    Standard Binary Search                          21.5 [Silver]  (imp:0.95, 4 attempts)
+    Longest Increasing Subsequence                  21.2 [Silver]  (imp:0.75, 1 attempts)
+    Top-K Elements                                  20.0 [Silver]  (imp:0.85, 0 attempts)
+    Dijkstra's (Weighted Shortest Path)             19.2 [Bronze]  (imp:0.75, 1 attempts)
+    Variable-Size Window (Expand/Contract)          18.9 [Bronze]  (imp:0.90, 2 attempts)
+    Permutations                                    18.9 [Bronze]  (imp:0.85, 2 attempts)
+
+  --- Topic Levels ---
+    Arrays & Hashing                           17.9 [Bronze]
+    Two Pointers                                8.6 [Bronze]
+    Stack                                      10.9 [Bronze]
+    Binary Search                              10.3 [Bronze]
+    Sliding Window                             11.2 [Bronze]
+    Linked List                                 9.4 [Bronze]
+    Trees                                      11.6 [Bronze]
+    Backtracking                               12.6 [Bronze]
+    Heap / Priority Queue                       6.5 [Bronze]
+    Graphs                                     11.7 [Bronze]
+    Core DP                                    10.1 [Bronze]
+    Intervals                                   4.3 [Bronze]
+    Greedy                                      2.9 [Bronze]
+    Advanced Graphs                             6.8 [Bronze]
+    Math & Geometry                             0.3 [Bronze]
+
+    OVERALL                                     8.6 [Bronze]
+
+==========================================================================================
+  SIMULATION: Struggle then recovery — reco engine adapts
+==========================================================================================
+
+  --- Phase A: Struggling on hard problems (forced) ---
+
+  #    Problem                             Subtopic                   Imp Quality            Perc      Chg  Score Tier
+  ---- ----------------------------------- ------------------------- ---- ------------------ ------ ------ ------ ---------------
+  #1   Count Subarrays With Score Less Th  Variable-Size Window (Ex  0.73 struggled          hard   + 0.00   50.0 [Gold]
+  #2   Minimum Operations to Reduce X to   Variable-Size Window (Ex  0.78 struggled          hard   + 0.00   50.0 [Gold]
+  #3   Minimum Number of K Consecutive Bi  Variable-Size Window (Ex  0.53 struggled          hard   + 0.00   50.0 [Gold]
+  #4   Count Substrings That Can Be Rearr  Variable-Size Window (Ex  0.78 struggled          hard   + 0.00   50.0 [Gold]
+  #5   Find Two Non-overlapping Sub-array  Variable-Size Window (Ex  0.62 struggled          hard   + 0.00   50.0 [Gold]
+  #6   Substring with Concatenation of Al  Variable-Size Window (Ex  0.58 struggled          hard   + 0.00   50.0 [Gold]
+  #7   Frequency of the Most Frequent Ele  Variable-Size Window (Ex  0.78 struggled          hard   + 0.00   50.0 [Gold]
+  #8   Replace the Substring for Balanced  Variable-Size Window (Ex  0.68 struggled          hard   + 0.00   50.0 [Gold]
+
+  Trough: 50.0 [Gold]
+
+  --- Phase B: Reco engine now serves easier problems to rebuild (auto quality) ---
+
+  #    Problem                             Subtopic                   Imp Quality            Perc      Chg  Score Tier
+  ---- ----------------------------------- ------------------------- ---- ------------------ ------ ------ ------ ---------------
+  #9   Number of Substrings Containing Al  Variable-Size Window (Ex  0.76 solved_clean       medium + 7.17   57.2 [Gold]
+  #10  Maximum Fruits Harvested After at   Variable-Size Window (Ex  0.58 solved_clean       medium + 8.77   65.9 [Gold->Platinum!]
+  #11  Maximum Number of Robots Within Bu  Variable-Size Window (Ex  0.73 solved_clean       medium + 7.14   73.1 [Platinum]
+  #12  Maximum Number of Visible Points    Variable-Size Window (Ex  0.33 solved_clean       medium + 7.14   80.2 [Platinum->Diamond!]
+  #13  Count Zero Request Servers          Variable-Size Window (Ex  0.55 solved_clean       medium + 8.95   89.2 [Diamond]
+  #14  Maximize Win From Two Segments      Variable-Size Window (Ex  0.62 solved_clean       easy   + 4.09   93.3 [Diamond]
+  #15  Maximum Difference Between Even an  Variable-Size Window (Ex  0.42 solved_clean       medium + 6.74  100.0 [Diamond]
+  #16  Minimum Number of Operations to Ma  Variable-Size Window (Ex  0.68 solved_clean       easy   + 0.00  100.0 [Diamond]
+  #17  Find the Longest Equal Subarray     Variable-Size Window (Ex  0.68 solved_clean       easy   + 0.00  100.0 [Diamond]
+  #18  Count Non-Decreasing Subarrays Aft  Variable-Size Window (Ex  0.25 solved_clean       medium + 0.00  100.0 [Diamond]
+  #19  Subarrays with K Different Integer  Variable-Size Window (Ex  0.82 solved_clean       easy   + 0.00  100.0 [Diamond]
+  #20  Continuous Subarrays                Variable-Size Window (Ex  0.73 solved_clean       easy   + 0.00  100.0 [Diamond]
+
+  --- Subtopic Scores ---
+    Variable-Size Window (Expand/Contract)         100.0 [Diamond]  (imp:0.90, 20 attempts)
+    Window with Monotonic Deque                     15.8 [Bronze]  (imp:0.55, 2 attempts)
+    Boundary Finding (Bisect Left/Right)             6.7 [Bronze]  (imp:0.85, 3 attempts)
+    Prefix Sums                                      4.4 [Bronze]  (imp:0.90, 8 attempts)
+    Frequency Counting / Hash Map Lookup             3.6 [Bronze]  (imp:0.95, 8 attempts)
+    Sorting + Comparison                             3.5 [Bronze]  (imp:0.75, 4 attempts)
+    General Bit Manipulation                         1.2 [Bronze]  (imp:0.50, 1 attempts)
+    Linear Recurrence DP                             1.0 [Bronze]  (imp:0.90, 2 attempts)
+    Monotonic Stack                                  1.0 [Bronze]  (imp:0.80, 1 attempts)
+    General Math                                     0.8 [Bronze]  (imp:0.45, 1 attempts)
+
+==========================================================================================
+  SIMULATION: Importance contrast — natural reco engine ordering
+==========================================================================================
+
+  --- 30 problems via reco engine — observe importance distribution ---
+
+  #    Problem                             Subtopic                   Imp Quality            Perc      Chg  Score Tier
+  ---- ----------------------------------- ------------------------- ---- ------------------ ------ ------ ------ ---------------
+  #1   Reverse String                      Opposite-Direction (Conv  0.78 solved_clean       medium + 6.19    6.2 [Bronze]
+  #2   Group By                            Frequency Counting / Has  0.06 solved_clean       medium + 0.27    0.3 [Bronze]
+  #3   Guess Number Higher or Lower        Standard Binary Search    0.76 solved_clean       medium +14.02   14.0 [Bronze]
+  #4   Generate Binary Strings Without Ad  Combinations / Subsets    0.42 struggled          hard   + 0.00    0.0 [Bronze]
+  #5   Binary Tree Paths                   DFS Traversal (Inorder,   0.68 solved_clean       medium + 4.47    4.5 [Bronze]
+  #6   Restaurant Growth                   Prefix Sums               0.12 struggled          hard   + 0.00    0.0 [Bronze]
+  #7   Minimum Total Operations            Prefix Sums               0.38 solved_with_hints  medium + 3.79    3.8 [Bronze]
+  #8   Maximum Number of Jumps to Reach t  Linear Recurrence DP      0.62 struggled          hard   + 0.00    0.0 [Bronze]
+  #9   Find the Longest Semi-Repetitive S  Variable-Size Window (Ex  0.68 solved_with_hints  hard   +10.69   10.7 [Bronze]
+  #10  Create a New Column                 Frequency Counting / Has  0.05 solved_clean       medium + 0.21    0.5 [Bronze]
+  #11  Maximum Level Sum of a Binary Tree  BFS / Level-Order Traver  0.68 solved_after_solution hard   +11.20   11.2 [Bronze]
+  #12  Consecutive Numbers                 Frequency Counting / Has  0.08 solved_with_hints  medium + 0.37    0.8 [Bronze]
+  #13  Maximum Possible Number by Binary   Permutations              0.25 struggled          hard   + 0.00    0.0 [Bronze]
+  #14  Egg Drop With 2 Eggs and N Floors   Linear Recurrence DP      0.48 solved_after_solution hard   + 3.91    3.9 [Bronze]
+  #15  Shortest Path in Binary Matrix      BFS Shortest Path (Unwei  0.82 solved_after_solution hard   +14.43   14.4 [Bronze]
+  #16  Max Area of Island                  DFS Connected Components  0.85 solved_clean       hard   +14.30   14.3 [Bronze]
+  #17  Valid Phone Numbers                 Frequency Counting / Has  0.07 solved_with_hints  medium + 0.33    1.2 [Bronze]
+  #18  Sqrt(x)                             Binary Search on Answer   0.72 solved_with_hints  medium + 6.98    7.0 [Bronze]
+  #19  Array Upper Bound                   Boundary Finding (Bisect  0.15 solved_with_hints  medium + 1.99    2.0 [Bronze]
+  #20  Combination Sum III                 Combinations / Subsets    0.72 struggled          hard   + 0.00    0.0 [Bronze]
+  #21  Remove Linked List Elements         Reversal (Full and Parti  0.52 struggled          hard   + 0.00    0.0 [Bronze]
+  #22  Climbing Stairs II                  Linear Recurrence DP      0.68 solved_after_solution hard   + 5.53    9.4 [Bronze]
+  #23  K Closest Points to Origin          Top-K Elements            0.82 solved_after_solution hard   +10.98   11.0 [Bronze]
+  #24  Count Pairs That Form a Complete D  Complement Search (Two S  0.55 struggled          hard   + 0.00    0.0 [Bronze]
+  #25  Find First and Last Position of El  Boundary Finding (Bisect  0.88 solved_after_solution hard   +12.53   14.5 [Bronze]
+  #26  Same Tree                           DFS Traversal (Inorder,   0.78 solved_clean       medium + 4.41    9.2 [Bronze]
+  #27  Permutations                        Permutations              0.92 struggled          hard   + 0.00    0.0 [Bronze]
+  #28  Find Champion II                    Topological Sort          0.55 struggled          hard   + 0.00    0.0 [Bronze]
+  #29  Closest Binary Search Tree Value    BST Operations (Insert,   0.62 solved_after_solution hard   + 9.53    9.5 [Bronze]
+  #30  Minimum Difference Between Highest  Fixed-Size Window         0.52 solved_with_hints  hard   +11.57   11.6 [Bronze]
+
+  High importance (>0.7) avg gain: 8.38 (10 problems)
+  Low importance (<0.35) avg gain: 0.45 (7 problems)
+  Ratio: 18.5x
+
+  --- Subtopic Scores ---
+    Standard Binary Search                          15.9 [Bronze]  (imp:0.95, 3 attempts)
+    Boundary Finding (Bisect Left/Right)            14.5 [Bronze]  (imp:0.85, 2 attempts)
+    BFS Shortest Path (Unweighted)                  14.4 [Bronze]  (imp:0.90, 1 attempts)
+    DFS Connected Components                        14.3 [Bronze]  (imp:0.80, 1 attempts)
+    Fixed-Size Window                               11.6 [Bronze]  (imp:0.80, 1 attempts)
+    BFS / Level-Order Traversal                     11.2 [Bronze]  (imp:0.90, 1 attempts)
+    Top-K Elements                                  11.0 [Bronze]  (imp:0.85, 1 attempts)
+    Variable-Size Window (Expand/Contract)          10.7 [Bronze]  (imp:0.90, 1 attempts)
+    BST Operations (Insert, Delete, Validate)        9.5 [Bronze]  (imp:0.80, 1 attempts)
+    Linear Recurrence DP                             9.4 [Bronze]  (imp:0.90, 3 attempts)
+
+==========================================================================================
+  SIMULATION: Depth — 30 problems, one subtopic focus
+==========================================================================================
+
+  #    Problem                             Subtopic                   Imp Quality            Perc      Chg  Score Tier
+  ---- ----------------------------------- ------------------------- ---- ------------------ ------ ------ ------ ---------------
+  #1   Remove K Digits                     Monotonic Stack           0.78 solved_after_solution hard   + 9.65    9.7 [Bronze]
+  #2   Make Array Non-decreasing           Monotonic Stack           0.52 solved_with_hints  hard   + 7.59   17.2 [Bronze]
+  #3   Next Greater Element II             Monotonic Stack           0.73 solved_clean       medium + 8.78   26.0 [Bronze->Silver!]
+  #4   Maximal Range That Each Element Is  Monotonic Stack           0.72 solved_clean       medium + 9.25   35.3 [Silver]
+  #5   132 Pattern                         Monotonic Stack           0.62 struggled          hard   + 0.00   35.3 [Silver]
+  #6   Daily Temperatures                  Monotonic Stack           0.91 struggled          medium + 0.00   35.3 [Silver]
+  #7   Next Greater Node In Linked List    Monotonic Stack           0.68 solved_clean       medium + 7.93   43.2 [Silver->Gold!]
+  #8   Beautiful Towers I                  Monotonic Stack           0.60 solved_clean       medium + 6.31   49.5 [Gold]
+  #9   Number of Valid Subarrays           Monotonic Stack           0.66 solved_clean       medium + 7.69   57.2 [Gold]
+  #10  Max Chunks To Make Sorted II        Monotonic Stack           0.52 solved_clean       medium + 6.51   63.7 [Gold->Platinum!]
+  #11  Sum of Subarray Minimums            Monotonic Stack           0.78 solved_clean       medium + 8.07   71.8 [Platinum]
+  #12  Find the Number of Subarrays Where  Monotonic Stack           0.55 solved_clean       medium + 7.00   78.8 [Platinum]
+  #13  Maximum Number of Books You Can Ta  Monotonic Stack           0.52 solved_clean       medium + 7.78   86.6 [Platinum->Diamond!]
+  #14  Car Fleet II                        Monotonic Stack           0.52 struggled          medium + 0.00   86.6 [Diamond]
+  #15  Create Maximum Number               Monotonic Stack           0.42 solved_clean       medium + 7.57   94.1 [Diamond]
+  #16  Steps to Make Array Non-decreasing  Monotonic Stack           0.44 solved_clean       medium + 5.86  100.0 [Diamond]
+  #17  Find Building Where Alice and Bob   Monotonic Stack           0.58 solved_clean       easy   + 0.00  100.0 [Diamond]
+  #18  Sum of Total Strength of Wizards    Monotonic Stack           0.47 struggled          medium + 0.00  100.0 [Diamond]
+  #19  Maximum Sum Queries                 Monotonic Stack           0.32 solved_clean       easy   + 0.00  100.0 [Diamond]
+  #20  Jump Game VIII                      Monotonic Stack           0.43 solved_clean       easy   + 0.00  100.0 [Diamond]
+  #21  Maximum and Minimum Sums of at Mos  Monotonic Stack           0.42 solved_clean       medium + 0.00  100.0 [Diamond]
+  #22  Find Sorted Submatrices With Maxim  Monotonic Stack           0.38 solved_clean       easy   + 0.00  100.0 [Diamond]
+  #23  Lexicographically Smallest String   Monotonic Stack           0.52 solved_clean       easy   + 0.00  100.0 [Diamond]
+  #24  Odd Even Jump                       Monotonic Stack           0.48 solved_clean       easy   + 0.00  100.0 [Diamond]
+  #25  Smallest Subsequence of Distinct C  Monotonic Stack           0.78 solved_clean       easy   + 0.00  100.0 [Diamond]
+  #26  Beautiful Towers II                 Monotonic Stack           0.68 solved_clean       easy   + 0.00  100.0 [Diamond]
+  #27  Smallest K-Length Subsequence With  Monotonic Stack           0.42 solved_clean       medium + 0.00  100.0 [Diamond]
+  #28  Maximum Subarray Min-Product        Monotonic Stack           0.76 solved_clean       easy   + 0.00  100.0 [Diamond]
+  #29  Subarray With Elements Greater Tha  Monotonic Stack           0.52 solved_clean       easy   + 0.00  100.0 [Diamond]
+  #30  Number of Visible People in a Queu  Monotonic Stack           0.72 solved_clean       easy   + 0.00  100.0 [Diamond]
+
+  --- Subtopic Scores ---
+    Monotonic Stack                                100.0 [Diamond]  (imp:0.80, 30 attempts)
+    General Greedy (Greedy is main insight)          7.4 [Bronze]  (imp:0.75, 8 attempts)
+    Prefix Sums                                      6.9 [Bronze]  (imp:0.90, 7 attempts)
+    Linear Recurrence DP                             5.1 [Bronze]  (imp:0.90, 5 attempts)
+    Boundary Finding (Bisect Left/Right)             3.5 [Bronze]  (imp:0.85, 2 attempts)
+    Sorting + Comparison                             2.8 [Bronze]  (imp:0.75, 4 attempts)
+    Modular Arithmetic                               2.3 [Bronze]  (imp:0.55, 2 attempts)
+    Union-Find                                       2.2 [Bronze]  (imp:0.65, 1 attempts)
+    Merging Sorted Arrays                            1.9 [Bronze]  (imp:0.65, 1 attempts)
+    Frequency Counting / Hash Map Lookup             1.9 [Bronze]  (imp:0.95, 4 attempts)
+    Matrix Traversal (Diagonal, Valid Sudoku, etc)    1.8 [Bronze]  (imp:0.60, 1 attempts)
+    Reversal (Full and Partial)                      1.5 [Bronze]  (imp:0.80, 1 attempts)
+    Heap Simulation                                  1.3 [Bronze]  (imp:0.75, 1 attempts)
+    Dijkstra's (Weighted Shortest Path)              1.2 [Bronze]  (imp:0.75, 1 attempts)
+    General Math                                     0.8 [Bronze]  (imp:0.45, 2 attempts)
+
+  --- Topic Levels ---
+    Arrays & Hashing                            2.3 [Bronze]
+    Two Pointers                                0.3 [Bronze]
+    Stack                                      36.4 [Silver]
+    Binary Search                               0.8 [Bronze]
+    Linked List                                 0.5 [Bronze]
+    Heap / Priority Queue                       0.4 [Bronze]
+    Graphs                                      0.3 [Bronze]
+    Core DP                                     0.8 [Bronze]
+    Greedy                                      7.4 [Bronze]
+    Advanced Graphs                             0.4 [Bronze]
+    Math & Geometry                             0.6 [Bronze]
+
+    OVERALL                                     3.1 [Bronze]
+
+==========================================================================================
+  SIMULATION: Breadth — 30 problems, reco engine across all subtopics
+==========================================================================================
+
+  #    Problem                             Subtopic                   Imp Quality            Perc      Chg  Score Tier
+  ---- ----------------------------------- ------------------------- ---- ------------------ ------ ------ ------ ---------------
+  #1   Evaluate Boolean Binary Tree        DFS Traversal (Inorder,   0.62 solved_after_solution hard   + 3.53    3.5 [Bronze]
+  #2   Equal Score Substrings              Prefix Sums               0.42 solved_after_solution hard   + 4.36    4.4 [Bronze]
+  #3   Employees Whose Manager Left the C  Frequency Counting / Has  0.18 struggled          hard   + 0.00    0.0 [Bronze]
+  #4   Combination Sum                     Combinations / Subsets    0.90 solved_clean       hard   +12.41   12.4 [Bronze]
+  #5   Ads Performance                     Frequency Counting / Has  0.10 struggled          hard   + 0.00    0.0 [Bronze]
+  #6   Binary Search                       Standard Binary Search    0.93 solved_clean       medium +14.58   14.6 [Bronze]
+  #7   The Maze                            BFS Shortest Path (Unwei  0.61 solved_with_hints  hard   +13.27   13.3 [Bronze]
+  #8   Binary Tree Level Order Traversal   BFS / Level-Order Traver  0.42 struggled          hard   + 0.00    0.0 [Bronze]
+  #9   Find Largest Value in Each Tree Ro  BFS / Level-Order Traver  0.53 solved_after_solution hard   + 8.69    8.7 [Bronze]
+  #10  Reverse Prefix of Word              Opposite-Direction (Conv  0.30 solved_clean       medium + 3.05    3.1 [Bronze]
+  #11  Project Employees I                 Frequency Counting / Has  0.10 solved_with_hints  medium + 0.41    0.4 [Bronze]
+  #12  House Robber II                     Linear Recurrence DP      0.78 struggled          hard   + 0.00    0.0 [Bronze]
+  #13  Binary Tree Inorder Traversal       DFS Traversal (Inorder,   0.88 solved_clean       medium + 5.03    9.0 [Bronze]
+  #14  Heaters                             Binary Search on Answer   0.51 solved_with_hints  hard   + 7.80    7.8 [Bronze]
+  #15  Two Sum                             Complement Search (Two S  0.95 solved_clean       medium +23.18   23.2 [Bronze->Silver!]
+  #16  Top K Frequent Elements             Top-K Elements            0.91 struggled          hard   + 0.00    0.0 [Bronze]
+  #17  Longest Substring with At Most Two  Variable-Size Window (Ex  0.82 solved_with_hints  hard   +11.78   11.8 [Bronze]
+  #18  Maximum Number of Jumps to Reach t  Linear Recurrence DP      0.62 solved_with_hints  hard   + 6.62    6.6 [Bronze]
+  #19  Remove Covered Intervals            Interval Merging          0.62 struggled          hard   + 0.00    0.0 [Bronze]
+  #20  Palindrome Permutation              Frequency Counting / Has  0.47 solved_with_hints  medium + 1.90    3.7 [Bronze]
+  #21  Apply Substitutions                 Topological Sort          0.43 solved_after_solution hard   + 5.15    5.2 [Bronze]
+  #22  Minimum Number of Operations to Mo  Prefix Sums               0.62 solved_after_solution hard   + 6.38   10.7 [Bronze]
+  #23  Find First and Last Position of El  Boundary Finding (Bisect  0.88 struggled          hard   + 0.00    1.3 [Bronze]
+  #24  Find First Palindromic String in t  Opposite-Direction (Conv  0.15 solved_after_solution hard   + 1.36    4.4 [Bronze]
+  #25  Odd Even Linked List                Reversal (Full and Parti  0.58 solved_after_solution hard   + 7.89    7.9 [Bronze]
+  #26  Minimum Difference Between Highest  Fixed-Size Window         0.52 struggled          hard   + 0.00    0.0 [Bronze]
+  #27  Permutations                        Permutations              0.92 struggled          hard   + 0.00    0.0 [Bronze]
+  #28  Kth Largest Element in a Stream     Top-K Elements            0.82 solved_after_solution hard   +10.73   10.7 [Bronze]
+  #29  Maximum Profit From Trading Stocks  0/1 Knapsack              0.73 solved_after_solution hard   +10.32   10.3 [Bronze]
+  #30  Find Center of Star Graph           DFS Connected Components  0.15 solved_with_hints  hard   + 2.11    2.6 [Bronze]
+
+  --- Subtopic Scores ---
+    Complement Search (Two Sum Pattern)             23.2 [Silver]  (imp:0.85, 1 attempts)
+    Standard Binary Search                          14.6 [Bronze]  (imp:0.95, 2 attempts)
+    BFS Shortest Path (Unweighted)                  13.3 [Bronze]  (imp:0.90, 1 attempts)
+    Combinations / Subsets                          12.4 [Bronze]  (imp:0.90, 1 attempts)
+    Variable-Size Window (Expand/Contract)          11.8 [Bronze]  (imp:0.90, 1 attempts)
+    Prefix Sums                                     10.7 [Bronze]  (imp:0.90, 2 attempts)
+    Top-K Elements                                  10.7 [Bronze]  (imp:0.85, 2 attempts)
+    0/1 Knapsack                                    10.3 [Bronze]  (imp:0.80, 1 attempts)
+    DFS Traversal (Inorder, Preorder, Postorder)     9.0 [Bronze]  (imp:0.95, 3 attempts)
+    BFS / Level-Order Traversal                      8.7 [Bronze]  (imp:0.90, 2 attempts)
+    Reversal (Full and Partial)                      7.9 [Bronze]  (imp:0.80, 1 attempts)
+    Binary Search on Answer Space                    7.8 [Bronze]  (imp:0.85, 1 attempts)
+    Linear Recurrence DP                             6.6 [Bronze]  (imp:0.90, 2 attempts)
+    Topological Sort                                 5.2 [Bronze]  (imp:0.80, 1 attempts)
+    Opposite-Direction (Converging)                  4.4 [Bronze]  (imp:0.90, 2 attempts)
+    Frequency Counting / Hash Map Lookup             4.2 [Bronze]  (imp:0.95, 10 attempts)
+    DFS Connected Components                         2.6 [Bronze]  (imp:0.80, 2 attempts)
+    DFS Path Finding                                 2.4 [Bronze]  (imp:0.65, 1 attempts)
+    Unbounded Knapsack                               1.8 [Bronze]  (imp:0.80, 1 attempts)
+    Boundary Finding (Bisect Left/Right)             1.3 [Bronze]  (imp:0.85, 2 attempts)
+    Matrix Traversal (Diagonal, Valid Sudoku, etc)    1.1 [Bronze]  (imp:0.60, 1 attempts)
+    BST Operations (Insert, Delete, Validate)        1.0 [Bronze]  (imp:0.80, 1 attempts)
+    Sorting + Comparison                             0.8 [Bronze]  (imp:0.75, 4 attempts)
+    Stack-Based Simulation                           0.7 [Bronze]  (imp:0.80, 1 attempts)
+    General Bit Manipulation                         0.4 [Bronze]  (imp:0.50, 1 attempts)
+    General Greedy (Greedy is main insight)          0.4 [Bronze]  (imp:0.75, 2 attempts)
+
+  --- Topic Levels ---
+    Arrays & Hashing                            7.3 [Bronze]
+    Two Pointers                                1.1 [Bronze]
+    Stack                                       0.2 [Bronze]
+    Binary Search                               5.7 [Bronze]
+    Sliding Window                              4.7 [Bronze]
+    Linked List                                 2.9 [Bronze]
+    Trees                                       4.3 [Bronze]
+    Backtracking                                3.1 [Bronze]
+    Heap / Priority Queue                       3.5 [Bronze]
+    Graphs                                      4.3 [Bronze]
+    Core DP                                     2.8 [Bronze]
+    Greedy                                      0.4 [Bronze]
+    Bit Manipulation                            0.4 [Bronze]
+
+    OVERALL                                     2.7 [Bronze]
+
+==========================================================================================
+  SIMULATION: Full journey — 150 problems with mode transitions
+==========================================================================================
+  #1   N-ary Tree Level Order Traversal    BFS / Level-Order Traver  0.73 solved_with_hints  medium +12.06   12.1 [Bronze]
+  #2   The Maze                            BFS Shortest Path (Unwei  0.61 solved_clean       hard   +16.33   16.3 [Bronze]
+  #3   Valid Perfect Square                Standard Binary Search    0.55 solved_after_solution hard   + 8.36    8.4 [Bronze]
+  #4   Combinations                        Combinations / Subsets    0.88 struggled          hard   + 0.00    0.0 [Bronze]
+  #5   Is Object Empty                     Frequency Counting / Has  0.04 solved_clean       medium + 0.16    0.2 [Bronze]
+  #6   Reverse String                      Opposite-Direction (Conv  0.78 solved_clean       medium + 6.19    6.2 [Bronze]
+  #7   Running Sum of 1d Array             Prefix Sums               0.72 solved_with_hints  medium + 6.94    6.9 [Bronze]
+  #8   Maximum Multiplication Score        Linear Recurrence DP      0.62 solved_with_hints  hard   + 7.22    7.2 [Bronze]
+  #9   Reshape Data: Melt                  Frequency Counting / Has  0.05 solved_with_hints  medium + 0.17    0.3 [Bronze]
+  #10  Peak Index in a Mountain Array      Standard Binary Search    0.72 solved_clean       medium +13.22   21.6 [Bronze->Silver!]
+  #11  Trim Trailing Vowels                Frequency Counting / Has  0.08 solved_clean       medium + 0.36    0.7 [Bronze]
+  #12  Longest Semi-Repeating Subarray     Variable-Size Window (Ex  0.68 solved_with_hints  hard   +10.20   10.2 [Bronze]
+  #13  Maximum Possible Number by Binary   Permutations              0.25 solved_with_hints  hard   + 7.22    7.2 [Bronze]
+  #14  K Closest Points to Origin          Top-K Elements            0.82 struggled          hard   + 0.00    0.0 [Bronze]
+  #15  Existence of a Substring in a Stri  Frequency Counting / Has  0.15 solved_after_solution hard   + 0.69    2.3 [Bronze]
+  #16  Kth Largest Element in a Stream     Top-K Elements            0.82 solved_clean       medium +13.74   13.7 [Bronze]
+  #17  Maximum Number of Vowels in a Subs  Fixed-Size Window         0.72 struggled          hard   + 0.00    0.0 [Bronze]
+  #18  Reverse Prefix of Word              Opposite-Direction (Conv  0.30 solved_clean       medium + 3.20    9.4 [Bronze]
+  #19  Find First and Last Position of El  Boundary Finding (Bisect  0.88 solved_after_solution hard   +12.81   12.8 [Bronze]
+  #20  Diameter of Binary Tree             DFS Traversal (Inorder,   0.88 struggled          hard   + 0.00    0.0 [Bronze]
+  #21  Letter Combinations of a Phone Num  Combinations / Subsets    0.79 struggled          hard   + 0.00    0.0 [Bronze]
+  #22  Two Sum III - Data structure desig  Complement Search (Two S  0.45 solved_with_hints  medium + 9.21    9.2 [Bronze]
+  #23  Next Greater Node In Linked List    Monotonic Stack           0.68 solved_with_hints  hard   +11.12   11.1 [Bronze]
+  #24  Ones and Zeroes                     0/1 Knapsack              0.72 solved_after_solution hard   +10.79   10.8 [Bronze]
+  #25  Construct String from Binary Tree   DFS Traversal (Inorder,   0.42 solved_after_solution hard   + 2.35    2.3 [Bronze]
+  #26  Paint House II                      Linear Recurrence DP      0.67 solved_with_hints  hard   + 7.02   14.2 [Bronze]
+  #27  Coin Change                         Unbounded Knapsack        0.93 solved_clean       hard   +18.56   18.6 [Bronze]
+  #28  Binary Tree Upside Down             DFS Traversal (Inorder,   0.28 solved_after_solution hard   + 1.65    4.0 [Bronze]
+  #29  Binary Tree Preorder Traversal      DFS Traversal (Inorder,   0.82 struggled          hard   + 0.00    4.0 [Bronze]
+  #30  Minimum Speed to Arrive on Time     Binary Search on Answer   0.82 solved_with_hints  hard   +14.12   14.8 [Bronze]
+
+  --- Checkpoint at 30 problems (mode: filling_gaps, avg mastery: 6.9) ---
+
+  --- Subtopic Scores ---
+    Standard Binary Search                          22.2 [Silver]  (imp:0.95, 3 attempts)
+    Unbounded Knapsack                              18.6 [Bronze]  (imp:0.80, 1 attempts)
+    BFS Shortest Path (Unweighted)                  16.3 [Bronze]  (imp:0.90, 1 attempts)
+    Binary Search on Answer Space                   14.8 [Bronze]  (imp:0.85, 2 attempts)
+    Linear Recurrence DP                            14.2 [Bronze]  (imp:0.90, 2 attempts)
+    Top-K Elements                                  13.7 [Bronze]  (imp:0.85, 2 attempts)
+    Boundary Finding (Bisect Left/Right)            12.8 [Bronze]  (imp:0.85, 1 attempts)
+    BFS / Level-Order Traversal                     12.1 [Bronze]  (imp:0.90, 1 attempts)
+    Monotonic Stack                                 11.1 [Bronze]  (imp:0.80, 1 attempts)
+    0/1 Knapsack                                    10.8 [Bronze]  (imp:0.80, 1 attempts)
+
+  --- Topic Levels ---
+    Arrays & Hashing                            3.8 [Bronze]
+    Two Pointers                                2.5 [Bronze]
+    Stack                                       4.3 [Bronze]
+    Binary Search                              11.7 [Bronze]
+    Sliding Window                              4.1 [Bronze]
+    Linked List                                 0.5 [Bronze]
+    Trees                                       4.0 [Bronze]
+    Backtracking                                1.7 [Bronze]
+    Heap / Priority Queue                       4.5 [Bronze]
+    Graphs                                      3.6 [Bronze]
+    Core DP                                     6.6 [Bronze]
+    Bit Manipulation                            0.8 [Bronze]
+    Math & Geometry                             0.1 [Bronze]
+
+    OVERALL                                     3.2 [Bronze]
+  #31  Apply Substitutions                 Topological Sort          0.43 solved_with_hints  hard   + 6.70    6.7 [Bronze]
+  #32  Meeting Rooms II                    Sweep Line / Meeting Roo  0.91 struggled          hard   + 0.00    0.0 [Bronze]
+  #33  Subsets                             Combinations / Subsets    0.92 solved_clean       hard   +11.80   11.8 [Bronze]
+  #34  Count Islands With Total Value Div  DFS Connected Components  0.72 solved_with_hints  hard   +10.99   11.7 [Bronze]
+  #35  Determine if Two Events Have Confl  Interval Merging          0.35 struggled          hard   + 0.00    0.0 [Bronze]
+  #36  Find All Anagrams in a String       Fixed-Size Window         0.86 solved_after_solution hard   +15.23   15.2 [Bronze]
+  #37  Find the Student that Will Replace  Prefix Sums               0.55 struggled          hard   + 0.00    6.9 [Bronze]
+  #38  Implement Stack using Queues        Stack-Based Simulation    0.55 solved_with_hints  medium + 4.23    4.9 [Bronze]
+  #39  Get Equal Substrings Within Budget  Variable-Size Window (Ex  0.78 solved_after_solution hard   + 8.57   18.8 [Bronze]
+  #40  Minimum Distance Between BST Nodes  DFS Traversal (Inorder,   0.62 solved_after_solution hard   + 3.43    7.4 [Bronze]
+  #41  Teemo Attacking                     Interval Merging          0.37 struggled          hard   + 0.00    0.0 [Bronze]
+  #42  Swap Nodes in Pairs                 Reversal (Full and Parti  0.56 solved_after_solution hard   + 7.35    8.8 [Bronze]
+  #43  Network Delay Time                  Dijkstra's (Weighted Sho  0.88 solved_after_solution hard   +14.72   14.7 [Bronze]
+  #44  Binary Tree Level Order Traversal   BFS / Level-Order Traver  0.42 solved_with_hints  medium + 6.85   18.9 [Bronze]
+  #45  My Calendar I                       Interval Merging          0.62 solved_after_solution hard   +14.37   14.4 [Bronze]
+  #46  Two City Scheduling                 General Greedy (Greedy i  0.78 struggled          hard   + 0.00    0.0 [Bronze]
+  #47  Number of Arithmetic Triplets       Complement Search (Two S  0.30 solved_clean       medium + 8.14   17.4 [Bronze]
+  #48  Deep Merge of Two Objects           DFS Traversal (Inorder,   0.14 struggled          hard   + 0.00    7.4 [Bronze]
+  #49  Sorting Three Groups                Longest Increasing Subse  0.58 solved_after_solution hard   +15.83   15.8 [Bronze]
+  #50  Unique 3-Digit Even Numbers         Permutations              0.35 solved_after_solution hard   + 7.82   15.0 [Bronze]
+  #51  Minimum Genetic Mutation            BFS Shortest Path (Unwei  0.68 solved_with_hints  medium + 9.29   25.6 [Bronze->Silver!]
+  #52  Knight Probability in Chessboard    Grid Path Problems        0.58 solved_with_hints  hard   +14.89   14.9 [Bronze]
+  #53  Rotting Oranges                     Multi-Source BFS          0.89 solved_after_solution hard   +20.64   20.6 [Bronze->Silver!]
+  #54  Word Break                          Word Break / String DP    0.92 struggled          hard   + 0.00    0.0 [Bronze]
+  #55  Partition String Into Minimum Beau  Word Break / String DP    0.52 struggled          hard   + 0.00    0.0 [Bronze]
+  #56  Longest Palindromic Subsequence     Two Sequence DP (LCS, Ed  0.76 solved_clean       hard   +19.98   20.0 [Bronze]
+  #57  Remove Duplicates from Sorted List  Fast/Slow Pointers (Cycl  0.55 solved_clean       medium +12.78   12.8 [Bronze]
+  #58  Restaurant Growth                   Prefix Sums               0.12 solved_clean       medium + 2.22    9.8 [Bronze]
+  #59  Flip Game II                        Constraint Satisfaction   0.38 solved_after_solution hard   +10.62   10.6 [Bronze]
+  #60  Is Subsequence                      Same-Direction (Fast/Slo  0.68 solved_after_solution hard   + 6.39    6.6 [Bronze]
+
+  --- Checkpoint at 60 problems (mode: filling_gaps, avg mastery: 10.5) ---
+
+  --- Subtopic Scores ---
+    BFS Shortest Path (Unweighted)                  25.6 [Silver]  (imp:0.90, 3 attempts)
+    Standard Binary Search                          22.2 [Silver]  (imp:0.95, 3 attempts)
+    Multi-Source BFS                                20.6 [Silver]  (imp:0.75, 1 attempts)
+    Two Sequence DP (LCS, Edit distance)            20.0 [Bronze]  (imp:0.75, 1 attempts)
+    BFS / Level-Order Traversal                     18.9 [Bronze]  (imp:0.90, 2 attempts)
+    Variable-Size Window (Expand/Contract)          18.8 [Bronze]  (imp:0.90, 2 attempts)
+    Unbounded Knapsack                              18.6 [Bronze]  (imp:0.80, 1 attempts)
+    Complement Search (Two Sum Pattern)             17.4 [Bronze]  (imp:0.85, 2 attempts)
+    Longest Increasing Subsequence                  15.8 [Bronze]  (imp:0.75, 1 attempts)
+    Linear Recurrence DP                            15.6 [Bronze]  (imp:0.90, 4 attempts)
+
+  --- Topic Levels ---
+    Arrays & Hashing                            6.7 [Bronze]
+    Two Pointers                                3.8 [Bronze]
+    Stack                                       5.8 [Bronze]
+    Binary Search                              12.1 [Bronze]
+    Sliding Window                             12.9 [Bronze]
+    Linked List                                 7.6 [Bronze]
+    Trees                                       6.7 [Bronze]
+    Backtracking                                8.4 [Bronze]
+    Heap / Priority Queue                       4.7 [Bronze]
+    Graphs                                     12.1 [Bronze]
+    Core DP                                    14.2 [Bronze]
+    Intervals                                   5.5 [Bronze]
+    Greedy                                      0.8 [Bronze]
+    Advanced Graphs                             5.3 [Bronze]
+    Bit Manipulation                            2.6 [Bronze]
+    Math & Geometry                             0.1 [Bronze]
+
+    OVERALL                                     6.9 [Bronze]
+  #61  Insert into a Binary Search Tree    BST Operations (Insert,   0.78 solved_clean       medium +14.85   17.7 [Bronze]
+  #62  3Sum                                K-Sum Pattern (3Sum, 4Su  0.91 solved_with_hints  hard   +29.14   29.1 [Bronze->Silver!]
+  #63  Find Champion II                    Topological Sort          0.55 struggled          hard   + 0.00    6.7 [Bronze]
+  #64  Minimum Value to Get Positive Step  Prefix Sums               0.55 solved_with_hints  medium + 5.38   15.2 [Bronze]
+  #65  Search in Rotated Sorted Array II   Search in Rotated/Modifi  0.72 solved_clean       hard   +22.78   22.8 [Bronze->Silver!]
+  #66  Letter Case Permutation             Combinations / Subsets    0.62 solved_with_hints  medium + 5.18   17.0 [Bronze]
+  #67  Reverse Only Letters                Opposite-Direction (Conv  0.55 solved_with_hints  medium + 4.38   13.8 [Bronze]
+  #68  Nested Array Generator              DFS Traversal (Inorder,   0.08 solved_with_hints  medium + 0.74    8.2 [Bronze]
+  #69  Sequence Reconstruction             Topological Sort          0.63 solved_with_hints  hard   +10.42   17.1 [Bronze]
+  #70  N-ary Tree Postorder Traversal      DFS Traversal (Inorder,   0.52 solved_clean       medium + 2.93   11.1 [Bronze]
+  #71  Find the Level of Tree with Minimu  BFS / Level-Order Traver  0.62 solved_clean       medium +11.33   30.2 [Bronze->Silver!]
+  #72  Maximum Profit From Trading Stocks  0/1 Knapsack              0.73 solved_after_solution hard   + 9.46   20.3 [Bronze->Silver!]
+  #73  Minimum Add to Make Parentheses Va  Stack-Based Simulation    0.72 solved_clean       medium + 7.16   12.6 [Bronze]
+  #74  Minimum Average of Smallest and La  Opposite-Direction (Conv  0.42 solved_clean       medium + 4.12   17.9 [Bronze]
+  #75  Next Greater Element I              Monotonic Stack           0.78 solved_clean       medium + 8.69   19.8 [Bronze]
+  #76  Maximum Subarray                    Kadane's Algorithm (Max   0.93 solved_after_solution hard   +14.80   14.8 [Bronze]
+  #77  Permutations III                    Permutations              0.58 solved_clean       medium +15.14   30.2 [Bronze->Silver!]
+  #78  Count Substrings That Satisfy K-Co  Variable-Size Window (Ex  0.62 solved_clean       medium + 6.92   25.7 [Bronze->Silver!]
+  #79  Add Two Numbers                     Merge Linked Lists        0.78 struggled          hard   + 0.00    0.0 [Bronze]
+  #80  Car Pooling                         Sweep Line / Meeting Roo  0.76 solved_clean       hard   +18.90   18.9 [Bronze]
+  #81  Design a 3D Binary Matrix with Eff  Heap Simulation           0.33 struggled          hard   + 0.00    0.8 [Bronze]
+  #82  Word Break II                       Word Break / String DP    0.72 struggled          hard   + 0.00    3.6 [Bronze]
+  #83  Remove Duplicates from Sorted Arra  Same-Direction (Fast/Slo  0.62 solved_after_solution hard   + 6.03   12.6 [Bronze]
+  #84  Ugly Number II                      Heap Simulation           0.63 solved_with_hints  hard   + 9.89   10.7 [Bronze]
+  #85  Find Smallest Letter Greater Than   Boundary Finding (Bisect  0.62 solved_clean       medium + 8.42   22.8 [Bronze->Silver!]
+  #86  Reverse Linked List                 Reversal (Full and Parti  0.93 solved_clean       medium +12.00   20.8 [Bronze->Silver!]
+  #87  Lowest Common Ancestor of a Binary  Lowest Common Ancestor    0.72 struggled          hard   + 0.00    0.0 [Bronze]
+  #88  Subsets II                          Combinations / Subsets    0.84 solved_clean       medium + 7.81   24.8 [Bronze->Silver!]
+  #89  Top K Frequent Elements             Top-K Elements            0.91 solved_with_hints  medium +11.07   24.8 [Bronze->Silver!]
+  #90  Merge Sorted Array                  Merging Sorted Arrays     0.82 struggled          hard   + 0.00    0.0 [Bronze]
+  #91  Check if a String Is an Acronym of  Frequency Counting / Has  0.12 solved_clean       medium + 0.89    7.7 [Bronze]
+  #92  Properties Graph                    Union-Find                0.58 solved_after_solution hard   + 9.69    9.7 [Bronze]
+  #93  Lowest Common Ancestor of a Binary  Lowest Common Ancestor    0.85 struggled          hard   + 0.00    0.0 [Bronze]
+  #94  Reverse String II                   Opposite-Direction (Conv  0.25 solved_clean       medium + 2.78   20.7 [Bronze->Silver!]
+  #95  Count Univalue Subtrees             DFS Traversal (Inorder,   0.56 solved_clean       medium + 3.86   15.0 [Bronze]
+  #96  Search in a Sorted Array of Unknow  Standard Binary Search    0.62 solved_clean       medium +11.24   33.4 [Silver]
+  #97  Longest String Chain                Longest Increasing Subse  0.73 solved_after_solution hard   +16.45   32.3 [Bronze->Silver!]
+  #98  Moving Average from Data Stream     Fixed-Size Window         0.45 solved_clean       medium + 6.97   22.2 [Bronze->Silver!]
+  #99  Path Sum II                         Path Sum Problems         0.72 struggled          hard   + 0.00    0.0 [Bronze]
+  #100 Path Sum                            Path Sum Problems         0.78 solved_with_hints  medium +20.08   20.1 [Bronze->Silver!]
+
+  --- Checkpoint at 100 problems (mode: filling_gaps, avg mastery: 15.0) ---
+
+  --- Subtopic Scores ---
+    Standard Binary Search                          33.4 [Silver]  (imp:0.95, 4 attempts)
+    Longest Increasing Subsequence                  32.3 [Silver]  (imp:0.75, 2 attempts)
+    BFS / Level-Order Traversal                     30.2 [Silver]  (imp:0.90, 3 attempts)
+    Permutations                                    30.2 [Silver]  (imp:0.85, 3 attempts)
+    K-Sum Pattern (3Sum, 4Sum)                      29.1 [Silver]  (imp:0.70, 1 attempts)
+    Variable-Size Window (Expand/Contract)          25.7 [Silver]  (imp:0.90, 3 attempts)
+    BFS Shortest Path (Unweighted)                  25.6 [Silver]  (imp:0.90, 3 attempts)
+    Boundary Finding (Bisect Left/Right)            24.9 [Silver]  (imp:0.85, 5 attempts)
+    Top-K Elements                                  24.8 [Silver]  (imp:0.85, 3 attempts)
+    Combinations / Subsets                          24.8 [Silver]  (imp:0.90, 5 attempts)
+
+  --- Topic Levels ---
+    Arrays & Hashing                           12.2 [Bronze]
+    Two Pointers                               13.8 [Bronze]
+    Stack                                      11.8 [Bronze]
+    Binary Search                              21.4 [Silver]
+    Sliding Window                             18.2 [Bronze]
+    Linked List                                11.9 [Bronze]
+    Trees                                      17.5 [Bronze]
+    Backtracking                               15.4 [Bronze]
+    Heap / Priority Queue                      11.2 [Bronze]
+    Graphs                                     15.5 [Bronze]
+    Core DP                                    18.1 [Bronze]
+    Intervals                                  12.2 [Bronze]
+    Greedy                                      2.2 [Bronze]
+    Advanced Graphs                             5.3 [Bronze]
+    Bit Manipulation                            3.3 [Bronze]
+    Math & Geometry                             0.2 [Bronze]
+
+    OVERALL                                    12.1 [Bronze]
+  #101 Perfect Squares                     Unbounded Knapsack        0.88 solved_clean       medium +11.74   30.3 [Bronze->Silver!]
+  #102 Interval List Intersections         Merging Sorted Arrays     0.78 struggled          hard   + 0.00    0.0 [Bronze]
+  #103 Minimum Cost to Reach City With Di  Dijkstra's (Weighted Sho  0.63 solved_with_hints  hard   +14.58   29.3 [Bronze->Silver!]
+  #104 Lowest Common Ancestor of a Binary  Lowest Common Ancestor    0.71 struggled          hard   + 0.00    0.0 [Bronze]
+  #105 Partition String                    Trie Construction / Pref  0.35 solved_clean       hard   + 9.85    9.8 [Bronze]
+  #106 Clone Graph                         DFS Connected Components  0.83 struggled          hard   + 0.00   12.5 [Bronze]
+  #107 Merge Two Sorted Lists              Merge Linked Lists        0.88 solved_clean       medium +20.91   20.9 [Bronze->Silver!]
+  #108 Employee Bonus                      Frequency Counting / Has  0.08 struggled          medium + 0.00    9.4 [Bronze]
+  #109 Find the Shortest Superstring II    Word Break / String DP    0.38 solved_clean       medium + 8.08   11.7 [Bronze]
+  #110 All Paths from Source Lead to Dest  DFS Path Finding          0.52 solved_with_hints  hard   +13.98   16.9 [Bronze]
+  #111 Cutting Ribbons                     Binary Search on Answer   0.78 solved_clean       hard   +13.45   28.3 [Bronze->Silver!]
+  #112 Winner of the Linked List Game      Fast/Slow Pointers (Cycl  0.18 solved_clean       medium + 5.36   18.1 [Bronze]
+  #113 Restore IP Addresses                String Partitioning (Pal  0.55 solved_with_hints  hard   +22.48   22.5 [Bronze->Silver!]
+  #114 Insert Interval                     Interval Merging          0.83 solved_with_hints  medium +17.00   31.4 [Bronze->Silver!]
+  #115 Longest Line of Consecutive One in  Grid Path Problems        0.38 solved_with_hints  hard   +10.14   25.0 [Bronze->Silver!]
+  #116 Maximum Length Substring With Two   Variable-Size Window (Ex  0.45 solved_clean       medium + 5.60   31.3 [Silver]
+  #117 Keys and Rooms                      DFS Connected Components  0.62 solved_after_solution hard   + 6.52   19.0 [Bronze]
+  #118 Merge Two 2D Arrays by Summing Val  Merging Sorted Arrays     0.52 solved_clean       hard   +17.50   17.5 [Bronze]
+  #119 Min Stack                           Min/Max Stack             0.88 solved_after_solution hard   +23.55   23.6 [Bronze->Silver!]
+  #120 Count Pairs Whose Sum is Less than  Opposite-Direction (Conv  0.52 solved_clean       medium + 4.38   25.0 [Silver]
+  #121 Course Schedule                     Topological Sort          0.92 solved_after_solution hard   + 8.42   26.6 [Bronze->Silver!]
+  #122 Beautiful Towers I                  Monotonic Stack           0.60 solved_after_solution hard   + 6.48   26.3 [Bronze->Silver!]
+  #123 Brightest Position on Street        Sweep Line / Meeting Roo  0.58 solved_after_solution hard   + 8.50   27.4 [Bronze->Silver!]
+  #124 Two Sum                             Complement Search (Two S  0.95 solved_with_hints  medium +13.87   33.0 [Bronze->Silver!]
+  #125 Lowest Common Ancestor of a Binary  Lowest Common Ancestor    0.72 solved_after_solution hard   +24.27   24.3 [Bronze->Silver!]
+  #126 Allow One Function Call             Frequency Counting / Has  0.06 solved_clean       medium + 0.68   11.6 [Bronze]
+  #127 Is Graph Bipartite?                 Bipartite Checking        0.76 solved_after_solution hard   +26.27   26.3 [Bronze->Silver!]
+  #128 Find the Encrypted String           Frequency Counting / Has  0.12 solved_with_hints  medium + 0.84   12.4 [Bronze]
+  #129 01 Matrix                           Multi-Source BFS          0.82 solved_after_solution hard   +16.15   36.8 [Silver]
+  #130 Target Sum                          0/1 Knapsack              0.88 solved_with_hints  medium +10.30   30.6 [Silver]
+  #131 Last Stone Weight                   Heap Simulation           0.76 struggled          hard   + 0.00   10.7 [Bronze]
+  #132 Convert Sorted Array to Binary Sea  BST Operations (Insert,   0.70 solved_clean       medium +11.08   28.7 [Bronze->Silver!]
+  #133 Intersection of Two Linked Lists    Fast/Slow Pointers (Cycl  0.76 solved_clean       medium +15.07   33.2 [Bronze->Silver!]
+  #134 Determine the Minimum Sum of a k-a  General Greedy (Greedy i  0.32 solved_after_solution hard   + 2.22    5.1 [Bronze]
+  #135 Baseball Game                       Stack-Based Simulation    0.62 solved_clean       medium + 5.01   18.2 [Bronze]
+  #136 Egg Drop With 2 Eggs and N Floors   Linear Recurrence DP      0.48 struggled          hard   + 0.00   17.7 [Bronze]
+  #137 Find the Substring With Maximum Co  Kadane's Algorithm (Max   0.68 solved_clean       medium +14.19   29.0 [Bronze->Silver!]
+  #138 Graph Valid Tree                    Union-Find                0.87 solved_after_solution hard   +11.82   21.5 [Bronze->Silver!]
+  #139 Double Modular Exponentiation       Modular Arithmetic        0.28 solved_with_hints  hard   + 8.53    8.5 [Bronze]
+  #140 Design HashSet                      Frequency Counting / Has  0.68 solved_clean       medium + 2.84   16.0 [Bronze]
+  #141 Minimum Cost to Connect Sticks      Heap Simulation           0.72 solved_with_hints  hard   +10.23   21.0 [Bronze->Silver!]
+  #142 Univalued Binary Tree               DFS Traversal (Inorder,   0.35 solved_clean       medium + 2.36   18.9 [Bronze]
+  #143 Biggest Single Number               Frequency Counting / Has  0.10 solved_clean       medium + 0.98   17.0 [Bronze]
+  #144 Delete Operation for Two Strings    Two Sequence DP (LCS, Ed  0.78 struggled          hard   + 0.00   20.0 [Bronze]
+  #145 Factor Combinations                 Combinations / Subsets    0.52 solved_with_hints  medium + 4.27   29.9 [Silver]
+  #146 Best Time to Buy and Sell Stock wi  Linear Recurrence DP      0.72 solved_clean       medium + 6.50   24.2 [Bronze->Silver!]
+  #147 Single Element in a Sorted Array    Standard Binary Search    0.78 solved_clean       medium +11.67   45.1 [Silver->Gold!]
+  #148 Remove Duplicates from Sorted List  Reversal (Full and Parti  0.63 solved_with_hints  medium + 7.74   28.6 [Silver]
+  #149 Longest Word With All Prefixes      Trie Construction / Pref  0.62 struggled          hard   + 0.00    9.8 [Bronze]
+  #150 Maximum Length of Repeated Subarra  Two Sequence DP (LCS, Ed  0.68 struggled          hard   + 0.00   20.0 [Bronze]
+
+  --- Checkpoint at 150 problems (mode: filling_gaps, avg mastery: 22.5) ---
+
+  --- Subtopic Scores ---
+    Standard Binary Search                          45.1 [Gold]  (imp:0.95, 5 attempts)
+    Multi-Source BFS                                36.8 [Silver]  (imp:0.75, 2 attempts)
+    Fast/Slow Pointers (Cycle, Middle)              33.2 [Silver]  (imp:0.75, 3 attempts)
+    Complement Search (Two Sum Pattern)             33.0 [Silver]  (imp:0.85, 4 attempts)
+    Longest Increasing Subsequence                  32.3 [Silver]  (imp:0.75, 2 attempts)
+    Interval Merging                                31.4 [Silver]  (imp:0.80, 5 attempts)
+    Variable-Size Window (Expand/Contract)          31.3 [Silver]  (imp:0.90, 4 attempts)
+    0/1 Knapsack                                    30.6 [Silver]  (imp:0.80, 3 attempts)
+    Unbounded Knapsack                              30.3 [Silver]  (imp:0.80, 2 attempts)
+    BFS / Level-Order Traversal                     30.2 [Silver]  (imp:0.90, 3 attempts)
+
+  --- Topic Levels ---
+    Arrays & Hashing                           19.2 [Bronze]
+    Two Pointers                               19.0 [Bronze]
+    Stack                                      22.6 [Silver]
+    Binary Search                              27.6 [Silver]
+    Sliding Window                             20.4 [Silver]
+    Linked List                                27.9 [Silver]
+    Trees                                      24.6 [Silver]
+    Tries                                       5.4 [Bronze]
+    Backtracking                               20.9 [Silver]
+    Heap / Priority Queue                      14.2 [Bronze]
+    Graphs                                     25.7 [Silver]
+    Core DP                                    24.9 [Silver]
+    Intervals                                  21.7 [Silver]
+    Greedy                                      7.2 [Bronze]
+    Advanced Graphs                            17.3 [Bronze]
+    Bit Manipulation                            3.3 [Bronze]
+    Math & Geometry                             2.2 [Bronze]
+
+    OVERALL                                    18.7 [Bronze]
+
+==========================================================================================
+  SIMULATION: Extended journey — 300 problems with mode transitions
+==========================================================================================
+  #1   Guess Number Higher or Lower        Standard Binary Search    0.76 solved_with_hints  medium +11.39   11.4 [Bronze]
+  #2   Check If a String Is a Valid Seque  DFS Traversal (Inorder,   0.42 solved_clean       hard   + 3.85    3.8 [Bronze]
+  #3   Find Total Time Spent by Each Empl  Frequency Counting / Has  0.10 struggled          hard   + 0.00    0.0 [Bronze]
+  #4   Subarray Product Less Than K        Variable-Size Window (Ex  0.76 struggled          hard   + 0.00    0.0 [Bronze]
+  #5   Maximum Length of Subarray With Po  Linear Recurrence DP      0.62 solved_clean       hard   + 8.97    9.0 [Bronze]
+  #6   Perform String Shifts               Frequency Counting / Has  0.18 solved_clean       medium + 0.93    0.9 [Bronze]
+  #7   Count Partitions with Even Sum Dif  Prefix Sums               0.40 solved_with_hints  medium + 4.14    4.3 [Bronze]
+  #8   Generate Binary Strings Without Ad  Combinations / Subsets    0.42 solved_after_solution hard   + 3.70    3.7 [Bronze]
+  #9   Binary Tree Level Order Traversal   BFS / Level-Order Traver  0.42 struggled          hard   + 0.00    0.0 [Bronze]
+  #10  Binary Tree Level Order Traversal   BFS / Level-Order Traver  0.92 struggled          hard   + 0.00    0.0 [Bronze]
+  #11  Max Consecutive Ones II             Variable-Size Window (Ex  0.72 solved_after_solution hard   + 8.09    8.1 [Bronze]
+  #12  Word Ladder                         BFS Shortest Path (Unwei  0.82 solved_clean       hard   +22.82   22.8 [Bronze->Silver!]
+  #13  Peak Index in a Mountain Array      Standard Binary Search    0.72 solved_clean       medium +12.74   24.1 [Bronze->Silver!]
+  #14  Maximum Possible Number by Binary   Permutations              0.25 struggled          hard   + 0.00    0.0 [Bronze]
+  #15  Permutations                        Permutations              0.92 solved_clean       hard   +30.19   30.2 [Bronze->Silver!]
+  #16  Check If a Number Is Majority Elem  Boundary Finding (Bisect  0.45 struggled          hard   + 0.00    0.0 [Bronze]
+  #17  Reverse String                      Opposite-Direction (Conv  0.78 solved_clean       medium + 6.19    6.2 [Bronze]
+  #18  Kth Largest Element in a Stream     Top-K Elements            0.82 solved_after_solution hard   +10.73   10.7 [Bronze]
+  #19  Two Sum III - Data structure desig  Complement Search (Two S  0.45 solved_clean       medium +11.34   11.3 [Bronze]
+  #20  Clone N-ary Tree                    DFS Traversal (Inorder,   0.38 solved_with_hints  medium + 2.19    6.0 [Bronze]
+  #21  Find First and Last Position of El  Boundary Finding (Bisect  0.88 struggled          hard   + 0.00    0.0 [Bronze]
+  #22  Maximize Total Tastiness of Purcha  0/1 Knapsack              0.72 solved_with_hints  hard   +14.06   14.1 [Bronze]
+  #23  Valid Palindrome                    Opposite-Direction (Conv  0.85 solved_clean       medium + 7.04   13.2 [Bronze]
+  #24  Combination Sum IV                  Unbounded Knapsack        0.82 solved_after_solution hard   +10.46   10.5 [Bronze]
+  #25  Sentence Screen Fitting             Linear Recurrence DP      0.45 struggled          hard   + 0.00    9.0 [Bronze]
+  #26  Find the Sequence of Strings Appea  Stack-Based Simulation    0.18 solved_with_hints  hard   + 1.99    2.0 [Bronze]
+  #27  Deep Merge of Two Objects           DFS Traversal (Inorder,   0.14 struggled          hard   + 0.00    6.0 [Bronze]
+  #28  N-ary Tree Level Order Traversal    BFS / Level-Order Traver  0.73 solved_with_hints  medium +12.06   12.1 [Bronze]
+  #29  Generate Parentheses                Combinations / Subsets    0.85 struggled          hard   + 0.00    3.7 [Bronze]
+  #30  Maximum Average Subarray I          Fixed-Size Window         0.72 solved_after_solution hard   +10.69   10.7 [Bronze]
+  #31  Sum of Left Leaves                  DFS Traversal (Inorder,   0.42 solved_after_solution hard   + 2.11    8.1 [Bronze]
+  #32  Combination Sum III                 Combinations / Subsets    0.72 solved_with_hints  hard   + 7.80   11.5 [Bronze]
+  #33  Determine if Two Events Have Confl  Interval Merging          0.35 struggled          hard   + 0.00    0.0 [Bronze]
+  #34  Find Champion II                    Topological Sort          0.55 struggled          hard   + 0.00    0.0 [Bronze]
+  #35  Compare Strings by Frequency of th  Boundary Finding (Bisect  0.40 solved_clean       hard   + 9.89    9.9 [Bronze]
+  #36  Remove K Digits                     Monotonic Stack           0.78 solved_clean       hard   +15.44   15.4 [Bronze]
+  #37  Count Islands With Total Value Div  DFS Connected Components  0.72 solved_clean       hard   +13.59   13.6 [Bronze]
+  #38  Longest Repeating Substring         Binary Search on Answer   0.58 solved_after_solution hard   + 7.73    8.4 [Bronze]
+  #39  Course Schedule II                  Topological Sort          0.90 struggled          hard   + 0.00    0.0 [Bronze]
+  #40  Minimum Cost to Reach City With Di  Dijkstra's (Weighted Sho  0.63 solved_with_hints  hard   +15.59   15.6 [Bronze]
+  #41  Knight Probability in Chessboard    Grid Path Problems        0.58 solved_after_solution hard   +11.46   11.5 [Bronze]
+  #42  Teemo Attacking                     Interval Merging          0.37 solved_clean       medium + 8.80    8.8 [Bronze]
+  #43  Flatten Deeply Nested Array         Stack-Based Simulation    0.18 struggled          hard   + 0.00    2.0 [Bronze]
+  #44  Sorting Three Groups                Longest Increasing Subse  0.58 solved_after_solution hard   +15.83   15.8 [Bronze]
+  #45  Remove Duplicates from Sorted List  Fast/Slow Pointers (Cycl  0.55 solved_after_solution hard   + 9.98   10.0 [Bronze]
+  #46  Minimum Size Subarray Sum           Variable-Size Window (Ex  0.87 solved_with_hints  medium + 8.92   17.0 [Bronze]
+  #47  Longest Palindromic Subsequence     Two Sequence DP (LCS, Ed  0.76 solved_with_hints  hard   +16.10   17.1 [Bronze]
+  #48  Number of Arithmetic Triplets       Complement Search (Two S  0.30 solved_clean       medium + 8.19   19.5 [Bronze]
+  #49  Remove Stones to Minimize the Tota  Heap Simulation           0.62 solved_with_hints  hard   + 9.27    9.3 [Bronze]
+  #50  Find Mode in Binary Search Tree     DFS Traversal (Inorder,   0.42 solved_after_solution hard   + 2.36   10.5 [Bronze]
+
+  --- Checkpoint at 50 problems (mode: filling_gaps, avg mastery: 10.0) ---
+  High-importance subtopics touched: 34/41
+  Unique subtopics attempted: 38
+
+  --- Subtopic Scores ---
+    Permutations                                    30.2 [Silver]  (imp:0.85, 2 attempts)
+    Standard Binary Search                          24.1 [Silver]  (imp:0.95, 3 attempts)
+    BFS Shortest Path (Unweighted)                  22.8 [Silver]  (imp:0.90, 1 attempts)
+    Complement Search (Two Sum Pattern)             19.5 [Bronze]  (imp:0.85, 2 attempts)
+    Two Sequence DP (LCS, Edit distance)            17.1 [Bronze]  (imp:0.75, 2 attempts)
+    Variable-Size Window (Expand/Contract)          17.0 [Bronze]  (imp:0.90, 3 attempts)
+    Longest Increasing Subsequence                  15.8 [Bronze]  (imp:0.75, 1 attempts)
+    Dijkstra's (Weighted Shortest Path)             15.6 [Bronze]  (imp:0.75, 1 attempts)
+    Monotonic Stack                                 15.4 [Bronze]  (imp:0.80, 1 attempts)
+    0/1 Knapsack                                    14.1 [Bronze]  (imp:0.80, 1 attempts)
+    DFS Connected Components                        13.6 [Bronze]  (imp:0.80, 1 attempts)
+    Opposite-Direction (Converging)                 13.2 [Bronze]  (imp:0.90, 2 attempts)
+    BFS / Level-Order Traversal                     12.1 [Bronze]  (imp:0.90, 3 attempts)
+    Combinations / Subsets                          11.5 [Bronze]  (imp:0.90, 3 attempts)
+    Grid Path Problems                              11.5 [Bronze]  (imp:0.75, 1 attempts)
+
+  --- Topic Levels ---
+    Arrays & Hashing                            5.9 [Bronze]
+    Two Pointers                                3.4 [Bronze]
+    Stack                                       6.3 [Bronze]
+    Binary Search                              10.3 [Bronze]
+    Sliding Window                             10.6 [Bronze]
+    Linked List                                 3.4 [Bronze]
+    Trees                                       6.0 [Bronze]
+    Backtracking                                9.9 [Bronze]
+    Heap / Priority Queue                       6.2 [Bronze]
+    Graphs                                      6.9 [Bronze]
+    Core DP                                    11.7 [Bronze]
+    Intervals                                   3.4 [Bronze]
+    Greedy                                      5.1 [Bronze]
+    Advanced Graphs                             5.6 [Bronze]
+    Bit Manipulation                            0.6 [Bronze]
+    Math & Geometry                             0.2 [Bronze]
+
+    OVERALL                                     6.0 [Bronze]
+  #51  Delete Node in a Linked List        Reversal (Full and Parti  0.30 solved_after_solution hard   + 3.83    3.8 [Bronze]
+  #52  01 Matrix                           Multi-Source BFS          0.82 solved_after_solution hard   +20.02   20.0 [Bronze->Silver!]
+  #53  Squares of a Sorted Array           Opposite-Direction (Conv  0.68 solved_clean       medium + 5.67   18.9 [Bronze]
+  #54  Course Schedule                     Topological Sort          0.92 solved_after_solution hard   +10.55   10.5 [Bronze]
+  #55  Clear Digits                        Stack-Based Simulation    0.38 solved_clean       hard   + 5.06    7.0 [Bronze]
+  #56  Meeting Rooms II                    Sweep Line / Meeting Roo  0.91 solved_clean       hard   +22.57   22.6 [Bronze->Silver!]
+  #57  K Closest Points to Origin          Top-K Elements            0.82 solved_after_solution hard   + 9.62   20.3 [Bronze->Silver!]
+  #58  Sum of All Subset XOR Totals        Combinations / Subsets    0.72 solved_after_solution hard   + 5.78   17.3 [Bronze]
+  #59  Is Subsequence                      Same-Direction (Fast/Slo  0.68 solved_clean       medium + 8.19    8.2 [Bronze]
+  #60  Construct String with Minimum Cost  Word Break / String DP    0.72 solved_with_hints  hard   +19.68   22.6 [Bronze->Silver!]
+  #61  Remove Linked List Elements         Reversal (Full and Parti  0.52 solved_clean       medium + 7.43   11.3 [Bronze]
+  #62  JSON Deep Equal                     DFS Traversal (Inorder,   0.10 solved_clean       medium + 1.27   11.8 [Bronze]
+  #63  Number of Sub-arrays of Size K and  Fixed-Size Window         0.62 solved_after_solution hard   + 9.86   20.6 [Bronze->Silver!]
+  #64  Pour Water Between Buckets to Make  Binary Search on Answer   0.68 solved_clean       hard   +13.18   22.3 [Bronze->Silver!]
+  #65  Find the Derangement of An Array    Linear Recurrence DP      0.42 solved_with_hints  hard   + 4.63   14.9 [Bronze]
+  #66  Insert into a Binary Search Tree    BST Operations (Insert,   0.78 solved_clean       medium +15.02   16.9 [Bronze]
+  #67  Maximum Subarray                    Kadane's Algorithm (Max   0.93 solved_clean       medium +18.94   18.9 [Bronze]
+  #68  N-Queens II                         Constraint Satisfaction   0.68 solved_clean       hard   +28.85   28.9 [Bronze->Silver!]
+  #69  Maximum Level Sum of a Binary Tree  BFS / Level-Order Traver  0.68 solved_clean       medium +12.76   24.8 [Bronze->Silver!]
+  #70  Running Sum of 1d Array             Prefix Sums               0.72 solved_clean       medium + 8.04   13.3 [Bronze]
+  #71  Find Smallest Letter Greater Than   Boundary Finding (Bisect  0.62 solved_clean       medium + 8.88   18.8 [Bronze]
+  #72  Evaluate Reverse Polish Notation    Stack-Based Simulation    0.84 solved_clean       medium + 8.24   15.3 [Bronze]
+  #73  Merge Two 2D Arrays by Summing Val  Merging Sorted Arrays     0.52 struggled          hard   + 0.00    0.0 [Bronze]
+  #74  Search in Rotated Sorted Array      Search in Rotated/Modifi  0.92 solved_after_solution hard   +17.25   17.2 [Bronze]
+  #75  Buildings With an Ocean View        Monotonic Stack           0.58 solved_with_hints  medium + 5.83   21.3 [Bronze->Silver!]
+  #76  Clone Graph                         DFS Connected Components  0.83 struggled          hard   + 0.00   13.6 [Bronze]
+  #77  All Paths from Source Lead to Dest  DFS Path Finding          0.52 solved_with_hints  hard   +14.04   14.0 [Bronze]
+  #78  Minimum Number of Primes to Sum to  Unbounded Knapsack        0.72 solved_clean       hard   +13.83   24.3 [Bronze->Silver!]
+  #79  Biggest Single Number               Frequency Counting / Has  0.10 solved_clean       medium + 0.73    6.6 [Bronze]
+  #80  Length of the Longest Subsequence   0/1 Knapsack              0.72 struggled          hard   + 0.00   14.1 [Bronze]
+  #81  Binary Tree Paths                   DFS Traversal (Inorder,   0.68 solved_clean       medium + 3.93   16.0 [Bronze]
+  #82  Reverse Prefix of Word              Opposite-Direction (Conv  0.30 solved_clean       medium + 3.27   22.2 [Bronze->Silver!]
+  #83  Lowest Common Ancestor of a Binary  Lowest Common Ancestor    0.85 solved_after_solution hard   +22.89   22.9 [Bronze->Silver!]
+  #84  Nearest Exit from Entrance in Maze  BFS Shortest Path (Unwei  0.88 struggled          hard   + 0.00   22.8 [Silver]
+  #85  Convert Doubly Linked List to Arra  Reversal (Full and Parti  0.28 solved_with_hints  medium + 4.40   15.7 [Bronze]
+  #86  Longest Substring with At Most K D  Variable-Size Window (Ex  0.82 struggled          hard   + 0.00   17.0 [Bronze]
+  #87  Palindrome Partitioning             String Partitioning (Pal  0.85 struggled          hard   + 0.00    0.0 [Bronze]
+  #88  3Sum Closest                        K-Sum Pattern (3Sum, 4Su  0.58 solved_after_solution hard   +13.40   13.4 [Bronze]
+  #89  Subsets II                          Combinations / Subsets    0.84 solved_clean       medium + 7.78   25.1 [Bronze->Silver!]
+  #90  Delete N Nodes After M Nodes of a   Fast/Slow Pointers (Cycl  0.30 solved_after_solution hard   + 6.10   16.1 [Bronze]
+  #91  Insert Interval                     Interval Merging          0.83 solved_with_hints  hard   +22.67   31.5 [Bronze->Silver!]
+  #92  Sum of Even Numbers After Queries   Prefix Sums               0.36 solved_clean       medium + 4.64   18.0 [Bronze]
+  #93  Sales Person                        Frequency Counting / Has  0.10 solved_after_solution hard   + 0.60    7.6 [Bronze]
+  #94  Maximum Erasure Value               Variable-Size Window (Ex  0.76 struggled          hard   + 0.00   17.0 [Bronze]
+  #95  Redundant Connection                Union-Find                0.82 struggled          hard   + 0.00    0.0 [Bronze]
+  #96  Find Minimum Time to Reach Last Ro  Dijkstra's (Weighted Sho  0.72 solved_after_solution hard   +11.75   27.3 [Bronze->Silver!]
+  #97  High Five                           Top-K Elements            0.42 solved_with_hints  medium + 6.04   26.4 [Silver]
+  #98  Target Sum                          0/1 Knapsack              0.88 solved_with_hints  hard   +13.88   27.9 [Bronze->Silver!]
+  #99  Graph Valid Tree                    Union-Find                0.87 struggled          hard   + 0.00    0.0 [Bronze]
+  #100 Restore IP Addresses                String Partitioning (Pal  0.55 solved_clean       hard   +27.67   27.7 [Bronze->Silver!]
+
+  --- Checkpoint at 100 problems (mode: filling_gaps, avg mastery: 15.9) ---
+  High-importance subtopics touched: 41/41
+  Unique subtopics attempted: 53
+
+  --- Subtopic Scores ---
+    Interval Merging                                31.5 [Silver]  (imp:0.80, 3 attempts)
+    Permutations                                    30.2 [Silver]  (imp:0.85, 2 attempts)
+    Constraint Satisfaction (N-Queens)              30.1 [Silver]  (imp:0.70, 2 attempts)
+    0/1 Knapsack                                    27.9 [Silver]  (imp:0.80, 3 attempts)
+    String Partitioning (Palindrome Partitioning)   27.7 [Silver]  (imp:0.65, 2 attempts)
+    Dijkstra's (Weighted Shortest Path)             27.3 [Silver]  (imp:0.75, 2 attempts)
+    Top-K Elements                                  26.4 [Silver]  (imp:0.85, 3 attempts)
+    Combinations / Subsets                          26.1 [Silver]  (imp:0.90, 6 attempts)
+    Standard Binary Search                          25.1 [Silver]  (imp:0.95, 4 attempts)
+    BFS / Level-Order Traversal                     24.8 [Silver]  (imp:0.90, 4 attempts)
+    Unbounded Knapsack                              24.3 [Silver]  (imp:0.80, 2 attempts)
+    Lowest Common Ancestor                          22.9 [Silver]  (imp:0.65, 1 attempts)
+    BFS Shortest Path (Unweighted)                  22.8 [Silver]  (imp:0.90, 3 attempts)
+    Word Break / String DP                          22.6 [Silver]  (imp:0.75, 3 attempts)
+    Sweep Line / Meeting Rooms                      22.6 [Silver]  (imp:0.75, 1 attempts)
+
+  --- Topic Levels ---
+    Arrays & Hashing                           12.7 [Bronze]
+    Two Pointers                               10.1 [Bronze]
+    Stack                                      13.6 [Bronze]
+    Binary Search                              19.0 [Bronze]
+    Sliding Window                             14.1 [Bronze]
+    Linked List                                11.5 [Bronze]
+    Trees                                      17.9 [Bronze]
+    Tries                                       1.4 [Bronze]
+    Backtracking                               24.2 [Silver]
+    Heap / Priority Queue                      12.2 [Bronze]
+    Graphs                                     14.2 [Bronze]
+    Core DP                                    19.3 [Bronze]
+    Intervals                                  20.1 [Silver]
+    Greedy                                      6.6 [Bronze]
+    Advanced Graphs                             9.8 [Bronze]
+    Bit Manipulation                            2.5 [Bronze]
+    Math & Geometry                             1.2 [Bronze]
+
+    OVERALL                                    13.0 [Bronze]
+  #101 The Number of Employees Which Repo  Frequency Counting / Has  0.11 solved_with_hints  medium + 0.68    8.5 [Bronze]
+  #102 Merge Two Sorted Lists              Merge Linked Lists        0.88 solved_clean       medium +20.91   20.9 [Bronze->Silver!]
+  #103 Find Closest Node to Given Two Nod  BFS Shortest Path (Unwei  0.53 struggled          hard   + 0.00   22.8 [Silver]
+  #104 Unique Paths                        Grid Path Problems        0.91 solved_clean       medium +16.47   27.9 [Bronze->Silver!]
+  #105 Two Sum                             Complement Search (Two S  0.95 solved_clean       medium +16.94   36.5 [Bronze->Silver!]
+  #106 Palindrome Permutation              Frequency Counting / Has  0.47 solved_clean       medium + 2.24   11.4 [Bronze]
+  #107 Interval List Intersections         Merging Sorted Arrays     0.78 struggled          hard   + 0.00    0.0 [Bronze]
+  #108 Min Stack                           Min/Max Stack             0.88 solved_with_hints  hard   +30.61   30.6 [Bronze->Silver!]
+  #109 Number of Longest Increasing Subse  Longest Increasing Subse  0.74 solved_with_hints  hard   +23.70   39.5 [Bronze->Silver!]
+  #110 Walls and Gates                     Multi-Source BFS          0.88 solved_with_hints  medium +16.09   36.1 [Silver]
+  #111 Minimum Knight Moves                BFS Shortest Path (Unwei  0.67 solved_after_solution hard   +10.51   33.3 [Silver]
+  #112 Sum of Subarray Ranges              Monotonic Stack           0.72 solved_after_solution hard   + 7.20   28.5 [Silver]
+  #113 Binary Tree Inorder Traversal       DFS Traversal (Inorder,   0.88 solved_clean       medium + 4.11   20.1 [Bronze->Silver!]
+  #114 Course Schedule IV                  Topological Sort          0.76 solved_after_solution hard   + 9.36   21.0 [Bronze->Silver!]
+  #115 Reverse Letters Then Special Chara  Opposite-Direction (Conv  0.28 solved_clean       medium + 3.29   25.5 [Silver]
+  #116 Path Sum II                         Path Sum Problems         0.72 solved_after_solution hard   +20.05   25.2 [Bronze->Silver!]
+  #117 The Earliest Moment When Everyone   Union-Find                0.72 solved_with_hints  hard   +15.59   15.6 [Bronze]
+  #118 Apply Operations to an Array        Same-Direction (Fast/Slo  0.30 solved_clean       medium + 4.12   12.3 [Bronze]
+  #119 Maximum Length Substring With Two   Variable-Size Window (Ex  0.45 solved_with_hints  medium + 4.84   21.9 [Bronze->Silver!]
+  #120 Flatten 2D Vector                   Same-Direction (Fast/Slo  0.48 solved_after_solution hard   + 4.69   17.0 [Bronze]
+  #121 Longest Common Subsequence          Two Sequence DP (LCS, Ed  0.93 solved_after_solution hard   +12.97   30.1 [Bronze->Silver!]
+  #122 Merge Sorted Array                  Merging Sorted Arrays     0.82 solved_clean       medium +19.40   19.4 [Bronze]
+  #123 Minimum Recolors to Get K Consecut  Fixed-Size Window         0.72 struggled          hard   + 0.00   20.6 [Silver]
+  #124 Cousins in Binary Tree              BFS / Level-Order Traver  0.42 solved_clean       medium + 8.34   33.2 [Silver]
+  #125 Find Peak Element                   Standard Binary Search    0.82 solved_clean       medium +12.97   38.1 [Silver]
+  #126 3Sum Smaller                        K-Sum Pattern (3Sum, 4Su  0.62 solved_clean       medium +16.14   29.5 [Bronze->Silver!]
+  #127 Restaurant Growth                   Prefix Sums               0.12 solved_clean       medium + 2.85   21.9 [Bronze->Silver!]
+  #128 Take Gifts From the Richest Pile    Heap Simulation           0.38 solved_after_solution hard   + 4.03   16.6 [Bronze]
+  #129 Car Pooling                         Sweep Line / Meeting Roo  0.76 solved_clean       medium +11.97   34.5 [Silver]
+  #130 Find the Array Concatenation Value  Opposite-Direction (Conv  0.22 solved_clean       medium + 2.97   28.4 [Silver]
+  #131 Sliding Window Maximum              Window with Monotonic De  0.88 struggled          hard   + 0.00    0.0 [Bronze]
+  #132 Kth Largest Element in an Array     Top-K Elements            0.91 solved_clean       medium +11.94   38.3 [Silver]
+  #133 Rotate String                       Frequency Counting / Has  0.32 solved_clean       medium + 1.85   14.7 [Bronze]
+  #134 Number of Provinces                 DFS Connected Components  0.85 solved_clean       medium + 9.55   24.1 [Bronze->Silver!]
+  #135 Best Time to Buy and Sell Stock     Kadane's Algorithm (Max   0.92 struggled          medium + 0.00   18.9 [Bronze]
+  #136 Swap Nodes in Pairs                 Reversal (Full and Parti  0.56 solved_clean       medium + 8.32   24.8 [Bronze->Silver!]
+  #137 Partition String                    Trie Construction / Pref  0.35 struggled          hard   + 0.00    2.5 [Bronze]
+  #138 Convert Binary Number in a Linked   Fast/Slow Pointers (Cycl  0.22 solved_clean       medium + 6.57   22.6 [Bronze->Silver!]
+  #139 Maximum Difference Between Adjacen  Frequency Counting / Has  0.15 solved_clean       medium + 1.23   15.9 [Bronze]
+  #140 Implement Trie II (Prefix Tree)     Trie Construction / Pref  0.72 struggled          hard   + 0.00    2.5 [Bronze]
+  #141 Double Modular Exponentiation       Modular Arithmetic        0.28 struggled          hard   + 0.00    0.0 [Bronze]
+  #142 Is Graph Bipartite?                 Bipartite Checking        0.76 solved_after_solution hard   +26.27   26.3 [Bronze->Silver!]
+  #143 Convert Sorted Array to Binary Sea  BST Operations (Insert,   0.70 solved_clean       medium +10.89   29.7 [Bronze->Silver!]
+  #144 Max Value of Equation               Window with Monotonic De  0.55 solved_after_solution hard   +26.04   26.0 [Bronze->Silver!]
+  #145 Maximum Count of Positive Integer   Boundary Finding (Bisect  0.45 solved_clean       medium + 6.87   27.3 [Silver]
+  #146 Find the Longest Semi-Repetitive S  Variable-Size Window (Ex  0.68 solved_with_hints  medium + 7.13   29.0 [Silver]
+  #147 Maximum Number of Operations With   Frequency Counting / Has  0.18 solved_clean       medium + 1.39   17.8 [Bronze]
+  #148 Permutations III                    Permutations              0.58 solved_clean       medium +12.93   43.1 [Silver->Gold!]
+  #149 Find Minimum in Rotated Sorted Arr  Search in Rotated/Modifi  0.62 struggled          hard   + 0.00   17.2 [Bronze]
+  #150 Find the Smallest Divisor Given a   Binary Search on Answer   0.82 struggled          hard   + 0.00   22.3 [Silver]
+
+  --- Checkpoint at 150 problems (mode: filling_gaps, avg mastery: 22.6) ---
+  High-importance subtopics touched: 41/41
+  Unique subtopics attempted: 59
+
+  --- Subtopic Scores ---
+    Permutations                                    43.1 [Gold]  (imp:0.85, 3 attempts)
+    Longest Increasing Subsequence                  39.5 [Silver]  (imp:0.75, 2 attempts)
+    Standard Binary Search                          38.8 [Silver]  (imp:0.95, 6 attempts)
+    Top-K Elements                                  38.3 [Silver]  (imp:0.85, 4 attempts)
+    Complement Search (Two Sum Pattern)             36.5 [Silver]  (imp:0.85, 3 attempts)
+    Multi-Source BFS                                36.1 [Silver]  (imp:0.75, 2 attempts)
+    BFS Shortest Path (Unweighted)                  35.5 [Silver]  (imp:0.90, 7 attempts)
+    Sweep Line / Meeting Rooms                      34.5 [Silver]  (imp:0.75, 2 attempts)
+    BFS / Level-Order Traversal                     33.2 [Silver]  (imp:0.90, 5 attempts)
+    Interval Merging                                31.5 [Silver]  (imp:0.80, 4 attempts)
+    Constraint Satisfaction (N-Queens)              31.1 [Silver]  (imp:0.70, 3 attempts)
+    Min/Max Stack                                   30.6 [Silver]  (imp:0.60, 1 attempts)
+    Two Sequence DP (LCS, Edit distance)            30.1 [Silver]  (imp:0.75, 3 attempts)
+    BST Operations (Insert, Delete, Validate)       29.7 [Silver]  (imp:0.80, 5 attempts)
+    K-Sum Pattern (3Sum, 4Sum)                      29.5 [Silver]  (imp:0.70, 2 attempts)
+
+  --- Topic Levels ---
+    Arrays & Hashing                           19.6 [Bronze]
+    Two Pointers                               20.6 [Silver]
+    Stack                                      24.5 [Silver]
+    Binary Search                              24.0 [Silver]
+    Sliding Window                             25.3 [Silver]
+    Linked List                                22.9 [Silver]
+    Trees                                      26.7 [Silver]
+    Tries                                       1.4 [Bronze]
+    Backtracking                               27.7 [Silver]
+    Heap / Priority Queue                      17.8 [Bronze]
+    Graphs                                     25.5 [Silver]
+    Core DP                                    26.6 [Silver]
+    Intervals                                  24.3 [Silver]
+    Greedy                                      6.6 [Bronze]
+    Advanced Graphs                            16.6 [Bronze]
+    Bit Manipulation                            3.5 [Bronze]
+    Math & Geometry                             1.6 [Bronze]
+
+    OVERALL                                    19.6 [Bronze]
+  #151 Max Increase to Keep City Skyline   General Greedy (Greedy i  0.28 solved_after_solution hard   + 2.08    8.7 [Bronze]
+  #152 Minimum Height Trees                Topological Sort          0.82 solved_with_hints  hard   +12.27   33.2 [Silver]
+  #153 Substrings of Size Three with Dist  Fixed-Size Window         0.38 solved_clean       medium + 7.81   28.4 [Silver]
+  #154 Find Minimum in Rotated Sorted Arr  Search in Rotated/Modifi  0.88 solved_with_hints  medium +12.55   29.8 [Bronze->Silver!]
+  #155 Combinations                        Combinations / Subsets    0.88 solved_clean       medium + 6.37   32.5 [Silver]
+  #156 Coin Change II                      Unbounded Knapsack        0.91 solved_clean       medium +12.21   36.5 [Silver]
+  #157 Maximum Nesting Depth of the Paren  Stack-Based Simulation    0.45 struggled          hard   + 0.00   16.0 [Bronze]
+  #158 Word Search II                      Trie + Backtracking       0.82 solved_clean       hard   +52.36   52.4 [Bronze->Gold!]
+  #159 Create Target Array in the Given O  Frequency Counting / Has  0.15 solved_clean       medium + 1.31   19.5 [Bronze]
+  #160 Design Twitter                      Merge K Sorted Structure  0.82 solved_clean       hard   +32.30   32.3 [Bronze->Silver!]
+  #161 Optimize Water Distribution in a V  Minimum Spanning Tree (P  0.62 struggled          hard   + 0.00    0.0 [Bronze]
+  #162 Super Pow                           Modular Arithmetic        0.33 solved_after_solution hard   + 8.05    8.0 [Bronze]
+  #163 Extra Characters in a String        Word Break / String DP    0.82 solved_after_solution hard   +14.73   37.3 [Silver]
+  #164 Count Paths With the Given XOR Val  Grid Path Problems        0.68 solved_with_hints  medium +11.30   39.2 [Silver]
+  #165 Minimum Cost to Repair Edges to Tr  Binary Search on Answer   0.58 struggled          hard   + 0.00   22.3 [Silver]
+  #166 Restore the Array From Adjacent Pa  DFS Path Finding          0.55 solved_after_solution hard   +10.54   24.6 [Bronze->Silver!]
+  #167 Find the Substring With Maximum Co  Kadane's Algorithm (Max   0.68 solved_clean       medium +13.60   32.5 [Bronze->Silver!]
+  #168 Minimum Time to Complete Trips      Binary Search on Answer   0.82 solved_after_solution hard   + 8.66   30.9 [Silver]
+  #169 Campus Bikes II                     Bitmask DP                0.58 solved_after_solution hard   +11.45   11.5 [Bronze]
+  #170 Minimum Processing Time             General Greedy (Greedy i  0.52 solved_with_hints  medium + 3.54   12.2 [Bronze]
+  #171 Maximum Twin Sum of a Linked List   Reversal (Full and Parti  0.68 solved_clean       medium + 9.64   34.4 [Silver]
+  #172 Find Median from Data Stream        Running Median (Two Heap  0.91 solved_after_solution hard   +32.85   32.8 [Bronze->Silver!]
+  #173 Stone Game VII                      Interval DP               0.55 struggled          hard   + 0.00    0.0 [Bronze]
+  #174 Solving Questions With Brainpower   Linear Recurrence DP      0.74 solved_after_solution hard   + 5.91   22.5 [Bronze->Silver!]
+  #175 Connecting Cities With Minimum Cos  Minimum Spanning Tree (P  0.82 struggled          hard   + 0.00    0.0 [Bronze]
+  #176 Implement Magic Dictionary          Trie Construction / Pref  0.48 solved_after_solution hard   + 8.74   13.0 [Bronze]
+  #177 Daily Temperatures                  Monotonic Stack           0.91 solved_clean       medium + 8.75   37.2 [Silver]
+  #178 Number of Common Factors            GCD / LCM                 0.28 solved_clean       medium + 6.98    7.0 [Bronze]
+  #179 Deepest Leaves Sum                  BFS / Level-Order Traver  0.68 solved_clean       medium +10.95   44.1 [Silver->Gold!]
+  #180 Backspace String Compare            Stack-Based Simulation    0.58 solved_clean       medium + 5.29   21.3 [Bronze->Silver!]
+  #181 Valid Word Square                   Matrix Traversal (Diagon  0.20 solved_clean       medium + 2.95    7.6 [Bronze]
+  #182 Find K Closest Elements             Boundary Finding (Bisect  0.78 solved_with_hints  medium + 9.59   36.9 [Silver]
+  #183 Minimum Time to Visit Disappearing  Dijkstra's (Weighted Sho  0.68 solved_clean       hard   +16.72   44.1 [Silver->Gold!]
+  #184 Merge Intervals                     Interval Merging          0.93 solved_clean       medium +15.65   47.1 [Silver->Gold!]
+  #185 Equalize Strings by Adding or Remo  Two Sequence DP (LCS, Ed  0.55 solved_clean       medium + 9.79   39.9 [Silver]
+  #186 The Knight’s Tour                   Path Finding with Backtr  0.38 solved_with_hints  hard   +13.52   22.6 [Bronze->Silver!]
+  #187 Lowest Common Ancestor of a Binary  Lowest Common Ancestor    0.71 solved_clean       medium +23.43   46.3 [Silver->Gold!]
+  #188 4Sum                                K-Sum Pattern (3Sum, 4Su  0.72 solved_clean       medium +17.80   47.3 [Silver->Gold!]
+  #189 Word Pattern II                     String Partitioning (Pal  0.47 solved_clean       medium +20.72   48.4 [Silver->Gold!]
+  #190 GCD of Odd and Even Sums            GCD / LCM                 0.14 solved_after_solution hard   + 3.66   10.6 [Bronze]
+  #191 Merge Nodes in Between Zeros        Merge Linked Lists        0.42 solved_clean       medium +11.18   32.1 [Silver]
+  #192 Maximal Square                      Grid Path Problems        0.73 solved_clean       medium +11.46   50.7 [Silver->Gold!]
+  #193 Find in Mountain Array              Search in Rotated/Modifi  0.72 struggled          hard   + 0.00   29.8 [Silver]
+  #194 Rotate Image                        Matrix Math (Rotation, T  0.78 struggled          hard   + 0.00    0.0 [Bronze]
+  #195 K Empty Slots                       Window with Monotonic De  0.37 struggled          hard   + 0.00   26.0 [Silver]
+  #196 Partition Equal Subset Sum          0/1 Knapsack              0.91 solved_with_hints  medium + 9.61   37.5 [Silver]
+  #197 Find Critical and Pseudo-Critical   Minimum Spanning Tree (P  0.62 struggled          hard   + 0.00    0.0 [Bronze]
+  #198 Search in Rotated Sorted Array II   Search in Rotated/Modifi  0.72 solved_with_hints  medium +11.15   40.9 [Silver->Gold!]
+  #199 Search a 2D Matrix II               Binary Search on Matrix   0.72 struggled          hard   + 0.00    0.0 [Bronze]
+  #200 Perfect Squares                     Unbounded Knapsack        0.88 solved_clean       medium + 8.75   45.3 [Silver->Gold!]
+
+  --- Checkpoint at 200 problems (mode: pushing, avg mastery: 27.3) ---
+  High-importance subtopics touched: 41/41
+  Unique subtopics attempted: 68
+
+  --- Subtopic Scores ---
+    Trie + Backtracking                             52.4 [Gold]  (imp:0.50, 1 attempts)
+    Grid Path Problems                              50.7 [Gold]  (imp:0.75, 4 attempts)
+    String Partitioning (Palindrome Partitioning)   48.4 [Gold]  (imp:0.65, 3 attempts)
+    K-Sum Pattern (3Sum, 4Sum)                      47.3 [Gold]  (imp:0.70, 3 attempts)
+    Interval Merging                                47.1 [Gold]  (imp:0.80, 5 attempts)
+    Lowest Common Ancestor                          46.3 [Gold]  (imp:0.65, 2 attempts)
+    Unbounded Knapsack                              45.3 [Gold]  (imp:0.80, 4 attempts)
+    BFS / Level-Order Traversal                     44.1 [Gold]  (imp:0.90, 6 attempts)
+    Dijkstra's (Weighted Shortest Path)             44.1 [Gold]  (imp:0.75, 3 attempts)
+    Permutations                                    43.1 [Gold]  (imp:0.85, 3 attempts)
+    Search in Rotated/Modified Array                40.9 [Gold]  (imp:0.70, 5 attempts)
+    Two Sequence DP (LCS, Edit distance)            39.9 [Silver]  (imp:0.75, 4 attempts)
+    Top-K Elements                                  39.7 [Silver]  (imp:0.85, 5 attempts)
+    Longest Increasing Subsequence                  39.5 [Silver]  (imp:0.75, 2 attempts)
+    Standard Binary Search                          38.8 [Silver]  (imp:0.95, 7 attempts)
+
+  --- Topic Levels ---
+    Arrays & Hashing                           23.7 [Silver]
+    Two Pointers                               25.5 [Silver]
+    Stack                                      29.6 [Silver]
+    Binary Search                              32.4 [Silver]
+    Sliding Window                             28.7 [Silver]
+    Linked List                                30.6 [Silver]
+    Trees                                      33.2 [Silver]
+    Tries                                      30.9 [Silver]
+    Backtracking                               36.3 [Silver]
+    Heap / Priority Queue                      31.1 [Silver]
+    Graphs                                     29.8 [Silver]
+    Core DP                                    38.6 [Silver]
+    Intervals                                  30.3 [Silver]
+    Greedy                                     12.2 [Bronze]
+    Advanced Graphs                            22.6 [Silver]
+    Advanced DP                                 5.7 [Bronze]
+    Bit Manipulation                            5.0 [Bronze]
+    Math & Geometry                             5.5 [Bronze]
+
+    OVERALL                                    26.9 [Silver]
+  #201 Minimum Operations to Make Array S  Modular Arithmetic        0.35 solved_clean       medium + 9.33   17.4 [Bronze]
+  #202 4Sum II                             Complement Search (Two S  0.72 solved_clean       medium +13.14   49.6 [Silver->Gold!]
+  #203 Smallest Even Multiple              GCD / LCM                 0.12 solved_clean       medium + 4.44   15.1 [Bronze]
+  #204 As Far from Land as Possible        Multi-Source BFS          0.78 struggled          hard   + 0.00   36.1 [Silver]
+  #205 Final Array State After K Multipli  Heap Simulation           0.45 solved_clean       medium + 5.11   24.5 [Bronze->Silver!]
+  #206 Sort Colors                         Partitioning (Dutch Nati  0.81 solved_clean       hard   +36.03   36.0 [Bronze->Silver!]
+  #207 Max Stack                           Min/Max Stack             0.65 struggled          hard   + 0.00   30.6 [Silver]
+  #208 Diet Plan Performance               Fixed-Size Window         0.62 solved_clean       medium +11.21   39.6 [Silver]
+  #209 Search a 2D Matrix                  Binary Search on Matrix   0.87 solved_clean       hard   +38.41   38.4 [Bronze->Silver!]
+  #210 Find the Divisibility Array of a S  Modular Arithmetic        0.45 struggled          hard   + 0.00   17.4 [Bronze]
+  #211 Determine Whether Matrix Can Be Ob  Matrix Math (Rotation, T  0.45 solved_clean       hard   +21.91   21.9 [Bronze->Silver!]
+  #212 Capitalize the Title                Frequency Counting / Has  0.12 solved_clean       medium + 1.36   25.4 [Silver]
+  #213 Divide Intervals Into Minimum Numb  Sweep Line / Meeting Roo  0.79 solved_clean       medium +13.14   47.7 [Silver->Gold!]
+  #214 Path Sum III                        Path Sum Problems         0.82 solved_with_hints  medium +21.33   46.5 [Silver->Gold!]
+  #215 Rotting Oranges                     Multi-Source BFS          0.89 solved_clean       medium +16.01   52.1 [Silver->Gold!]
+  #216 Special Permutations                Bitmask DP                0.62 solved_after_solution hard   +12.59   24.0 [Bronze->Silver!]
+  #217 Ones and Zeroes                     0/1 Knapsack              0.72 solved_clean       medium + 9.72   47.3 [Silver->Gold!]
+  #218 Merge In Between Linked Lists       Merge Linked Lists        0.45 solved_clean       medium +11.60   43.7 [Silver->Gold!]
+  #219 132 Pattern                         Monotonic Stack           0.62 solved_after_solution hard   + 6.61   43.8 [Silver->Gold!]
+  #220 Goat Latin                          Frequency Counting / Has  0.10 solved_clean       medium + 1.32   27.1 [Silver]
+  #221 Word Search                         Path Finding with Backtr  0.87 solved_with_hints  medium +16.30   38.9 [Silver]
+  #222 Ways to Split Array Into Good Suba  Combinatorics             0.48 solved_with_hints  hard   +10.61   15.4 [Bronze]
+  #223 Brace Expansion                     Combinations / Subsets    0.48 solved_clean       medium + 4.96   38.5 [Silver]
+  #224 Burst Balloons                      Interval DP               0.82 struggled          hard   + 0.00    0.0 [Bronze]
+  #225 Replace Words                       Trie Construction / Pref  0.60 solved_clean       medium +13.10   26.1 [Bronze->Silver!]
+  #226 Largest Divisible Subset            Longest Increasing Subse  0.67 solved_clean       medium +14.79   54.3 [Silver->Gold!]
+  #227 Maximize Spanning Tree Stability w  Minimum Spanning Tree (P  0.40 solved_clean       hard   +22.73   22.7 [Bronze->Silver!]
+  #228 Maximum Length of Repeated Subarra  Two Sequence DP (LCS, Ed  0.68 solved_with_hints  medium + 8.50   48.4 [Silver->Gold!]
+  #229 Inorder Successor in BST II         BST Operations (Insert,   0.56 solved_clean       medium +10.53   40.2 [Silver->Gold!]
+  #230 Kth Smallest Element in a BST       DFS Traversal (Inorder,   0.86 solved_clean       medium + 4.46   28.0 [Silver]
+  #231 K-th Nearest Obstacle Queries       Top-K Elements            0.72 solved_clean       medium + 8.72   48.4 [Silver->Gold!]
+  #232 Find the Closest Marked Node        Dijkstra's (Weighted Sho  0.72 solved_clean       easy   + 6.50   50.6 [Gold]
+  #233 Maximum Number of Fish in a Grid    DFS Connected Components  0.72 solved_after_solution hard   + 6.83   31.7 [Silver]
+  #234 Palindromic Substrings              Opposite-Direction (Conv  0.82 solved_clean       medium + 6.61   36.3 [Silver]
+  #235 Palindrome Permutation II           Permutations              0.50 solved_with_hints  medium + 9.92   53.0 [Gold]
+  #236 Evaluate Division                   DFS Path Finding          0.82 struggled          hard   + 0.00   24.6 [Silver]
+  #237 Next Greater Node In Linked List    Monotonic Stack           0.68 solved_clean       medium + 6.99   50.8 [Gold]
+  #238 House Robber V                      Linear Recurrence DP      0.72 solved_clean       medium + 6.60   29.1 [Silver]
+  #239 Sliding Window Median               Running Median (Two Heap  0.72 struggled          hard   + 0.00   32.8 [Silver]
+  #240 Apply Substitutions                 Topological Sort          0.43 solved_clean       medium + 5.94   39.2 [Silver]
+  #241 Find Overlapping Shifts II          Sweep Line / Meeting Roo  0.14 solved_clean       medium + 6.96   54.6 [Gold]
+  #242 Length of the Longest Alphabetical  Variable-Size Window (Ex  0.30 solved_clean       easy   + 3.14   33.8 [Silver]
+  #243 Stone Game V                        Interval DP               0.45 struggled          hard   + 0.00    0.0 [Bronze]
+  #244 Cheapest Flights Within K Stops     Bellman-Ford              0.82 solved_with_hints  hard   +40.11   40.1 [Bronze->Gold!]
+  #245 Sort Array By Parity                Partitioning (Dutch Nati  0.58 solved_clean       easy   + 9.84   45.9 [Silver->Gold!]
+  #246 The Number of Ways to Make the Sum  Unbounded Knapsack        0.62 solved_clean       medium + 8.15   53.4 [Gold]
+  #247 Find the Minimum and Maximum Numbe  Fast/Slow Pointers (Cycl  0.48 solved_clean       medium +11.46   36.7 [Silver]
+  #248 Count Operations to Obtain Zero     GCD / LCM                 0.33 solved_clean       medium + 8.73   23.8 [Bronze->Silver!]
+  #249 Smallest Common Region              Lowest Common Ancestor    0.68 solved_clean       medium +19.55   65.9 [Gold->Platinum!]
+  #250 Sum of Increasing Product Blocks    Modular Arithmetic        0.18 solved_clean       medium + 6.66   26.0 [Bronze->Silver!]
+
+  --- Checkpoint at 250 problems (mode: pushing, avg mastery: 34.4) ---
+  High-importance subtopics touched: 41/41
+  Unique subtopics attempted: 70
+
+  --- Subtopic Scores ---
+    Lowest Common Ancestor                          65.9 [Platinum]  (imp:0.65, 3 attempts)
+    Sweep Line / Meeting Rooms                      54.6 [Gold]  (imp:0.75, 4 attempts)
+    Longest Increasing Subsequence                  54.3 [Gold]  (imp:0.75, 3 attempts)
+    Unbounded Knapsack                              53.4 [Gold]  (imp:0.80, 5 attempts)
+    Permutations                                    53.0 [Gold]  (imp:0.85, 4 attempts)
+    Trie + Backtracking                             52.4 [Gold]  (imp:0.50, 1 attempts)
+    Multi-Source BFS                                52.1 [Gold]  (imp:0.75, 4 attempts)
+    Monotonic Stack                                 50.8 [Gold]  (imp:0.80, 6 attempts)
+    Grid Path Problems                              50.7 [Gold]  (imp:0.75, 4 attempts)
+    Dijkstra's (Weighted Shortest Path)             50.6 [Gold]  (imp:0.75, 4 attempts)
+    Complement Search (Two Sum Pattern)             49.6 [Gold]  (imp:0.85, 4 attempts)
+    0/1 Knapsack                                    48.5 [Gold]  (imp:0.80, 6 attempts)
+    Top-K Elements                                  48.4 [Gold]  (imp:0.85, 6 attempts)
+    Two Sequence DP (LCS, Edit distance)            48.4 [Gold]  (imp:0.75, 5 attempts)
+    String Partitioning (Palindrome Partitioning)   48.4 [Gold]  (imp:0.65, 3 attempts)
+
+  --- Topic Levels ---
+    Arrays & Hashing                           29.3 [Silver]
+    Two Pointers                               33.7 [Silver]
+    Stack                                      34.9 [Silver]
+    Binary Search                              38.1 [Silver]
+    Sliding Window                             33.9 [Silver]
+    Linked List                                38.3 [Silver]
+    Trees                                      43.8 [Gold]
+    Tries                                      38.0 [Silver]
+    Backtracking                               42.3 [Gold]
+    Heap / Priority Queue                      35.7 [Silver]
+    Graphs                                     35.4 [Silver]
+    Core DP                                    46.1 [Gold]
+    Intervals                                  37.5 [Silver]
+    Greedy                                     12.6 [Bronze]
+    Advanced Graphs                            36.1 [Silver]
+    Advanced DP                                12.0 [Bronze]
+    Bit Manipulation                            5.0 [Bronze]
+    Math & Geometry                            17.1 [Bronze]
+
+    OVERALL                                    33.4 [Silver]
+  #251 Transpose Matrix                    Matrix Math (Rotation, T  0.63 solved_clean       medium +17.97   39.9 [Silver]
+  #252 Maximum Star Sum of a Graph         Top-K Elements            0.55 solved_clean       medium + 8.96   57.4 [Gold]
+  #253 Strange Printer                     Interval DP               0.62 solved_with_hints  hard   +26.31   26.3 [Bronze->Silver!]
+  #254 Maximum Frequency After Subarray O  Kadane's Algorithm (Max   0.52 struggled          hard   + 0.00   32.5 [Silver]
+  #255 Count Primes                        Primes / Sieve of Eratos  0.48 solved_clean       medium +12.51   17.1 [Bronze]
+  #256 Swapping Nodes in a Linked List     Fast/Slow Pointers (Cycl  0.40 solved_clean       medium +10.03   46.7 [Silver->Gold!]
+  #257 Find Diameter Endpoints of a Tree   BFS / Level-Order Traver  0.56 solved_clean       medium +11.43   55.5 [Gold]
+  #258 Simplified Fractions                GCD / LCM                 0.33 solved_clean       medium + 9.04   32.9 [Silver]
+  #259 Maximize Amount After Two Days of   DFS Path Finding          0.46 struggled          hard   + 0.00   24.6 [Silver]
+  #260 Number of Self-Divisible Permutati  Bitmask DP                0.45 solved_with_hints  medium + 7.99   32.0 [Silver]
+  #261 Count Good Meals                    Complement Search (Two S  0.62 solved_with_hints  medium +12.60   62.2 [Gold->Platinum!]
+  #262 Find the Index of the Large Intege  Standard Binary Search    0.55 solved_clean       easy   + 7.17   47.7 [Gold]
+  #263 Rearrange Array to Maximize Prefix  General Greedy (Greedy i  0.35 solved_with_hints  medium + 2.55   16.0 [Bronze]
+  #264 Maximum Sum of Distinct Subarrays   Fixed-Size Window         0.72 solved_clean       medium +12.10   51.7 [Silver->Gold!]
+  #265 Longest Arithmetic Subsequence      Longest Increasing Subse  0.72 solved_clean       medium +14.69   69.0 [Gold->Platinum!]
+  #266 Split Array into Fibonacci Sequenc  String Partitioning (Pal  0.42 solved_clean       medium +18.01   66.4 [Gold->Platinum!]
+  #267 Sort the People                     Sorting + Comparison      0.22 solved_clean       medium + 2.77   22.3 [Bronze->Silver!]
+  #268 Shortest Distance from All Buildin  Multi-Source BFS          0.63 solved_clean       medium +17.17   69.3 [Gold->Platinum!]
+  #269 Flip Game II                        Constraint Satisfaction   0.38 solved_clean       medium +14.34   45.5 [Silver->Gold!]
+  #270 Maximum Number of Accepted Invitat  DFS Path Finding          0.40 struggled          hard   + 0.00   24.6 [Silver]
+  #271 Pseudo-Palindromic Paths in a Bina  DFS Traversal (Inorder,   0.58 solved_clean       medium + 3.60   32.4 [Silver]
+  #272 Min Cost to Connect All Points      Minimum Spanning Tree (P  0.82 solved_after_solution hard   +19.88   42.6 [Silver->Gold!]
+  #273 Reorder List                        Reversal (Full and Parti  0.85 solved_clean       medium +11.09   46.6 [Silver->Gold!]
+  #274 Successful Pairs of Spells and Pot  Boundary Finding (Bisect  0.78 solved_clean       medium +10.19   47.1 [Silver->Gold!]
+  #275 Letter Tile Possibilities           Permutations              0.72 solved_clean       medium +14.43   68.6 [Gold->Platinum!]
+  #276 3Sum With Multiplicity              K-Sum Pattern (3Sum, 4Su  0.53 solved_clean       medium +13.84   61.2 [Gold->Platinum!]
+  #277 Maximum Average Subtree             DFS Traversal (Inorder,   0.55 solved_clean       medium + 3.19   35.5 [Silver]
+  #278 Find K Pairs with Smallest Sums     Merge K Sorted Structure  0.71 solved_after_solution hard   +13.52   45.8 [Silver->Gold!]
+  #279 Reverse Words in a String           Same-Direction (Fast/Slo  0.52 solved_clean       medium + 5.79   29.2 [Silver]
+  #280 Sort List                           Merge Linked Lists        0.72 solved_with_hints  medium +10.89   56.4 [Gold]
+  #281 Minimum Path Cost in a Hidden Grid  Dijkstra's (Weighted Sho  0.45 solved_clean       medium + 9.61   60.2 [Gold->Platinum!]
+  #282 Add One Row to Tree                 DFS Traversal (Inorder,   0.48 solved_clean       medium + 3.05   38.6 [Silver]
+  #283 Split a String in Balanced Strings  General Greedy (Greedy i  0.32 solved_clean       medium + 2.67   19.3 [Bronze]
+  #284 Minimum Number of Chairs in a Wait  Stack-Based Simulation    0.18 solved_with_hints  medium + 2.12   24.2 [Silver]
+  #285 Palindrome Partitioning II          Word Break / String DP    0.62 solved_clean       medium +14.63   55.9 [Gold]
+  #286 Sum of All Odd Length Subarrays     Prefix Sums               0.42 solved_clean       medium + 5.70   33.8 [Silver]
+  #287 House Robber III                    DFS Traversal (Inorder,   0.82 solved_clean       medium + 4.46   43.1 [Silver->Gold!]
+  #288 Missing Element in Sorted Array     Binary Search on Answer   0.62 solved_clean       medium + 7.31   41.2 [Silver->Gold!]
+  #289 Remove Outermost Parentheses        Stack-Based Simulation    0.36 solved_clean       medium + 3.94   28.2 [Silver]
+  #290 Unique Binary Search Trees II       BST Operations (Insert,   0.52 solved_clean       medium +11.35   53.2 [Gold]
+  #291 Find Overbooked Employees           Frequency Counting / Has  0.12 solved_clean       medium + 1.62   35.6 [Silver]
+  #292 Leftmost Column with at Least a On  Binary Search on Matrix   0.58 solved_clean       medium +16.21   54.6 [Silver->Gold!]
+  #293 Valid Palindrome III                Two Sequence DP (LCS, Ed  0.72 solved_clean       medium +10.73   59.1 [Gold]
+  #294 Word Squares                        Trie + Backtracking       0.60 solved_clean       medium +23.30   75.7 [Gold->Platinum!]
+  #295 Loud and Rich                       Topological Sort          0.62 solved_with_hints  medium + 7.03   46.2 [Silver->Gold!]
+  #296 Maximum Array Hopping Score I       Linear Recurrence DP      0.48 struggled          hard   + 0.00   33.0 [Silver]
+  #297 Reorganize String                   Heap Simulation           0.80 struggled          hard   + 0.00   25.6 [Silver]
+  #298 Ways to Express an Integer as Sum   0/1 Knapsack              0.72 solved_clean       medium + 9.75   58.2 [Gold]
+  #299 Minimum Number of Vertices to Reac  DFS Connected Components  0.62 struggled          medium + 0.00   32.3 [Silver]
+  #300 Data Stream as Disjoint Intervals   Interval Merging          0.52 solved_clean       medium +14.61   61.7 [Gold->Platinum!]
+
+  --- Checkpoint at 300 problems (mode: pushing, avg mastery: 41.6) ---
+  High-importance subtopics touched: 41/41
+  Unique subtopics attempted: 70
+
+  --- Subtopic Scores ---
+    Trie + Backtracking                             75.7 [Platinum]  (imp:0.50, 2 attempts)
+    Multi-Source BFS                                69.3 [Platinum]  (imp:0.75, 5 attempts)
+    Longest Increasing Subsequence                  69.0 [Platinum]  (imp:0.75, 4 attempts)
+    String Partitioning (Palindrome Partitioning)   69.0 [Platinum]  (imp:0.65, 5 attempts)
+    Permutations                                    68.6 [Platinum]  (imp:0.85, 6 attempts)
+    Lowest Common Ancestor                          65.9 [Platinum]  (imp:0.65, 3 attempts)
+    Complement Search (Two Sum Pattern)             62.2 [Platinum]  (imp:0.85, 5 attempts)
+    Interval Merging                                61.7 [Platinum]  (imp:0.80, 6 attempts)
+    K-Sum Pattern (3Sum, 4Sum)                      61.2 [Platinum]  (imp:0.70, 4 attempts)
+    Dijkstra's (Weighted Shortest Path)             60.2 [Platinum]  (imp:0.75, 5 attempts)
+    Two Sequence DP (LCS, Edit distance)            59.1 [Gold]  (imp:0.75, 6 attempts)
+    Top-K Elements                                  58.2 [Gold]  (imp:0.85, 8 attempts)
+    0/1 Knapsack                                    58.2 [Gold]  (imp:0.80, 7 attempts)
+    Word Break / String DP                          57.6 [Gold]  (imp:0.75, 8 attempts)
+    BFS / Level-Order Traversal                     57.0 [Gold]  (imp:0.90, 8 attempts)
+
+  --- Topic Levels ---
+    Arrays & Hashing                           35.8 [Silver]
+    Two Pointers                               38.0 [Silver]
+    Stack                                      37.1 [Silver]
+    Binary Search                              46.1 [Gold]
+    Sliding Window                             38.2 [Silver]
+    Linked List                                50.6 [Gold]
+    Trees                                      52.6 [Gold]
+    Tries                                      48.6 [Gold]
+    Backtracking                               52.9 [Gold]
+    Heap / Priority Queue                      41.6 [Gold]
+    Graphs                                     40.2 [Gold]
+    Core DP                                    53.9 [Gold]
+    Intervals                                  43.0 [Gold]
+    Greedy                                     19.4 [Bronze]
+    Advanced Graphs                            44.2 [Gold]
+    Advanced DP                                29.2 [Silver]
+    Bit Manipulation                            6.0 [Bronze]
+    Math & Geometry                            24.2 [Silver]
+
+    OVERALL                                    40.4 [Gold]
+
+==========================================================================================
+  SIMULATION: Edge cases — floor (0) and ceiling (100)
+==========================================================================================
+
+  --- Floor: struggling from 0 — should stay at 0 ---
+
+  #    Problem                             Subtopic                   Imp Quality            Perc      Chg  Score Tier
+  ---- ----------------------------------- ------------------------- ---- ------------------ ------ ------ ------ ---------------
+  #1   Three Divisors                      Primes / Sieve of Eratos  0.22 struggled          hard   + 0.00    0.0 [Bronze]
+  #2   Split Array by Prime Indices        Primes / Sieve of Eratos  0.30 struggled          hard   + 0.00    0.0 [Bronze]
+  #3   Count Primes                        Primes / Sieve of Eratos  0.48 struggled          hard   + 0.00    0.0 [Bronze]
+  #4   Prime In Diagonal                   Primes / Sieve of Eratos  0.22 struggled          hard   + 0.00    0.0 [Bronze]
+  #5   Complete Prime Number               Primes / Sieve of Eratos  0.28 struggled          hard   + 0.00    0.0 [Bronze]
+
+  --- Ceiling: near 100, clean solving hard problems — should cap at 100 ---
+
+  #    Problem                             Subtopic                   Imp Quality            Perc      Chg  Score Tier
+  ---- ----------------------------------- ------------------------- ---- ------------------ ------ ------ ------ ---------------
+  #6   Range Sum Query 2D - Mutable        Prefix Sums               0.45 solved_clean       hard   + 3.00  100.0 [Diamond]
+  #7   Number of Substrings With Fixed Ra  Prefix Sums               0.58 solved_clean       hard   + 0.00  100.0 [Diamond]
+  #8   Maximum Good Subarray Sum           Prefix Sums               0.68 solved_clean       hard   + 0.00  100.0 [Diamond]
+  #9   Plates Between Candles              Prefix Sums               0.71 solved_clean       hard   + 0.00  100.0 [Diamond]
+  #10  Can Make Palindrome from Substring  Prefix Sums               0.63 solved_clean       hard   + 0.00  100.0 [Diamond]
+  #11  Can You Eat Your Favorite Candy on  Prefix Sums               0.48 solved_clean       hard   + 0.00  100.0 [Diamond]
+  #12  Get Biggest Three Rhombus Sums in   Prefix Sums               0.28 solved_clean       hard   + 0.00  100.0 [Diamond]
+  #13  Minimum Operations to Make All Arr  Prefix Sums               0.78 solved_clean       hard   + 0.00  100.0 [Diamond]
+
+  --- Subtopic Scores ---
+    Prefix Sums                                    100.0 [Diamond]  (imp:0.90, 9 attempts)
+    Boundary Finding (Bisect Left/Right)             8.5 [Bronze]  (imp:0.85, 2 attempts)
+    Frequency Counting / Hash Map Lookup             2.7 [Bronze]  (imp:0.95, 3 attempts)
+    General Bit Manipulation                         2.6 [Bronze]  (imp:0.50, 1 attempts)
+    Matrix Traversal (Diagonal, Valid Sudoku, etc)    2.5 [Bronze]  (imp:0.60, 3 attempts)
+    Sorting + Comparison                             2.4 [Bronze]  (imp:0.75, 2 attempts)
+    Complement Search (Two Sum Pattern)              2.3 [Bronze]  (imp:0.85, 1 attempts)
+    General Math                                     1.3 [Bronze]  (imp:0.45, 3 attempts)
+    DFS Traversal (Inorder, Preorder, Postorder)     1.0 [Bronze]  (imp:0.95, 1 attempts)
+    General Greedy (Greedy is main insight)          0.5 [Bronze]  (imp:0.75, 1 attempts)
+    Primes / Sieve of Eratosthenes                   0.0 [Bronze]  (imp:0.35, 5 attempts)
+
+==========================================================================================
+  TEST SUITE SUMMARY
+==========================================================================================
+
+  1. Realistic beginner:   Reco engine serves high-importance first, scales difficulty
+  2. Experienced user:     Pre-set mastery, pushing phase with harder/niche problems
+  3. Struggle + recovery:  Drop from struggling, reco adapts to rebuild
+  4. Importance contrast:  High-importance gains >> low-importance at low mastery
+  5. Breadth vs depth:     Single subtopic focus vs broad coverage
+  6. Full 150-problem journey: Mode transitions from filling_gaps to pushing
+  7. Extended 300-problem journey: Coverage tracking, mode transitions
+  8. Edge cases:           Floor stays 0, ceiling caps at 100
+

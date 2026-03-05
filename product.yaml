@@ -6,7 +6,7 @@ product:
   tagline: Adaptive DSA learning through spaced repetition and pattern mastery
   components:
     - Chrome extension (lives on LeetCode)
-    - Web dashboard (mastery skill tree, ELO, stats)
+    - Web dashboard (mastery skill tree, levels, stats)
 
 # ─── Content Pipeline ────────────────────────────────────────────────
 
@@ -37,9 +37,9 @@ content_pipeline:
       - data/nc150.json
 
   llm_tagging:
-    status: in_progress
+    status: done
     description: >
-      Two-pass process.
+      Two-pass process. All 3860 problems tagged.
     pass_1:
       model: claude-opus-4-6
       batch_size: 25
@@ -55,20 +55,35 @@ content_pipeline:
         - interview_plausibility: float 0-1 (independent of importance)
         - company_plausibility: quant / faang / mid / startup (float 0-1 each)
     pass_2:
-      model: gpt-5.2-mini
+      model: claude-haiku-4-5-20251001
       description: >
-        Groups pass 1 results by sub-pattern and score tier, sends back for relative comparison
-        to catch inconsistencies. Flags outliers for recalibration.
+        Groups pass 1 results by sub-pattern, sends back for relative comparison.
+        Conservative flagging — only misclassifications and egregious score errors (>0.25 delta).
+        393 flags produced, select fixes applied.
+    validation:
+      deterministic: >
+        validate_tags.py checks weight ordering, weight sums, invalid subtopics, topic mismatches.
+        fix_tags.py auto-corrected 47 structural issues.
     files:
       - scripts/tag_problems.py
+      - scripts/corrective_pass.py
+      - scripts/validate_tags.py
+      - scripts/fix_tags.py
       - tagging_schema.yaml
 
   embeddings:
-    status: pending
+    status: done
     description: >
-      After tagging, concatenate each problem's description + solution + all tags into a text blob,
-      run through embedding model (OpenAI text-embedding-3-small), store vectors.
-      One batch job, minutes to run.
+      Tags-only embeddings (topic + primary subtopic + secondary subtopics).
+      No description, solution, or numeric scores — purely semantic.
+      Importance/difficulty handled as post-retrieval filtering.
+    model: text-embedding-3-large
+    vector_count: 3860
+    file_size: 253.7 MB
+    files:
+      - scripts/generate_embeddings.py
+      - scripts/test_embeddings.py
+      - data/embeddings.json (gitignored, regenerate with generate_embeddings.py)
 
 # ─── User Onboarding ────────────────────────────────────────────────
 
@@ -98,17 +113,53 @@ modes:
   build_patterns:
     driven_by: LLM
     description: >
-      Adaptive learning mode. LLM receives user's mastery object (sub-pattern scores, problems solved
-      per sub-pattern), recent problem history, and prerequisite graph.
-    selection_philosophy: >
-      Prioritize low mastery + high importance sub-patterns, respect prerequisites, progress difficulty
-      with mastery, mix in review for decaying patterns, introduce variety, be somewhat random.
-    recommendation_flow:
-      - LLM outputs a target problem profile as text
-      - Profile text gets embedded
-      - Cosine similarity against all problem embedding vectors
-      - Filter out seen problems and prerequisite-gated problems
-      - Pick from top candidates with randomness
+      Adaptive learning mode. LLM receives user's mastery object, recent history,
+      prerequisite graph, taxonomy, current mode, active filters, user goal/timeline.
+
+    llm_context:
+      - mastery_object: every sub-pattern with score, problems solved count, last attempted timestamp
+      - recent_history: last 10-15 problems across all sub-patterns with results
+      - prerequisite_graph: hard/soft dependencies
+      - taxonomy: with importance scores
+      - current_mode: and any active topic filters
+      - user_goal: and timeline if set
+
+    three_states:
+      filling_gaps:
+        description: >
+          Default state for most users. User has many sub-patterns at low mastery.
+          Focus on building foundations. Prioritize high importance sub-patterns with
+          prerequisites met. Serve problems at appropriate difficulty for current mastery.
+          Not pushing, just building competency.
+      pushing:
+        description: >
+          User has few gaps, most high importance sub-patterns at solid mastery.
+          Push harder — harder problems, challenging variants, niche edge cases,
+          pushing toward higher tiers. Also triggers when user has an active topic
+          filter (filtering = asking to be pushed in that area).
+      spaced_repetition:
+        description: >
+          Background layer throughout states 1 and 2. Periodically mix in problems
+          from sub-patterns with stale last-attempted timestamps. Review problems are
+          at the user's current mastery level, not harder. Checking retention, not
+          pushing growth. If they struggle, mastery drops and the system naturally
+          increases focus on that sub-pattern.
+
+    variety: >
+      Throughout all states: introduce variety, don't repeat same sub-pattern too many
+      times in a row, be somewhat random among similarly good choices.
+
+    output: >
+      LLM outputs a shortlist of ~10 problem profiles. Each gets matched against the
+      problem database by sub-pattern, difficulty range, and generalizability. Filter out
+      seen/done problems and prerequisite-gated problems. Pick from candidates with
+      randomness. Queue refreshes when mastery changes significantly or queue runs low.
+
+    matching:
+      primary: sub-pattern filter + optional embedding similarity for fuzzy cross-subtopic matching
+      secondary: difficulty range, generalizability
+      exclude: seen problems, prerequisite-gated problems, discarded problems
+
     optional_topic_filter: User can scope to a specific area and the LLM works within that constraint
 
   interview_practice:
@@ -117,14 +168,14 @@ modes:
       Simulates real interview randomness. No adaptation to weaknesses.
     flow:
       - User selects company type (quant, FAANG, mid-level, startup, all)
-      - Filter unseen problems to the ELO band for that company type
+      - Filter unseen problems to difficulty band for that company type
       - Weight by interview plausibility and company type plausibility
       - Pull top candidates, random pick
     premium_additions:
       - Timer
       - AI follow-up questions
 
-  shared: Both modes update mastery and ELO from results
+  shared: Both modes update mastery from results
 
 # ─── Chrome Extension ────────────────────────────────────────────────
 
@@ -148,7 +199,7 @@ chrome_extension:
 
   progress_animation:
     description: >
-      Post-solve dopamine loop — XP gains per sub-pattern, tier promotions, ELO movement.
+      Post-solve dopamine loop — XP gains/losses per sub-pattern, tier promotions/demotions, level movement.
 
   skip:
     available: true
@@ -158,65 +209,85 @@ chrome_extension:
   shaky_solves:
     description: >
       Problems self-reported as shaky (used hints or looked at solution) get flagged for re-serving
-      after a cooldown period. They re-enter the unseen pool after the cooldown expires.
+      after a ~30 day cooldown. Solved clean on re-serve: permanently marked done. Shaky twice:
+      discarded (never re-served again).
 
 # ─── Mastery Model ───────────────────────────────────────────────────
 
 mastery_model:
-  internal_score:
+  type: Running score (additive/subtractive), no averaging, no decay, no recency weighting
+  implementation: lib/mastery.py
+
+  subtopic_mastery:
     range: 0-100
     per: sub-pattern
+    mechanism: Each attempt adds or subtracts from the running score
+
+  formula:
+    mastery_change: quality_score × perceived_diff_mult × difficulty_multiplier × generalizability_factor
+    quality_score:
+      solved_clean: 4.0
+      solved_with_hints: 2.0
+      solved_after_solution: 0.75
+      struggled: -2.0 (struggled even after seeing solution — subtracts from mastery)
+    perceived_difficulty_multiplier:
+      easy: 0.8
+      medium: 1.0
+      hard: 1.25
+    difficulty_multiplier:
+      description: >
+        Continuous function of problem elo vs user's expected elo for their mastery level.
+        Higher mastery requires harder problems for meaningful gains.
+        expected_elo = 800 + (mastery/100) * 1700
+        multiplier = clamp(1.0 + 0.5 * (problem_elo - expected_elo) / 500, 0.3, 2.5)
+        For unsolved: inverted — failing hard problems penalizes less than failing easy ones.
+    generalizability_factor:
+      formula: importance + (1 - importance) * (current_mastery / 100)
+      description: >
+        At low mastery, niche problems (low importance) give little gain.
+        At high mastery, the gap shrinks and niche problems give meaningful gains.
+
+  secondary_subtopics:
+    description: >
+      Primary subtopic gets full mastery change.
+      Each secondary subtopic gets: mastery_change × weight × 0.5
+
+  tiers:
+    per_subtopic:
+      display: Tier name (can go up and down)
+      ranges:
+        - { range: "0-19", tier: Bronze }
+        - { range: "20-39", tier: Silver }
+        - { range: "40-59", tier: Gold }
+        - { range: "60-79", tier: Platinum }
+        - { range: "80-100", tier: Diamond }
+    per_topic:
+      display: Level (e.g., Level 1-50)
+      calculation: Importance-weighted average of subtopic scores within the topic
+    overall:
+      display: Level (e.g., Level 1-100)
+      calculation: Importance-weighted average of topic scores
 
   user_facing:
-    display: XP and tiers
-    tiers:
-      - Bronze
-      - Silver
-      - Gold
-      - Platinum
-      - Diamond
-
-  gain_formula:
-    mastery_gain: quality_score * difficulty_multiplier * generalizability_factor
-    quality_score:
-      solved_clean: full credit
-      solved_with_hints: moderate credit
-      solved_after_solution: minimal credit
-      unsolved: zero
-    perceived_difficulty_adjustment: >
-      Solved clean but rated hard gives more credit than solved clean rated easy.
-    generalizability_factor:
-      formula: generalizability + (1 - generalizability) * (current_mastery / 100)
-      description: >
-        At low mastery, generalizability matters a lot — niche problems give little.
-        At high mastery, it flattens out so niche problems give meaningful gains.
-    applies_to: Problem's single primary sub-pattern
-
-  score_type: Recency-weighted rolling average (recent attempts count more, older ones fade)
-
-  decay:
-    mechanism: Half-life function
-    half_life_extension: More volume and consistency extends half-life
-    scope: Only affects recommendation engine for spaced repetition
-    visual: Dashboard tiers never visually downgrade
+    display: XP gains/losses after every attempt, tier promotions/demotions
+    individual_ranks: Every subtopic has its own tier
+    topic_ranks: Cumulative level per topic
+    overall_rank: Cumulative level across all topics
 
   manual_override: >
     Users can manually override mastery levels at any time.
     Override sets a starting point that real performance adjusts from.
 
-# ─── ELO System ──────────────────────────────────────────────────────
+# ─── Overall Rank ────────────────────────────────────────────────────
 
-elo_system:
-  type: Passive metric updating across both modes
-  math: Standard ELO — user ELO vs problem difficulty rating, adjust on solve or fail
-  problem_ratings:
-    initialization: Zerotrac contest ratings
-    refinement: Over time from aggregate user data
-  open_decisions:
-    - True fluctuating rating vs never-decreasing progress metric vs true rating with a floor
-  visibility:
-    default: private
-    opt_in: share with friends
+overall_rank:
+  description: >
+    Overall mastery across all subtopics, displayed as a level.
+    Importance-weighted aggregation of topic scores.
+    Separate from per-subtopic tiers.
+  estimated_contest_elo:
+    status: deferred
+    description: May add estimated contest elo later based on mastery profile
 
 # ─── Dashboard ───────────────────────────────────────────────────────
 
@@ -225,8 +296,9 @@ dashboard:
     description: >
       Visualization of all sub-patterns with tier badges.
       Shows unlocked, locked (behind prerequisites), and close to unlocking.
-      Tiers never visually decay.
-  elo_graph: ELO over time
+      Tiers can go up and down.
+  overall_level: Overall mastery level prominently displayed
+  topic_levels: Per-topic level breakdown
   stats:
     - Problems solved
     - Quality scores
@@ -234,7 +306,7 @@ dashboard:
     - Total time practiced
   social:
     friends_list: true
-    visibility: Opt-in ELO and tier sharing
+    visibility: Opt-in level and tier sharing
 
 # ─── Monetization ────────────────────────────────────────────────────
 
@@ -247,3 +319,8 @@ monetization:
       - Company-specific interview practice
       - AI interview simulation with timer and follow-ups
       - Unlimited skips
+
+Personal Notes (CLAUDE WHATEVER CHANEGS U MAKE DO NOT TOUCH THIS)
+- for targeted practice, we may need to ignore prereq graph, but also warn users that they may ecounter new patterns
+- starting problem handpicked by me for each pattern if unseen
+- maybe we only do elo drop for spaced reptition (when reco randomly chooses, and u fail, then u drop significantly)

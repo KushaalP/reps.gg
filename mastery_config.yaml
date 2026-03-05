@@ -1,0 +1,166 @@
+# Mastery Model Configuration
+# Separate from taxonomy — this controls progression tuning.
+
+# ── Quality Scores (base points per attempt) ────────────────────────
+quality_scores:
+  solved_clean: 4.0
+  solved_with_hints: 3.25
+  solved_after_solution: 2.5
+  struggled: 0.0
+
+# ── Perceived Difficulty Multipliers ────────────────────────────────
+perceived_difficulty:
+  easy: 0.8
+  medium: 1.0
+  hard: 1.25
+
+# ── Difficulty Multiplier Constants ─────────────────────────────────
+difficulty_multiplier:
+  base_elo: 800           # expected elo at mastery 0
+  elo_range: 1900         # maps mastery 0-100 to elo 800-2700
+  normalization: 500      # delta divisor
+  min: 0.3
+  max: 2.5
+
+# ── Secondary Subtopic Discount ─────────────────────────────────────
+secondary_discount: 0.5   # secondary gains = change × weight × this
+
+# ── Importance Gate ────────────────────────────────────────────────
+# Problems below threshold get heavily discounted. Above = full gain.
+importance_threshold: 0.2
+importance_discount: 0.25  # below-threshold problems give 25% of normal gain
+
+# ── Diminishing Returns ────────────────────────────────────────────
+# After Gold, gains taper off — higher tiers require more grinding.
+# UX: displayed as more "levels" within each tier, not lower XP.
+diminishing_returns:
+  threshold: 40        # mastery score where tapering begins (Gold)
+  max_reduction: 0.7   # at mastery 100, gains are (1 - 0.7) = 0.3x
+
+# ── Tier Thresholds ─────────────────────────────────────────────────
+tiers:
+  - { min: 0,  name: Bronze }
+  - { min: 20, name: Silver }
+  - { min: 40, name: Gold }
+  - { min: 60, name: Platinum }
+  - { min: 80, name: Diamond }
+
+# ── Per-Subtopic Mastery Targets ────────────────────────────────────
+# target_solves_to_gold: number of clean medium solves to reach Gold (40).
+# mastery_rate is derived: 40 / (target × ~2.5)
+#
+# Calibration anchors:
+#   NC150 completion in a subtopic ≈ Silver / low Gold (30-40)
+#   NC250 completion in a subtopic ≈ comfortable Gold (45-55)
+#
+# Format: subtopic_name: target_solves_to_gold
+
+subtopic_targets:
+
+  # ── Arrays & Hashing ──────────────────────────────────────────────
+  # nc150/nc250 counts inform depth. Broad subtopics need more solves.
+  Frequency Counting / Hash Map Lookup: 18      # nc250:19, massive pool, broad pattern
+  Prefix Sums: 8                                 # nc250:3, but deep pattern with many variants
+  Kadane's Algorithm (Max Subarray): 5           # nc250:3, narrow focused pattern
+  Sorting + Comparison: 10                       # nc250:2, broad utility pattern
+  Complement Search (Two Sum Pattern): 4         # nc250:1, narrow classic pattern
+  Matrix Traversal (Diagonal, Valid Sudoku, etc): 7  # nc250:4, moderate breadth
+
+  # ── Two Pointers ──────────────────────────────────────────────────
+  Opposite-Direction (Converging): 10            # nc250:10, well-represented
+  Same-Direction (Fast/Slow on Arrays): 8        # nc250:4, moderate
+  K-Sum Pattern (3Sum, 4Sum): 4                  # nc250:2, narrow extension of two sum
+  Partitioning (Dutch National Flag): 3          # nc250:1, very narrow
+  Merging Sorted Arrays: 4                       # nc250:1, narrow
+
+  # ── Stack ─────────────────────────────────────────────────────────
+  Monotonic Stack: 8                             # nc250:4, focused but tricky pattern
+  Stack-Based Simulation: 10                     # nc250:10, broad applications
+  Min/Max Stack: 3                               # nc250:1, very narrow
+
+  # ── Binary Search ─────────────────────────────────────────────────
+  Standard Binary Search: 5                      # nc250:3, fundamental
+  Binary Search on Answer Space: 8               # nc250:4, moderate breadth
+  Boundary Finding (Bisect Left/Right): 6        # nc250:3, focused
+  Search in Rotated/Modified Array: 5            # nc250:4, narrow but tricky
+  Binary Search on Matrix: 3                     # nc250:1, narrow
+
+  # ── Sliding Window ───────────────────────────────────────────────
+  Fixed-Size Window: 5                           # nc250:1, narrow
+  Variable-Size Window (Expand/Contract): 8      # nc250:5, moderate breadth
+  Window with Monotonic Deque: 3                 # nc250:1, narrow advanced
+
+  # ── Linked List ───────────────────────────────────────────────────
+  Fast/Slow Pointers (Cycle, Middle): 4          # nc250:2, focused classic
+  Reversal (Full and Partial): 6                 # nc250:4, moderate
+  Merge Linked Lists: 4                          # nc250:2, focused
+
+  # ── Trees ─────────────────────────────────────────────────────────
+  DFS Traversal (Inorder, Preorder, Postorder): 15  # nc250:17, very broad
+  BFS / Level-Order Traversal: 5                 # nc250:2, focused
+  BST Operations (Insert, Delete, Validate): 5   # nc250:3, moderate
+  Lowest Common Ancestor: 3                      # nc250:1, narrow
+  Path Sum Problems: 3                           # nc250:0, narrow
+
+  # ── Tries ─────────────────────────────────────────────────────────
+  Trie Construction / Prefix Search: 5           # nc250:2, moderate
+  Trie + Backtracking: 3                         # nc250:1, narrow
+
+  # ── Backtracking ──────────────────────────────────────────────────
+  Permutations: 4                                # nc250:2, focused
+  Combinations / Subsets: 10                     # nc250:10, broad and foundational
+  Constraint Satisfaction (N-Queens): 4          # nc250:2, focused
+  String Partitioning (Palindrome Partitioning): 3  # nc250:1, narrow
+  Path Finding with Backtracking: 4              # nc250:1, moderate
+
+  # ── Heap / Priority Queue ─────────────────────────────────────────
+  Top-K Elements: 6                              # nc250:4, well-represented
+  Merge K Sorted Structures: 4                   # nc250:2, focused
+  Running Median (Two Heaps): 3                  # nc250:1, narrow
+  Heap Simulation: 8                             # nc250:7, broad
+
+  # ── Graphs ────────────────────────────────────────────────────────
+  BFS Shortest Path (Unweighted): 6              # nc250:2, moderate
+  Multi-Source BFS: 4                            # nc250:2, focused
+  DFS Connected Components: 8                    # nc250:7, broad
+  DFS Path Finding: 5                            # nc250:3, moderate
+  Union-Find: 6                                  # nc250:4, moderate
+  Topological Sort: 8                            # nc250:6, well-represented
+
+  # ── Core DP ───────────────────────────────────────────────────────
+  Linear Recurrence DP: 12                       # nc250:13, very broad
+  Longest Increasing Subsequence: 4              # nc250:1, focused
+  Word Break / String DP: 5                      # nc250:3, moderate
+  Unbounded Knapsack: 7                          # nc250:4, moderate
+  0/1 Knapsack: 7                                # nc250:3, moderate
+  Two Sequence DP (LCS, Edit distance): 6        # nc250:5, moderate
+  Grid Path Problems: 5                          # nc250:3, moderate
+
+  # ── Intervals ─────────────────────────────────────────────────────
+  Interval Merging: 4                            # nc250:2, focused
+  Interval Scheduling (Non-Overlapping): 3       # nc250:0, narrow
+  Sweep Line / Meeting Rooms: 6                  # nc250:3, moderate
+
+  # ── Greedy ────────────────────────────────────────────────────────
+  General Greedy (Greedy is main insight): 13    # nc250:13, very broad
+
+  # ── Advanced Graphs ───────────────────────────────────────────────
+  Dijkstra's (Weighted Shortest Path): 6         # nc250:3, moderate
+  Bellman-Ford: 3                                # nc250:1, narrow
+  Minimum Spanning Tree (Prim's / Kruskal's): 4  # nc250:2, focused
+  Bipartite Checking: 3                          # nc250:0, narrow
+
+  # ── Advanced DP ───────────────────────────────────────────────────
+  Bitmask DP: 6                                  # nc250:0, niche but deep
+  Interval DP: 4                                 # nc250:1, moderate
+
+  # ── Bit Manipulation ──────────────────────────────────────────────
+  General Bit Manipulation: 8                    # nc250:7, broad
+
+  # ── Math & Geometry ───────────────────────────────────────────────
+  General Math: 10                               # nc250:7, very broad
+  Modular Arithmetic: 4                          # nc250:0, focused
+  Matrix Math (Rotation, Transpose): 3           # nc250:2, narrow
+  GCD / LCM: 4                                   # nc250:2, focused
+  Primes / Sieve of Eratosthenes: 4              # nc250:0, focused
+  Combinatorics: 6                               # nc250:0, moderate
