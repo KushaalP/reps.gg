@@ -28,17 +28,6 @@ prerequisites:
     soft:
       - Complement Search (Two Sum Pattern)
 
-  Partitioning (Dutch National Flag):
-    hard:
-      - Opposite-Direction (Converging)
-    soft: []
-
-  Merging Sorted Arrays:
-    hard:
-      - Same-Direction (Fast/Slow on Arrays)
-      - Sorting + Comparison
-    soft: []
-
   # ============================================================
   # BINARY SEARCH — requires sorting understanding
   # ============================================================
@@ -62,12 +51,6 @@ prerequisites:
       - Standard Binary Search
     soft:
       - Boundary Finding (Bisect Left/Right)
-
-  Binary Search on Matrix:
-    hard:
-      - Standard Binary Search
-    soft:
-      - Matrix Traversal (Diagonal, Valid Sudoku, etc)
 
   # ============================================================
   # SLIDING WINDOW — requires two pointers foundation
@@ -131,12 +114,6 @@ prerequisites:
     soft:
       - Frequency Counting / Hash Map Lookup
 
-  Trie + Backtracking:
-    hard:
-      - Trie Construction / Prefix Search
-      - Combinations / Subsets
-    soft: []
-
   # ============================================================
   # BACKTRACKING — requires recursion via trees
   # ============================================================
@@ -180,15 +157,8 @@ prerequisites:
   Merge K Sorted Structures:
     hard:
       - Top-K Elements
-      - Merging Sorted Arrays
     soft:
       - Merge Linked Lists
-
-  Running Median (Two Heaps):
-    hard:
-      - Top-K Elements
-    soft:
-      - Standard Binary Search
 
   Heap Simulation:
     hard:
@@ -284,12 +254,6 @@ prerequisites:
     soft:
       - Top-K Elements
 
-  Interval Scheduling (Non-Overlapping):
-    hard:
-      - Interval Merging
-    soft:
-      - Top-K Elements
-
   Sweep Line / Meeting Rooms:
     hard:
       - Interval Merging
@@ -315,23 +279,12 @@ prerequisites:
       - Top-K Elements
     soft: []
 
-  Bellman-Ford:
-    hard:
-      - Dijkstra's (Weighted Shortest Path)
-    soft: []
-
   Minimum Spanning Tree (Prim's / Kruskal's):
     hard:
       - Union-Find
       - Top-K Elements
     soft:
       - Dijkstra's (Weighted Shortest Path)
-
-  Bipartite Checking:
-    hard:
-      - BFS Shortest Path (Unweighted)
-      - DFS Connected Components
-    soft: []
 
   # ============================================================
   # ADVANCED DP — requires core DP mastery

@@ -24,10 +24,6 @@ topics:
         importance: 0.75
       - name: K-Sum Pattern (3Sum, 4Sum)
         importance: 0.70
-      - name: Partitioning (Dutch National Flag)
-        importance: 0.50
-      - name: Merging Sorted Arrays
-        importance: 0.65
 
   - name: Stack
     importance: 0.80
@@ -36,8 +32,6 @@ topics:
         importance: 0.80
       - name: Stack-Based Simulation
         importance: 0.80
-      - name: Min/Max Stack
-        importance: 0.60
 
   - name: Binary Search
     importance: 0.90
@@ -50,8 +44,6 @@ topics:
         importance: 0.85
       - name: Search in Rotated/Modified Array
         importance: 0.70
-      - name: Binary Search on Matrix
-        importance: 0.45
 
   - name: Sliding Window
     importance: 0.875
@@ -73,8 +65,6 @@ topics:
       - name: Merge Linked Lists
         importance: 0.65
 
-
-
   - name: Trees
     importance: 0.90
     subtopics:
@@ -94,9 +84,6 @@ topics:
     subtopics:
       - name: Trie Construction / Prefix Search
         importance: 0.60
-      - name: Trie + Backtracking
-        importance: 0.50
-
 
   - name: Backtracking
     importance: 0.80
@@ -119,11 +106,8 @@ topics:
         importance: 0.85
       - name: Merge K Sorted Structures
         importance: 0.50
-      - name: Running Median (Two Heaps)
-        importance: 0.50
       - name: Heap Simulation
         importance: 0.75
-
 
   - name: Graphs
     importance: 0.90
@@ -152,7 +136,7 @@ topics:
         importance: 0.75
       - name: Unbounded Knapsack
         importance: 0.80
-      - name: 0/1 Knapsack 
+      - name: 0/1 Knapsack
         importance: 0.80
       - name: Two Sequence DP (LCS, Edit distance)
         importance: 0.75
@@ -164,8 +148,6 @@ topics:
     subtopics:
       - name: Interval Merging
         importance: 0.80
-      - name: Interval Scheduling (Non-Overlapping)
-        importance: 0.55
       - name: Sweep Line / Meeting Rooms
         importance: 0.75
 
@@ -180,12 +162,8 @@ topics:
     subtopics:
       - name: Dijkstra's (Weighted Shortest Path)
         importance: 0.75
-      - name: Bellman-Ford
-        importance: 0.30
       - name: Minimum Spanning Tree (Prim's / Kruskal's)
         importance: 0.50
-      - name: Bipartite Checking
-        importance: 0.55
 
   - name: Advanced DP
     importance: 0.40
@@ -208,8 +186,6 @@ topics:
         importance: 0.45
       - name: Modular Arithmetic
         importance: 0.55
-      - name: Matrix Math (Rotation, Transpose)
-        importance: 0.45
       - name: GCD / LCM
         importance: 0.50
       - name: Primes / Sieve of Eratosthenes

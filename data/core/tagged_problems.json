@@ -81,7 +81,7 @@
     "secondary_subtopics": [
       {
         "topic": "Two Pointers",
-        "name": "Merging Sorted Arrays",
+        "name": "Same-Direction (Fast/Slow on Arrays)",
         "weight": 0.25
       }
     ],
@@ -1102,7 +1102,7 @@
     "id": 48,
     "primary_topic": "Math & Geometry",
     "primary_subtopic": {
-      "name": "Matrix Math (Rotation, Transpose)",
+      "name": "General Math",
       "weight": 0.8
     },
     "secondary_subtopics": [
@@ -1678,16 +1678,10 @@
     "id": 74,
     "primary_topic": "Binary Search",
     "primary_subtopic": {
-      "name": "Binary Search on Matrix",
-      "weight": 0.7
+      "name": "Standard Binary Search",
+      "weight": 1.0
     },
-    "secondary_subtopics": [
-      {
-        "topic": "Binary Search",
-        "name": "Standard Binary Search",
-        "weight": 0.3
-      }
-    ],
+    "secondary_subtopics": [],
     "difficulty": 1257,
     "importance": 0.87,
     "interview_plausibility": 0.9,
@@ -1702,7 +1696,7 @@
     "id": 75,
     "primary_topic": "Two Pointers",
     "primary_subtopic": {
-      "name": "Partitioning (Dutch National Flag)",
+      "name": "Opposite-Direction (Converging)",
       "weight": 0.9
     },
     "secondary_subtopics": [
@@ -1983,7 +1977,7 @@
     "id": 88,
     "primary_topic": "Two Pointers",
     "primary_subtopic": {
-      "name": "Merging Sorted Arrays",
+      "name": "Same-Direction (Fast/Slow on Arrays)",
       "weight": 1.0
     },
     "secondary_subtopics": [],
@@ -3503,7 +3497,7 @@
     "id": 155,
     "primary_topic": "Stack",
     "primary_subtopic": {
-      "name": "Min/Max Stack",
+      "name": "Stack-Based Simulation",
       "weight": 1.0
     },
     "secondary_subtopics": [],
@@ -4645,7 +4639,7 @@
     "id": 212,
     "primary_topic": "Tries",
     "primary_subtopic": {
-      "name": "Trie + Backtracking",
+      "name": "Trie Construction / Prefix Search",
       "weight": 0.65
     },
     "secondary_subtopics": [
@@ -5277,7 +5271,7 @@
     "id": 240,
     "primary_topic": "Binary Search",
     "primary_subtopic": {
-      "name": "Binary Search on Matrix",
+      "name": "Standard Binary Search",
       "weight": 0.6
     },
     "secondary_subtopics": [
@@ -5379,18 +5373,13 @@
     "primary_topic": "Arrays & Hashing",
     "primary_subtopic": {
       "name": "Frequency Counting / Hash Map Lookup",
-      "weight": 0.5
+      "weight": 0.59
     },
     "secondary_subtopics": [
       {
         "topic": "Two Pointers",
         "name": "Same-Direction (Fast/Slow on Arrays)",
-        "weight": 0.35
-      },
-      {
-        "topic": "Two Pointers",
-        "name": "Merging Sorted Arrays",
-        "weight": 0.15
+        "weight": 0.41
       }
     ],
     "difficulty": 1328,
@@ -6350,7 +6339,7 @@
     "secondary_subtopics": [
       {
         "topic": "Two Pointers",
-        "name": "Partitioning (Dutch National Flag)",
+        "name": "Opposite-Direction (Converging)",
         "weight": 0.15
       }
     ],
@@ -6612,7 +6601,7 @@
     "id": 295,
     "primary_topic": "Heap / Priority Queue",
     "primary_subtopic": {
-      "name": "Running Median (Two Heaps)",
+      "name": "Heap Simulation",
       "weight": 0.9
     },
     "secondary_subtopics": [
@@ -7257,7 +7246,7 @@
       },
       {
         "topic": "Two Pointers",
-        "name": "Merging Sorted Arrays",
+        "name": "Same-Direction (Fast/Slow on Arrays)",
         "weight": 0.2
       }
     ],
@@ -7323,7 +7312,7 @@
     "secondary_subtopics": [
       {
         "topic": "Two Pointers",
-        "name": "Partitioning (Dutch National Flag)",
+        "name": "Opposite-Direction (Converging)",
         "weight": 0.35
       },
       {
@@ -8663,7 +8652,7 @@
       },
       {
         "topic": "Binary Search",
-        "name": "Binary Search on Matrix",
+        "name": "Standard Binary Search",
         "weight": 0.2
       }
     ],
@@ -9746,7 +9735,7 @@
     "id": 425,
     "primary_topic": "Tries",
     "primary_subtopic": {
-      "name": "Trie + Backtracking",
+      "name": "Trie Construction / Prefix Search",
       "weight": 0.6
     },
     "secondary_subtopics": [
@@ -9987,21 +9976,21 @@
   },
   {
     "id": 435,
-    "primary_topic": "Greedy",
+    "primary_topic": "Intervals",
     "primary_subtopic": {
-      "name": "General Greedy (Greedy is main insight)",
-      "weight": 0.55
+      "name": "Interval Merging",
+      "weight": 0.46
     },
     "secondary_subtopics": [
-      {
-        "topic": "Intervals",
-        "name": "Interval Scheduling (Non-Overlapping)",
-        "weight": 0.3
-      },
       {
         "topic": "Arrays & Hashing",
         "name": "Sorting + Comparison",
         "weight": 0.15
+      },
+      {
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.39,
+        "topic": "Greedy"
       }
     ],
     "difficulty": 1416,
@@ -10397,21 +10386,21 @@
   },
   {
     "id": 452,
-    "primary_topic": "Greedy",
+    "primary_topic": "Intervals",
     "primary_subtopic": {
-      "name": "General Greedy (Greedy is main insight)",
-      "weight": 0.45
+      "name": "Interval Merging",
+      "weight": 0.48
     },
     "secondary_subtopics": [
-      {
-        "topic": "Intervals",
-        "name": "Interval Scheduling (Non-Overlapping)",
-        "weight": 0.35
-      },
       {
         "topic": "Arrays & Hashing",
         "name": "Sorting + Comparison",
         "weight": 0.2
+      },
+      {
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.32,
+        "topic": "Greedy"
       }
     ],
     "difficulty": 1370,
@@ -11070,7 +11059,7 @@
     "id": 480,
     "primary_topic": "Heap / Priority Queue",
     "primary_subtopic": {
-      "name": "Running Median (Two Heaps)",
+      "name": "Heap Simulation",
       "weight": 0.55
     },
     "secondary_subtopics": [
@@ -14255,21 +14244,21 @@
   },
   {
     "id": 621,
-    "primary_topic": "Greedy",
+    "primary_topic": "Heap / Priority Queue",
     "primary_subtopic": {
-      "name": "General Greedy (Greedy is main insight)",
-      "weight": 0.4
+      "name": "Heap Simulation",
+      "weight": 0.3
     },
     "secondary_subtopics": [
-      {
-        "topic": "Heap / Priority Queue",
-        "name": "Heap Simulation",
-        "weight": 0.3
-      },
       {
         "topic": "Arrays & Hashing",
         "name": "Frequency Counting / Hash Map Lookup",
         "weight": 0.3
+      },
+      {
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.4,
+        "topic": "Greedy"
       }
     ],
     "difficulty": 1658,
@@ -14463,21 +14452,21 @@
   },
   {
     "id": 630,
-    "primary_topic": "Greedy",
+    "primary_topic": "Heap / Priority Queue",
     "primary_subtopic": {
-      "name": "General Greedy (Greedy is main insight)",
+      "name": "Heap Simulation",
       "weight": 0.45
     },
     "secondary_subtopics": [
       {
-        "topic": "Heap / Priority Queue",
-        "name": "Heap Simulation",
-        "weight": 0.35
-      },
-      {
         "topic": "Arrays & Hashing",
         "name": "Sorting + Comparison",
         "weight": 0.2
+      },
+      {
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.35,
+        "topic": "Greedy"
       }
     ],
     "difficulty": 2085,
@@ -14881,21 +14870,21 @@
   },
   {
     "id": 646,
-    "primary_topic": "Greedy",
+    "primary_topic": "Intervals",
     "primary_subtopic": {
-      "name": "General Greedy (Greedy is main insight)",
-      "weight": 0.5
+      "name": "Interval Merging",
+      "weight": 0.45
     },
     "secondary_subtopics": [
-      {
-        "topic": "Intervals",
-        "name": "Interval Scheduling (Non-Overlapping)",
-        "weight": 0.3
-      },
       {
         "topic": "Arrays & Hashing",
         "name": "Sorting + Comparison",
         "weight": 0.2
+      },
+      {
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.35,
+        "topic": "Greedy"
       }
     ],
     "difficulty": 1459,
@@ -15212,9 +15201,9 @@
   },
   {
     "id": 659,
-    "primary_topic": "Greedy",
+    "primary_topic": "Heap / Priority Queue",
     "primary_subtopic": {
-      "name": "General Greedy (Greedy is main insight)",
+      "name": "Heap Simulation",
       "weight": 0.55
     },
     "secondary_subtopics": [
@@ -15224,9 +15213,9 @@
         "weight": 0.3
       },
       {
-        "topic": "Heap / Priority Queue",
-        "name": "Heap Simulation",
-        "weight": 0.15
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.15,
+        "topic": "Greedy"
       }
     ],
     "difficulty": 1753,
@@ -16465,7 +16454,7 @@
       },
       {
         "topic": "Math & Geometry",
-        "name": "Matrix Math (Rotation, Transpose)",
+        "name": "General Math",
         "weight": 0.25
       }
     ],
@@ -16579,19 +16568,14 @@
     "id": 716,
     "primary_topic": "Stack",
     "primary_subtopic": {
-      "name": "Min/Max Stack",
-      "weight": 0.5
+      "name": "Stack-Based Simulation",
+      "weight": 0.62
     },
     "secondary_subtopics": [
       {
         "topic": "Heap / Priority Queue",
         "name": "Heap Simulation",
-        "weight": 0.3
-      },
-      {
-        "topic": "Stack",
-        "name": "Stack-Based Simulation",
-        "weight": 0.2
+        "weight": 0.37
       }
     ],
     "difficulty": 1940,
@@ -17601,21 +17585,21 @@
   },
   {
     "id": 757,
-    "primary_topic": "Greedy",
+    "primary_topic": "Intervals",
     "primary_subtopic": {
-      "name": "General Greedy (Greedy is main insight)",
-      "weight": 0.55
+      "name": "Interval Merging",
+      "weight": 0.46
     },
     "secondary_subtopics": [
-      {
-        "topic": "Intervals",
-        "name": "Interval Scheduling (Non-Overlapping)",
-        "weight": 0.3
-      },
       {
         "topic": "Arrays & Hashing",
         "name": "Sorting + Comparison",
         "weight": 0.15
+      },
+      {
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.39,
+        "topic": "Greedy"
       }
     ],
     "difficulty": 2378.62,
@@ -17759,21 +17743,26 @@
   },
   {
     "id": 763,
-    "primary_topic": "Greedy",
+    "primary_topic": "Intervals",
     "primary_subtopic": {
-      "name": "General Greedy (Greedy is main insight)",
-      "weight": 0.5
+      "name": "Interval Merging",
+      "weight": 0.33
     },
     "secondary_subtopics": [
       {
         "topic": "Arrays & Hashing",
         "name": "Frequency Counting / Hash Map Lookup",
-        "weight": 0.3
+        "weight": 0.2
       },
       {
         "topic": "Two Pointers",
         "name": "Same-Direction (Fast/Slow on Arrays)",
-        "weight": 0.2
+        "weight": 0.13
+      },
+      {
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.33,
+        "topic": "Greedy"
       }
     ],
     "difficulty": 1443.07,
@@ -18335,18 +18324,12 @@
   },
   {
     "id": 785,
-    "primary_topic": "Advanced Graphs",
+    "primary_topic": "Graphs",
     "primary_subtopic": {
-      "name": "Bipartite Checking",
-      "weight": 0.8
+      "name": "DFS Connected Components",
+      "weight": 1.0
     },
-    "secondary_subtopics": [
-      {
-        "topic": "Graphs",
-        "name": "DFS Connected Components",
-        "weight": 0.2
-      }
-    ],
+    "secondary_subtopics": [],
     "difficulty": 1624.98,
     "importance": 0.76,
     "interview_plausibility": 0.82,
@@ -18390,7 +18373,7 @@
     "id": 787,
     "primary_topic": "Advanced Graphs",
     "primary_subtopic": {
-      "name": "Bellman-Ford",
+      "name": "Dijkstra's (Weighted Shortest Path)",
       "weight": 0.5
     },
     "secondary_subtopics": [
@@ -20088,21 +20071,21 @@
   },
   {
     "id": 857,
-    "primary_topic": "Greedy",
+    "primary_topic": "Heap / Priority Queue",
     "primary_subtopic": {
-      "name": "General Greedy (Greedy is main insight)",
+      "name": "Heap Simulation",
       "weight": 0.4
     },
     "secondary_subtopics": [
       {
-        "topic": "Heap / Priority Queue",
-        "name": "Heap Simulation",
-        "weight": 0.35
-      },
-      {
         "topic": "Arrays & Hashing",
         "name": "Sorting + Comparison",
         "weight": 0.25
+      },
+      {
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.35,
+        "topic": "Greedy"
       }
     ],
     "difficulty": 2259.66,
@@ -20355,7 +20338,7 @@
     "id": 867,
     "primary_topic": "Math & Geometry",
     "primary_subtopic": {
-      "name": "Matrix Math (Rotation, Transpose)",
+      "name": "General Math",
       "weight": 0.85
     },
     "secondary_subtopics": [
@@ -20448,21 +20431,21 @@
   },
   {
     "id": 871,
-    "primary_topic": "Greedy",
+    "primary_topic": "Heap / Priority Queue",
     "primary_subtopic": {
-      "name": "General Greedy (Greedy is main insight)",
+      "name": "Heap Simulation",
       "weight": 0.45
     },
     "secondary_subtopics": [
       {
-        "topic": "Heap / Priority Queue",
-        "name": "Heap Simulation",
-        "weight": 0.35
-      },
-      {
         "topic": "Core DP",
         "name": "Linear Recurrence DP",
         "weight": 0.2
+      },
+      {
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.35,
+        "topic": "Greedy"
       }
     ],
     "difficulty": 2074.41,
@@ -20829,18 +20812,13 @@
     "primary_topic": "Graphs",
     "primary_subtopic": {
       "name": "BFS Shortest Path (Unweighted)",
-      "weight": 0.45
+      "weight": 0.53
     },
     "secondary_subtopics": [
       {
-        "topic": "Advanced Graphs",
-        "name": "Bipartite Checking",
-        "weight": 0.4
-      },
-      {
         "topic": "Graphs",
         "name": "DFS Connected Components",
-        "weight": 0.15
+        "weight": 0.47
       }
     ],
     "difficulty": 1794.58,
@@ -21313,7 +21291,7 @@
     "id": 905,
     "primary_topic": "Two Pointers",
     "primary_subtopic": {
-      "name": "Partitioning (Dutch National Flag)",
+      "name": "Opposite-Direction (Converging)",
       "weight": 0.8
     },
     "secondary_subtopics": [
@@ -21729,7 +21707,7 @@
     "secondary_subtopics": [
       {
         "topic": "Two Pointers",
-        "name": "Partitioning (Dutch National Flag)",
+        "name": "Opposite-Direction (Converging)",
         "weight": 0.3
       }
     ],
@@ -23340,7 +23318,7 @@
     "id": 986,
     "primary_topic": "Two Pointers",
     "primary_subtopic": {
-      "name": "Merging Sorted Arrays",
+      "name": "Same-Direction (Fast/Slow on Arrays)",
       "weight": 0.55
     },
     "secondary_subtopics": [
@@ -24259,21 +24237,21 @@
   },
   {
     "id": 1024,
-    "primary_topic": "Greedy",
+    "primary_topic": "Intervals",
     "primary_subtopic": {
-      "name": "General Greedy (Greedy is main insight)",
+      "name": "Interval Merging",
       "weight": 0.55
     },
     "secondary_subtopics": [
       {
-        "topic": "Intervals",
-        "name": "Interval Merging",
-        "weight": 0.25
-      },
-      {
         "topic": "Core DP",
         "name": "Linear Recurrence DP",
         "weight": 0.2
+      },
+      {
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.25,
+        "topic": "Greedy"
       }
     ],
     "difficulty": 1746.14,
@@ -25937,16 +25915,21 @@
   },
   {
     "id": 1094,
-    "primary_topic": "Intervals",
+    "primary_topic": "Heap / Priority Queue",
     "primary_subtopic": {
-      "name": "Sweep Line / Meeting Rooms",
-      "weight": 0.6
+      "name": "Heap Simulation",
+      "weight": 0.29
     },
     "secondary_subtopics": [
       {
+        "name": "Sweep Line / Meeting Rooms",
+        "weight": 0.43,
+        "topic": "Intervals"
+      },
+      {
         "topic": "Arrays & Hashing",
         "name": "Prefix Sums",
-        "weight": 0.4
+        "weight": 0.29
       }
     ],
     "difficulty": 1441.43,
@@ -28352,7 +28335,7 @@
       },
       {
         "topic": "Two Pointers",
-        "name": "Merging Sorted Arrays",
+        "name": "Same-Direction (Fast/Slow on Arrays)",
         "weight": 0.2
       }
     ],
@@ -30751,21 +30734,26 @@
   },
   {
     "id": 1296,
-    "primary_topic": "Greedy",
+    "primary_topic": "Intervals",
     "primary_subtopic": {
-      "name": "General Greedy (Greedy is main insight)",
-      "weight": 0.45
+      "name": "Interval Merging",
+      "weight": 0.36
     },
     "secondary_subtopics": [
       {
         "topic": "Arrays & Hashing",
         "name": "Frequency Counting / Hash Map Lookup",
-        "weight": 0.3
+        "weight": 0.24
       },
       {
         "topic": "Arrays & Hashing",
         "name": "Sorting + Comparison",
-        "weight": 0.25
+        "weight": 0.2
+      },
+      {
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.2,
+        "topic": "Greedy"
       }
     ],
     "difficulty": 1490.24,
@@ -30991,7 +30979,7 @@
     "secondary_subtopics": [
       {
         "topic": "Two Pointers",
-        "name": "Merging Sorted Arrays",
+        "name": "Same-Direction (Fast/Slow on Arrays)",
         "weight": 0.3
       },
       {
@@ -31478,9 +31466,9 @@
   },
   {
     "id": 1326,
-    "primary_topic": "Greedy",
+    "primary_topic": "Intervals",
     "primary_subtopic": {
-      "name": "General Greedy (Greedy is main insight)",
+      "name": "Interval Merging",
       "weight": 0.5
     },
     "secondary_subtopics": [
@@ -31490,9 +31478,9 @@
         "weight": 0.35
       },
       {
-        "topic": "Intervals",
-        "name": "Interval Merging",
-        "weight": 0.15
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.15,
+        "topic": "Greedy"
       }
     ],
     "difficulty": 1885.02,
@@ -32055,7 +32043,7 @@
     "id": 1351,
     "primary_topic": "Binary Search",
     "primary_subtopic": {
-      "name": "Binary Search on Matrix",
+      "name": "Standard Binary Search",
       "weight": 0.5
     },
     "secondary_subtopics": [
@@ -33939,7 +33927,7 @@
     "id": 1428,
     "primary_topic": "Binary Search",
     "primary_subtopic": {
-      "name": "Binary Search on Matrix",
+      "name": "Standard Binary Search",
       "weight": 0.65
     },
     "secondary_subtopics": [
@@ -35183,21 +35171,26 @@
   },
   {
     "id": 1481,
-    "primary_topic": "Greedy",
+    "primary_topic": "Heap / Priority Queue",
     "primary_subtopic": {
-      "name": "General Greedy (Greedy is main insight)",
-      "weight": 0.45
+      "name": "Top-K Elements",
+      "weight": 0.31
     },
     "secondary_subtopics": [
       {
         "topic": "Arrays & Hashing",
         "name": "Frequency Counting / Hash Map Lookup",
-        "weight": 0.3
+        "weight": 0.21
       },
       {
         "topic": "Arrays & Hashing",
         "name": "Sorting + Comparison",
-        "weight": 0.25
+        "weight": 0.17
+      },
+      {
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.31,
+        "topic": "Greedy"
       }
     ],
     "difficulty": 1284.36,
@@ -35342,21 +35335,26 @@
   },
   {
     "id": 1488,
-    "primary_topic": "Greedy",
+    "primary_topic": "Intervals",
     "primary_subtopic": {
-      "name": "General Greedy (Greedy is main insight)",
-      "weight": 0.45
+      "name": "Sweep Line / Meeting Rooms",
+      "weight": 0.35
     },
     "secondary_subtopics": [
       {
         "topic": "Binary Search",
         "name": "Boundary Finding (Bisect Left/Right)",
-        "weight": 0.3
+        "weight": 0.24
       },
       {
         "topic": "Arrays & Hashing",
         "name": "Frequency Counting / Hash Map Lookup",
-        "weight": 0.25
+        "weight": 0.2
+      },
+      {
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.21,
+        "topic": "Greedy"
       }
     ],
     "difficulty": 1973.74,
@@ -35975,18 +35973,13 @@
     "primary_topic": "Advanced Graphs",
     "primary_subtopic": {
       "name": "Dijkstra's (Weighted Shortest Path)",
-      "weight": 0.6
+      "weight": 0.8
     },
     "secondary_subtopics": [
       {
-        "topic": "Advanced Graphs",
-        "name": "Bellman-Ford",
-        "weight": 0.25
-      },
-      {
         "topic": "Heap / Priority Queue",
         "name": "Heap Simulation",
-        "weight": 0.15
+        "weight": 0.2
       }
     ],
     "difficulty": 1846.41,
@@ -36101,9 +36094,9 @@
   },
   {
     "id": 1520,
-    "primary_topic": "Greedy",
+    "primary_topic": "Intervals",
     "primary_subtopic": {
-      "name": "General Greedy (Greedy is main insight)",
+      "name": "Interval Merging",
       "weight": 0.55
     },
     "secondary_subtopics": [
@@ -36113,9 +36106,9 @@
         "weight": 0.25
       },
       {
-        "topic": "Intervals",
-        "name": "Interval Merging",
-        "weight": 0.2
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.2,
+        "topic": "Greedy"
       }
     ],
     "difficulty": 2362.65,
@@ -36726,21 +36719,26 @@
   },
   {
     "id": 1546,
-    "primary_topic": "Greedy",
+    "primary_topic": "Intervals",
     "primary_subtopic": {
-      "name": "General Greedy (Greedy is main insight)",
-      "weight": 0.45
+      "name": "Sweep Line / Meeting Rooms",
+      "weight": 0.35
     },
     "secondary_subtopics": [
       {
         "topic": "Arrays & Hashing",
         "name": "Prefix Sums",
-        "weight": 0.35
+        "weight": 0.28
       },
       {
         "topic": "Arrays & Hashing",
         "name": "Frequency Counting / Hash Map Lookup",
-        "weight": 0.2
+        "weight": 0.16
+      },
+      {
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.21,
+        "topic": "Greedy"
       }
     ],
     "difficulty": 1855.38,
@@ -41832,23 +41830,18 @@
     "primary_topic": "Core DP",
     "primary_subtopic": {
       "name": "Linear Recurrence DP",
-      "weight": 0.45
+      "weight": 0.53
     },
     "secondary_subtopics": [
       {
         "topic": "Binary Search",
         "name": "Boundary Finding (Bisect Left/Right)",
-        "weight": 0.25
+        "weight": 0.29
       },
       {
         "topic": "Arrays & Hashing",
         "name": "Sorting + Comparison",
-        "weight": 0.15
-      },
-      {
-        "topic": "Intervals",
-        "name": "Interval Scheduling (Non-Overlapping)",
-        "weight": 0.15
+        "weight": 0.18
       }
     ],
     "difficulty": 2040.56,
@@ -43510,8 +43503,8 @@
     },
     "secondary_subtopics": [
       {
-        "topic": "Advanced Graphs",
-        "name": "Bipartite Checking",
+        "topic": "Graphs",
+        "name": "DFS Connected Components",
         "weight": 0.4
       }
     ],
@@ -44251,21 +44244,21 @@
   },
   {
     "id": 1851,
-    "primary_topic": "Heap / Priority Queue",
+    "primary_topic": "Intervals",
     "primary_subtopic": {
-      "name": "Heap Simulation",
-      "weight": 0.4
+      "name": "Sweep Line / Meeting Rooms",
+      "weight": 0.3
     },
     "secondary_subtopics": [
-      {
-        "topic": "Intervals",
-        "name": "Sweep Line / Meeting Rooms",
-        "weight": 0.3
-      },
       {
         "topic": "Arrays & Hashing",
         "name": "Sorting + Comparison",
         "weight": 0.3
+      },
+      {
+        "name": "Heap Simulation",
+        "weight": 0.4,
+        "topic": "Heap / Priority Queue"
       }
     ],
     "difficulty": 2286.14,
@@ -44508,7 +44501,7 @@
       },
       {
         "topic": "Math & Geometry",
-        "name": "Matrix Math (Rotation, Transpose)",
+        "name": "General Math",
         "weight": 0.2
       }
     ],
@@ -45102,7 +45095,7 @@
     "id": 1886,
     "primary_topic": "Math & Geometry",
     "primary_subtopic": {
-      "name": "Matrix Math (Rotation, Transpose)",
+      "name": "General Math",
       "weight": 0.85
     },
     "secondary_subtopics": [
@@ -46413,7 +46406,7 @@
     "secondary_subtopics": [
       {
         "topic": "Two Pointers",
-        "name": "Merging Sorted Arrays",
+        "name": "Same-Direction (Fast/Slow on Arrays)",
         "weight": 0.3
       }
     ],
@@ -50879,18 +50872,13 @@
     "primary_topic": "Graphs",
     "primary_subtopic": {
       "name": "DFS Connected Components",
-      "weight": 0.45
+      "weight": 0.69
     },
     "secondary_subtopics": [
       {
-        "topic": "Advanced Graphs",
-        "name": "Bipartite Checking",
-        "weight": 0.35
-      },
-      {
         "topic": "Arrays & Hashing",
         "name": "Matrix Traversal (Diagonal, Valid Sudoku, etc)",
-        "weight": 0.2
+        "weight": 0.31
       }
     ],
     "difficulty": 2650,
@@ -51828,7 +51816,7 @@
     "id": 2161,
     "primary_topic": "Two Pointers",
     "primary_subtopic": {
-      "name": "Partitioning (Dutch National Flag)",
+      "name": "Opposite-Direction (Converging)",
       "weight": 0.7
     },
     "secondary_subtopics": [
@@ -52362,21 +52350,21 @@
   },
   {
     "id": 2182,
-    "primary_topic": "Greedy",
+    "primary_topic": "Heap / Priority Queue",
     "primary_subtopic": {
-      "name": "General Greedy (Greedy is main insight)",
+      "name": "Heap Simulation",
       "weight": 0.5
     },
     "secondary_subtopics": [
       {
-        "topic": "Heap / Priority Queue",
-        "name": "Heap Simulation",
-        "weight": 0.25
-      },
-      {
         "topic": "Arrays & Hashing",
         "name": "Frequency Counting / Hash Map Lookup",
         "weight": 0.25
+      },
+      {
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.25,
+        "topic": "Greedy"
       }
     ],
     "difficulty": 1680.14,
@@ -56075,17 +56063,12 @@
   },
   {
     "id": 2333,
-    "primary_topic": "Greedy",
+    "primary_topic": "Heap / Priority Queue",
     "primary_subtopic": {
-      "name": "General Greedy (Greedy is main insight)",
+      "name": "Heap Simulation",
       "weight": 0.4
     },
     "secondary_subtopics": [
-      {
-        "topic": "Heap / Priority Queue",
-        "name": "Heap Simulation",
-        "weight": 0.3
-      },
       {
         "topic": "Binary Search",
         "name": "Binary Search on Answer Space",
@@ -56095,6 +56078,11 @@
         "topic": "Arrays & Hashing",
         "name": "Sorting + Comparison",
         "weight": 0.15
+      },
+      {
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.3,
+        "topic": "Greedy"
       }
     ],
     "difficulty": 2011.05,
@@ -57780,10 +57768,10 @@
   },
   {
     "id": 2402,
-    "primary_topic": "Heap / Priority Queue",
+    "primary_topic": "Intervals",
     "primary_subtopic": {
-      "name": "Heap Simulation",
-      "weight": 0.55
+      "name": "Sweep Line / Meeting Rooms",
+      "weight": 0.2
     },
     "secondary_subtopics": [
       {
@@ -57792,9 +57780,9 @@
         "weight": 0.25
       },
       {
-        "topic": "Intervals",
-        "name": "Sweep Line / Meeting Rooms",
-        "weight": 0.2
+        "name": "Heap Simulation",
+        "weight": 0.55,
+        "topic": "Heap / Priority Queue"
       }
     ],
     "difficulty": 2092.89,
@@ -60149,18 +60137,13 @@
     "primary_topic": "Graphs",
     "primary_subtopic": {
       "name": "BFS Shortest Path (Unweighted)",
-      "weight": 0.4
+      "weight": 0.53
     },
     "secondary_subtopics": [
       {
-        "topic": "Advanced Graphs",
-        "name": "Bipartite Checking",
-        "weight": 0.35
-      },
-      {
         "topic": "Graphs",
         "name": "DFS Connected Components",
-        "weight": 0.25
+        "weight": 0.47
       }
     ],
     "difficulty": 2415.28,
@@ -61356,15 +61339,9 @@
     "primary_topic": "Two Pointers",
     "primary_subtopic": {
       "name": "Same-Direction (Fast/Slow on Arrays)",
-      "weight": 0.65
+      "weight": 1.0
     },
-    "secondary_subtopics": [
-      {
-        "topic": "Two Pointers",
-        "name": "Merging Sorted Arrays",
-        "weight": 0.35
-      }
-    ],
+    "secondary_subtopics": [],
     "difficulty": 1249.75,
     "importance": 0.55,
     "interview_plausibility": 0.68,
@@ -62127,7 +62104,7 @@
     "id": 2570,
     "primary_topic": "Two Pointers",
     "primary_subtopic": {
-      "name": "Merging Sorted Arrays",
+      "name": "Same-Direction (Fast/Slow on Arrays)",
       "weight": 0.75
     },
     "secondary_subtopics": [
@@ -62636,10 +62613,10 @@
   },
   {
     "id": 2589,
-    "primary_topic": "Greedy",
+    "primary_topic": "Intervals",
     "primary_subtopic": {
-      "name": "General Greedy (Greedy is main insight)",
-      "weight": 0.5
+      "name": "Interval Merging",
+      "weight": 0.4
     },
     "secondary_subtopics": [
       {
@@ -62648,9 +62625,9 @@
         "weight": 0.25
       },
       {
-        "topic": "Intervals",
-        "name": "Interval Scheduling (Non-Overlapping)",
-        "weight": 0.25
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.35,
+        "topic": "Greedy"
       }
     ],
     "difficulty": 2380.6,
@@ -62909,21 +62886,21 @@
   },
   {
     "id": 2599,
-    "primary_topic": "Greedy",
+    "primary_topic": "Heap / Priority Queue",
     "primary_subtopic": {
-      "name": "General Greedy (Greedy is main insight)",
+      "name": "Heap Simulation",
       "weight": 0.5
     },
     "secondary_subtopics": [
       {
-        "topic": "Heap / Priority Queue",
-        "name": "Heap Simulation",
-        "weight": 0.35
-      },
-      {
         "topic": "Arrays & Hashing",
         "name": "Prefix Sums",
         "weight": 0.15
+      },
+      {
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.35,
+        "topic": "Greedy"
       }
     ],
     "difficulty": 1850,
@@ -63246,21 +63223,21 @@
   },
   {
     "id": 2611,
-    "primary_topic": "Greedy",
+    "primary_topic": "Heap / Priority Queue",
     "primary_subtopic": {
-      "name": "General Greedy (Greedy is main insight)",
-      "weight": 0.5
+      "name": "Top-K Elements",
+      "weight": 0.42
     },
     "secondary_subtopics": [
       {
         "topic": "Arrays & Hashing",
         "name": "Sorting + Comparison",
-        "weight": 0.35
+        "weight": 0.29
       },
       {
-        "topic": "Heap / Priority Queue",
-        "name": "Top-K Elements",
-        "weight": 0.15
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.29,
+        "topic": "Greedy"
       }
     ],
     "difficulty": 1663.46,
@@ -73655,21 +73632,21 @@
   },
   {
     "id": 3049,
-    "primary_topic": "Greedy",
+    "primary_topic": "Heap / Priority Queue",
     "primary_subtopic": {
-      "name": "General Greedy (Greedy is main insight)",
+      "name": "Heap Simulation",
       "weight": 0.35
     },
     "secondary_subtopics": [
       {
-        "topic": "Heap / Priority Queue",
-        "name": "Heap Simulation",
-        "weight": 0.35
-      },
-      {
         "topic": "Binary Search",
         "name": "Binary Search on Answer Space",
         "weight": 0.3
+      },
+      {
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.35,
+        "topic": "Greedy"
       }
     ],
     "difficulty": 3111.13,
@@ -75142,16 +75119,21 @@
   },
   {
     "id": 3111,
-    "primary_topic": "Greedy",
+    "primary_topic": "Intervals",
     "primary_subtopic": {
-      "name": "General Greedy (Greedy is main insight)",
-      "weight": 0.55
+      "name": "Sweep Line / Meeting Rooms",
+      "weight": 0.33
     },
     "secondary_subtopics": [
       {
         "topic": "Arrays & Hashing",
         "name": "Sorting + Comparison",
-        "weight": 0.45
+        "weight": 0.3
+      },
+      {
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.37,
+        "topic": "Greedy"
       }
     ],
     "difficulty": 1401.27,
@@ -77705,7 +77687,7 @@
       },
       {
         "topic": "Two Pointers",
-        "name": "Merging Sorted Arrays",
+        "name": "Same-Direction (Fast/Slow on Arrays)",
         "weight": 0.15
       }
     ],
@@ -81327,21 +81309,21 @@
   },
   {
     "id": 3362,
-    "primary_topic": "Greedy",
+    "primary_topic": "Heap / Priority Queue",
     "primary_subtopic": {
-      "name": "General Greedy (Greedy is main insight)",
+      "name": "Heap Simulation",
       "weight": 0.35
     },
     "secondary_subtopics": [
       {
-        "topic": "Heap / Priority Queue",
-        "name": "Heap Simulation",
-        "weight": 0.35
-      },
-      {
         "topic": "Arrays & Hashing",
         "name": "Prefix Sums",
         "weight": 0.3
+      },
+      {
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.35,
+        "topic": "Greedy"
       }
     ],
     "difficulty": 2423.86,
@@ -82655,23 +82637,18 @@
     "primary_topic": "Core DP",
     "primary_subtopic": {
       "name": "Linear Recurrence DP",
-      "weight": 0.4
+      "weight": 0.47
     },
     "secondary_subtopics": [
       {
         "topic": "Binary Search",
         "name": "Boundary Finding (Bisect Left/Right)",
-        "weight": 0.25
+        "weight": 0.29
       },
       {
         "topic": "Arrays & Hashing",
         "name": "Sorting + Comparison",
-        "weight": 0.2
-      },
-      {
-        "topic": "Intervals",
-        "name": "Interval Scheduling (Non-Overlapping)",
-        "weight": 0.15
+        "weight": 0.24
       }
     ],
     "difficulty": 2723.3,
@@ -83797,10 +83774,10 @@
   },
   {
     "id": 3458,
-    "primary_topic": "Greedy",
+    "primary_topic": "Intervals",
     "primary_subtopic": {
-      "name": "General Greedy (Greedy is main insight)",
-      "weight": 0.4
+      "name": "Interval Merging",
+      "weight": 0.42
     },
     "secondary_subtopics": [
       {
@@ -83809,9 +83786,9 @@
         "weight": 0.3
       },
       {
-        "topic": "Intervals",
-        "name": "Interval Scheduling (Non-Overlapping)",
-        "weight": 0.3
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.28,
+        "topic": "Greedy"
       }
     ],
     "difficulty": 2220.5,
@@ -83889,21 +83866,21 @@
   },
   {
     "id": 3462,
-    "primary_topic": "Greedy",
+    "primary_topic": "Heap / Priority Queue",
     "primary_subtopic": {
-      "name": "General Greedy (Greedy is main insight)",
-      "weight": 0.5
+      "name": "Top-K Elements",
+      "weight": 0.38
     },
     "secondary_subtopics": [
       {
         "topic": "Arrays & Hashing",
         "name": "Sorting + Comparison",
-        "weight": 0.3
+        "weight": 0.23
       },
       {
-        "topic": "Heap / Priority Queue",
-        "name": "Top-K Elements",
-        "weight": 0.2
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.38,
+        "topic": "Greedy"
       }
     ],
     "difficulty": 1416.07,
@@ -88846,9 +88823,9 @@
   },
   {
     "id": 3645,
-    "primary_topic": "Greedy",
+    "primary_topic": "Heap / Priority Queue",
     "primary_subtopic": {
-      "name": "General Greedy (Greedy is main insight)",
+      "name": "Heap Simulation",
       "weight": 0.5
     },
     "secondary_subtopics": [
@@ -88858,9 +88835,9 @@
         "weight": 0.25
       },
       {
-        "topic": "Heap / Priority Queue",
-        "name": "Heap Simulation",
-        "weight": 0.25
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.25,
+        "topic": "Greedy"
       }
     ],
     "difficulty": 2018.88,
@@ -90058,21 +90035,21 @@
   },
   {
     "id": 3691,
-    "primary_topic": "Greedy",
+    "primary_topic": "Heap / Priority Queue",
     "primary_subtopic": {
-      "name": "General Greedy (Greedy is main insight)",
+      "name": "Top-K Elements",
       "weight": 0.4
     },
     "secondary_subtopics": [
       {
-        "topic": "Heap / Priority Queue",
-        "name": "Top-K Elements",
-        "weight": 0.3
-      },
-      {
         "topic": "Stack",
         "name": "Monotonic Stack",
         "weight": 0.3
+      },
+      {
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.3,
+        "topic": "Greedy"
       }
     ],
     "difficulty": 2469.01,
@@ -90549,16 +90526,16 @@
   },
   {
     "id": 3711,
-    "primary_topic": "Greedy",
+    "primary_topic": "Heap / Priority Queue",
     "primary_subtopic": {
-      "name": "General Greedy (Greedy is main insight)",
+      "name": "Heap Simulation",
       "weight": 0.55
     },
     "secondary_subtopics": [
       {
-        "topic": "Heap / Priority Queue",
-        "name": "Heap Simulation",
-        "weight": 0.45
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.45,
+        "topic": "Greedy"
       }
     ],
     "difficulty": 1650,
@@ -91887,9 +91864,9 @@
   },
   {
     "id": 3763,
-    "primary_topic": "Greedy",
+    "primary_topic": "Heap / Priority Queue",
     "primary_subtopic": {
-      "name": "General Greedy (Greedy is main insight)",
+      "name": "Heap Simulation",
       "weight": 0.4
     },
     "secondary_subtopics": [
@@ -91899,9 +91876,9 @@
         "weight": 0.3
       },
       {
-        "topic": "Heap / Priority Queue",
-        "name": "Heap Simulation",
-        "weight": 0.3
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.3,
+        "topic": "Greedy"
       }
     ],
     "difficulty": 1550,
@@ -91995,9 +91972,9 @@
   },
   {
     "id": 3767,
-    "primary_topic": "Greedy",
+    "primary_topic": "Heap / Priority Queue",
     "primary_subtopic": {
-      "name": "General Greedy (Greedy is main insight)",
+      "name": "Top-K Elements",
       "weight": 0.4
     },
     "secondary_subtopics": [
@@ -92007,9 +91984,9 @@
         "weight": 0.3
       },
       {
-        "topic": "Heap / Priority Queue",
-        "name": "Top-K Elements",
-        "weight": 0.3
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.3,
+        "topic": "Greedy"
       }
     ],
     "difficulty": 1703.89,
@@ -92366,21 +92343,21 @@
   },
   {
     "id": 3781,
-    "primary_topic": "Greedy",
+    "primary_topic": "Heap / Priority Queue",
     "primary_subtopic": {
-      "name": "General Greedy (Greedy is main insight)",
+      "name": "Heap Simulation",
       "weight": 0.55
     },
     "secondary_subtopics": [
       {
-        "topic": "Heap / Priority Queue",
-        "name": "Heap Simulation",
-        "weight": 0.25
-      },
-      {
         "topic": "Arrays & Hashing",
         "name": "Sorting + Comparison",
         "weight": 0.2
+      },
+      {
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.25,
+        "topic": "Greedy"
       }
     ],
     "difficulty": 1823.3,

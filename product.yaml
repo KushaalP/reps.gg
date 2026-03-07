@@ -328,3 +328,5 @@ Personal Notes (CLAUDE WHATEVER CHANEGS U MAKE DO NOT TOUCH THIS)
 - handle reco engine's specing into things like bitmask dp, dont handle in mastery weighting, thats fine how it is
 - come back to tests when reco engine is fully polished
 - will probably change instead of solve w hints blah blah, ill do sclae of ese 1-5, adjust mastery calc accordingly, need to tune with that
+- need to absorb certain subtopics into others
+- add a filter if user is lc premium or not to reccommend premium problems
