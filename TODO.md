@@ -17,16 +17,16 @@
 ## General
 - [ ] Commit current changes (perceived_difficulty removal, elo caps, learning loop, rashmith profile)
 
+# My TODO
+- normalize 1-10
+- handle decay/progress loss/spaced repetition with recent struggle so its more adaptive (recent fails, etc.)
+- work on targeted learning mode (seperate prompt, ignore prereqs)
+- Interview Mode
+
 # General Notes
 
-- for targeted practice, we may need to ignore prereq graph, but also warn users that they may ecounter new patterns
-- starting problem handpicked by me for each pattern if unseen
-- maybe we only do elo drop for spaced reptition (when reco randomly chooses, and u fail, then u drop significantly)
-- another mastery thing can be placement rounds for users with existing leetcode history, theyre given a problem at their level/below, and first few can bump them down (would probably only be for gold and above)
-- handle reco engine's specing into things like bitmask dp, dont handle in mastery weighting, thats fine how it is
-- come back to tests when reco engine is fully polished
-- will probably change instead of solve w hints blah blah, ill do sclae of ese 1-5, adjust mastery calc accordingly, need to tune with that
-- need to absorb certain subtopics into others
 - add a filter if user is lc premium or not to reccommend premium problems
 - need a way to look through solutions and see which solution the user chose, like if they chose to use union find for example, update mastery accordingly (maybe not in mvp)
-- we should maybe pass in a recently struggled this many times or smth later on
+- company specific can just look at company patterns and tag if it fits will enough, or can just pull from existing company tags, and enrich with similar/consensus if not enough (maybe no enrich though cuz that may be decpetive, or maybe disclaimer once exhausted)
+- 
+

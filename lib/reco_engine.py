@@ -264,7 +264,7 @@ Guidelines for what to recommend:
 - If stale subtopics are flagged, include 1-2 review profiles at the user's current level for those subtopics.
 - Consider the prerequisite graph: if a user is weak in a prereq, strengthening it benefits downstream subtopics.
 - Balance breadth and depth — don't hyper-focus on one topic unless that's what the user needs.
-- have some randomness to introduce variety, for some do not choose the 'mathematically optimal' choice.
+- have some randomness to introduce variety, for a few do not choose the 'mathematically optimal' choice.
 
 Output valid JSON with the key "recommendations" containing an array of 10 objects. Format:
 {"recommendations": [
