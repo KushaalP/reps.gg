@@ -287,19 +287,15 @@ def simulate_quality_archetype(archetype, mastery, problem_elo):
         if r < cumulative:
             # Map to function args
             if quality == "struggled":
-                perceived = "hard" if gap > 0 else "medium"
-                return {"struggled": True, "perceived": perceived}
+                return {"struggled": True}
             elif quality == "solution":
-                perceived = "hard" if gap > 200 else "medium"
-                return {"solution": True, "perceived": perceived}
+                return {"solution": True}
             elif quality == "hints":
-                perceived = "medium"
-                return {"hints": True, "perceived": perceived}
+                return {"hints": True}
             else:  # clean
-                perceived = "easy" if gap < -200 else "medium"
-                return {"perceived": perceived}
+                return {}
 
-    return {"perceived": "medium"}
+    return {}
 
 
 # ── Single journey ────────────────────────────────────────────────
@@ -410,7 +406,6 @@ def run_journey(archetype, num_problems=300):
             used_hints=result.get("hints", False),
             looked_at_solution=result.get("solution", False),
             struggled=result.get("struggled", False),
-            perceived_difficulty=result["perceived"],
             now=ts,
         )
 

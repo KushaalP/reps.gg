@@ -4,7 +4,7 @@ reps.gg Mastery Model
 Running score per subtopic (0-100). Each attempt adds or subtracts.
 No averaging, no decay, no recency weighting.
 
-mastery_change = quality_score × perceived_diff_mult × difficulty_multiplier × importance_gate × mastery_rate
+mastery_change = quality_score × difficulty_multiplier × importance_gate × mastery_rate
 """
 
 import time
@@ -19,7 +19,6 @@ with open(_CONFIG_PATH) as f:
     _CONFIG = yaml.safe_load(f)
 
 QUALITY_SCORES = _CONFIG["quality_scores"]
-PERCEIVED_DIFFICULTY_MULT = _CONFIG["perceived_difficulty"]
 TIERS = [(t["min"], t["name"]) for t in _CONFIG["tiers"]]
 SECONDARY_DISCOUNT = _CONFIG["secondary_discount"]
 IMPORTANCE_THRESHOLD = _CONFIG["importance_threshold"]
@@ -80,14 +79,12 @@ def compute_importance_gate(importance: float) -> float:
 
 def compute_attempt_score(
     quality: str,
-    perceived_difficulty: str,
     problem_elo: float,
     problem_importance: float,
     current_mastery: float,
     mastery_rate: float = 1.0,
 ) -> float:
     base = QUALITY_SCORES[quality]
-    perceived_mult = PERCEIVED_DIFFICULTY_MULT[perceived_difficulty]
 
     diff_mult = compute_difficulty_multiplier(problem_elo, current_mastery)
     imp_gate = compute_importance_gate(problem_importance)
@@ -99,7 +96,7 @@ def compute_attempt_score(
     else:
         dampening = 1.0
 
-    return base * perceived_mult * diff_mult * imp_gate * mastery_rate * dampening
+    return base * diff_mult * imp_gate * mastery_rate * dampening
 
 
 def get_subtopic_tier(score: float) -> str:
@@ -135,7 +132,6 @@ def update_mastery(
     used_hints: bool,
     looked_at_solution: bool,
     struggled: bool,
-    perceived_difficulty: str,
     now: float = None,
 ) -> dict:
     if now is None:
@@ -153,7 +149,7 @@ def update_mastery(
 
     # Compute primary mastery change
     change = compute_attempt_score(
-        quality, perceived_difficulty, problem_elo, problem_importance, current_mastery, rate
+        quality, problem_elo, problem_importance, current_mastery, rate
     )
 
     # Update primary subtopic
@@ -170,7 +166,7 @@ def update_mastery(
         sec_rate = get_mastery_rate(sec_name)
         # Secondary change uses secondary's own mastery_rate
         sec_change = compute_attempt_score(
-            quality, perceived_difficulty, problem_elo, problem_importance, sec_mastery, sec_rate
+            quality, problem_elo, problem_importance, sec_mastery, sec_rate
         ) * sec_weight * SECONDARY_DISCOUNT
         state["subtopics"][sec_name]["score"] = max(0, min(100, sec_mastery + sec_change))
         state["subtopics"][sec_name]["attempts_count"] += 1
@@ -180,7 +176,6 @@ def update_mastery(
     state["attempts"].append({
         "problem_id": problem_id,
         "quality": quality,
-        "perceived_difficulty": perceived_difficulty,
         "primary_subtopic": primary,
         "mastery_change": change,
         "new_mastery": state["subtopics"][primary]["score"],

@@ -167,7 +167,6 @@ for pid in matched_ids:
         used_hints=True,
         looked_at_solution=False,
         struggled=False,
-        perceived_difficulty="medium",
     )
 
 # ── Print results ─────────────────────────────────────────────────

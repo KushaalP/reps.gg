@@ -8,12 +8,6 @@ quality_scores:
   solved_after_solution: 2.5
   struggled: 0.0
 
-# ── Perceived Difficulty Multipliers ────────────────────────────────
-perceived_difficulty:
-  easy: 0.8
-  medium: 1.0
-  hard: 1.25
-
 # ── Difficulty Multiplier Constants ─────────────────────────────────
 difficulty_multiplier:
   base_elo: 800           # expected elo at mastery 0
