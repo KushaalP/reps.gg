@@ -5,7 +5,7 @@ LLM-driven problem recommendation with direct subtopic matching.
 
 Flow:
 1. Code assembles context (mastery state, taxonomy, prereqs, history, stale flags)
-2. LLM outputs 10 problem profiles (subtopic + elo_range + importance_range)
+2. LLM outputs 10 problem profiles (subtopic + selectivity)
 3. Each profile → direct subtopic search (primary then secondary by weight)
 4. Code filters: completed, skip cooldown, discarded, prereq-gated, elo/importance bounds
 5. Queue serves one problem per slot; skips rotate to back of queue
@@ -70,24 +70,46 @@ for topic in TAXONOMY["topics"]:
         ALL_SUBTOPICS.append(sub["name"])
         SUBTOPIC_TO_TOPIC[sub["name"]] = topic["name"]
 
-# Precompute per-subtopic elo stats from tagged problems
+# Precompute per-subtopic elo distributions from tagged problems
 _sub_elos = {}
+_sub_elo_imp_pairs = {}  # subtopic -> [(elo, importance)] for filtered ceiling computation
 for t in TAGGED:
     sub = t["primary_subtopic"]["name"]
     elo = t.get("difficulty", 0)
+    imp = t.get("importance", 0)
     if elo:
         _sub_elos.setdefault(sub, []).append(elo)
+        _sub_elo_imp_pairs.setdefault(sub, []).append((elo, imp))
 
 import statistics
 SUBTOPIC_ELO_STATS = {}
+SUBTOPIC_ELO_VALUES = {}
+SUBTOPIC_ELO_IMP_PAIRS = {}
 for sub, elos in _sub_elos.items():
     elos.sort()
+    SUBTOPIC_ELO_VALUES[sub] = elos
     SUBTOPIC_ELO_STATS[sub] = {
         "min": round(elos[0]),
         "median": round(statistics.median(elos)),
         "max": round(elos[-1]),
         "count": len(elos),
     }
+for sub, pairs in _sub_elo_imp_pairs.items():
+    SUBTOPIC_ELO_IMP_PAIRS[sub] = pairs
+
+# Precompute per-subtopic importance distributions (primary + secondary)
+_sub_importances = {}
+for _t in TAGGED:
+    imp = _t.get("importance", 0)
+    if not imp:
+        continue
+    pname = _t["primary_subtopic"]["name"]
+    _sub_importances.setdefault(pname, []).append(imp)
+    for _s in _t.get("secondary_subtopics", []):
+        _sub_importances.setdefault(_s["name"], []).append(imp)
+SUBTOPIC_IMP_VALUES = {}
+for _sub, _imps in _sub_importances.items():
+    SUBTOPIC_IMP_VALUES[_sub] = sorted(_imps)
 
 # ── Staleness detection ───────────────────────────────────────────
 
@@ -202,16 +224,12 @@ def build_recent_history(state, n=5):
 
 
 def build_taxonomy_summary():
-    """Compact taxonomy for the prompt (topic > subtopic: importance + elo stats)."""
+    """Compact taxonomy for the prompt (topic > subtopic: importance)."""
     lines = []
     for topic in TAXONOMY["topics"]:
         lines.append(f"{topic['name']} (importance: {topic['importance']}):")
         for sub in topic["subtopics"]:
-            stats = SUBTOPIC_ELO_STATS.get(sub["name"])
-            if stats:
-                lines.append(f"  {sub['name']}: importance {sub['importance']}, elo {stats['min']}-{stats['max']} (median {stats['median']}, {stats['count']} problems)")
-            else:
-                lines.append(f"  {sub['name']}: importance {sub['importance']}")
+            lines.append(f"  {sub['name']}: importance {sub['importance']}")
     return "\n".join(lines)
 
 
@@ -232,21 +250,16 @@ Your job: given a user's mastery state, generate 10 problem profiles that will o
 
 Each profile targets a single subtopic. Use EXACT topic and subtopic names from the taxonomy provided.
 
-You specify an elo_range [min, max] and importance_range [min, max] for each profile.
-
-Guidelines for elo_range and importance_range:
-- elo_range maps to problem difficulty. Each subtopic in the taxonomy includes its actual elo range (min-max) and median from our problem database. USE THESE STATS to pick realistic elo ranges. Do NOT pick elo values below a subtopic's min or above its max.
-- A user's expected elo = 800 + (subtopic_mastery / 100) * 1900. Recommend problems NEAR their expected elo for that subtopic — slightly above to push, at level to reinforce. But always constrain to what actually exists in the database for that subtopic.
-- importance_range controls how foundational vs niche the problems are.
-  - Low mastery users (Bronze/Silver): prioritize high importance [0.6, 1.0] — these are the most transferable patterns.
-  - Medium mastery users (Gold): mix of high and moderate importance [0.4, 1.0].
-  - High mastery users (Platinum/Diamond): can include lower importance [0.2, 1.0] — niche patterns become valuable.
-- Ranges should be tight enough to be useful but not so tight that no problems match. A spread of 0.2-0.3 for importance and 200-400 for elo is typical.
+You specify a "selectivity" value (10-80) for each profile. This controls how selective the importance gate is — it maps to a percentile of the subtopic's actual problem pool, these are simply guidelines, and you should adapt accordingly for the mastery at hand:
+- selectivity 70-80: very selective, only the most foundational and high-yield problems pass. Use for subtopics where the user is just starting out.
+- selectivity 50-65: moderately selective, a mix of core and moderate problems. Use for subtopics where the user has some experience (Silver/Gold).
+- selectivity 30-45: broad, includes moderately niche problems. Use for subtopics where the user is solid (Platinum) and needs variety.
+- selectivity 10-25: wide open, nearly all problems pass including niche patterns. Use for subtopics where the user is advanced (Diamond) and has seen most common patterns.
 
 Guidelines for what to recommend:
 - Never recommend subtopics marked [LOCKED] — their prerequisites are not met.
 - Never recommend subtopics marked [EXHAUSTED] — no problems remain for that subtopic.
-- Prioritize subtopics that are lagging relative to the user's overall level.
+- Prioritize subtopics that are lagging relative to the user's overall level. When multiple subtopics are lagging, prefer higher-importance ones (from the taxonomy). But don't ignore low-importance subtopics entirely — if the gap is large enough, they still deserve attention.
 - Introduce variety — don't recommend the same subtopic multiple times unless they desperately need it.
 - If stale subtopics are flagged, include 1-2 review profiles at the user's current level for those subtopics.
 - Consider the prerequisite graph: if a user is weak in a prereq, strengthening it benefits downstream subtopics.
@@ -257,11 +270,68 @@ Output valid JSON with the key "recommendations" containing an array of 10 objec
   {
     "topic": "Arrays & Hashing",
     "subtopic": "Frequency Counting / Hash Map Lookup",
-    "elo_range": [800, 1200],
-    "importance_range": [0.7, 1.0]
+    "selectivity": 70
   }
 ]}
 """
+
+
+ELO_MASTERY_THRESHOLD = 25  # Below this mastery, no elo filtering (importance-only)
+
+def compute_elo_range(state, subtopic, imp_min=0.0):
+    """Compute elo range from user's mastery using the subtopic's actual elo distribution.
+
+    Below ELO_MASTERY_THRESHOLD: returns None (no elo filtering, importance-only).
+    Above threshold: returns [elo_floor, elo_cap].
+    - Floor: percentile in the subtopic's elo distribution corresponding to mastery.
+    - Cap: computed from filtered elo distribution (only problems >= imp_min).
+      cap = filtered_median + (mastery_pct * (filtered_max - filtered_median))
+      At low mastery: cap near median. At high mastery: cap near max.
+    """
+    mastery = state.get("subtopics", {}).get(subtopic, {}).get("score", 0.0)
+
+    if mastery < ELO_MASTERY_THRESHOLD:
+        return None  # No elo filtering for early learners
+
+    elo_values = SUBTOPIC_ELO_VALUES.get(subtopic)
+    if not elo_values:
+        return None
+
+    n = len(elo_values)
+    # Floor: map mastery 25-100 to percentile 10-75
+    floor_pct = 10 + ((mastery - ELO_MASTERY_THRESHOLD) / (100 - ELO_MASTERY_THRESHOLD)) * 65
+    floor_idx = int((floor_pct / 100) * (n - 1))
+    elo_floor = round(elo_values[floor_idx])
+
+    # Cap: from importance-filtered elo distribution
+    pairs = SUBTOPIC_ELO_IMP_PAIRS.get(subtopic, [])
+    filtered_elos = sorted([elo for elo, imp in pairs if imp >= imp_min])
+    if not filtered_elos:
+        filtered_elos = sorted([elo for elo, _ in pairs])  # fallback to unfiltered
+    if not filtered_elos:
+        return [elo_floor, None]
+
+    filtered_median = statistics.median(filtered_elos)
+    filtered_max = filtered_elos[-1]
+    mastery_pct = mastery / 100.0
+    elo_cap = round(filtered_median + mastery_pct * (filtered_max - filtered_median))
+
+    # Ensure cap >= floor
+    if elo_cap < elo_floor:
+        elo_cap = elo_floor
+
+    return [elo_floor, elo_cap]
+
+
+def compute_importance_range(subtopic, selectivity):
+    """Convert LLM selectivity (10-80) to [imp_min, 1.0] using subtopic's actual distribution."""
+    imp_values = SUBTOPIC_IMP_VALUES.get(subtopic)
+    if not imp_values:
+        return [0.0, 1.0]
+    selectivity = max(10, min(80, selectivity))
+    idx = int((selectivity / 100) * (len(imp_values) - 1))
+    imp_min = round(imp_values[idx], 2)
+    return [imp_min, 1.0]
 
 
 def build_user_prompt(state, topic_filter=None, stale_subtopics=None, exhausted_subtopics=None):
@@ -337,10 +407,8 @@ def call_llm(state, topic_filter=None, exhausted_subtopics=None):
 
     if not profiles:
         print(f"DEBUG: Raw LLM response: {raw[:500]}")
-    else:
-        print(f"\n--- Raw LLM Output ---\n{raw}\n--- End LLM Output ---\n")
 
-    return profiles
+    return profiles, raw
 
 
 # ── Embedding search + filtering ──────────────────────────────────
@@ -380,14 +448,14 @@ def filter_candidates(
     Filter candidates by elo, importance, prereqs, and exclusion lists.
     If too few pass, widen bounds incrementally.
     """
-    elo_min, elo_max = elo_range
-    imp_min, imp_max = importance_range
+    elo_min = elo_range[0] if elo_range else None
+    elo_cap = elo_range[1] if elo_range and len(elo_range) > 1 else None
+    imp_min = importance_range[0]
 
     for expansion in range(max_expansions + 1):
-        current_elo_min = elo_min - (expansion * elo_expand_step)
-        current_elo_max = elo_max + (expansion * elo_expand_step)
+        current_elo_min = (elo_min - (expansion * elo_expand_step)) if elo_min is not None else None
+        current_elo_cap = (elo_cap + (expansion * 100)) if elo_cap is not None else None
         current_imp_min = max(0.0, imp_min - (expansion * importance_expand_step))
-        current_imp_max = min(1.0, imp_max + (expansion * importance_expand_step))
 
         results = []
         for pid, sim_score in candidates:
@@ -404,14 +472,16 @@ def filter_candidates(
             if not prereqs_met(state, primary_sub):
                 continue
 
-            # Elo filter
+            # Elo filter (floor and ceiling)
             prob_elo = tags.get("difficulty", 0)
-            if prob_elo < current_elo_min or prob_elo > current_elo_max:
+            if current_elo_min is not None and prob_elo < current_elo_min:
+                continue
+            if current_elo_cap is not None and prob_elo > current_elo_cap:
                 continue
 
             # Importance filter
             prob_imp = tags.get("importance", 0)
-            if prob_imp < current_imp_min or prob_imp > current_imp_max:
+            if prob_imp < current_imp_min:
                 continue
 
             prob = PROB_LOOKUP.get(pid, {})
@@ -470,7 +540,12 @@ def search_by_subtopic(
     Widens bounds incrementally if too few results.
     """
 
-    def _filter(pid, elo_min, elo_max, imp_min, imp_max):
+    mastery = state.get("subtopics", {}).get(subtopic, {}).get("score", 0.0)
+    is_bronze = mastery < ELO_MASTERY_THRESHOLD
+
+    elo_cap = elo_range[1] if elo_range and len(elo_range) > 1 else None
+
+    def _filter(pid, elo_min, cur_elo_cap, imp_min):
         if pid in completed_ids or pid in skip_cooldown_ids or pid in discarded_ids:
             return None
         tags = TAG_LOOKUP.get(pid)
@@ -480,10 +555,12 @@ def search_by_subtopic(
         if not prereqs_met(state, primary_sub):
             return None
         prob_elo = tags.get("difficulty", 0)
-        if prob_elo < elo_min or prob_elo > elo_max:
+        if elo_min is not None and prob_elo < elo_min:
+            return None
+        if cur_elo_cap is not None and prob_elo > cur_elo_cap:
             return None
         prob_imp = tags.get("importance", 0)
-        if prob_imp < imp_min or prob_imp > imp_max:
+        if prob_imp < imp_min:
             return None
         prob = PROB_LOOKUP.get(pid, {})
         return {
@@ -497,44 +574,65 @@ def search_by_subtopic(
             "weight": None,
         }
 
-    elo_min, elo_max = elo_range
-    imp_min, imp_max = importance_range
+    elo_min = elo_range[0] if elo_range else None
     min_secondary_weight = 0.15
+
+    # Bronze: 90th percentile importance gate, sort by elo ascending
+    # Silver+: LLM selectivity-based importance gate, sort by score
+    if is_bronze:
+        imp_values = SUBTOPIC_IMP_VALUES.get(subtopic, [])
+        if imp_values:
+            idx_90 = int(0.9 * (len(imp_values) - 1))
+            imp_min = imp_values[idx_90]
+        else:
+            imp_min = 0.7  # fallback
+    else:
+        imp_min = importance_range[0]
 
     all_candidates = []
     seen_ids = set()
 
+    elo_cap_expand_step = 100  # cap expands upward faster than floor expands downward
+
     for expansion in range(max_expansions + 1):
-        cur_elo_min = elo_min - (expansion * elo_expand_step)
-        cur_elo_max = elo_max + (expansion * elo_expand_step)
+        cur_elo_min = (elo_min - (expansion * elo_expand_step)) if elo_min is not None else None
+        cur_elo_cap = (elo_cap + (expansion * elo_cap_expand_step)) if elo_cap is not None else None
         cur_imp_min = max(0.0, imp_min - (expansion * importance_expand_step))
-        cur_imp_max = min(1.0, imp_max + (expansion * importance_expand_step))
         decay = 1.0 - (expansion * 0.1)
 
         for pid in _PRIMARY_INDEX.get(subtopic, []):
             if pid in seen_ids:
                 continue
-            r = _filter(pid, cur_elo_min, cur_elo_max, cur_imp_min, cur_imp_max)
+            r = _filter(pid, cur_elo_min, cur_elo_cap, cur_imp_min)
             if r:
                 w = TAG_LOOKUP[pid]["primary_subtopic"]["weight"]
                 r["match_type"] = "primary"
                 r["weight"] = w
-                r["score"] = 1.0 * w * decay
+                r["score"] = r["elo"] if is_bronze else 1.0 * w * decay
                 all_candidates.append(r)
                 seen_ids.add(pid)
 
         for pid, weight in _SECONDARY_INDEX.get(subtopic, []):
             if pid in seen_ids or weight < min_secondary_weight:
                 continue
-            r = _filter(pid, cur_elo_min, cur_elo_max, cur_imp_min, cur_imp_max)
+            r = _filter(pid, cur_elo_min, cur_elo_cap, cur_imp_min)
             if r:
                 r["match_type"] = "secondary"
                 r["weight"] = weight
-                r["score"] = 0.5 * weight * decay
+                r["score"] = r["elo"] if is_bronze else 0.5 * weight * decay
                 all_candidates.append(r)
                 seen_ids.add(pid)
 
-    all_candidates.sort(key=lambda x: -x["score"])
+        # Bronze: check if we have enough after this expansion
+        if is_bronze and len(all_candidates) >= max_results:
+            break
+
+    if is_bronze:
+        # Primaries first, then elo ascending within each group
+        all_candidates.sort(key=lambda x: (x["match_type"] != "primary", x["score"]))
+    else:
+        # Sort by score descending (best match first)
+        all_candidates.sort(key=lambda x: -x["score"])
     return all_candidates[:max_results]
 
 
@@ -553,6 +651,7 @@ class RecoQueue:
 
     def __init__(self):
         self.slots = []
+        self.raw_llm_output = ""
         self._completed_ids = set()
         self._skip_cooldown_ids = set()
         self._discarded_ids = set()
@@ -567,7 +666,7 @@ class RecoQueue:
         exhausted = get_exhausted_subtopics(
             self._completed_ids, self._skip_cooldown_ids, self._discarded_ids
         )
-        profiles = call_llm(state, topic_filter, exhausted)
+        profiles, self.raw_llm_output = call_llm(state, topic_filter, exhausted)
         self.slots = []
 
         if not profiles:
@@ -585,11 +684,14 @@ class RecoQueue:
             query_vecs = query_vecs / np.linalg.norm(query_vecs, axis=1, keepdims=True)
 
             for i, profile in enumerate(profiles):
+                subtopic = profile.get("subtopic", "")
+                selectivity = profile.get("selectivity", 50)
                 candidates_raw = search_candidates(query_vecs[i], top_k=50)
+                imp_range = compute_importance_range(subtopic, selectivity) if subtopic else [0.0, 1.0]
                 candidates = filter_candidates(
                     candidates_raw,
-                    elo_range=profile.get("elo_range", [800, 2500]),
-                    importance_range=profile.get("importance_range", [0.0, 1.0]),
+                    elo_range=compute_elo_range(state, subtopic, imp_min=imp_range[0]) if subtopic else [800, 2500],
+                    importance_range=imp_range,
                     state=state,
                     completed_ids=self._completed_ids,
                     skip_cooldown_ids=self._skip_cooldown_ids,
@@ -609,10 +711,25 @@ class RecoQueue:
 
                 candidates = []
                 if subtopic:
+                    selectivity = profile.get("selectivity", 50)
+                    imp_range = compute_importance_range(subtopic, selectivity)
+                    elo_range = compute_elo_range(state, subtopic, imp_min=imp_range[0])
+                    mastery = state.get("subtopics", {}).get(subtopic, {}).get("score", 0.0)
+                    if mastery < ELO_MASTERY_THRESHOLD:
+                        # Bronze override: 90th percentile gate
+                        imp_values = SUBTOPIC_IMP_VALUES.get(subtopic, [])
+                        if imp_values:
+                            idx_90 = int(0.9 * (len(imp_values) - 1))
+                            profile["imp_range"] = [imp_values[idx_90], 1.0]
+                        else:
+                            profile["imp_range"] = [0.7, 1.0]
+                    else:
+                        profile["imp_range"] = imp_range
+                    profile["elo_range"] = elo_range  # store for debugging
                     candidates = search_by_subtopic(
                         subtopic,
-                        elo_range=profile.get("elo_range", [800, 2500]),
-                        importance_range=profile.get("importance_range", [0.0, 1.0]),
+                        elo_range=elo_range,
+                        importance_range=imp_range,
                         state=state,
                         completed_ids=self._completed_ids,
                         skip_cooldown_ids=self._skip_cooldown_ids,

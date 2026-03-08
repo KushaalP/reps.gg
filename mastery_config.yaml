@@ -68,22 +68,18 @@ subtopic_targets:
 
   # ── Two Pointers ──────────────────────────────────────────────────
   Opposite-Direction (Converging): 10            # nc250:10, well-represented
-  Same-Direction (Fast/Slow on Arrays): 8        # nc250:4, moderate
+  Same-Direction (Fast/Slow on Arrays): 11        # nc250:4, moderate
   K-Sum Pattern (3Sum, 4Sum): 4                  # nc250:2, narrow extension of two sum
-  Partitioning (Dutch National Flag): 3          # nc250:1, very narrow
-  Merging Sorted Arrays: 4                       # nc250:1, narrow
 
   # ── Stack ─────────────────────────────────────────────────────────
   Monotonic Stack: 8                             # nc250:4, focused but tricky pattern
-  Stack-Based Simulation: 10                     # nc250:10, broad applications
-  Min/Max Stack: 3                               # nc250:1, very narrow
+  Stack-Based Simulation: 13                    # nc250:10, broad applications
 
   # ── Binary Search ─────────────────────────────────────────────────
-  Standard Binary Search: 5                      # nc250:3, fundamental
+  Standard Binary Search: 6                      # nc250:3, fundamental
   Binary Search on Answer Space: 8               # nc250:4, moderate breadth
-  Boundary Finding (Bisect Left/Right): 6        # nc250:3, focused
+  Boundary Finding (Bisect Left/Right): 7        # nc250:3, focused
   Search in Rotated/Modified Array: 5            # nc250:4, narrow but tricky
-  Binary Search on Matrix: 3                     # nc250:1, narrow
 
   # ── Sliding Window ───────────────────────────────────────────────
   Fixed-Size Window: 5                           # nc250:1, narrow
@@ -103,8 +99,7 @@ subtopic_targets:
   Path Sum Problems: 3                           # nc250:0, narrow
 
   # ── Tries ─────────────────────────────────────────────────────────
-  Trie Construction / Prefix Search: 5           # nc250:2, moderate
-  Trie + Backtracking: 3                         # nc250:1, narrow
+  Trie Construction / Prefix Search: 7           # nc250:2, moderate
 
   # ── Backtracking ──────────────────────────────────────────────────
   Permutations: 4                                # nc250:2, focused
@@ -116,13 +111,12 @@ subtopic_targets:
   # ── Heap / Priority Queue ─────────────────────────────────────────
   Top-K Elements: 6                              # nc250:4, well-represented
   Merge K Sorted Structures: 4                   # nc250:2, focused
-  Running Median (Two Heaps): 3                  # nc250:1, narrow
-  Heap Simulation: 8                             # nc250:7, broad
+  Heap Simulation: 10                             # nc250:7, broad
 
   # ── Graphs ────────────────────────────────────────────────────────
   BFS Shortest Path (Unweighted): 6              # nc250:2, moderate
-  Multi-Source BFS: 4                            # nc250:2, focused
-  DFS Connected Components: 8                    # nc250:7, broad
+  Multi-Source BFS: 5                            # nc250:2, focused
+  DFS Connected Components: 9                    # nc250:7, broad
   DFS Path Finding: 5                            # nc250:3, moderate
   Union-Find: 6                                  # nc250:4, moderate
   Topological Sort: 8                            # nc250:6, well-represented
@@ -137,8 +131,7 @@ subtopic_targets:
   Grid Path Problems: 5                          # nc250:3, moderate
 
   # ── Intervals ─────────────────────────────────────────────────────
-  Interval Merging: 4                            # nc250:2, focused
-  Interval Scheduling (Non-Overlapping): 3       # nc250:0, narrow
+  Interval Merging: 7                            # nc250:2, focused
   Sweep Line / Meeting Rooms: 6                  # nc250:3, moderate
 
   # ── Greedy ────────────────────────────────────────────────────────
@@ -146,9 +139,7 @@ subtopic_targets:
 
   # ── Advanced Graphs ───────────────────────────────────────────────
   Dijkstra's (Weighted Shortest Path): 6         # nc250:3, moderate
-  Bellman-Ford: 3                                # nc250:1, narrow
   Minimum Spanning Tree (Prim's / Kruskal's): 4  # nc250:2, focused
-  Bipartite Checking: 3                          # nc250:0, narrow
 
   # ── Advanced DP ───────────────────────────────────────────────────
   Bitmask DP: 6                                  # nc250:0, niche but deep
@@ -160,7 +151,6 @@ subtopic_targets:
   # ── Math & Geometry ───────────────────────────────────────────────
   General Math: 10                               # nc250:7, very broad
   Modular Arithmetic: 4                          # nc250:0, focused
-  Matrix Math (Rotation, Transpose): 3           # nc250:2, narrow
   GCD / LCM: 4                                   # nc250:2, focused
   Primes / Sieve of Eratosthenes: 4              # nc250:0, focused
   Combinatorics: 6                               # nc250:0, moderate

@@ -44,7 +44,7 @@ GOLD_THRESHOLD = 40.0
 _SUBTOPIC_TARGETS = _CONFIG.get("subtopic_targets", {})
 MASTERY_RATES = {}
 for sub_name, target in _SUBTOPIC_TARGETS.items():
-    MASTERY_RATES[sub_name] = GOLD_THRESHOLD / (target * AVG_GAIN_PER_SOLVE)
+    MASTERY_RATES[sub_name] = GOLD_THRESHOLD / (max(6, target) * AVG_GAIN_PER_SOLVE)
 
 DEFAULT_MASTERY_RATE = 1.0  # fallback for subtopics not in config
 
