@@ -1,5 +1,7 @@
 # reps.gg
 
+**Video Demo:** https://youtu.be/2zx42ad9NTA
+
 **Candidate Name:** Kushaal
 
 **Scenario Chosen:** Skill-Bridge Career Navigator
