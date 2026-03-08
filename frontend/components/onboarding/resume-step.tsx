@@ -10,9 +10,10 @@ interface ResumeStepProps {
   onNext: () => void
   onSkip: () => void
   isEnriching?: boolean
+  error?: string | null
 }
 
-export function ResumeStep({ resume, setResume, onNext, onSkip, isEnriching }: ResumeStepProps) {
+export function ResumeStep({ resume, setResume, onNext, onSkip, isEnriching, error }: ResumeStepProps) {
   return (
     <div className="space-y-6">
       <div className="text-center mb-6">
@@ -40,6 +41,9 @@ export function ResumeStep({ resume, setResume, onNext, onSkip, isEnriching }: R
         <p className="text-xs text-muted-foreground">
           We&apos;ll analyze your coursework, projects, and experience to give you a head start on relevant topics
         </p>
+        {error && (
+          <p className="text-sm text-[#ef4444] font-medium">{error}</p>
+        )}
       </div>
 
       <div className="flex gap-3">

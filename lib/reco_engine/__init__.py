@@ -37,6 +37,7 @@ from lib.reco_engine.search import (
 )
 
 from lib.reco_engine.llm import call_llm
+from lib.mastery import get_overall_level
 
 
 # ── Queue management ─────────────────────────────────────────────
@@ -64,13 +65,59 @@ class RecoQueue:
         self._skip_cooldown_ids = set(skip_cooldown_ids)
         self._discarded_ids = set(discarded_ids)
 
+    def _rule_based_profiles(self, state, exhausted, topic_filter=None):
+        """Fallback: pick 10 weakest eligible subtopics, sorted by gap to overall."""
+        overall = get_overall_level(state, TAXONOMY)
+        candidates = []
+        for topic in TAXONOMY["topics"]:
+            if topic_filter and topic["name"] != topic_filter:
+                continue
+            for sub in topic["subtopics"]:
+                s_name = sub["name"]
+                if s_name in exhausted:
+                    continue
+                if not prereqs_met(state, s_name):
+                    continue
+                score = state.get("subtopics", {}).get(s_name, {}).get("score", 0.0)
+                gap = overall - score
+                candidates.append({
+                    "topic": topic["name"],
+                    "subtopic": s_name,
+                    "selectivity": max(10, min(80, int(70 - score))),
+                    "gap": gap,
+                    "importance": sub.get("importance", 0.5),
+                })
+        # Sort by gap (descending), then importance (descending)
+        candidates.sort(key=lambda c: (c["gap"], c["importance"]), reverse=True)
+        # Take top 10, deduplicate topics for variety
+        selected = []
+        seen_topics = {}
+        for c in candidates:
+            t = c["topic"]
+            if seen_topics.get(t, 0) >= 3:
+                continue
+            selected.append({"topic": c["topic"], "subtopic": c["subtopic"], "selectivity": c["selectivity"]})
+            seen_topics[t] = seen_topics.get(t, 0) + 1
+            if len(selected) >= 10:
+                break
+        return selected
+
     def fill(self, state, topic_filter=None, use_embeddings=False):
-        """Call LLM and fill the queue with 10 slots."""
+        """Call LLM and fill the queue with 10 slots. Falls back to rule-based if LLM fails."""
         exhausted = get_exhausted_subtopics(
             self._completed_ids, self._skip_cooldown_ids, self._discarded_ids
         )
-        profiles, self.raw_llm_output = call_llm(state, topic_filter, exhausted)
+        try:
+            profiles, self.raw_llm_output = call_llm(state, topic_filter, exhausted)
+        except Exception as e:
+            print(f"LLM recommendation failed, using rule-based fallback: {e}")
+            profiles = self._rule_based_profiles(state, exhausted, topic_filter)
+            self.raw_llm_output = "FALLBACK"
         self.slots = []
+
+        if not profiles:
+            # Last resort fallback
+            profiles = self._rule_based_profiles(state, exhausted, topic_filter)
 
         if not profiles:
             return

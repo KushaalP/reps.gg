@@ -2,5 +2,6 @@
 venv/
 __pycache__/
 *.pyc
-data/core/embeddings.json
+data/core/
 data/output/
+!data/sample/

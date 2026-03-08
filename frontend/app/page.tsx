@@ -27,8 +27,6 @@ export default function OnboardingPage() {
         body: JSON.stringify(credentials),
       })
       if (!res.ok) throw new Error('Connection failed')
-      const data = await res.json()
-      localStorage.setItem('reps-session', JSON.stringify(data))
       setCurrentStep(1)
     } catch (err) {
       console.error('Connect failed:', err)
@@ -37,31 +35,50 @@ export default function OnboardingPage() {
     }
   }
 
+  const handleDemoConnect = async () => {
+    setIsConnecting(true)
+    try {
+      const res = await fetch('/api/connect-demo', { method: 'POST' })
+      if (!res.ok) throw new Error('Demo connect failed')
+      setCurrentStep(1)
+    } catch (err) {
+      console.error('Demo connect failed:', err)
+    } finally {
+      setIsConnecting(false)
+    }
+  }
+
   const [isEnriching, setIsEnriching] = useState(false)
   const [enrichResult, setEnrichResult] = useState<{ bumps: { subtopic: string; bump: number; reason: string }[] } | null>(null)
+  const [resumeError, setResumeError] = useState<string | null>(null)
 
   const handleResumeNext = async () => {
     if (!resume.trim()) {
       setCurrentStep(2)
       return
     }
+    setResumeError(null)
     setIsEnriching(true)
     try {
-      const res = await fetch('/api/enrich-resume', {
+      const res = await fetch('http://localhost:8000/api/enrich-resume', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ resume }),
       })
       if (res.ok) {
         const data = await res.json()
+        if (data.error === 'not_a_resume') {
+          setResumeError(data.message)
+          setIsEnriching(false)
+          return
+        }
         setEnrichResult(data)
       }
     } catch (err) {
       console.error('Resume enrichment failed:', err)
-    } finally {
-      setIsEnriching(false)
-      setCurrentStep(2)
     }
+    setIsEnriching(false)
+    setCurrentStep(2)
   }
 
   const handleResumeSkip = () => {
@@ -106,6 +123,7 @@ export default function OnboardingPage() {
                 credentials={credentials}
                 setCredentials={setCredentials}
                 onConnect={handleConnect}
+                onDemoConnect={handleDemoConnect}
                 isConnecting={isConnecting}
               />
             )}
@@ -116,6 +134,7 @@ export default function OnboardingPage() {
                 onNext={handleResumeNext}
                 onSkip={handleResumeSkip}
                 isEnriching={isEnriching}
+                error={resumeError}
               />
             )}
             {currentStep === 2 && (

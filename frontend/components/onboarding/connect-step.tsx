@@ -10,10 +10,11 @@ interface ConnectStepProps {
   credentials: { session: string; csrfToken: string }
   setCredentials: (creds: { session: string; csrfToken: string }) => void
   onConnect: () => void
+  onDemoConnect: () => void
   isConnecting: boolean
 }
 
-export function ConnectStep({ credentials, setCredentials, onConnect, isConnecting }: ConnectStepProps) {
+export function ConnectStep({ credentials, setCredentials, onConnect, onDemoConnect, isConnecting }: ConnectStepProps) {
   const [isHelpOpen, setIsHelpOpen] = useState(false)
   
   const isValid = credentials.session.length > 0 && credentials.csrfToken.length > 0
@@ -98,8 +99,8 @@ export function ConnectStep({ credentials, setCredentials, onConnect, isConnecti
         </CollapsibleContent>
       </Collapsible>
 
-      <Button 
-        onClick={onConnect} 
+      <Button
+        onClick={onConnect}
         disabled={!isValid || isConnecting}
         className="w-full"
         size="lg"
@@ -111,6 +112,32 @@ export function ConnectStep({ credentials, setCredentials, onConnect, isConnecti
           </>
         ) : (
           'Connect'
+        )}
+      </Button>
+
+      <div className="relative">
+        <div className="absolute inset-0 flex items-center">
+          <span className="w-full border-t border-border" />
+        </div>
+        <div className="relative flex justify-center text-xs uppercase">
+          <span className="bg-card px-2 text-muted-foreground">or</span>
+        </div>
+      </div>
+
+      <Button
+        variant="outline"
+        onClick={onDemoConnect}
+        disabled={isConnecting}
+        className="w-full"
+        size="lg"
+      >
+        {isConnecting ? (
+          <>
+            <Loader2 className="h-4 w-4 animate-spin mr-2" />
+            Loading...
+          </>
+        ) : (
+          'Use Demo Profile'
         )}
       </Button>
     </div>

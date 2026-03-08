@@ -1,0 +1,5105 @@
+[
+  {
+    "id": 1,
+    "primary_topic": "Arrays & Hashing",
+    "primary_subtopic": {
+      "name": "Complement Search (Two Sum Pattern)",
+      "weight": 0.7
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Frequency Counting / Hash Map Lookup",
+        "weight": 0.3
+      }
+    ],
+    "difficulty": 1142,
+    "importance": 0.95,
+    "interview_plausibility": 0.92,
+    "company_plausibility": {
+      "quant": 0.65,
+      "faang": 0.95,
+      "mid": 0.9,
+      "startup": 0.85
+    },
+    "title": "Two Sum",
+    "slug": "two-sum"
+  },
+  {
+    "id": 76,
+    "primary_topic": "Sliding Window",
+    "primary_subtopic": {
+      "name": "Variable-Size Window (Expand/Contract)",
+      "weight": 0.6
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Frequency Counting / Hash Map Lookup",
+        "weight": 0.4
+      }
+    ],
+    "difficulty": 1594,
+    "importance": 0.95,
+    "interview_plausibility": 0.92,
+    "company_plausibility": {
+      "quant": 0.72,
+      "faang": 0.95,
+      "mid": 0.8,
+      "startup": 0.55
+    },
+    "title": "Minimum Window Substring",
+    "slug": "minimum-window-substring"
+  },
+  {
+    "id": 3,
+    "primary_topic": "Sliding Window",
+    "primary_subtopic": {
+      "name": "Variable-Size Window (Expand/Contract)",
+      "weight": 0.65
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Frequency Counting / Hash Map Lookup",
+        "weight": 0.35
+      }
+    ],
+    "difficulty": 1301,
+    "importance": 0.93,
+    "interview_plausibility": 0.94,
+    "company_plausibility": {
+      "quant": 0.7,
+      "faang": 0.95,
+      "mid": 0.88,
+      "startup": 0.8
+    },
+    "title": "Longest Substring Without Repeating Characters",
+    "slug": "longest-substring-without-repeating-characters"
+  },
+  {
+    "id": 42,
+    "primary_topic": "Two Pointers",
+    "primary_subtopic": {
+      "name": "Opposite-Direction (Converging)",
+      "weight": 0.35
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Stack",
+        "name": "Monotonic Stack",
+        "weight": 0.3
+      },
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Prefix Sums",
+        "weight": 0.35
+      }
+    ],
+    "difficulty": 1699,
+    "importance": 0.93,
+    "interview_plausibility": 0.94,
+    "company_plausibility": {
+      "quant": 0.72,
+      "faang": 0.96,
+      "mid": 0.75,
+      "startup": 0.55
+    },
+    "title": "Trapping Rain Water",
+    "slug": "trapping-rain-water"
+  },
+  {
+    "id": 53,
+    "primary_topic": "Arrays & Hashing",
+    "primary_subtopic": {
+      "name": "Kadane's Algorithm (Max Subarray)",
+      "weight": 0.85
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Core DP",
+        "name": "Linear Recurrence DP",
+        "weight": 0.15
+      }
+    ],
+    "difficulty": 1200,
+    "importance": 0.93,
+    "interview_plausibility": 0.92,
+    "company_plausibility": {
+      "quant": 0.75,
+      "faang": 0.95,
+      "mid": 0.9,
+      "startup": 0.85
+    },
+    "title": "Maximum Subarray",
+    "slug": "maximum-subarray"
+  },
+  {
+    "id": 56,
+    "primary_topic": "Intervals",
+    "primary_subtopic": {
+      "name": "Interval Merging",
+      "weight": 0.8
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Sorting + Comparison",
+        "weight": 0.2
+      }
+    ],
+    "difficulty": 1302,
+    "importance": 0.93,
+    "interview_plausibility": 0.95,
+    "company_plausibility": {
+      "quant": 0.65,
+      "faang": 0.95,
+      "mid": 0.9,
+      "startup": 0.82
+    },
+    "title": "Merge Intervals",
+    "slug": "merge-intervals"
+  },
+  {
+    "id": 146,
+    "primary_topic": "Arrays & Hashing",
+    "primary_subtopic": {
+      "name": "Frequency Counting / Hash Map Lookup",
+      "weight": 0.65
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Linked List",
+        "name": "Merge Linked Lists",
+        "weight": 0.35
+      }
+    ],
+    "difficulty": 1580,
+    "importance": 0.93,
+    "interview_plausibility": 0.95,
+    "company_plausibility": {
+      "quant": 0.6,
+      "faang": 0.95,
+      "mid": 0.82,
+      "startup": 0.65
+    },
+    "title": "LRU Cache",
+    "slug": "lru-cache"
+  },
+  {
+    "id": 200,
+    "primary_topic": "Graphs",
+    "primary_subtopic": {
+      "name": "DFS Connected Components",
+      "weight": 0.6
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Graphs",
+        "name": "BFS Shortest Path (Unweighted)",
+        "weight": 0.25
+      },
+      {
+        "topic": "Graphs",
+        "name": "Union-Find",
+        "weight": 0.15
+      }
+    ],
+    "difficulty": 1323,
+    "importance": 0.93,
+    "interview_plausibility": 0.95,
+    "company_plausibility": {
+      "quant": 0.55,
+      "faang": 0.95,
+      "mid": 0.85,
+      "startup": 0.75
+    },
+    "title": "Number of Islands",
+    "slug": "number-of-islands"
+  },
+  {
+    "id": 206,
+    "primary_topic": "Linked List",
+    "primary_subtopic": {
+      "name": "Reversal (Full and Partial)",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1025,
+    "importance": 0.93,
+    "interview_plausibility": 0.95,
+    "company_plausibility": {
+      "quant": 0.55,
+      "faang": 0.95,
+      "mid": 0.9,
+      "startup": 0.85
+    },
+    "title": "Reverse Linked List",
+    "slug": "reverse-linked-list"
+  },
+  {
+    "id": 300,
+    "primary_topic": "Core DP",
+    "primary_subtopic": {
+      "name": "Longest Increasing Subsequence",
+      "weight": 0.75
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Binary Search",
+        "name": "Boundary Finding (Bisect Left/Right)",
+        "weight": 0.25
+      }
+    ],
+    "difficulty": 1407,
+    "importance": 0.93,
+    "interview_plausibility": 0.9,
+    "company_plausibility": {
+      "quant": 0.72,
+      "faang": 0.92,
+      "mid": 0.78,
+      "startup": 0.58
+    },
+    "title": "Longest Increasing Subsequence",
+    "slug": "longest-increasing-subsequence"
+  },
+  {
+    "id": 322,
+    "primary_topic": "Core DP",
+    "primary_subtopic": {
+      "name": "Unbounded Knapsack",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1337,
+    "importance": 0.93,
+    "interview_plausibility": 0.92,
+    "company_plausibility": {
+      "quant": 0.75,
+      "faang": 0.92,
+      "mid": 0.85,
+      "startup": 0.75
+    },
+    "title": "Coin Change",
+    "slug": "coin-change"
+  },
+  {
+    "id": 704,
+    "primary_topic": "Binary Search",
+    "primary_subtopic": {
+      "name": "Standard Binary Search",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 878,
+    "importance": 0.93,
+    "interview_plausibility": 0.82,
+    "company_plausibility": {
+      "quant": 0.55,
+      "faang": 0.75,
+      "mid": 0.85,
+      "startup": 0.8
+    },
+    "title": "Binary Search",
+    "slug": "binary-search"
+  },
+  {
+    "id": 1143,
+    "primary_topic": "Core DP",
+    "primary_subtopic": {
+      "name": "Two Sequence DP (LCS, Edit distance)",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1580,
+    "importance": 0.93,
+    "interview_plausibility": 0.92,
+    "company_plausibility": {
+      "quant": 0.7,
+      "faang": 0.92,
+      "mid": 0.8,
+      "startup": 0.55
+    },
+    "title": "Longest Common Subsequence",
+    "slug": "longest-common-subsequence"
+  },
+  {
+    "id": 33,
+    "primary_topic": "Binary Search",
+    "primary_subtopic": {
+      "name": "Search in Rotated/Modified Array",
+      "weight": 0.85
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Binary Search",
+        "name": "Standard Binary Search",
+        "weight": 0.15
+      }
+    ],
+    "difficulty": 1450,
+    "importance": 0.92,
+    "interview_plausibility": 0.93,
+    "company_plausibility": {
+      "quant": 0.7,
+      "faang": 0.95,
+      "mid": 0.82,
+      "startup": 0.7
+    },
+    "title": "Search in Rotated Sorted Array",
+    "slug": "search-in-rotated-sorted-array"
+  },
+  {
+    "id": 46,
+    "primary_topic": "Backtracking",
+    "primary_subtopic": {
+      "name": "Permutations",
+      "weight": 0.9
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Frequency Counting / Hash Map Lookup",
+        "weight": 0.1
+      }
+    ],
+    "difficulty": 1244,
+    "importance": 0.92,
+    "interview_plausibility": 0.95,
+    "company_plausibility": {
+      "quant": 0.6,
+      "faang": 0.93,
+      "mid": 0.85,
+      "startup": 0.75
+    },
+    "title": "Permutations",
+    "slug": "permutations"
+  },
+  {
+    "id": 70,
+    "primary_topic": "Core DP",
+    "primary_subtopic": {
+      "name": "Linear Recurrence DP",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1098,
+    "importance": 0.92,
+    "interview_plausibility": 0.88,
+    "company_plausibility": {
+      "quant": 0.6,
+      "faang": 0.9,
+      "mid": 0.88,
+      "startup": 0.82
+    },
+    "title": "Climbing Stairs",
+    "slug": "climbing-stairs"
+  },
+  {
+    "id": 72,
+    "primary_topic": "Core DP",
+    "primary_subtopic": {
+      "name": "Two Sequence DP (LCS, Edit distance)",
+      "weight": 0.9
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Core DP",
+        "name": "Word Break / String DP",
+        "weight": 0.1
+      }
+    ],
+    "difficulty": 1574,
+    "importance": 0.92,
+    "interview_plausibility": 0.85,
+    "company_plausibility": {
+      "quant": 0.72,
+      "faang": 0.92,
+      "mid": 0.75,
+      "startup": 0.52
+    },
+    "title": "Edit Distance",
+    "slug": "edit-distance"
+  },
+  {
+    "id": 78,
+    "primary_topic": "Backtracking",
+    "primary_subtopic": {
+      "name": "Combinations / Subsets",
+      "weight": 0.75
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Bit Manipulation",
+        "name": "General Bit Manipulation",
+        "weight": 0.25
+      }
+    ],
+    "difficulty": 1211,
+    "importance": 0.92,
+    "interview_plausibility": 0.93,
+    "company_plausibility": {
+      "quant": 0.55,
+      "faang": 0.93,
+      "mid": 0.82,
+      "startup": 0.68
+    },
+    "title": "Subsets",
+    "slug": "subsets"
+  },
+  {
+    "id": 84,
+    "primary_topic": "Stack",
+    "primary_subtopic": {
+      "name": "Monotonic Stack",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1886,
+    "importance": 0.92,
+    "interview_plausibility": 0.82,
+    "company_plausibility": {
+      "quant": 0.7,
+      "faang": 0.88,
+      "mid": 0.6,
+      "startup": 0.35
+    },
+    "title": "Largest Rectangle in Histogram",
+    "slug": "largest-rectangle-in-histogram"
+  },
+  {
+    "id": 102,
+    "primary_topic": "Trees",
+    "primary_subtopic": {
+      "name": "BFS / Level-Order Traversal",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1195,
+    "importance": 0.92,
+    "interview_plausibility": 0.92,
+    "company_plausibility": {
+      "quant": 0.45,
+      "faang": 0.9,
+      "mid": 0.85,
+      "startup": 0.7
+    },
+    "title": "Binary Tree Level Order Traversal",
+    "slug": "binary-tree-level-order-traversal"
+  },
+  {
+    "id": 121,
+    "primary_topic": "Arrays & Hashing",
+    "primary_subtopic": {
+      "name": "Kadane's Algorithm (Max Subarray)",
+      "weight": 0.65
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Core DP",
+        "name": "Linear Recurrence DP",
+        "weight": 0.35
+      }
+    ],
+    "difficulty": 1053,
+    "importance": 0.92,
+    "interview_plausibility": 0.93,
+    "company_plausibility": {
+      "quant": 0.6,
+      "faang": 0.92,
+      "mid": 0.88,
+      "startup": 0.8
+    },
+    "title": "Best Time to Buy and Sell Stock",
+    "slug": "best-time-to-buy-and-sell-stock"
+  },
+  {
+    "id": 139,
+    "primary_topic": "Core DP",
+    "primary_subtopic": {
+      "name": "Word Break / String DP",
+      "weight": 0.7
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Frequency Counting / Hash Map Lookup",
+        "weight": 0.15
+      },
+      {
+        "topic": "Graphs",
+        "name": "BFS Shortest Path (Unweighted)",
+        "weight": 0.15
+      }
+    ],
+    "difficulty": 1560,
+    "importance": 0.92,
+    "interview_plausibility": 0.9,
+    "company_plausibility": {
+      "quant": 0.55,
+      "faang": 0.92,
+      "mid": 0.75,
+      "startup": 0.55
+    },
+    "title": "Word Break",
+    "slug": "word-break"
+  },
+  {
+    "id": 198,
+    "primary_topic": "Core DP",
+    "primary_subtopic": {
+      "name": "Linear Recurrence DP",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1274,
+    "importance": 0.92,
+    "interview_plausibility": 0.92,
+    "company_plausibility": {
+      "quant": 0.7,
+      "faang": 0.92,
+      "mid": 0.85,
+      "startup": 0.75
+    },
+    "title": "House Robber",
+    "slug": "house-robber"
+  },
+  {
+    "id": 207,
+    "primary_topic": "Graphs",
+    "primary_subtopic": {
+      "name": "Topological Sort",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1414,
+    "importance": 0.92,
+    "interview_plausibility": 0.92,
+    "company_plausibility": {
+      "quant": 0.5,
+      "faang": 0.92,
+      "mid": 0.75,
+      "startup": 0.55
+    },
+    "title": "Course Schedule",
+    "slug": "course-schedule"
+  },
+  {
+    "id": 15,
+    "primary_topic": "Two Pointers",
+    "primary_subtopic": {
+      "name": "K-Sum Pattern (3Sum, 4Sum)",
+      "weight": 0.6
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Sorting + Comparison",
+        "weight": 0.25
+      },
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Complement Search (Two Sum Pattern)",
+        "weight": 0.15
+      }
+    ],
+    "difficulty": 1534,
+    "importance": 0.91,
+    "interview_plausibility": 0.93,
+    "company_plausibility": {
+      "quant": 0.75,
+      "faang": 0.95,
+      "mid": 0.82,
+      "startup": 0.65
+    },
+    "title": "3Sum",
+    "slug": "3sum"
+  },
+  {
+    "id": 62,
+    "primary_topic": "Core DP",
+    "primary_subtopic": {
+      "name": "Grid Path Problems",
+      "weight": 0.75
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Math & Geometry",
+        "name": "Combinatorics",
+        "weight": 0.25
+      }
+    ],
+    "difficulty": 1248,
+    "importance": 0.91,
+    "interview_plausibility": 0.9,
+    "company_plausibility": {
+      "quant": 0.65,
+      "faang": 0.92,
+      "mid": 0.88,
+      "startup": 0.75
+    },
+    "title": "Unique Paths",
+    "slug": "unique-paths"
+  },
+  {
+    "id": 128,
+    "primary_topic": "Arrays & Hashing",
+    "primary_subtopic": {
+      "name": "Frequency Counting / Hash Map Lookup",
+      "weight": 0.8
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Graphs",
+        "name": "Union-Find",
+        "weight": 0.2
+      }
+    ],
+    "difficulty": 1412,
+    "importance": 0.91,
+    "interview_plausibility": 0.92,
+    "company_plausibility": {
+      "quant": 0.6,
+      "faang": 0.92,
+      "mid": 0.75,
+      "startup": 0.65
+    },
+    "title": "Longest Consecutive Sequence",
+    "slug": "longest-consecutive-sequence"
+  },
+  {
+    "id": 215,
+    "primary_topic": "Heap / Priority Queue",
+    "primary_subtopic": {
+      "name": "Top-K Elements",
+      "weight": 0.55
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Sorting + Comparison",
+        "weight": 0.45
+      }
+    ],
+    "difficulty": 1356,
+    "importance": 0.91,
+    "interview_plausibility": 0.93,
+    "company_plausibility": {
+      "quant": 0.65,
+      "faang": 0.93,
+      "mid": 0.8,
+      "startup": 0.65
+    },
+    "title": "Kth Largest Element in an Array",
+    "slug": "kth-largest-element-in-an-array"
+  },
+  {
+    "id": 238,
+    "primary_topic": "Arrays & Hashing",
+    "primary_subtopic": {
+      "name": "Prefix Sums",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1305,
+    "importance": 0.91,
+    "interview_plausibility": 0.94,
+    "company_plausibility": {
+      "quant": 0.6,
+      "faang": 0.95,
+      "mid": 0.88,
+      "startup": 0.75
+    },
+    "title": "Product of Array Except Self",
+    "slug": "product-of-array-except-self"
+  },
+  {
+    "id": 253,
+    "primary_topic": "Intervals",
+    "primary_subtopic": {
+      "name": "Sweep Line / Meeting Rooms",
+      "weight": 0.55
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Heap / Priority Queue",
+        "name": "Heap Simulation",
+        "weight": 0.25
+      },
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Sorting + Comparison",
+        "weight": 0.2
+      }
+    ],
+    "difficulty": 1437,
+    "importance": 0.91,
+    "interview_plausibility": 0.95,
+    "company_plausibility": {
+      "quant": 0.5,
+      "faang": 0.95,
+      "mid": 0.8,
+      "startup": 0.55
+    },
+    "title": "Meeting Rooms II",
+    "slug": "meeting-rooms-ii"
+  },
+  {
+    "id": 295,
+    "primary_topic": "Heap / Priority Queue",
+    "primary_subtopic": {
+      "name": "Heap Simulation",
+      "weight": 0.9
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Sorting + Comparison",
+        "weight": 0.1
+      }
+    ],
+    "difficulty": 1706,
+    "importance": 0.91,
+    "interview_plausibility": 0.9,
+    "company_plausibility": {
+      "quant": 0.82,
+      "faang": 0.92,
+      "mid": 0.72,
+      "startup": 0.55
+    },
+    "title": "Find Median from Data Stream",
+    "slug": "find-median-from-data-stream"
+  },
+  {
+    "id": 347,
+    "primary_topic": "Heap / Priority Queue",
+    "primary_subtopic": {
+      "name": "Top-K Elements",
+      "weight": 0.55
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Frequency Counting / Hash Map Lookup",
+        "weight": 0.3
+      },
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Sorting + Comparison",
+        "weight": 0.15
+      }
+    ],
+    "difficulty": 1280,
+    "importance": 0.91,
+    "interview_plausibility": 0.92,
+    "company_plausibility": {
+      "quant": 0.55,
+      "faang": 0.92,
+      "mid": 0.78,
+      "startup": 0.65
+    },
+    "title": "Top K Frequent Elements",
+    "slug": "top-k-frequent-elements"
+  },
+  {
+    "id": 416,
+    "primary_topic": "Core DP",
+    "primary_subtopic": {
+      "name": "0/1 Knapsack",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1548,
+    "importance": 0.91,
+    "interview_plausibility": 0.88,
+    "company_plausibility": {
+      "quant": 0.65,
+      "faang": 0.9,
+      "mid": 0.75,
+      "startup": 0.5
+    },
+    "title": "Partition Equal Subset Sum",
+    "slug": "partition-equal-subset-sum"
+  },
+  {
+    "id": 518,
+    "primary_topic": "Core DP",
+    "primary_subtopic": {
+      "name": "Unbounded Knapsack",
+      "weight": 0.85
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Core DP",
+        "name": "Linear Recurrence DP",
+        "weight": 0.15
+      }
+    ],
+    "difficulty": 1523,
+    "importance": 0.91,
+    "interview_plausibility": 0.85,
+    "company_plausibility": {
+      "quant": 0.6,
+      "faang": 0.85,
+      "mid": 0.7,
+      "startup": 0.5
+    },
+    "title": "Coin Change II",
+    "slug": "coin-change-ii"
+  },
+  {
+    "id": 560,
+    "primary_topic": "Arrays & Hashing",
+    "primary_subtopic": {
+      "name": "Prefix Sums",
+      "weight": 0.55
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Frequency Counting / Hash Map Lookup",
+        "weight": 0.45
+      }
+    ],
+    "difficulty": 1324,
+    "importance": 0.91,
+    "interview_plausibility": 0.92,
+    "company_plausibility": {
+      "quant": 0.6,
+      "faang": 0.92,
+      "mid": 0.8,
+      "startup": 0.65
+    },
+    "title": "Subarray Sum Equals K",
+    "slug": "subarray-sum-equals-k"
+  },
+  {
+    "id": 739,
+    "primary_topic": "Stack",
+    "primary_subtopic": {
+      "name": "Monotonic Stack",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1370,
+    "importance": 0.91,
+    "interview_plausibility": 0.92,
+    "company_plausibility": {
+      "quant": 0.55,
+      "faang": 0.92,
+      "mid": 0.8,
+      "startup": 0.6
+    },
+    "title": "Daily Temperatures",
+    "slug": "daily-temperatures"
+  },
+  {
+    "id": 11,
+    "primary_topic": "Two Pointers",
+    "primary_subtopic": {
+      "name": "Opposite-Direction (Converging)",
+      "weight": 0.75
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Greedy",
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.25
+      }
+    ],
+    "difficulty": 1374,
+    "importance": 0.9,
+    "interview_plausibility": 0.93,
+    "company_plausibility": {
+      "quant": 0.65,
+      "faang": 0.92,
+      "mid": 0.85,
+      "startup": 0.72
+    },
+    "title": "Container With Most Water",
+    "slug": "container-with-most-water"
+  },
+  {
+    "id": 23,
+    "primary_topic": "Heap / Priority Queue",
+    "primary_subtopic": {
+      "name": "Merge K Sorted Structures",
+      "weight": 0.6
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Linked List",
+        "name": "Merge Linked Lists",
+        "weight": 0.4
+      }
+    ],
+    "difficulty": 1594,
+    "importance": 0.9,
+    "interview_plausibility": 0.88,
+    "company_plausibility": {
+      "quant": 0.65,
+      "faang": 0.92,
+      "mid": 0.75,
+      "startup": 0.55
+    },
+    "title": "Merge k Sorted Lists",
+    "slug": "merge-k-sorted-lists"
+  },
+  {
+    "id": 39,
+    "primary_topic": "Backtracking",
+    "primary_subtopic": {
+      "name": "Combinations / Subsets",
+      "weight": 0.8
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Core DP",
+        "name": "Unbounded Knapsack",
+        "weight": 0.2
+      }
+    ],
+    "difficulty": 1317,
+    "importance": 0.9,
+    "interview_plausibility": 0.92,
+    "company_plausibility": {
+      "quant": 0.55,
+      "faang": 0.92,
+      "mid": 0.82,
+      "startup": 0.7
+    },
+    "title": "Combination Sum",
+    "slug": "combination-sum"
+  },
+  {
+    "id": 49,
+    "primary_topic": "Arrays & Hashing",
+    "primary_subtopic": {
+      "name": "Frequency Counting / Hash Map Lookup",
+      "weight": 0.65
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Sorting + Comparison",
+        "weight": 0.35
+      }
+    ],
+    "difficulty": 1219,
+    "importance": 0.9,
+    "interview_plausibility": 0.93,
+    "company_plausibility": {
+      "quant": 0.5,
+      "faang": 0.92,
+      "mid": 0.85,
+      "startup": 0.75
+    },
+    "title": "Group Anagrams",
+    "slug": "group-anagrams"
+  },
+  {
+    "id": 98,
+    "primary_topic": "Trees",
+    "primary_subtopic": {
+      "name": "BST Operations (Insert, Delete, Validate)",
+      "weight": 0.65
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Trees",
+        "name": "DFS Traversal (Inorder, Preorder, Postorder)",
+        "weight": 0.35
+      }
+    ],
+    "difficulty": 1342,
+    "importance": 0.9,
+    "interview_plausibility": 0.93,
+    "company_plausibility": {
+      "quant": 0.55,
+      "faang": 0.92,
+      "mid": 0.85,
+      "startup": 0.68
+    },
+    "title": "Validate Binary Search Tree",
+    "slug": "validate-binary-search-tree"
+  },
+  {
+    "id": 141,
+    "primary_topic": "Linked List",
+    "primary_subtopic": {
+      "name": "Fast/Slow Pointers (Cycle, Middle)",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1068,
+    "importance": 0.9,
+    "interview_plausibility": 0.93,
+    "company_plausibility": {
+      "quant": 0.5,
+      "faang": 0.9,
+      "mid": 0.85,
+      "startup": 0.75
+    },
+    "title": "Linked List Cycle",
+    "slug": "linked-list-cycle"
+  },
+  {
+    "id": 167,
+    "primary_topic": "Two Pointers",
+    "primary_subtopic": {
+      "name": "Opposite-Direction (Converging)",
+      "weight": 0.7
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Complement Search (Two Sum Pattern)",
+        "weight": 0.3
+      }
+    ],
+    "difficulty": 1124,
+    "importance": 0.9,
+    "interview_plausibility": 0.92,
+    "company_plausibility": {
+      "quant": 0.5,
+      "faang": 0.9,
+      "mid": 0.82,
+      "startup": 0.65
+    },
+    "title": "Two Sum II - Input Array Is Sorted",
+    "slug": "two-sum-ii-input-array-is-sorted"
+  },
+  {
+    "id": 208,
+    "primary_topic": "Tries",
+    "primary_subtopic": {
+      "name": "Trie Construction / Prefix Search",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1377,
+    "importance": 0.9,
+    "interview_plausibility": 0.88,
+    "company_plausibility": {
+      "quant": 0.35,
+      "faang": 0.9,
+      "mid": 0.65,
+      "startup": 0.45
+    },
+    "title": "Implement Trie (Prefix Tree)",
+    "slug": "implement-trie-prefix-tree"
+  },
+  {
+    "id": 210,
+    "primary_topic": "Graphs",
+    "primary_subtopic": {
+      "name": "Topological Sort",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1503,
+    "importance": 0.9,
+    "interview_plausibility": 0.9,
+    "company_plausibility": {
+      "quant": 0.5,
+      "faang": 0.9,
+      "mid": 0.72,
+      "startup": 0.5
+    },
+    "title": "Course Schedule II",
+    "slug": "course-schedule-ii"
+  },
+  {
+    "id": 303,
+    "primary_topic": "Arrays & Hashing",
+    "primary_subtopic": {
+      "name": "Prefix Sums",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1028,
+    "importance": 0.9,
+    "interview_plausibility": 0.72,
+    "company_plausibility": {
+      "quant": 0.55,
+      "faang": 0.65,
+      "mid": 0.75,
+      "startup": 0.7
+    },
+    "title": "Range Sum Query - Immutable",
+    "slug": "range-sum-query-immutable"
+  },
+  {
+    "id": 1011,
+    "primary_topic": "Binary Search",
+    "primary_subtopic": {
+      "name": "Binary Search on Answer Space",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1725.45,
+    "importance": 0.9,
+    "interview_plausibility": 0.92,
+    "company_plausibility": {
+      "quant": 0.55,
+      "faang": 0.92,
+      "mid": 0.8,
+      "startup": 0.6
+    },
+    "difficulty_llm": 1725,
+    "title": "Capacity To Ship Packages Within D Days",
+    "slug": "capacity-to-ship-packages-within-d-days"
+  },
+  {
+    "id": 297,
+    "primary_topic": "Trees",
+    "primary_subtopic": {
+      "name": "DFS Traversal (Inorder, Preorder, Postorder)",
+      "weight": 0.55
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Trees",
+        "name": "BFS / Level-Order Traversal",
+        "weight": 0.3
+      },
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Frequency Counting / Hash Map Lookup",
+        "weight": 0.15
+      }
+    ],
+    "difficulty": 1672,
+    "importance": 0.89,
+    "interview_plausibility": 0.88,
+    "company_plausibility": {
+      "quant": 0.45,
+      "faang": 0.92,
+      "mid": 0.72,
+      "startup": 0.52
+    },
+    "title": "Serialize and Deserialize Binary Tree",
+    "slug": "serialize-and-deserialize-binary-tree"
+  },
+  {
+    "id": 994,
+    "primary_topic": "Graphs",
+    "primary_subtopic": {
+      "name": "Multi-Source BFS",
+      "weight": 0.8
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Matrix Traversal (Diagonal, Valid Sudoku, etc)",
+        "weight": 0.2
+      }
+    ],
+    "difficulty": 1432.91,
+    "importance": 0.89,
+    "interview_plausibility": 0.91,
+    "company_plausibility": {
+      "quant": 0.4,
+      "faang": 0.9,
+      "mid": 0.8,
+      "startup": 0.7
+    },
+    "difficulty_llm": 1433,
+    "title": "Rotting Oranges",
+    "slug": "rotting-oranges"
+  },
+  {
+    "id": 20,
+    "primary_topic": "Stack",
+    "primary_subtopic": {
+      "name": "Stack-Based Simulation",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1121,
+    "importance": 0.88,
+    "interview_plausibility": 0.92,
+    "company_plausibility": {
+      "quant": 0.6,
+      "faang": 0.9,
+      "mid": 0.88,
+      "startup": 0.85
+    },
+    "title": "Valid Parentheses",
+    "slug": "valid-parentheses"
+  },
+  {
+    "id": 21,
+    "primary_topic": "Linked List",
+    "primary_subtopic": {
+      "name": "Merge Linked Lists",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1107,
+    "importance": 0.88,
+    "interview_plausibility": 0.91,
+    "company_plausibility": {
+      "quant": 0.5,
+      "faang": 0.9,
+      "mid": 0.88,
+      "startup": 0.82
+    },
+    "title": "Merge Two Sorted Lists",
+    "slug": "merge-two-sorted-lists"
+  },
+  {
+    "id": 34,
+    "primary_topic": "Binary Search",
+    "primary_subtopic": {
+      "name": "Boundary Finding (Bisect Left/Right)",
+      "weight": 0.9
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Binary Search",
+        "name": "Standard Binary Search",
+        "weight": 0.1
+      }
+    ],
+    "difficulty": 1337,
+    "importance": 0.88,
+    "interview_plausibility": 0.91,
+    "company_plausibility": {
+      "quant": 0.65,
+      "faang": 0.92,
+      "mid": 0.8,
+      "startup": 0.65
+    },
+    "title": "Find First and Last Position of Element in Sorted Array",
+    "slug": "find-first-and-last-position-of-element-in-sorted-array"
+  },
+  {
+    "id": 77,
+    "primary_topic": "Backtracking",
+    "primary_subtopic": {
+      "name": "Combinations / Subsets",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1258,
+    "importance": 0.88,
+    "interview_plausibility": 0.88,
+    "company_plausibility": {
+      "quant": 0.5,
+      "faang": 0.88,
+      "mid": 0.78,
+      "startup": 0.6
+    },
+    "title": "Combinations",
+    "slug": "combinations"
+  },
+  {
+    "id": 94,
+    "primary_topic": "Trees",
+    "primary_subtopic": {
+      "name": "DFS Traversal (Inorder, Preorder, Postorder)",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1048,
+    "importance": 0.88,
+    "interview_plausibility": 0.82,
+    "company_plausibility": {
+      "quant": 0.4,
+      "faang": 0.78,
+      "mid": 0.8,
+      "startup": 0.7
+    },
+    "title": "Binary Tree Inorder Traversal",
+    "slug": "binary-tree-inorder-traversal"
+  },
+  {
+    "id": 104,
+    "primary_topic": "Trees",
+    "primary_subtopic": {
+      "name": "DFS Traversal (Inorder, Preorder, Postorder)",
+      "weight": 0.6
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Trees",
+        "name": "BFS / Level-Order Traversal",
+        "weight": 0.4
+      }
+    ],
+    "difficulty": 1028,
+    "importance": 0.88,
+    "interview_plausibility": 0.85,
+    "company_plausibility": {
+      "quant": 0.3,
+      "faang": 0.8,
+      "mid": 0.82,
+      "startup": 0.75
+    },
+    "title": "Maximum Depth of Binary Tree",
+    "slug": "maximum-depth-of-binary-tree"
+  },
+  {
+    "id": 105,
+    "primary_topic": "Trees",
+    "primary_subtopic": {
+      "name": "DFS Traversal (Inorder, Preorder, Postorder)",
+      "weight": 0.7
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Frequency Counting / Hash Map Lookup",
+        "weight": 0.3
+      }
+    ],
+    "difficulty": 1505,
+    "importance": 0.88,
+    "interview_plausibility": 0.88,
+    "company_plausibility": {
+      "quant": 0.45,
+      "faang": 0.88,
+      "mid": 0.75,
+      "startup": 0.55
+    },
+    "title": "Construct Binary Tree from Preorder and Inorder Traversal",
+    "slug": "construct-binary-tree-from-preorder-and-inorder-traversal"
+  },
+  {
+    "id": 124,
+    "primary_topic": "Trees",
+    "primary_subtopic": {
+      "name": "DFS Traversal (Inorder, Preorder, Postorder)",
+      "weight": 0.6
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Trees",
+        "name": "Path Sum Problems",
+        "weight": 0.4
+      }
+    ],
+    "difficulty": 1689,
+    "importance": 0.88,
+    "interview_plausibility": 0.85,
+    "company_plausibility": {
+      "quant": 0.5,
+      "faang": 0.9,
+      "mid": 0.72,
+      "startup": 0.5
+    },
+    "title": "Binary Tree Maximum Path Sum",
+    "slug": "binary-tree-maximum-path-sum"
+  },
+  {
+    "id": 153,
+    "primary_topic": "Binary Search",
+    "primary_subtopic": {
+      "name": "Search in Rotated/Modified Array",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1307,
+    "importance": 0.88,
+    "interview_plausibility": 0.9,
+    "company_plausibility": {
+      "quant": 0.55,
+      "faang": 0.92,
+      "mid": 0.78,
+      "startup": 0.55
+    },
+    "title": "Find Minimum in Rotated Sorted Array",
+    "slug": "find-minimum-in-rotated-sorted-array"
+  },
+  {
+    "id": 155,
+    "primary_topic": "Stack",
+    "primary_subtopic": {
+      "name": "Stack-Based Simulation",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1213,
+    "importance": 0.88,
+    "interview_plausibility": 0.92,
+    "company_plausibility": {
+      "quant": 0.5,
+      "faang": 0.9,
+      "mid": 0.82,
+      "startup": 0.65
+    },
+    "title": "Min Stack",
+    "slug": "min-stack"
+  },
+  {
+    "id": 226,
+    "primary_topic": "Trees",
+    "primary_subtopic": {
+      "name": "DFS Traversal (Inorder, Preorder, Postorder)",
+      "weight": 0.7
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Trees",
+        "name": "BFS / Level-Order Traversal",
+        "weight": 0.3
+      }
+    ],
+    "difficulty": 1112,
+    "importance": 0.88,
+    "interview_plausibility": 0.9,
+    "company_plausibility": {
+      "quant": 0.35,
+      "faang": 0.85,
+      "mid": 0.8,
+      "startup": 0.75
+    },
+    "title": "Invert Binary Tree",
+    "slug": "invert-binary-tree"
+  },
+  {
+    "id": 239,
+    "primary_topic": "Sliding Window",
+    "primary_subtopic": {
+      "name": "Window with Monotonic Deque",
+      "weight": 0.75
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Sliding Window",
+        "name": "Fixed-Size Window",
+        "weight": 0.25
+      }
+    ],
+    "difficulty": 1763,
+    "importance": 0.88,
+    "interview_plausibility": 0.82,
+    "company_plausibility": {
+      "quant": 0.7,
+      "faang": 0.88,
+      "mid": 0.65,
+      "startup": 0.45
+    },
+    "title": "Sliding Window Maximum",
+    "slug": "sliding-window-maximum"
+  },
+  {
+    "id": 269,
+    "primary_topic": "Graphs",
+    "primary_subtopic": {
+      "name": "Topological Sort",
+      "weight": 0.75
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Graphs",
+        "name": "BFS Shortest Path (Unweighted)",
+        "weight": 0.15
+      },
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Frequency Counting / Hash Map Lookup",
+        "weight": 0.1
+      }
+    ],
+    "difficulty": 1842,
+    "importance": 0.88,
+    "interview_plausibility": 0.85,
+    "company_plausibility": {
+      "quant": 0.35,
+      "faang": 0.92,
+      "mid": 0.55,
+      "startup": 0.3
+    },
+    "title": "Alien Dictionary",
+    "slug": "alien-dictionary"
+  },
+  {
+    "id": 279,
+    "primary_topic": "Core DP",
+    "primary_subtopic": {
+      "name": "Unbounded Knapsack",
+      "weight": 0.7
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Graphs",
+        "name": "BFS Shortest Path (Unweighted)",
+        "weight": 0.2
+      },
+      {
+        "topic": "Math & Geometry",
+        "name": "General Math",
+        "weight": 0.1
+      }
+    ],
+    "difficulty": 1405,
+    "importance": 0.88,
+    "interview_plausibility": 0.82,
+    "company_plausibility": {
+      "quant": 0.5,
+      "faang": 0.85,
+      "mid": 0.72,
+      "startup": 0.55
+    },
+    "title": "Perfect Squares",
+    "slug": "perfect-squares"
+  },
+  {
+    "id": 286,
+    "primary_topic": "Graphs",
+    "primary_subtopic": {
+      "name": "Multi-Source BFS",
+      "weight": 0.85
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Matrix Traversal (Diagonal, Valid Sudoku, etc)",
+        "weight": 0.15
+      }
+    ],
+    "difficulty": 1385,
+    "importance": 0.88,
+    "interview_plausibility": 0.85,
+    "company_plausibility": {
+      "quant": 0.3,
+      "faang": 0.85,
+      "mid": 0.7,
+      "startup": 0.5
+    },
+    "title": "Walls and Gates",
+    "slug": "walls-and-gates"
+  },
+  {
+    "id": 323,
+    "primary_topic": "Graphs",
+    "primary_subtopic": {
+      "name": "DFS Connected Components",
+      "weight": 0.55
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Graphs",
+        "name": "Union-Find",
+        "weight": 0.45
+      }
+    ],
+    "difficulty": 1303,
+    "importance": 0.88,
+    "interview_plausibility": 0.88,
+    "company_plausibility": {
+      "quant": 0.45,
+      "faang": 0.85,
+      "mid": 0.78,
+      "startup": 0.65
+    },
+    "title": "Number of Connected Components in an Undirected Graph",
+    "slug": "number-of-connected-components-in-an-undirected-graph"
+  },
+  {
+    "id": 329,
+    "primary_topic": "Graphs",
+    "primary_subtopic": {
+      "name": "DFS Path Finding",
+      "weight": 0.4
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Core DP",
+        "name": "Grid Path Problems",
+        "weight": 0.35
+      },
+      {
+        "topic": "Graphs",
+        "name": "Topological Sort",
+        "weight": 0.25
+      }
+    ],
+    "difficulty": 1928,
+    "importance": 0.88,
+    "interview_plausibility": 0.72,
+    "company_plausibility": {
+      "quant": 0.5,
+      "faang": 0.82,
+      "mid": 0.55,
+      "startup": 0.35
+    },
+    "title": "Longest Increasing Path in a Matrix",
+    "slug": "longest-increasing-path-in-a-matrix"
+  },
+  {
+    "id": 410,
+    "primary_topic": "Binary Search",
+    "primary_subtopic": {
+      "name": "Binary Search on Answer Space",
+      "weight": 0.55
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Core DP",
+        "name": "Linear Recurrence DP",
+        "weight": 0.25
+      },
+      {
+        "topic": "Greedy",
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.2
+      }
+    ],
+    "difficulty": 2064,
+    "importance": 0.88,
+    "interview_plausibility": 0.78,
+    "company_plausibility": {
+      "quant": 0.7,
+      "faang": 0.85,
+      "mid": 0.6,
+      "startup": 0.35
+    },
+    "title": "Split Array Largest Sum",
+    "slug": "split-array-largest-sum"
+  },
+  {
+    "id": 424,
+    "primary_topic": "Sliding Window",
+    "primary_subtopic": {
+      "name": "Variable-Size Window (Expand/Contract)",
+      "weight": 0.75
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Frequency Counting / Hash Map Lookup",
+        "weight": 0.25
+      }
+    ],
+    "difficulty": 1571,
+    "importance": 0.88,
+    "interview_plausibility": 0.88,
+    "company_plausibility": {
+      "quant": 0.55,
+      "faang": 0.9,
+      "mid": 0.75,
+      "startup": 0.55
+    },
+    "title": "Longest Repeating Character Replacement",
+    "slug": "longest-repeating-character-replacement"
+  },
+  {
+    "id": 435,
+    "primary_topic": "Intervals",
+    "primary_subtopic": {
+      "name": "Interval Merging",
+      "weight": 0.46
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Sorting + Comparison",
+        "weight": 0.15
+      },
+      {
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.39,
+        "topic": "Greedy"
+      }
+    ],
+    "difficulty": 1416,
+    "importance": 0.88,
+    "interview_plausibility": 0.88,
+    "company_plausibility": {
+      "quant": 0.55,
+      "faang": 0.88,
+      "mid": 0.75,
+      "startup": 0.6
+    },
+    "title": "Non-overlapping Intervals",
+    "slug": "non-overlapping-intervals"
+  },
+  {
+    "id": 494,
+    "primary_topic": "Core DP",
+    "primary_subtopic": {
+      "name": "0/1 Knapsack",
+      "weight": 0.75
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Backtracking",
+        "name": "Combinations / Subsets",
+        "weight": 0.25
+      }
+    ],
+    "difficulty": 1534,
+    "importance": 0.88,
+    "interview_plausibility": 0.82,
+    "company_plausibility": {
+      "quant": 0.6,
+      "faang": 0.85,
+      "mid": 0.7,
+      "startup": 0.5
+    },
+    "title": "Target Sum",
+    "slug": "target-sum"
+  },
+  {
+    "id": 543,
+    "primary_topic": "Trees",
+    "primary_subtopic": {
+      "name": "DFS Traversal (Inorder, Preorder, Postorder)",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1267,
+    "importance": 0.88,
+    "interview_plausibility": 0.92,
+    "company_plausibility": {
+      "quant": 0.45,
+      "faang": 0.9,
+      "mid": 0.8,
+      "startup": 0.7
+    },
+    "title": "Diameter of Binary Tree",
+    "slug": "diameter-of-binary-tree"
+  },
+  {
+    "id": 743,
+    "primary_topic": "Advanced Graphs",
+    "primary_subtopic": {
+      "name": "Dijkstra's (Weighted Shortest Path)",
+      "weight": 0.85
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Heap / Priority Queue",
+        "name": "Heap Simulation",
+        "weight": 0.15
+      }
+    ],
+    "difficulty": 1566,
+    "importance": 0.88,
+    "interview_plausibility": 0.87,
+    "company_plausibility": {
+      "quant": 0.55,
+      "faang": 0.88,
+      "mid": 0.65,
+      "startup": 0.4
+    },
+    "title": "Network Delay Time",
+    "slug": "network-delay-time"
+  },
+  {
+    "id": 746,
+    "primary_topic": "Core DP",
+    "primary_subtopic": {
+      "name": "Linear Recurrence DP",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1358.36,
+    "importance": 0.88,
+    "interview_plausibility": 0.88,
+    "company_plausibility": {
+      "quant": 0.45,
+      "faang": 0.85,
+      "mid": 0.8,
+      "startup": 0.7
+    },
+    "title": "Min Cost Climbing Stairs",
+    "slug": "min-cost-climbing-stairs"
+  },
+  {
+    "id": 752,
+    "primary_topic": "Graphs",
+    "primary_subtopic": {
+      "name": "BFS Shortest Path (Unweighted)",
+      "weight": 0.8
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Frequency Counting / Hash Map Lookup",
+        "weight": 0.2
+      }
+    ],
+    "difficulty": 1877.56,
+    "importance": 0.88,
+    "interview_plausibility": 0.9,
+    "company_plausibility": {
+      "quant": 0.55,
+      "faang": 0.9,
+      "mid": 0.75,
+      "startup": 0.6
+    },
+    "title": "Open the Lock",
+    "slug": "open-the-lock"
+  },
+  {
+    "id": 875,
+    "primary_topic": "Binary Search",
+    "primary_subtopic": {
+      "name": "Binary Search on Answer Space",
+      "weight": 0.9
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Frequency Counting / Hash Map Lookup",
+        "weight": 0.1
+      }
+    ],
+    "difficulty": 1765.57,
+    "importance": 0.88,
+    "interview_plausibility": 0.88,
+    "company_plausibility": {
+      "quant": 0.55,
+      "faang": 0.9,
+      "mid": 0.75,
+      "startup": 0.55
+    },
+    "title": "Koko Eating Bananas",
+    "slug": "koko-eating-bananas"
+  },
+  {
+    "id": 981,
+    "primary_topic": "Binary Search",
+    "primary_subtopic": {
+      "name": "Boundary Finding (Bisect Left/Right)",
+      "weight": 0.55
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Frequency Counting / Hash Map Lookup",
+        "weight": 0.45
+      }
+    ],
+    "difficulty": 1574.75,
+    "importance": 0.88,
+    "interview_plausibility": 0.88,
+    "company_plausibility": {
+      "quant": 0.55,
+      "faang": 0.9,
+      "mid": 0.75,
+      "startup": 0.6
+    },
+    "difficulty_llm": 1575,
+    "title": "Time Based Key-Value Store",
+    "slug": "time-based-key-value-store"
+  },
+  {
+    "id": 1004,
+    "primary_topic": "Sliding Window",
+    "primary_subtopic": {
+      "name": "Variable-Size Window (Expand/Contract)",
+      "weight": 0.85
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Two Pointers",
+        "name": "Same-Direction (Fast/Slow on Arrays)",
+        "weight": 0.15
+      }
+    ],
+    "difficulty": 1655.64,
+    "importance": 0.88,
+    "interview_plausibility": 0.9,
+    "company_plausibility": {
+      "quant": 0.45,
+      "faang": 0.9,
+      "mid": 0.8,
+      "startup": 0.65
+    },
+    "difficulty_llm": 1656,
+    "title": "Max Consecutive Ones III",
+    "slug": "max-consecutive-ones-iii"
+  },
+  {
+    "id": 1851,
+    "primary_topic": "Intervals",
+    "primary_subtopic": {
+      "name": "Sweep Line / Meeting Rooms",
+      "weight": 0.3
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Sorting + Comparison",
+        "weight": 0.3
+      },
+      {
+        "name": "Heap Simulation",
+        "weight": 0.4,
+        "topic": "Heap / Priority Queue"
+      }
+    ],
+    "difficulty": 2286.14,
+    "importance": 0.88,
+    "interview_plausibility": 0.62,
+    "company_plausibility": {
+      "quant": 0.55,
+      "faang": 0.72,
+      "mid": 0.35,
+      "startup": 0.22
+    },
+    "difficulty_llm": 2286,
+    "title": "Minimum Interval to Include Each Query",
+    "slug": "minimum-interval-to-include-each-query"
+  },
+  {
+    "id": 1926,
+    "primary_topic": "Graphs",
+    "primary_subtopic": {
+      "name": "BFS Shortest Path (Unweighted)",
+      "weight": 0.85
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Matrix Traversal (Diagonal, Valid Sudoku, etc)",
+        "weight": 0.15
+      }
+    ],
+    "difficulty": 1638.31,
+    "importance": 0.88,
+    "interview_plausibility": 0.9,
+    "company_plausibility": {
+      "quant": 0.35,
+      "faang": 0.85,
+      "mid": 0.8,
+      "startup": 0.65
+    },
+    "difficulty_llm": 1638,
+    "title": "Nearest Exit from Entrance in Maze",
+    "slug": "nearest-exit-from-entrance-in-maze"
+  },
+  {
+    "id": 74,
+    "primary_topic": "Binary Search",
+    "primary_subtopic": {
+      "name": "Standard Binary Search",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1257,
+    "importance": 0.87,
+    "interview_plausibility": 0.9,
+    "company_plausibility": {
+      "quant": 0.6,
+      "faang": 0.92,
+      "mid": 0.85,
+      "startup": 0.72
+    },
+    "title": "Search a 2D Matrix",
+    "slug": "search-a-2d-matrix"
+  },
+  {
+    "id": 79,
+    "primary_topic": "Backtracking",
+    "primary_subtopic": {
+      "name": "Path Finding with Backtracking",
+      "weight": 0.7
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Matrix Traversal (Diagonal, Valid Sudoku, etc)",
+        "weight": 0.3
+      }
+    ],
+    "difficulty": 1457,
+    "importance": 0.87,
+    "interview_plausibility": 0.88,
+    "company_plausibility": {
+      "quant": 0.45,
+      "faang": 0.9,
+      "mid": 0.75,
+      "startup": 0.55
+    },
+    "title": "Word Search",
+    "slug": "word-search"
+  },
+  {
+    "id": 209,
+    "primary_topic": "Sliding Window",
+    "primary_subtopic": {
+      "name": "Variable-Size Window (Expand/Contract)",
+      "weight": 0.75
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Binary Search",
+        "name": "Binary Search on Answer Space",
+        "weight": 0.15
+      },
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Prefix Sums",
+        "weight": 0.1
+      }
+    ],
+    "difficulty": 1325,
+    "importance": 0.87,
+    "interview_plausibility": 0.88,
+    "company_plausibility": {
+      "quant": 0.45,
+      "faang": 0.88,
+      "mid": 0.72,
+      "startup": 0.55
+    },
+    "title": "Minimum Size Subarray Sum",
+    "slug": "minimum-size-subarray-sum"
+  },
+  {
+    "id": 236,
+    "primary_topic": "Trees",
+    "primary_subtopic": {
+      "name": "Lowest Common Ancestor",
+      "weight": 0.7
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Trees",
+        "name": "DFS Traversal (Inorder, Preorder, Postorder)",
+        "weight": 0.3
+      }
+    ],
+    "difficulty": 1387,
+    "importance": 0.87,
+    "interview_plausibility": 0.93,
+    "company_plausibility": {
+      "quant": 0.5,
+      "faang": 0.92,
+      "mid": 0.85,
+      "startup": 0.72
+    },
+    "title": "Lowest Common Ancestor of a Binary Tree",
+    "slug": "lowest-common-ancestor-of-a-binary-tree"
+  },
+  {
+    "id": 261,
+    "primary_topic": "Graphs",
+    "primary_subtopic": {
+      "name": "Union-Find",
+      "weight": 0.45
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Graphs",
+        "name": "DFS Connected Components",
+        "weight": 0.35
+      },
+      {
+        "topic": "Graphs",
+        "name": "BFS Shortest Path (Unweighted)",
+        "weight": 0.2
+      }
+    ],
+    "difficulty": 1398,
+    "importance": 0.87,
+    "interview_plausibility": 0.9,
+    "company_plausibility": {
+      "quant": 0.4,
+      "faang": 0.9,
+      "mid": 0.7,
+      "startup": 0.45
+    },
+    "title": "Graph Valid Tree",
+    "slug": "graph-valid-tree"
+  },
+  {
+    "id": 304,
+    "primary_topic": "Arrays & Hashing",
+    "primary_subtopic": {
+      "name": "Prefix Sums",
+      "weight": 0.85
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Matrix Traversal (Diagonal, Valid Sudoku, etc)",
+        "weight": 0.15
+      }
+    ],
+    "difficulty": 1407,
+    "importance": 0.87,
+    "interview_plausibility": 0.78,
+    "company_plausibility": {
+      "quant": 0.6,
+      "faang": 0.8,
+      "mid": 0.7,
+      "startup": 0.5
+    },
+    "title": "Range Sum Query 2D - Immutable",
+    "slug": "range-sum-query-2d-immutable"
+  },
+  {
+    "id": 1482,
+    "primary_topic": "Binary Search",
+    "primary_subtopic": {
+      "name": "Binary Search on Answer Space",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1945.51,
+    "importance": 0.87,
+    "interview_plausibility": 0.82,
+    "company_plausibility": {
+      "quant": 0.55,
+      "faang": 0.8,
+      "mid": 0.65,
+      "startup": 0.45
+    },
+    "difficulty_llm": 1946,
+    "title": "Minimum Number of Days to Make m Bouquets",
+    "slug": "minimum-number-of-days-to-make-m-bouquets"
+  },
+  {
+    "id": 45,
+    "primary_topic": "Greedy",
+    "primary_subtopic": {
+      "name": "General Greedy (Greedy is main insight)",
+      "weight": 0.7
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Core DP",
+        "name": "Linear Recurrence DP",
+        "weight": 0.3
+      }
+    ],
+    "difficulty": 1432,
+    "importance": 0.86,
+    "interview_plausibility": 0.88,
+    "company_plausibility": {
+      "quant": 0.55,
+      "faang": 0.88,
+      "mid": 0.75,
+      "startup": 0.6
+    },
+    "title": "Jump Game II",
+    "slug": "jump-game-ii"
+  },
+  {
+    "id": 55,
+    "primary_topic": "Greedy",
+    "primary_subtopic": {
+      "name": "General Greedy (Greedy is main insight)",
+      "weight": 0.7
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Core DP",
+        "name": "Linear Recurrence DP",
+        "weight": 0.3
+      }
+    ],
+    "difficulty": 1307,
+    "importance": 0.86,
+    "interview_plausibility": 0.88,
+    "company_plausibility": {
+      "quant": 0.55,
+      "faang": 0.9,
+      "mid": 0.82,
+      "startup": 0.7
+    },
+    "title": "Jump Game",
+    "slug": "jump-game"
+  },
+  {
+    "id": 152,
+    "primary_topic": "Core DP",
+    "primary_subtopic": {
+      "name": "Linear Recurrence DP",
+      "weight": 0.7
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Kadane's Algorithm (Max Subarray)",
+        "weight": 0.3
+      }
+    ],
+    "difficulty": 1438,
+    "importance": 0.86,
+    "interview_plausibility": 0.85,
+    "company_plausibility": {
+      "quant": 0.55,
+      "faang": 0.88,
+      "mid": 0.72,
+      "startup": 0.5
+    },
+    "title": "Maximum Product Subarray",
+    "slug": "maximum-product-subarray"
+  },
+  {
+    "id": 230,
+    "primary_topic": "Trees",
+    "primary_subtopic": {
+      "name": "DFS Traversal (Inorder, Preorder, Postorder)",
+      "weight": 0.65
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Trees",
+        "name": "BST Operations (Insert, Delete, Validate)",
+        "weight": 0.35
+      }
+    ],
+    "difficulty": 1277,
+    "importance": 0.86,
+    "interview_plausibility": 0.91,
+    "company_plausibility": {
+      "quant": 0.5,
+      "faang": 0.9,
+      "mid": 0.82,
+      "startup": 0.7
+    },
+    "title": "Kth Smallest Element in a BST",
+    "slug": "kth-smallest-element-in-a-bst"
+  },
+  {
+    "id": 438,
+    "primary_topic": "Sliding Window",
+    "primary_subtopic": {
+      "name": "Fixed-Size Window",
+      "weight": 0.6
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Frequency Counting / Hash Map Lookup",
+        "weight": 0.4
+      }
+    ],
+    "difficulty": 1358,
+    "importance": 0.86,
+    "interview_plausibility": 0.9,
+    "company_plausibility": {
+      "quant": 0.5,
+      "faang": 0.88,
+      "mid": 0.78,
+      "startup": 0.65
+    },
+    "title": "Find All Anagrams in a String",
+    "slug": "find-all-anagrams-in-a-string"
+  },
+  {
+    "id": 567,
+    "primary_topic": "Sliding Window",
+    "primary_subtopic": {
+      "name": "Fixed-Size Window",
+      "weight": 0.6
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Frequency Counting / Hash Map Lookup",
+        "weight": 0.4
+      }
+    ],
+    "difficulty": 1368,
+    "importance": 0.86,
+    "interview_plausibility": 0.9,
+    "company_plausibility": {
+      "quant": 0.5,
+      "faang": 0.88,
+      "mid": 0.75,
+      "startup": 0.55
+    },
+    "title": "Permutation in String",
+    "slug": "permutation-in-string"
+  },
+  {
+    "id": 22,
+    "primary_topic": "Backtracking",
+    "primary_subtopic": {
+      "name": "Combinations / Subsets",
+      "weight": 0.75
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Core DP",
+        "name": "Linear Recurrence DP",
+        "weight": 0.25
+      }
+    ],
+    "difficulty": 1375,
+    "importance": 0.85,
+    "interview_plausibility": 0.9,
+    "company_plausibility": {
+      "quant": 0.55,
+      "faang": 0.9,
+      "mid": 0.8,
+      "startup": 0.65
+    },
+    "title": "Generate Parentheses",
+    "slug": "generate-parentheses"
+  },
+  {
+    "id": 35,
+    "primary_topic": "Binary Search",
+    "primary_subtopic": {
+      "name": "Boundary Finding (Bisect Left/Right)",
+      "weight": 0.7
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Binary Search",
+        "name": "Standard Binary Search",
+        "weight": 0.3
+      }
+    ],
+    "difficulty": 1112,
+    "importance": 0.85,
+    "interview_plausibility": 0.8,
+    "company_plausibility": {
+      "quant": 0.45,
+      "faang": 0.75,
+      "mid": 0.78,
+      "startup": 0.72
+    },
+    "title": "Search Insert Position",
+    "slug": "search-insert-position"
+  },
+  {
+    "id": 125,
+    "primary_topic": "Two Pointers",
+    "primary_subtopic": {
+      "name": "Opposite-Direction (Converging)",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1045,
+    "importance": 0.85,
+    "interview_plausibility": 0.88,
+    "company_plausibility": {
+      "quant": 0.4,
+      "faang": 0.85,
+      "mid": 0.82,
+      "startup": 0.75
+    },
+    "title": "Valid Palindrome",
+    "slug": "valid-palindrome"
+  },
+  {
+    "id": 131,
+    "primary_topic": "Backtracking",
+    "primary_subtopic": {
+      "name": "String Partitioning (Palindrome Partitioning)",
+      "weight": 0.7
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Core DP",
+        "name": "Word Break / String DP",
+        "weight": 0.3
+      }
+    ],
+    "difficulty": 1548,
+    "importance": 0.85,
+    "interview_plausibility": 0.8,
+    "company_plausibility": {
+      "quant": 0.4,
+      "faang": 0.82,
+      "mid": 0.6,
+      "startup": 0.4
+    },
+    "title": "Palindrome Partitioning",
+    "slug": "palindrome-partitioning"
+  },
+  {
+    "id": 143,
+    "primary_topic": "Linked List",
+    "primary_subtopic": {
+      "name": "Reversal (Full and Partial)",
+      "weight": 0.45
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Linked List",
+        "name": "Fast/Slow Pointers (Cycle, Middle)",
+        "weight": 0.3
+      },
+      {
+        "topic": "Linked List",
+        "name": "Merge Linked Lists",
+        "weight": 0.25
+      }
+    ],
+    "difficulty": 1487,
+    "importance": 0.85,
+    "interview_plausibility": 0.88,
+    "company_plausibility": {
+      "quant": 0.4,
+      "faang": 0.88,
+      "mid": 0.72,
+      "startup": 0.55
+    },
+    "title": "Reorder List",
+    "slug": "reorder-list"
+  },
+  {
+    "id": 199,
+    "primary_topic": "Trees",
+    "primary_subtopic": {
+      "name": "BFS / Level-Order Traversal",
+      "weight": 0.65
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Trees",
+        "name": "DFS Traversal (Inorder, Preorder, Postorder)",
+        "weight": 0.35
+      }
+    ],
+    "difficulty": 1337,
+    "importance": 0.85,
+    "interview_plausibility": 0.88,
+    "company_plausibility": {
+      "quant": 0.4,
+      "faang": 0.88,
+      "mid": 0.75,
+      "startup": 0.6
+    },
+    "title": "Binary Tree Right Side View",
+    "slug": "binary-tree-right-side-view"
+  },
+  {
+    "id": 235,
+    "primary_topic": "Trees",
+    "primary_subtopic": {
+      "name": "Lowest Common Ancestor",
+      "weight": 0.65
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Trees",
+        "name": "BST Operations (Insert, Delete, Validate)",
+        "weight": 0.35
+      }
+    ],
+    "difficulty": 1222,
+    "importance": 0.85,
+    "interview_plausibility": 0.92,
+    "company_plausibility": {
+      "quant": 0.45,
+      "faang": 0.9,
+      "mid": 0.82,
+      "startup": 0.7
+    },
+    "title": "Lowest Common Ancestor of a Binary Search Tree",
+    "slug": "lowest-common-ancestor-of-a-binary-search-tree"
+  },
+  {
+    "id": 417,
+    "primary_topic": "Graphs",
+    "primary_subtopic": {
+      "name": "DFS Connected Components",
+      "weight": 0.55
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Graphs",
+        "name": "Multi-Source BFS",
+        "weight": 0.3
+      },
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Matrix Traversal (Diagonal, Valid Sudoku, etc)",
+        "weight": 0.15
+      }
+    ],
+    "difficulty": 1573,
+    "importance": 0.85,
+    "interview_plausibility": 0.83,
+    "company_plausibility": {
+      "quant": 0.4,
+      "faang": 0.88,
+      "mid": 0.7,
+      "startup": 0.45
+    },
+    "title": "Pacific Atlantic Water Flow",
+    "slug": "pacific-atlantic-water-flow"
+  },
+  {
+    "id": 547,
+    "primary_topic": "Graphs",
+    "primary_subtopic": {
+      "name": "DFS Connected Components",
+      "weight": 0.5
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Graphs",
+        "name": "Union-Find",
+        "weight": 0.3
+      },
+      {
+        "topic": "Graphs",
+        "name": "BFS Shortest Path (Unweighted)",
+        "weight": 0.2
+      }
+    ],
+    "difficulty": 1281,
+    "importance": 0.85,
+    "interview_plausibility": 0.88,
+    "company_plausibility": {
+      "quant": 0.4,
+      "faang": 0.85,
+      "mid": 0.75,
+      "startup": 0.6
+    },
+    "title": "Number of Provinces",
+    "slug": "number-of-provinces"
+  },
+  {
+    "id": 695,
+    "primary_topic": "Graphs",
+    "primary_subtopic": {
+      "name": "DFS Connected Components",
+      "weight": 0.85
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Matrix Traversal (Diagonal, Valid Sudoku, etc)",
+        "weight": 0.15
+      }
+    ],
+    "difficulty": 1280,
+    "importance": 0.85,
+    "interview_plausibility": 0.9,
+    "company_plausibility": {
+      "quant": 0.3,
+      "faang": 0.88,
+      "mid": 0.78,
+      "startup": 0.7
+    },
+    "title": "Max Area of Island",
+    "slug": "max-area-of-island"
+  },
+  {
+    "id": 763,
+    "primary_topic": "Intervals",
+    "primary_subtopic": {
+      "name": "Interval Merging",
+      "weight": 0.33
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Frequency Counting / Hash Map Lookup",
+        "weight": 0.2
+      },
+      {
+        "topic": "Two Pointers",
+        "name": "Same-Direction (Fast/Slow on Arrays)",
+        "weight": 0.13
+      },
+      {
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.33,
+        "topic": "Greedy"
+      }
+    ],
+    "difficulty": 1443.07,
+    "importance": 0.85,
+    "interview_plausibility": 0.88,
+    "company_plausibility": {
+      "quant": 0.4,
+      "faang": 0.88,
+      "mid": 0.75,
+      "startup": 0.65
+    },
+    "title": "Partition Labels",
+    "slug": "partition-labels"
+  },
+  {
+    "id": 5,
+    "primary_topic": "Two Pointers",
+    "primary_subtopic": {
+      "name": "Opposite-Direction (Converging)",
+      "weight": 0.55
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Core DP",
+        "name": "Word Break / String DP",
+        "weight": 0.45
+      }
+    ],
+    "difficulty": 1458,
+    "importance": 0.84,
+    "interview_plausibility": 0.87,
+    "company_plausibility": {
+      "quant": 0.6,
+      "faang": 0.9,
+      "mid": 0.78,
+      "startup": 0.65
+    },
+    "title": "Longest Palindromic Substring",
+    "slug": "longest-palindromic-substring"
+  },
+  {
+    "id": 64,
+    "primary_topic": "Core DP",
+    "primary_subtopic": {
+      "name": "Grid Path Problems",
+      "weight": 0.9
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Matrix Traversal (Diagonal, Valid Sudoku, etc)",
+        "weight": 0.1
+      }
+    ],
+    "difficulty": 1279,
+    "importance": 0.84,
+    "interview_plausibility": 0.87,
+    "company_plausibility": {
+      "quant": 0.55,
+      "faang": 0.88,
+      "mid": 0.82,
+      "startup": 0.68
+    },
+    "title": "Minimum Path Sum",
+    "slug": "minimum-path-sum"
+  },
+  {
+    "id": 90,
+    "primary_topic": "Backtracking",
+    "primary_subtopic": {
+      "name": "Combinations / Subsets",
+      "weight": 0.8
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Sorting + Comparison",
+        "weight": 0.2
+      }
+    ],
+    "difficulty": 1361,
+    "importance": 0.84,
+    "interview_plausibility": 0.86,
+    "company_plausibility": {
+      "quant": 0.45,
+      "faang": 0.85,
+      "mid": 0.72,
+      "startup": 0.55
+    },
+    "title": "Subsets II",
+    "slug": "subsets-ii"
+  },
+  {
+    "id": 150,
+    "primary_topic": "Stack",
+    "primary_subtopic": {
+      "name": "Stack-Based Simulation",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1264,
+    "importance": 0.84,
+    "interview_plausibility": 0.87,
+    "company_plausibility": {
+      "quant": 0.5,
+      "faang": 0.85,
+      "mid": 0.75,
+      "startup": 0.6
+    },
+    "title": "Evaluate Reverse Polish Notation",
+    "slug": "evaluate-reverse-polish-notation"
+  },
+  {
+    "id": 309,
+    "primary_topic": "Core DP",
+    "primary_subtopic": {
+      "name": "Linear Recurrence DP",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1538,
+    "importance": 0.84,
+    "interview_plausibility": 0.8,
+    "company_plausibility": {
+      "quant": 0.65,
+      "faang": 0.85,
+      "mid": 0.7,
+      "startup": 0.5
+    },
+    "title": "Best Time to Buy and Sell Stock with Cooldown",
+    "slug": "best-time-to-buy-and-sell-stock-with-cooldown"
+  },
+  {
+    "id": 40,
+    "primary_topic": "Backtracking",
+    "primary_subtopic": {
+      "name": "Combinations / Subsets",
+      "weight": 0.85
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Sorting + Comparison",
+        "weight": 0.15
+      }
+    ],
+    "difficulty": 1403,
+    "importance": 0.83,
+    "interview_plausibility": 0.87,
+    "company_plausibility": {
+      "quant": 0.45,
+      "faang": 0.85,
+      "mid": 0.75,
+      "startup": 0.6
+    },
+    "title": "Combination Sum II",
+    "slug": "combination-sum-ii"
+  },
+  {
+    "id": 57,
+    "primary_topic": "Intervals",
+    "primary_subtopic": {
+      "name": "Interval Merging",
+      "weight": 0.75
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Binary Search",
+        "name": "Boundary Finding (Bisect Left/Right)",
+        "weight": 0.25
+      }
+    ],
+    "difficulty": 1420,
+    "importance": 0.83,
+    "interview_plausibility": 0.86,
+    "company_plausibility": {
+      "quant": 0.55,
+      "faang": 0.88,
+      "mid": 0.78,
+      "startup": 0.62
+    },
+    "title": "Insert Interval",
+    "slug": "insert-interval"
+  },
+  {
+    "id": 91,
+    "primary_topic": "Core DP",
+    "primary_subtopic": {
+      "name": "Linear Recurrence DP",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1414,
+    "importance": 0.83,
+    "interview_plausibility": 0.87,
+    "company_plausibility": {
+      "quant": 0.55,
+      "faang": 0.88,
+      "mid": 0.75,
+      "startup": 0.52
+    },
+    "title": "Decode Ways",
+    "slug": "decode-ways"
+  },
+  {
+    "id": 130,
+    "primary_topic": "Graphs",
+    "primary_subtopic": {
+      "name": "DFS Connected Components",
+      "weight": 0.65
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Matrix Traversal (Diagonal, Valid Sudoku, etc)",
+        "weight": 0.2
+      },
+      {
+        "topic": "Graphs",
+        "name": "Union-Find",
+        "weight": 0.15
+      }
+    ],
+    "difficulty": 1468,
+    "importance": 0.83,
+    "interview_plausibility": 0.82,
+    "company_plausibility": {
+      "quant": 0.4,
+      "faang": 0.82,
+      "mid": 0.65,
+      "startup": 0.45
+    },
+    "title": "Surrounded Regions",
+    "slug": "surrounded-regions"
+  },
+  {
+    "id": 133,
+    "primary_topic": "Graphs",
+    "primary_subtopic": {
+      "name": "DFS Connected Components",
+      "weight": 0.6
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Frequency Counting / Hash Map Lookup",
+        "weight": 0.4
+      }
+    ],
+    "difficulty": 1341,
+    "importance": 0.83,
+    "interview_plausibility": 0.85,
+    "company_plausibility": {
+      "quant": 0.4,
+      "faang": 0.85,
+      "mid": 0.7,
+      "startup": 0.5
+    },
+    "title": "Clone Graph",
+    "slug": "clone-graph"
+  },
+  {
+    "id": 394,
+    "primary_topic": "Stack",
+    "primary_subtopic": {
+      "name": "Stack-Based Simulation",
+      "weight": 0.85
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Trees",
+        "name": "DFS Traversal (Inorder, Preorder, Postorder)",
+        "weight": 0.15
+      }
+    ],
+    "difficulty": 1399,
+    "importance": 0.83,
+    "interview_plausibility": 0.9,
+    "company_plausibility": {
+      "quant": 0.4,
+      "faang": 0.88,
+      "mid": 0.8,
+      "startup": 0.65
+    },
+    "title": "Decode String",
+    "slug": "decode-string"
+  },
+  {
+    "id": 721,
+    "primary_topic": "Graphs",
+    "primary_subtopic": {
+      "name": "Union-Find",
+      "weight": 0.6
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Graphs",
+        "name": "DFS Connected Components",
+        "weight": 0.25
+      },
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Frequency Counting / Hash Map Lookup",
+        "weight": 0.15
+      }
+    ],
+    "difficulty": 1638,
+    "importance": 0.83,
+    "interview_plausibility": 0.82,
+    "company_plausibility": {
+      "quant": 0.38,
+      "faang": 0.85,
+      "mid": 0.65,
+      "startup": 0.45
+    },
+    "title": "Accounts Merge",
+    "slug": "accounts-merge"
+  },
+  {
+    "id": 904,
+    "primary_topic": "Sliding Window",
+    "primary_subtopic": {
+      "name": "Variable-Size Window (Expand/Contract)",
+      "weight": 0.75
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Frequency Counting / Hash Map Lookup",
+        "weight": 0.25
+      }
+    ],
+    "difficulty": 1516.41,
+    "importance": 0.83,
+    "interview_plausibility": 0.8,
+    "company_plausibility": {
+      "quant": 0.35,
+      "faang": 0.82,
+      "mid": 0.75,
+      "startup": 0.65
+    },
+    "title": "Fruit Into Baskets",
+    "slug": "fruit-into-baskets"
+  },
+  {
+    "id": 1235,
+    "primary_topic": "Core DP",
+    "primary_subtopic": {
+      "name": "Linear Recurrence DP",
+      "weight": 0.45
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Binary Search",
+        "name": "Boundary Finding (Bisect Left/Right)",
+        "weight": 0.25
+      },
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Sorting + Comparison",
+        "weight": 0.3
+      }
+    ],
+    "difficulty": 2022.85,
+    "importance": 0.83,
+    "interview_plausibility": 0.74,
+    "company_plausibility": {
+      "quant": 0.65,
+      "faang": 0.82,
+      "mid": 0.55,
+      "startup": 0.3
+    },
+    "difficulty_llm": 2023,
+    "title": "Maximum Profit in Job Scheduling",
+    "slug": "maximum-profit-in-job-scheduling"
+  },
+  {
+    "id": 4,
+    "primary_topic": "Binary Search",
+    "primary_subtopic": {
+      "name": "Standard Binary Search",
+      "weight": 0.75
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Two Pointers",
+        "name": "Same-Direction (Fast/Slow on Arrays)",
+        "weight": 0.25
+      }
+    ],
+    "difficulty": 2078,
+    "importance": 0.82,
+    "interview_plausibility": 0.62,
+    "company_plausibility": {
+      "quant": 0.8,
+      "faang": 0.75,
+      "mid": 0.4,
+      "startup": 0.25
+    },
+    "title": "Median of Two Sorted Arrays",
+    "slug": "median-of-two-sorted-arrays"
+  },
+  {
+    "id": 19,
+    "primary_topic": "Linked List",
+    "primary_subtopic": {
+      "name": "Fast/Slow Pointers (Cycle, Middle)",
+      "weight": 0.65
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Two Pointers",
+        "name": "Same-Direction (Fast/Slow on Arrays)",
+        "weight": 0.35
+      }
+    ],
+    "difficulty": 1207,
+    "importance": 0.82,
+    "interview_plausibility": 0.9,
+    "company_plausibility": {
+      "quant": 0.5,
+      "faang": 0.88,
+      "mid": 0.82,
+      "startup": 0.72
+    },
+    "title": "Remove Nth Node From End of List",
+    "slug": "remove-nth-node-from-end-of-list"
+  },
+  {
+    "id": 26,
+    "primary_topic": "Two Pointers",
+    "primary_subtopic": {
+      "name": "Same-Direction (Fast/Slow on Arrays)",
+      "weight": 0.75
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Sorting + Comparison",
+        "weight": 0.25
+      }
+    ],
+    "difficulty": 1102,
+    "importance": 0.82,
+    "interview_plausibility": 0.78,
+    "company_plausibility": {
+      "quant": 0.35,
+      "faang": 0.72,
+      "mid": 0.75,
+      "startup": 0.68
+    },
+    "title": "Remove Duplicates from Sorted Array",
+    "slug": "remove-duplicates-from-sorted-array"
+  },
+  {
+    "id": 41,
+    "primary_topic": "Arrays & Hashing",
+    "primary_subtopic": {
+      "name": "Frequency Counting / Hash Map Lookup",
+      "weight": 0.7
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Sorting + Comparison",
+        "weight": 0.3
+      }
+    ],
+    "difficulty": 1737,
+    "importance": 0.82,
+    "interview_plausibility": 0.78,
+    "company_plausibility": {
+      "quant": 0.6,
+      "faang": 0.85,
+      "mid": 0.62,
+      "startup": 0.45
+    },
+    "title": "First Missing Positive",
+    "slug": "first-missing-positive"
+  },
+  {
+    "id": 47,
+    "primary_topic": "Backtracking",
+    "primary_subtopic": {
+      "name": "Permutations",
+      "weight": 0.8
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Frequency Counting / Hash Map Lookup",
+        "weight": 0.1
+      },
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Sorting + Comparison",
+        "weight": 0.1
+      }
+    ],
+    "difficulty": 1408,
+    "importance": 0.82,
+    "interview_plausibility": 0.86,
+    "company_plausibility": {
+      "quant": 0.5,
+      "faang": 0.85,
+      "mid": 0.75,
+      "startup": 0.6
+    },
+    "title": "Permutations II",
+    "slug": "permutations-ii"
+  },
+  {
+    "id": 51,
+    "primary_topic": "Backtracking",
+    "primary_subtopic": {
+      "name": "Constraint Satisfaction (N-Queens)",
+      "weight": 0.85
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Matrix Traversal (Diagonal, Valid Sudoku, etc)",
+        "weight": 0.15
+      }
+    ],
+    "difficulty": 1697,
+    "importance": 0.82,
+    "interview_plausibility": 0.72,
+    "company_plausibility": {
+      "quant": 0.45,
+      "faang": 0.78,
+      "mid": 0.55,
+      "startup": 0.35
+    },
+    "title": "N-Queens",
+    "slug": "n-queens"
+  },
+  {
+    "id": 88,
+    "primary_topic": "Two Pointers",
+    "primary_subtopic": {
+      "name": "Same-Direction (Fast/Slow on Arrays)",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1101,
+    "importance": 0.82,
+    "interview_plausibility": 0.85,
+    "company_plausibility": {
+      "quant": 0.4,
+      "faang": 0.82,
+      "mid": 0.8,
+      "startup": 0.72
+    },
+    "title": "Merge Sorted Array",
+    "slug": "merge-sorted-array"
+  },
+  {
+    "id": 92,
+    "primary_topic": "Linked List",
+    "primary_subtopic": {
+      "name": "Reversal (Full and Partial)",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1418,
+    "importance": 0.82,
+    "interview_plausibility": 0.84,
+    "company_plausibility": {
+      "quant": 0.35,
+      "faang": 0.82,
+      "mid": 0.72,
+      "startup": 0.5
+    },
+    "title": "Reverse Linked List II",
+    "slug": "reverse-linked-list-ii"
+  },
+  {
+    "id": 110,
+    "primary_topic": "Trees",
+    "primary_subtopic": {
+      "name": "DFS Traversal (Inorder, Preorder, Postorder)",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1161,
+    "importance": 0.82,
+    "interview_plausibility": 0.85,
+    "company_plausibility": {
+      "quant": 0.35,
+      "faang": 0.82,
+      "mid": 0.78,
+      "startup": 0.65
+    },
+    "title": "Balanced Binary Tree",
+    "slug": "balanced-binary-tree"
+  },
+  {
+    "id": 115,
+    "primary_topic": "Core DP",
+    "primary_subtopic": {
+      "name": "Two Sequence DP (LCS, Edit distance)",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1727,
+    "importance": 0.82,
+    "interview_plausibility": 0.76,
+    "company_plausibility": {
+      "quant": 0.55,
+      "faang": 0.78,
+      "mid": 0.58,
+      "startup": 0.35
+    },
+    "title": "Distinct Subsequences",
+    "slug": "distinct-subsequences"
+  },
+  {
+    "id": 122,
+    "primary_topic": "Greedy",
+    "primary_subtopic": {
+      "name": "General Greedy (Greedy is main insight)",
+      "weight": 0.7
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Core DP",
+        "name": "Linear Recurrence DP",
+        "weight": 0.3
+      }
+    ],
+    "difficulty": 1197,
+    "importance": 0.82,
+    "interview_plausibility": 0.83,
+    "company_plausibility": {
+      "quant": 0.5,
+      "faang": 0.82,
+      "mid": 0.75,
+      "startup": 0.65
+    },
+    "title": "Best Time to Buy and Sell Stock II",
+    "slug": "best-time-to-buy-and-sell-stock-ii"
+  },
+  {
+    "id": 127,
+    "primary_topic": "Graphs",
+    "primary_subtopic": {
+      "name": "BFS Shortest Path (Unweighted)",
+      "weight": 0.7
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Frequency Counting / Hash Map Lookup",
+        "weight": 0.3
+      }
+    ],
+    "difficulty": 1637,
+    "importance": 0.82,
+    "interview_plausibility": 0.72,
+    "company_plausibility": {
+      "quant": 0.45,
+      "faang": 0.78,
+      "mid": 0.55,
+      "startup": 0.35
+    },
+    "title": "Word Ladder",
+    "slug": "word-ladder"
+  },
+  {
+    "id": 134,
+    "primary_topic": "Greedy",
+    "primary_subtopic": {
+      "name": "General Greedy (Greedy is main insight)",
+      "weight": 0.7
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Prefix Sums",
+        "weight": 0.3
+      }
+    ],
+    "difficulty": 1576,
+    "importance": 0.82,
+    "interview_plausibility": 0.78,
+    "company_plausibility": {
+      "quant": 0.5,
+      "faang": 0.8,
+      "mid": 0.6,
+      "startup": 0.4
+    },
+    "title": "Gas Station",
+    "slug": "gas-station"
+  },
+  {
+    "id": 138,
+    "primary_topic": "Arrays & Hashing",
+    "primary_subtopic": {
+      "name": "Frequency Counting / Hash Map Lookup",
+      "weight": 0.55
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Linked List",
+        "name": "Merge Linked Lists",
+        "weight": 0.45
+      }
+    ],
+    "difficulty": 1478,
+    "importance": 0.82,
+    "interview_plausibility": 0.85,
+    "company_plausibility": {
+      "quant": 0.45,
+      "faang": 0.88,
+      "mid": 0.7,
+      "startup": 0.5
+    },
+    "title": "Copy List with Random Pointer",
+    "slug": "copy-list-with-random-pointer"
+  },
+  {
+    "id": 144,
+    "primary_topic": "Trees",
+    "primary_subtopic": {
+      "name": "DFS Traversal (Inorder, Preorder, Postorder)",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1028,
+    "importance": 0.82,
+    "interview_plausibility": 0.75,
+    "company_plausibility": {
+      "quant": 0.3,
+      "faang": 0.7,
+      "mid": 0.72,
+      "startup": 0.65
+    },
+    "title": "Binary Tree Preorder Traversal",
+    "slug": "binary-tree-preorder-traversal"
+  },
+  {
+    "id": 159,
+    "primary_topic": "Sliding Window",
+    "primary_subtopic": {
+      "name": "Variable-Size Window (Expand/Contract)",
+      "weight": 0.75
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Frequency Counting / Hash Map Lookup",
+        "weight": 0.25
+      }
+    ],
+    "difficulty": 1356,
+    "importance": 0.82,
+    "interview_plausibility": 0.85,
+    "company_plausibility": {
+      "quant": 0.4,
+      "faang": 0.82,
+      "mid": 0.65,
+      "startup": 0.45
+    },
+    "title": "Longest Substring with At Most Two Distinct Characters",
+    "slug": "longest-substring-with-at-most-two-distinct-characters"
+  },
+  {
+    "id": 162,
+    "primary_topic": "Binary Search",
+    "primary_subtopic": {
+      "name": "Standard Binary Search",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1307,
+    "importance": 0.82,
+    "interview_plausibility": 0.87,
+    "company_plausibility": {
+      "quant": 0.55,
+      "faang": 0.85,
+      "mid": 0.72,
+      "startup": 0.5
+    },
+    "title": "Find Peak Element",
+    "slug": "find-peak-element"
+  },
+  {
+    "id": 169,
+    "primary_topic": "Arrays & Hashing",
+    "primary_subtopic": {
+      "name": "Frequency Counting / Hash Map Lookup",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1052,
+    "importance": 0.82,
+    "interview_plausibility": 0.85,
+    "company_plausibility": {
+      "quant": 0.4,
+      "faang": 0.82,
+      "mid": 0.75,
+      "startup": 0.6
+    },
+    "title": "Majority Element",
+    "slug": "majority-element"
+  },
+  {
+    "id": 211,
+    "primary_topic": "Tries",
+    "primary_subtopic": {
+      "name": "Trie Construction / Prefix Search",
+      "weight": 0.7
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Backtracking",
+        "name": "Path Finding with Backtracking",
+        "weight": 0.3
+      }
+    ],
+    "difficulty": 1573,
+    "importance": 0.82,
+    "interview_plausibility": 0.83,
+    "company_plausibility": {
+      "quant": 0.3,
+      "faang": 0.85,
+      "mid": 0.6,
+      "startup": 0.4
+    },
+    "title": "Design Add and Search Words Data Structure",
+    "slug": "design-add-and-search-words-data-structure"
+  },
+  {
+    "id": 212,
+    "primary_topic": "Tries",
+    "primary_subtopic": {
+      "name": "Trie Construction / Prefix Search",
+      "weight": 0.65
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Backtracking",
+        "name": "Path Finding with Backtracking",
+        "weight": 0.35
+      }
+    ],
+    "difficulty": 1907,
+    "importance": 0.82,
+    "interview_plausibility": 0.72,
+    "company_plausibility": {
+      "quant": 0.3,
+      "faang": 0.78,
+      "mid": 0.45,
+      "startup": 0.25
+    },
+    "title": "Word Search II",
+    "slug": "word-search-ii"
+  },
+  {
+    "id": 217,
+    "primary_topic": "Arrays & Hashing",
+    "primary_subtopic": {
+      "name": "Frequency Counting / Hash Map Lookup",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 978,
+    "importance": 0.82,
+    "interview_plausibility": 0.72,
+    "company_plausibility": {
+      "quant": 0.25,
+      "faang": 0.65,
+      "mid": 0.7,
+      "startup": 0.7
+    },
+    "title": "Contains Duplicate",
+    "slug": "contains-duplicate"
+  },
+  {
+    "id": 242,
+    "primary_topic": "Arrays & Hashing",
+    "primary_subtopic": {
+      "name": "Frequency Counting / Hash Map Lookup",
+      "weight": 0.75
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Sorting + Comparison",
+        "weight": 0.25
+      }
+    ],
+    "difficulty": 1025,
+    "importance": 0.82,
+    "interview_plausibility": 0.88,
+    "company_plausibility": {
+      "quant": 0.35,
+      "faang": 0.82,
+      "mid": 0.8,
+      "startup": 0.78
+    },
+    "title": "Valid Anagram",
+    "slug": "valid-anagram"
+  },
+  {
+    "id": 252,
+    "primary_topic": "Intervals",
+    "primary_subtopic": {
+      "name": "Sweep Line / Meeting Rooms",
+      "weight": 0.65
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Sorting + Comparison",
+        "weight": 0.35
+      }
+    ],
+    "difficulty": 1124,
+    "importance": 0.82,
+    "interview_plausibility": 0.88,
+    "company_plausibility": {
+      "quant": 0.35,
+      "faang": 0.85,
+      "mid": 0.75,
+      "startup": 0.6
+    },
+    "title": "Meeting Rooms",
+    "slug": "meeting-rooms"
+  },
+  {
+    "id": 256,
+    "primary_topic": "Core DP",
+    "primary_subtopic": {
+      "name": "Linear Recurrence DP",
+      "weight": 0.85
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Frequency Counting / Hash Map Lookup",
+        "weight": 0.15
+      }
+    ],
+    "difficulty": 1283,
+    "importance": 0.82,
+    "interview_plausibility": 0.85,
+    "company_plausibility": {
+      "quant": 0.35,
+      "faang": 0.8,
+      "mid": 0.65,
+      "startup": 0.45
+    },
+    "title": "Paint House",
+    "slug": "paint-house"
+  },
+  {
+    "id": 271,
+    "primary_topic": "Arrays & Hashing",
+    "primary_subtopic": {
+      "name": "Frequency Counting / Hash Map Lookup",
+      "weight": 0.6
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Prefix Sums",
+        "weight": 0.4
+      }
+    ],
+    "difficulty": 1387,
+    "importance": 0.82,
+    "interview_plausibility": 0.88,
+    "company_plausibility": {
+      "quant": 0.3,
+      "faang": 0.88,
+      "mid": 0.65,
+      "startup": 0.45
+    },
+    "title": "Encode and Decode Strings",
+    "slug": "encode-and-decode-strings"
+  },
+  {
+    "id": 278,
+    "primary_topic": "Binary Search",
+    "primary_subtopic": {
+      "name": "Boundary Finding (Bisect Left/Right)",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1108,
+    "importance": 0.82,
+    "interview_plausibility": 0.75,
+    "company_plausibility": {
+      "quant": 0.4,
+      "faang": 0.7,
+      "mid": 0.75,
+      "startup": 0.65
+    },
+    "title": "First Bad Version",
+    "slug": "first-bad-version"
+  },
+  {
+    "id": 287,
+    "primary_topic": "Two Pointers",
+    "primary_subtopic": {
+      "name": "Same-Direction (Fast/Slow on Arrays)",
+      "weight": 0.5
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Binary Search",
+        "name": "Binary Search on Answer Space",
+        "weight": 0.3
+      },
+      {
+        "topic": "Linked List",
+        "name": "Fast/Slow Pointers (Cycle, Middle)",
+        "weight": 0.2
+      }
+    ],
+    "difficulty": 1551,
+    "importance": 0.82,
+    "interview_plausibility": 0.83,
+    "company_plausibility": {
+      "quant": 0.45,
+      "faang": 0.85,
+      "mid": 0.68,
+      "startup": 0.48
+    },
+    "title": "Find the Duplicate Number",
+    "slug": "find-the-duplicate-number"
+  },
+  {
+    "id": 310,
+    "primary_topic": "Graphs",
+    "primary_subtopic": {
+      "name": "Topological Sort",
+      "weight": 0.7
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Graphs",
+        "name": "BFS Shortest Path (Unweighted)",
+        "weight": 0.3
+      }
+    ],
+    "difficulty": 1748,
+    "importance": 0.82,
+    "interview_plausibility": 0.72,
+    "company_plausibility": {
+      "quant": 0.35,
+      "faang": 0.78,
+      "mid": 0.6,
+      "startup": 0.4
+    },
+    "title": "Minimum Height Trees",
+    "slug": "minimum-height-trees"
+  },
+  {
+    "id": 312,
+    "primary_topic": "Advanced DP",
+    "primary_subtopic": {
+      "name": "Interval DP",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 2073,
+    "importance": 0.82,
+    "interview_plausibility": 0.58,
+    "company_plausibility": {
+      "quant": 0.55,
+      "faang": 0.7,
+      "mid": 0.4,
+      "startup": 0.2
+    },
+    "title": "Burst Balloons",
+    "slug": "burst-balloons"
+  },
+  {
+    "id": 337,
+    "primary_topic": "Trees",
+    "primary_subtopic": {
+      "name": "DFS Traversal (Inorder, Preorder, Postorder)",
+      "weight": 0.5
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Core DP",
+        "name": "Linear Recurrence DP",
+        "weight": 0.5
+      }
+    ],
+    "difficulty": 1568,
+    "importance": 0.82,
+    "interview_plausibility": 0.78,
+    "company_plausibility": {
+      "quant": 0.4,
+      "faang": 0.8,
+      "mid": 0.65,
+      "startup": 0.45
+    },
+    "title": "House Robber III",
+    "slug": "house-robber-iii"
+  },
+  {
+    "id": 340,
+    "primary_topic": "Sliding Window",
+    "primary_subtopic": {
+      "name": "Variable-Size Window (Expand/Contract)",
+      "weight": 0.7
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Frequency Counting / Hash Map Lookup",
+        "weight": 0.3
+      }
+    ],
+    "difficulty": 1490,
+    "importance": 0.82,
+    "interview_plausibility": 0.85,
+    "company_plausibility": {
+      "quant": 0.4,
+      "faang": 0.85,
+      "mid": 0.65,
+      "startup": 0.45
+    },
+    "title": "Longest Substring with At Most K Distinct Characters",
+    "slug": "longest-substring-with-at-most-k-distinct-characters"
+  },
+  {
+    "id": 355,
+    "primary_topic": "Heap / Priority Queue",
+    "primary_subtopic": {
+      "name": "Merge K Sorted Structures",
+      "weight": 0.5
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Frequency Counting / Hash Map Lookup",
+        "weight": 0.3
+      },
+      {
+        "topic": "Heap / Priority Queue",
+        "name": "Top-K Elements",
+        "weight": 0.2
+      }
+    ],
+    "difficulty": 1533,
+    "importance": 0.82,
+    "interview_plausibility": 0.82,
+    "company_plausibility": {
+      "quant": 0.35,
+      "faang": 0.8,
+      "mid": 0.65,
+      "startup": 0.5
+    },
+    "title": "Design Twitter",
+    "slug": "design-twitter"
+  },
+  {
+    "id": 370,
+    "primary_topic": "Arrays & Hashing",
+    "primary_subtopic": {
+      "name": "Prefix Sums",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1371,
+    "importance": 0.82,
+    "interview_plausibility": 0.78,
+    "company_plausibility": {
+      "quant": 0.45,
+      "faang": 0.75,
+      "mid": 0.65,
+      "startup": 0.45
+    },
+    "title": "Range Addition",
+    "slug": "range-addition"
+  },
+  {
+    "id": 377,
+    "primary_topic": "Core DP",
+    "primary_subtopic": {
+      "name": "Unbounded Knapsack",
+      "weight": 0.8
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Frequency Counting / Hash Map Lookup",
+        "weight": 0.2
+      }
+    ],
+    "difficulty": 1372,
+    "importance": 0.82,
+    "interview_plausibility": 0.82,
+    "company_plausibility": {
+      "quant": 0.5,
+      "faang": 0.8,
+      "mid": 0.7,
+      "startup": 0.55
+    },
+    "title": "Combination Sum IV",
+    "slug": "combination-sum-iv"
+  },
+  {
+    "id": 399,
+    "primary_topic": "Graphs",
+    "primary_subtopic": {
+      "name": "DFS Path Finding",
+      "weight": 0.55
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Graphs",
+        "name": "Union-Find",
+        "weight": 0.25
+      },
+      {
+        "topic": "Graphs",
+        "name": "BFS Shortest Path (Unweighted)",
+        "weight": 0.2
+      }
+    ],
+    "difficulty": 1597,
+    "importance": 0.82,
+    "interview_plausibility": 0.85,
+    "company_plausibility": {
+      "quant": 0.45,
+      "faang": 0.85,
+      "mid": 0.65,
+      "startup": 0.45
+    },
+    "title": "Evaluate Division",
+    "slug": "evaluate-division"
+  },
+  {
+    "id": 437,
+    "primary_topic": "Trees",
+    "primary_subtopic": {
+      "name": "Path Sum Problems",
+      "weight": 0.45
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Prefix Sums",
+        "weight": 0.35
+      },
+      {
+        "topic": "Trees",
+        "name": "DFS Traversal (Inorder, Preorder, Postorder)",
+        "weight": 0.2
+      }
+    ],
+    "difficulty": 1530,
+    "importance": 0.82,
+    "interview_plausibility": 0.85,
+    "company_plausibility": {
+      "quant": 0.4,
+      "faang": 0.85,
+      "mid": 0.7,
+      "startup": 0.5
+    },
+    "title": "Path Sum III",
+    "slug": "path-sum-iii"
+  },
+  {
+    "id": 450,
+    "primary_topic": "Trees",
+    "primary_subtopic": {
+      "name": "BST Operations (Insert, Delete, Validate)",
+      "weight": 0.85
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Trees",
+        "name": "DFS Traversal (Inorder, Preorder, Postorder)",
+        "weight": 0.15
+      }
+    ],
+    "difficulty": 1476,
+    "importance": 0.82,
+    "interview_plausibility": 0.85,
+    "company_plausibility": {
+      "quant": 0.4,
+      "faang": 0.82,
+      "mid": 0.7,
+      "startup": 0.5
+    },
+    "title": "Delete Node in a BST",
+    "slug": "delete-node-in-a-bst"
+  },
+  {
+    "id": 452,
+    "primary_topic": "Intervals",
+    "primary_subtopic": {
+      "name": "Interval Merging",
+      "weight": 0.48
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Sorting + Comparison",
+        "weight": 0.2
+      },
+      {
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.32,
+        "topic": "Greedy"
+      }
+    ],
+    "difficulty": 1370,
+    "importance": 0.82,
+    "interview_plausibility": 0.85,
+    "company_plausibility": {
+      "quant": 0.35,
+      "faang": 0.82,
+      "mid": 0.7,
+      "startup": 0.5
+    },
+    "title": "Minimum Number of Arrows to Burst Balloons",
+    "slug": "minimum-number-of-arrows-to-burst-balloons"
+  },
+  {
+    "id": 542,
+    "primary_topic": "Graphs",
+    "primary_subtopic": {
+      "name": "Multi-Source BFS",
+      "weight": 0.75
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Matrix Traversal (Diagonal, Valid Sudoku, etc)",
+        "weight": 0.25
+      }
+    ],
+    "difficulty": 1519,
+    "importance": 0.82,
+    "interview_plausibility": 0.82,
+    "company_plausibility": {
+      "quant": 0.35,
+      "faang": 0.8,
+      "mid": 0.65,
+      "startup": 0.45
+    },
+    "title": "01 Matrix",
+    "slug": "01-matrix"
+  },
+  {
+    "id": 572,
+    "primary_topic": "Trees",
+    "primary_subtopic": {
+      "name": "DFS Traversal (Inorder, Preorder, Postorder)",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1207,
+    "importance": 0.82,
+    "interview_plausibility": 0.85,
+    "company_plausibility": {
+      "quant": 0.3,
+      "faang": 0.82,
+      "mid": 0.75,
+      "startup": 0.6
+    },
+    "title": "Subtree of Another Tree",
+    "slug": "subtree-of-another-tree"
+  },
+  {
+    "id": 621,
+    "primary_topic": "Heap / Priority Queue",
+    "primary_subtopic": {
+      "name": "Heap Simulation",
+      "weight": 0.3
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Frequency Counting / Hash Map Lookup",
+        "weight": 0.3
+      },
+      {
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.4,
+        "topic": "Greedy"
+      }
+    ],
+    "difficulty": 1658,
+    "importance": 0.82,
+    "interview_plausibility": 0.85,
+    "company_plausibility": {
+      "quant": 0.45,
+      "faang": 0.88,
+      "mid": 0.72,
+      "startup": 0.55
+    },
+    "title": "Task Scheduler",
+    "slug": "task-scheduler"
+  },
+  {
+    "id": 647,
+    "primary_topic": "Two Pointers",
+    "primary_subtopic": {
+      "name": "Opposite-Direction (Converging)",
+      "weight": 0.55
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Core DP",
+        "name": "Word Break / String DP",
+        "weight": 0.45
+      }
+    ],
+    "difficulty": 1405,
+    "importance": 0.82,
+    "interview_plausibility": 0.83,
+    "company_plausibility": {
+      "quant": 0.45,
+      "faang": 0.85,
+      "mid": 0.7,
+      "startup": 0.55
+    },
+    "title": "Palindromic Substrings",
+    "slug": "palindromic-substrings"
+  },
+  {
+    "id": 684,
+    "primary_topic": "Graphs",
+    "primary_subtopic": {
+      "name": "Union-Find",
+      "weight": 0.7
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Graphs",
+        "name": "DFS Connected Components",
+        "weight": 0.3
+      }
+    ],
+    "difficulty": 1420,
+    "importance": 0.82,
+    "interview_plausibility": 0.85,
+    "company_plausibility": {
+      "quant": 0.4,
+      "faang": 0.82,
+      "mid": 0.68,
+      "startup": 0.5
+    },
+    "title": "Redundant Connection",
+    "slug": "redundant-connection"
+  },
+  {
+    "id": 703,
+    "primary_topic": "Heap / Priority Queue",
+    "primary_subtopic": {
+      "name": "Top-K Elements",
+      "weight": 0.85
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Trees",
+        "name": "BST Operations (Insert, Delete, Validate)",
+        "weight": 0.15
+      }
+    ],
+    "difficulty": 1182,
+    "importance": 0.82,
+    "interview_plausibility": 0.83,
+    "company_plausibility": {
+      "quant": 0.4,
+      "faang": 0.8,
+      "mid": 0.75,
+      "startup": 0.65
+    },
+    "title": "Kth Largest Element in a Stream",
+    "slug": "kth-largest-element-in-a-stream"
+  },
+  {
+    "id": 733,
+    "primary_topic": "Graphs",
+    "primary_subtopic": {
+      "name": "DFS Connected Components",
+      "weight": 0.65
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Graphs",
+        "name": "BFS Shortest Path (Unweighted)",
+        "weight": 0.35
+      }
+    ],
+    "difficulty": 1087,
+    "importance": 0.82,
+    "interview_plausibility": 0.88,
+    "company_plausibility": {
+      "quant": 0.3,
+      "faang": 0.85,
+      "mid": 0.75,
+      "startup": 0.7
+    },
+    "title": "Flood Fill",
+    "slug": "flood-fill"
+  },
+  {
+    "id": 787,
+    "primary_topic": "Advanced Graphs",
+    "primary_subtopic": {
+      "name": "Dijkstra's (Weighted Shortest Path)",
+      "weight": 0.5
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Graphs",
+        "name": "BFS Shortest Path (Unweighted)",
+        "weight": 0.25
+      },
+      {
+        "topic": "Core DP",
+        "name": "Linear Recurrence DP",
+        "weight": 0.25
+      }
+    ],
+    "difficulty": 1786.48,
+    "importance": 0.82,
+    "interview_plausibility": 0.8,
+    "company_plausibility": {
+      "quant": 0.5,
+      "faang": 0.82,
+      "mid": 0.55,
+      "startup": 0.35
+    },
+    "title": "Cheapest Flights Within K Stops",
+    "slug": "cheapest-flights-within-k-stops"
+  },
+  {
+    "id": 853,
+    "primary_topic": "Stack",
+    "primary_subtopic": {
+      "name": "Monotonic Stack",
+      "weight": 0.45
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Sorting + Comparison",
+        "weight": 0.4
+      },
+      {
+        "topic": "Greedy",
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.15
+      }
+    ],
+    "difficulty": 1678.11,
+    "importance": 0.82,
+    "interview_plausibility": 0.82,
+    "company_plausibility": {
+      "quant": 0.5,
+      "faang": 0.85,
+      "mid": 0.65,
+      "startup": 0.45
+    },
+    "title": "Car Fleet",
+    "slug": "car-fleet"
+  },
+  {
+    "id": 876,
+    "primary_topic": "Linked List",
+    "primary_subtopic": {
+      "name": "Fast/Slow Pointers (Cycle, Middle)",
+      "weight": 0.85
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Two Pointers",
+        "name": "Same-Direction (Fast/Slow on Arrays)",
+        "weight": 0.15
+      }
+    ],
+    "difficulty": 1231.62,
+    "importance": 0.82,
+    "interview_plausibility": 0.78,
+    "company_plausibility": {
+      "quant": 0.35,
+      "faang": 0.72,
+      "mid": 0.75,
+      "startup": 0.68
+    },
+    "title": "Middle of the Linked List",
+    "slug": "middle-of-the-linked-list"
+  },
+  {
+    "id": 901,
+    "primary_topic": "Stack",
+    "primary_subtopic": {
+      "name": "Monotonic Stack",
+      "weight": 0.8
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Frequency Counting / Hash Map Lookup",
+        "weight": 0.2
+      }
+    ],
+    "difficulty": 1708.87,
+    "importance": 0.82,
+    "interview_plausibility": 0.82,
+    "company_plausibility": {
+      "quant": 0.45,
+      "faang": 0.78,
+      "mid": 0.7,
+      "startup": 0.55
+    },
+    "title": "Online Stock Span",
+    "slug": "online-stock-span"
+  },
+  {
+    "id": 973,
+    "primary_topic": "Heap / Priority Queue",
+    "primary_subtopic": {
+      "name": "Top-K Elements",
+      "weight": 0.7
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Sorting + Comparison",
+        "weight": 0.3
+      }
+    ],
+    "difficulty": 1213.81,
+    "importance": 0.82,
+    "interview_plausibility": 0.88,
+    "company_plausibility": {
+      "quant": 0.55,
+      "faang": 0.88,
+      "mid": 0.75,
+      "startup": 0.65
+    },
+    "title": "K Closest Points to Origin",
+    "slug": "k-closest-points-to-origin"
+  },
+  {
+    "id": 992,
+    "primary_topic": "Sliding Window",
+    "primary_subtopic": {
+      "name": "Variable-Size Window (Expand/Contract)",
+      "weight": 0.65
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Frequency Counting / Hash Map Lookup",
+        "weight": 0.35
+      }
+    ],
+    "difficulty": 2210.35,
+    "importance": 0.82,
+    "interview_plausibility": 0.62,
+    "company_plausibility": {
+      "quant": 0.5,
+      "faang": 0.72,
+      "mid": 0.45,
+      "startup": 0.3
+    },
+    "difficulty_llm": 2210,
+    "title": "Subarrays with K Different Integers",
+    "slug": "subarrays-with-k-different-integers"
+  },
+  {
+    "id": 1035,
+    "primary_topic": "Core DP",
+    "primary_subtopic": {
+      "name": "Two Sequence DP (LCS, Edit distance)",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1805.59,
+    "importance": 0.82,
+    "interview_plausibility": 0.8,
+    "company_plausibility": {
+      "quant": 0.55,
+      "faang": 0.78,
+      "mid": 0.6,
+      "startup": 0.35
+    },
+    "difficulty_llm": 1806,
+    "title": "Uncrossed Lines",
+    "slug": "uncrossed-lines"
+  },
+  {
+    "id": 1049,
+    "primary_topic": "Core DP",
+    "primary_subtopic": {
+      "name": "0/1 Knapsack",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 2092.49,
+    "importance": 0.82,
+    "interview_plausibility": 0.72,
+    "company_plausibility": {
+      "quant": 0.6,
+      "faang": 0.72,
+      "mid": 0.52,
+      "startup": 0.3
+    },
+    "difficulty_llm": 2092,
+    "title": "Last Stone Weight II",
+    "slug": "last-stone-weight-ii"
+  },
+  {
+    "id": 1091,
+    "primary_topic": "Graphs",
+    "primary_subtopic": {
+      "name": "BFS Shortest Path (Unweighted)",
+      "weight": 0.85
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Matrix Traversal (Diagonal, Valid Sudoku, etc)",
+        "weight": 0.15
+      }
+    ],
+    "difficulty": 1658.35,
+    "importance": 0.82,
+    "interview_plausibility": 0.85,
+    "company_plausibility": {
+      "quant": 0.4,
+      "faang": 0.82,
+      "mid": 0.7,
+      "startup": 0.5
+    },
+    "difficulty_llm": 1658,
+    "title": "Shortest Path in Binary Matrix",
+    "slug": "shortest-path-in-binary-matrix"
+  },
+  {
+    "id": 1135,
+    "primary_topic": "Advanced Graphs",
+    "primary_subtopic": {
+      "name": "Minimum Spanning Tree (Prim's / Kruskal's)",
+      "weight": 0.6
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Graphs",
+        "name": "Union-Find",
+        "weight": 0.4
+      }
+    ],
+    "difficulty": 1752.96,
+    "importance": 0.82,
+    "interview_plausibility": 0.78,
+    "company_plausibility": {
+      "quant": 0.45,
+      "faang": 0.75,
+      "mid": 0.6,
+      "startup": 0.35
+    },
+    "difficulty_llm": 1753,
+    "title": "Connecting Cities With Minimum Cost",
+    "slug": "connecting-cities-with-minimum-cost"
+  },
+  {
+    "id": 1137,
+    "primary_topic": "Core DP",
+    "primary_subtopic": {
+      "name": "Linear Recurrence DP",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1142.87,
+    "importance": 0.82,
+    "interview_plausibility": 0.65,
+    "company_plausibility": {
+      "quant": 0.4,
+      "faang": 0.65,
+      "mid": 0.7,
+      "startup": 0.65
+    },
+    "difficulty_llm": 1143,
+    "title": "N-th Tribonacci Number",
+    "slug": "n-th-tribonacci-number"
+  },
+  {
+    "id": 1155,
+    "primary_topic": "Core DP",
+    "primary_subtopic": {
+      "name": "Unbounded Knapsack",
+      "weight": 0.7
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Core DP",
+        "name": "Linear Recurrence DP",
+        "weight": 0.15
+      },
+      {
+        "topic": "Math & Geometry",
+        "name": "Modular Arithmetic",
+        "weight": 0.15
+      }
+    ],
+    "difficulty": 1653.73,
+    "importance": 0.82,
+    "interview_plausibility": 0.83,
+    "company_plausibility": {
+      "quant": 0.55,
+      "faang": 0.8,
+      "mid": 0.65,
+      "startup": 0.4
+    },
+    "difficulty_llm": 1654,
+    "title": "Number of Dice Rolls With Target Sum",
+    "slug": "number-of-dice-rolls-with-target-sum"
+  },
+  {
+    "id": 1202,
+    "primary_topic": "Graphs",
+    "primary_subtopic": {
+      "name": "Union-Find",
+      "weight": 0.55
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Sorting + Comparison",
+        "weight": 0.25
+      },
+      {
+        "topic": "Graphs",
+        "name": "DFS Connected Components",
+        "weight": 0.2
+      }
+    ],
+    "difficulty": 1855.45,
+    "importance": 0.82,
+    "interview_plausibility": 0.8,
+    "company_plausibility": {
+      "quant": 0.5,
+      "faang": 0.82,
+      "mid": 0.65,
+      "startup": 0.4
+    },
+    "difficulty_llm": 1855,
+    "title": "Smallest String With Swaps",
+    "slug": "smallest-string-with-swaps"
+  },
+  {
+    "id": 1283,
+    "primary_topic": "Binary Search",
+    "primary_subtopic": {
+      "name": "Binary Search on Answer Space",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1541.78,
+    "importance": 0.82,
+    "interview_plausibility": 0.83,
+    "company_plausibility": {
+      "quant": 0.55,
+      "faang": 0.8,
+      "mid": 0.7,
+      "startup": 0.5
+    },
+    "difficulty_llm": 1542,
+    "title": "Find the Smallest Divisor Given a Threshold",
+    "slug": "find-the-smallest-divisor-given-a-threshold"
+  },
+  {
+    "id": 1448,
+    "primary_topic": "Trees",
+    "primary_subtopic": {
+      "name": "DFS Traversal (Inorder, Preorder, Postorder)",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1360.22,
+    "importance": 0.82,
+    "interview_plausibility": 0.85,
+    "company_plausibility": {
+      "quant": 0.4,
+      "faang": 0.85,
+      "mid": 0.75,
+      "startup": 0.6
+    },
+    "difficulty_llm": 1360,
+    "title": "Count Good Nodes in Binary Tree",
+    "slug": "count-good-nodes-in-binary-tree"
+  },
+  {
+    "id": 1552,
+    "primary_topic": "Binary Search",
+    "primary_subtopic": {
+      "name": "Binary Search on Answer Space",
+      "weight": 0.75
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Sorting + Comparison",
+        "weight": 0.15
+      },
+      {
+        "topic": "Greedy",
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.1
+      }
+    ],
+    "difficulty": 1919.74,
+    "importance": 0.82,
+    "interview_plausibility": 0.82,
+    "company_plausibility": {
+      "quant": 0.6,
+      "faang": 0.78,
+      "mid": 0.65,
+      "startup": 0.45
+    },
+    "difficulty_llm": 1920,
+    "title": "Magnetic Force Between Two Balls",
+    "slug": "magnetic-force-between-two-balls"
+  },
+  {
+    "id": 1584,
+    "primary_topic": "Advanced Graphs",
+    "primary_subtopic": {
+      "name": "Minimum Spanning Tree (Prim's / Kruskal's)",
+      "weight": 0.8
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Graphs",
+        "name": "Union-Find",
+        "weight": 0.2
+      }
+    ],
+    "difficulty": 1857.64,
+    "importance": 0.82,
+    "interview_plausibility": 0.72,
+    "company_plausibility": {
+      "quant": 0.5,
+      "faang": 0.7,
+      "mid": 0.5,
+      "startup": 0.3
+    },
+    "difficulty_llm": 1858,
+    "title": "Min Cost to Connect All Points",
+    "slug": "min-cost-to-connect-all-points"
+  },
+  {
+    "id": 1730,
+    "primary_topic": "Graphs",
+    "primary_subtopic": {
+      "name": "BFS Shortest Path (Unweighted)",
+      "weight": 0.85
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Matrix Traversal (Diagonal, Valid Sudoku, etc)",
+        "weight": 0.15
+      }
+    ],
+    "difficulty": 1350,
+    "importance": 0.82,
+    "interview_plausibility": 0.88,
+    "company_plausibility": {
+      "quant": 0.4,
+      "faang": 0.85,
+      "mid": 0.75,
+      "startup": 0.65
+    },
+    "title": "Shortest Path to Get Food",
+    "slug": "shortest-path-to-get-food"
+  },
+  {
+    "id": 1760,
+    "primary_topic": "Binary Search",
+    "primary_subtopic": {
+      "name": "Binary Search on Answer Space",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1939.93,
+    "importance": 0.82,
+    "interview_plausibility": 0.78,
+    "company_plausibility": {
+      "quant": 0.55,
+      "faang": 0.8,
+      "mid": 0.65,
+      "startup": 0.45
+    },
+    "difficulty_llm": 1940,
+    "title": "Minimum Limit of Balls in a Bag",
+    "slug": "minimum-limit-of-balls-in-a-bag"
+  },
+  {
+    "id": 1765,
+    "primary_topic": "Graphs",
+    "primary_subtopic": {
+      "name": "Multi-Source BFS",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1782.98,
+    "importance": 0.82,
+    "interview_plausibility": 0.75,
+    "company_plausibility": {
+      "quant": 0.4,
+      "faang": 0.78,
+      "mid": 0.6,
+      "startup": 0.35
+    },
+    "difficulty_llm": 1783,
+    "title": "Map of Highest Peak",
+    "slug": "map-of-highest-peak"
+  },
+  {
+    "id": 1857,
+    "primary_topic": "Graphs",
+    "primary_subtopic": {
+      "name": "Topological Sort",
+      "weight": 0.6
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Core DP",
+        "name": "Linear Recurrence DP",
+        "weight": 0.25
+      },
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Frequency Counting / Hash Map Lookup",
+        "weight": 0.15
+      }
+    ],
+    "difficulty": 2312.99,
+    "importance": 0.82,
+    "interview_plausibility": 0.55,
+    "company_plausibility": {
+      "quant": 0.5,
+      "faang": 0.65,
+      "mid": 0.35,
+      "startup": 0.22
+    },
+    "difficulty_llm": 2313,
+    "title": "Largest Color Value in a Directed Graph",
+    "slug": "largest-color-value-in-a-directed-graph"
+  },
+  {
+    "id": 1870,
+    "primary_topic": "Binary Search",
+    "primary_subtopic": {
+      "name": "Binary Search on Answer Space",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1675.76,
+    "importance": 0.82,
+    "interview_plausibility": 0.82,
+    "company_plausibility": {
+      "quant": 0.55,
+      "faang": 0.8,
+      "mid": 0.7,
+      "startup": 0.55
+    },
+    "difficulty_llm": 1676,
+    "title": "Minimum Speed to Arrive on Time",
+    "slug": "minimum-speed-to-arrive-on-time"
+  },
+  {
+    "id": 2064,
+    "primary_topic": "Binary Search",
+    "primary_subtopic": {
+      "name": "Binary Search on Answer Space",
+      "weight": 0.8
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Greedy",
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.2
+      }
+    ],
+    "difficulty": 1885.9,
+    "importance": 0.82,
+    "interview_plausibility": 0.78,
+    "company_plausibility": {
+      "quant": 0.55,
+      "faang": 0.8,
+      "mid": 0.65,
+      "startup": 0.45
+    },
+    "difficulty_llm": 1886,
+    "title": "Minimized Maximum of Products Distributed to Any Store",
+    "slug": "minimized-maximum-of-products-distributed-to-any-store"
+  },
+  {
+    "id": 2187,
+    "primary_topic": "Binary Search",
+    "primary_subtopic": {
+      "name": "Binary Search on Answer Space",
+      "weight": 0.85
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Frequency Counting / Hash Map Lookup",
+        "weight": 0.15
+      }
+    ],
+    "difficulty": 1640.96,
+    "importance": 0.82,
+    "interview_plausibility": 0.8,
+    "company_plausibility": {
+      "quant": 0.6,
+      "faang": 0.78,
+      "mid": 0.65,
+      "startup": 0.5
+    },
+    "difficulty_llm": 1641,
+    "title": "Minimum Time to Complete Trips",
+    "slug": "minimum-time-to-complete-trips"
+  },
+  {
+    "id": 2226,
+    "primary_topic": "Binary Search",
+    "primary_subtopic": {
+      "name": "Binary Search on Answer Space",
+      "weight": 0.8
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Sorting + Comparison",
+        "weight": 0.2
+      }
+    ],
+    "difficulty": 1646.18,
+    "importance": 0.82,
+    "interview_plausibility": 0.82,
+    "company_plausibility": {
+      "quant": 0.45,
+      "faang": 0.78,
+      "mid": 0.72,
+      "startup": 0.55
+    },
+    "difficulty_llm": 1646,
+    "title": "Maximum Candies Allocated to K Children",
+    "slug": "maximum-candies-allocated-to-k-children"
+  },
+  {
+    "id": 2392,
+    "primary_topic": "Graphs",
+    "primary_subtopic": {
+      "name": "Topological Sort",
+      "weight": 0.8
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Matrix Traversal (Diagonal, Valid Sudoku, etc)",
+        "weight": 0.2
+      }
+    ],
+    "difficulty": 1960.55,
+    "importance": 0.82,
+    "interview_plausibility": 0.65,
+    "company_plausibility": {
+      "quant": 0.4,
+      "faang": 0.72,
+      "mid": 0.45,
+      "startup": 0.25
+    },
+    "difficulty_llm": 1961,
+    "title": "Build a Matrix With Conditions",
+    "slug": "build-a-matrix-with-conditions"
+  },
+  {
+    "id": 2402,
+    "primary_topic": "Intervals",
+    "primary_subtopic": {
+      "name": "Sweep Line / Meeting Rooms",
+      "weight": 0.2
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Sorting + Comparison",
+        "weight": 0.25
+      },
+      {
+        "name": "Heap Simulation",
+        "weight": 0.55,
+        "topic": "Heap / Priority Queue"
+      }
+    ],
+    "difficulty": 2092.89,
+    "importance": 0.82,
+    "interview_plausibility": 0.78,
+    "company_plausibility": {
+      "quant": 0.55,
+      "faang": 0.85,
+      "mid": 0.65,
+      "startup": 0.4
+    },
+    "difficulty_llm": 2093,
+    "title": "Meeting Rooms III",
+    "slug": "meeting-rooms-iii"
+  },
+  {
+    "id": 2594,
+    "primary_topic": "Binary Search",
+    "primary_subtopic": {
+      "name": "Binary Search on Answer Space",
+      "weight": 0.7
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Frequency Counting / Hash Map Lookup",
+        "weight": 0.3
+      }
+    ],
+    "difficulty": 1915.26,
+    "importance": 0.82,
+    "interview_plausibility": 0.8,
+    "company_plausibility": {
+      "quant": 0.6,
+      "faang": 0.8,
+      "mid": 0.65,
+      "startup": 0.5
+    },
+    "difficulty_llm": 1915,
+    "title": "Minimum Time to Repair Cars",
+    "slug": "minimum-time-to-repair-cars"
+  },
+  {
+    "id": 2707,
+    "primary_topic": "Core DP",
+    "primary_subtopic": {
+      "name": "Word Break / String DP",
+      "weight": 0.6
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Tries",
+        "name": "Trie Construction / Prefix Search",
+        "weight": 0.2
+      },
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Frequency Counting / Hash Map Lookup",
+        "weight": 0.2
+      }
+    ],
+    "difficulty": 1735.85,
+    "importance": 0.82,
+    "interview_plausibility": 0.82,
+    "company_plausibility": {
+      "quant": 0.45,
+      "faang": 0.85,
+      "mid": 0.72,
+      "startup": 0.55
+    },
+    "difficulty_llm": 1736,
+    "title": "Extra Characters in a String",
+    "slug": "extra-characters-in-a-string"
+  },
+  {
+    "id": 2958,
+    "primary_topic": "Sliding Window",
+    "primary_subtopic": {
+      "name": "Variable-Size Window (Expand/Contract)",
+      "weight": 0.7
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Frequency Counting / Hash Map Lookup",
+        "weight": 0.3
+      }
+    ],
+    "difficulty": 1535.37,
+    "importance": 0.82,
+    "interview_plausibility": 0.85,
+    "company_plausibility": {
+      "quant": 0.45,
+      "faang": 0.82,
+      "mid": 0.72,
+      "startup": 0.55
+    },
+    "difficulty_llm": 1535,
+    "title": "Length of Longest Subarray With at Most K Frequency",
+    "slug": "length-of-longest-subarray-with-at-most-k-frequency"
+  },
+  {
+    "id": 75,
+    "primary_topic": "Two Pointers",
+    "primary_subtopic": {
+      "name": "Opposite-Direction (Converging)",
+      "weight": 0.9
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Sorting + Comparison",
+        "weight": 0.1
+      }
+    ],
+    "difficulty": 1268,
+    "importance": 0.81,
+    "interview_plausibility": 0.87,
+    "company_plausibility": {
+      "quant": 0.5,
+      "faang": 0.88,
+      "mid": 0.78,
+      "startup": 0.62
+    },
+    "title": "Sort Colors",
+    "slug": "sort-colors"
+  },
+  {
+    "id": 25,
+    "primary_topic": "Linked List",
+    "primary_subtopic": {
+      "name": "Reversal (Full and Partial)",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1678,
+    "importance": 0.8,
+    "interview_plausibility": 0.78,
+    "company_plausibility": {
+      "quant": 0.5,
+      "faang": 0.82,
+      "mid": 0.6,
+      "startup": 0.4
+    },
+    "title": "Reverse Nodes in k-Group",
+    "slug": "reverse-nodes-in-k-group"
+  },
+  {
+    "id": 97,
+    "primary_topic": "Core DP",
+    "primary_subtopic": {
+      "name": "Two Sequence DP (LCS, Edit distance)",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1668,
+    "importance": 0.8,
+    "interview_plausibility": 0.78,
+    "company_plausibility": {
+      "quant": 0.55,
+      "faang": 0.8,
+      "mid": 0.58,
+      "startup": 0.32
+    },
+    "title": "Interleaving String",
+    "slug": "interleaving-string"
+  },
+  {
+    "id": 136,
+    "primary_topic": "Bit Manipulation",
+    "primary_subtopic": {
+      "name": "General Bit Manipulation",
+      "weight": 1.0
+    },
+    "secondary_subtopics": [],
+    "difficulty": 1107,
+    "importance": 0.8,
+    "interview_plausibility": 0.82,
+    "company_plausibility": {
+      "quant": 0.55,
+      "faang": 0.78,
+      "mid": 0.7,
+      "startup": 0.6
+    },
+    "title": "Single Number",
+    "slug": "single-number"
+  },
+  {
+    "id": 145,
+    "primary_topic": "Trees",
+    "primary_subtopic": {
+      "name": "DFS Traversal (Inorder, Preorder, Postorder)",
+      "weight": 0.75
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Stack",
+        "name": "Stack-Based Simulation",
+        "weight": 0.25
+      }
+    ],
+    "difficulty": 1078,
+    "importance": 0.8,
+    "interview_plausibility": 0.73,
+    "company_plausibility": {
+      "quant": 0.3,
+      "faang": 0.68,
+      "mid": 0.7,
+      "startup": 0.62
+    },
+    "title": "Binary Tree Postorder Traversal",
+    "slug": "binary-tree-postorder-traversal"
+  },
+  {
+    "id": 325,
+    "primary_topic": "Arrays & Hashing",
+    "primary_subtopic": {
+      "name": "Prefix Sums",
+      "weight": 0.55
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Frequency Counting / Hash Map Lookup",
+        "weight": 0.45
+      }
+    ],
+    "difficulty": 1408,
+    "importance": 0.8,
+    "interview_plausibility": 0.82,
+    "company_plausibility": {
+      "quant": 0.5,
+      "faang": 0.82,
+      "mid": 0.72,
+      "startup": 0.55
+    },
+    "title": "Maximum Size Subarray Sum Equals k",
+    "slug": "maximum-size-subarray-sum-equals-k"
+  },
+  {
+    "id": 767,
+    "primary_topic": "Heap / Priority Queue",
+    "primary_subtopic": {
+      "name": "Heap Simulation",
+      "weight": 0.45
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Greedy",
+        "name": "General Greedy (Greedy is main insight)",
+        "weight": 0.35
+      },
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Frequency Counting / Hash Map Lookup",
+        "weight": 0.2
+      }
+    ],
+    "difficulty": 1681.33,
+    "importance": 0.8,
+    "interview_plausibility": 0.85,
+    "company_plausibility": {
+      "quant": 0.45,
+      "faang": 0.85,
+      "mid": 0.7,
+      "startup": 0.55
+    },
+    "title": "Reorganize String",
+    "slug": "reorganize-string"
+  },
+  {
+    "id": 17,
+    "primary_topic": "Backtracking",
+    "primary_subtopic": {
+      "name": "Combinations / Subsets",
+      "weight": 0.7
+    },
+    "secondary_subtopics": [
+      {
+        "topic": "Arrays & Hashing",
+        "name": "Frequency Counting / Hash Map Lookup",
+        "weight": 0.3
+      }
+    ],
+    "difficulty": 1275,
+    "importance": 0.79,
+    "interview_plausibility": 0.86,
+    "company_plausibility": {
+      "quant": 0.45,
+      "faang": 0.85,
+      "mid": 0.75,
+      "startup": 0.65
+    },
+    "title": "Letter Combinations of a Phone Number",
+    "slug": "letter-combinations-of-a-phone-number"
+  }
+]

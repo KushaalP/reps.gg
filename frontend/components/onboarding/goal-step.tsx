@@ -28,11 +28,11 @@ const goalIcons: Record<Goal, React.ReactNode> = {
 }
 
 const goalDescriptions: Record<Goal, string> = {
-  faang: 'Target Diamond tier across all topics',
-  'mid-tech': 'Target Platinum tier across most topics',
-  startup: 'Target Gold tier with focus on practical skills',
-  quant: 'Diamond tier focus on math-heavy problems',
-  general: 'Balanced improvement across all areas'
+  faang: 'Target 50 overall mastery — Gold/Platinum across all topics',
+  'mid-tech': 'Target 40 overall mastery — solid Gold across core topics',
+  startup: 'Target 30 overall mastery — Silver/Gold on practical fundamentals',
+  quant: 'Target 65 overall mastery — Platinum+ with math & DP focus',
+  general: 'Target 35 overall mastery — balanced Silver/Gold improvement',
 }
 
 export function GoalStep({ selectedGoal, setSelectedGoal, onStart, enrichResult }: GoalStepProps) {
@@ -42,16 +42,23 @@ export function GoalStep({ selectedGoal, setSelectedGoal, onStart, enrichResult 
     <div className="space-y-6">
       {/* Resume enrichment results */}
       {enrichResult?.bumps && enrichResult.bumps.length > 0 && (
-        <div className="rounded-lg border border-[#22c55e]/30 bg-[#22c55e]/5 p-4 space-y-2">
+        <div className="rounded-lg border border-[#22c55e]/30 bg-[#22c55e]/5 p-4 space-y-3">
           <div className="flex items-center gap-2">
             <Sparkles className="h-4 w-4 text-[#22c55e]" />
-            <span className="text-sm font-medium text-foreground">Resume Analysis Applied</span>
+            <span className="text-sm font-medium text-foreground">
+              Resume boosted {enrichResult.bumps.length} subtopic{enrichResult.bumps.length > 1 ? 's' : ''}
+            </span>
           </div>
-          <div className="space-y-1">
+          <div className="space-y-2">
             {enrichResult.bumps.map((b) => (
-              <div key={b.subtopic} className="flex items-center justify-between text-xs">
-                <span className="text-muted-foreground">{b.subtopic}</span>
-                <span className="font-mono text-[#22c55e] font-medium">+{b.bump}</span>
+              <div key={b.subtopic} className="flex items-center justify-between gap-3 text-xs">
+                <div className="min-w-0">
+                  <span className="text-foreground font-medium">{b.subtopic}</span>
+                  {b.reason && (
+                    <span className="text-muted-foreground ml-1.5">— {b.reason}</span>
+                  )}
+                </div>
+                <span className="font-mono text-[#22c55e] font-bold shrink-0">+{b.bump}</span>
               </div>
             ))}
           </div>

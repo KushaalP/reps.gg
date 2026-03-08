@@ -233,7 +233,14 @@ Rules — be VERY conservative:
   - "Competitive programming experience" → broad small bumps +5-10 across fundamentals
 - If no LeetCode data was provided (all scores are 0), you can be slightly more generous with fundamentals if the resume shows strong CS background, but still cap at 35.
 
-Output valid JSON: {"bumps": [{"subtopic": "exact subtopic name", "bump": number, "reason": "brief justification"}]}
+IMPORTANT: First check if the input is actually a substantive resume or CV. Reject if:
+- It's clearly not a resume (random text, code, gibberish, a question, etc.)
+- It's too vague or short to extract any concrete skills (e.g. just "CS student" or "software engineer")
+- It lacks specific details like projects, coursework, work experience, bullet points, or technical skills
+
+If the input fails this check, output: {"error": "not_a_resume", "message": "Please paste a more detailed resume with specific projects, coursework, or work experience so we can analyze your skills."}
+
+If it IS a resume, output valid JSON: {"bumps": [{"subtopic": "exact subtopic name", "bump": number, "reason": "brief justification"}]}
 If no bumps are warranted, output: {"bumps": []}
 """
 
@@ -283,6 +290,10 @@ def _enrich_mastery_from_resume(state: dict, resume: str) -> list[dict]:
 
     raw = response.output_text
     parsed = json.loads(raw)
+
+    if parsed.get("error") == "not_a_resume":
+        return "not_a_resume", parsed.get("message", "That doesn't look like a resume.")
+
     bumps = parsed.get("bumps", [])
 
     applied = []
@@ -339,6 +350,26 @@ async def connect(req: ConnectRequest):
         slugs = _fetch_leetcode_solved(req.session, req.csrfToken)
     except Exception as e:
         raise HTTPException(status_code=400, detail=f"Failed to fetch LeetCode data: {e}")
+
+    _state, _completed_ids = _build_mastery_from_solved(slugs)
+    _queue = RecoQueue()
+    _queue.load_exclusions(_completed_ids, _skip_cooldown_ids, _discarded_ids)
+
+    return {
+        "connected": True,
+        "problemsMatched": len(_completed_ids),
+        "totalSlugs": len(slugs),
+    }
+
+
+@app.post("/api/connect-demo")
+async def connect_demo():
+    """Dev shortcut: load synthetic solve history instead of hitting LeetCode."""
+    global _state, _completed_ids, _queue, _goal
+
+    demo_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "sample", "demo_solves.json")
+    with open(demo_path) as f:
+        slugs = json.load(f)
 
     _state, _completed_ids = _build_mastery_from_solved(slugs)
     _queue = RecoQueue()
@@ -480,15 +511,19 @@ async def enrich_resume(req: ResumeEnrichRequest):
         return {"enriched": False, "bumps": [], "message": "No resume provided"}
 
     try:
-        bumps = _enrich_mastery_from_resume(_state, req.resume)
+        result = _enrich_mastery_from_resume(_state, req.resume)
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Resume enrichment failed: {e}")
+
+    if isinstance(result, tuple):
+        error_type, message = result
+        return {"enriched": False, "error": error_type, "message": message, "bumps": []}
 
     new_overall = round(get_overall_level(_state, TAXONOMY), 1)
 
     return {
         "enriched": True,
-        "bumps": bumps,
+        "bumps": result,
         "newOverall": new_overall,
     }
 
