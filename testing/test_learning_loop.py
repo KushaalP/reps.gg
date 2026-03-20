@@ -23,11 +23,10 @@ PROFILES = {
     "realistic": {
         "description": "Realistic mix — mostly hints, some clean, occasional struggles",
         "quality_weights": {
-            # (used_hints, looked_at_solution, struggled)
-            "clean":    (False, False, False),
-            "hints":    (True,  False, False),
-            "solution": (False, True,  False),
-            "struggled": (False, False, True),
+            "clean":    9,
+            "hints":    6,
+            "solution": 4,
+            "struggled": 1,
         },
         "quality_dist": [
             ("clean",    0.30),
@@ -134,17 +133,14 @@ def run_learning_loop(profile_name="realistic", num_rounds=20, seed=42):
                 continue
 
             # Simulate quality
-            quality_name, (used_hints, looked_at_solution, struggled) = pick_quality(profile)
+            quality_name, quality_score = pick_quality(profile)
 
             # Get mastery before
             primary_sub = TAG_LOOKUP[pid]["primary_subtopic"]["name"]
             mastery_before = state.get("subtopics", {}).get(primary_sub, {}).get("score", 0.0)
 
             # Update mastery
-            update_mastery(state, pid, TAG_LOOKUP[pid],
-                           used_hints=used_hints,
-                           looked_at_solution=looked_at_solution,
-                           struggled=struggled)
+            update_mastery(state, pid, TAG_LOOKUP[pid], quality=quality_score)
 
             mastery_after = state["subtopics"][primary_sub]["score"]
             change = mastery_after - mastery_before

@@ -280,22 +280,16 @@ def simulate_quality_archetype(archetype, mastery, problem_elo):
     else:
         dist = archetype["quality_dist"]["below"]
 
+    quality_map = {"struggled": 1, "solution": 4, "hints": 6, "clean": 9}
+
     r = random.random()
     cumulative = 0
     for quality, prob in dist.items():
         cumulative += prob
         if r < cumulative:
-            # Map to function args
-            if quality == "struggled":
-                return {"struggled": True}
-            elif quality == "solution":
-                return {"solution": True}
-            elif quality == "hints":
-                return {"hints": True}
-            else:  # clean
-                return {}
+            return quality_map.get(quality, 9)
 
-    return {}
+    return 9
 
 
 # ── Single journey ────────────────────────────────────────────────
@@ -401,13 +395,7 @@ def run_journey(archetype, num_problems=300):
 
         ts += 86400
         seen.add(p["id"])
-        update_mastery(
-            state, p["id"], p,
-            used_hints=result.get("hints", False),
-            looked_at_solution=result.get("solution", False),
-            struggled=result.get("struggled", False),
-            now=ts,
-        )
+        update_mastery(state, p["id"], p, quality=result, now=ts)
 
         if checkpoint_idx < len(CHECKPOINTS) and (i + 1) == CHECKPOINTS[checkpoint_idx]:
             attempted_subs = [s for s, d in state["subtopics"].items() if d["attempts_count"] > 0]

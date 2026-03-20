@@ -58,7 +58,7 @@ def build_real_profile():
     matched_ids = [slug_to_id[s] for s in all_slugs if s in slug_to_id and slug_to_id[s] in tag_lookup]
     state = new_user_state()
     for pid in matched_ids:
-        update_mastery(state, pid, tag_lookup[pid], used_hints=True, looked_at_solution=False, struggled=False)
+        update_mastery(state, pid, tag_lookup[pid], quality=6)
     return state, set(matched_ids)
 
 
@@ -112,7 +112,7 @@ def build_friend_profile():
     matched_ids = [slug_to_id[s] for s in all_slugs if s in slug_to_id and slug_to_id[s] in tag_lookup]
     state = new_user_state()
     for pid in matched_ids:
-        update_mastery(state, pid, tag_lookup[pid], used_hints=True, looked_at_solution=False, struggled=False)
+        update_mastery(state, pid, tag_lookup[pid], quality=6)
     return state, set(matched_ids)
 
 

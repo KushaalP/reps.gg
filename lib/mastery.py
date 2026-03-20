@@ -18,7 +18,7 @@ _CONFIG_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__fi
 with open(_CONFIG_PATH) as f:
     _CONFIG = yaml.safe_load(f)
 
-QUALITY_SCORES = _CONFIG["quality_scores"]
+QUALITY_SCORES = {int(k): v for k, v in _CONFIG["quality_scores"].items()}
 TIERS = [(t["min"], t["name"]) for t in _CONFIG["tiers"]]
 SECONDARY_DISCOUNT = _CONFIG["secondary_discount"]
 IMPORTANCE_THRESHOLD = _CONFIG["importance_threshold"]
@@ -50,16 +50,6 @@ DEFAULT_MASTERY_RATE = 1.0  # fallback for subtopics not in config
 
 # ── Core functions ──────────────────────────────────────────────────
 
-def classify_quality(used_hints: bool, looked_at_solution: bool, struggled: bool) -> str:
-    if struggled:
-        return "struggled"
-    if looked_at_solution:
-        return "solved_after_solution"
-    if used_hints:
-        return "solved_with_hints"
-    return "solved_clean"
-
-
 def get_mastery_rate(subtopic_name: str) -> float:
     return MASTERY_RATES.get(subtopic_name, DEFAULT_MASTERY_RATE)
 
@@ -78,13 +68,13 @@ def compute_importance_gate(importance: float) -> float:
 
 
 def compute_attempt_score(
-    quality: str,
+    quality: int,
     problem_elo: float,
     problem_importance: float,
     current_mastery: float,
     mastery_rate: float = 1.0,
 ) -> float:
-    base = QUALITY_SCORES[quality]
+    base = QUALITY_SCORES[max(1, min(10, quality))]
 
     diff_mult = compute_difficulty_multiplier(problem_elo, current_mastery)
     imp_gate = compute_importance_gate(problem_importance)
@@ -129,15 +119,11 @@ def update_mastery(
     state: dict,
     problem_id: int,
     problem_tags: dict,
-    used_hints: bool,
-    looked_at_solution: bool,
-    struggled: bool,
+    quality: int,
     now: float = None,
 ) -> dict:
     if now is None:
         now = time.time()
-
-    quality = classify_quality(used_hints, looked_at_solution, struggled)
     primary = problem_tags["primary_subtopic"]["name"]
     problem_elo = problem_tags["difficulty"]
     problem_importance = problem_tags["importance"]

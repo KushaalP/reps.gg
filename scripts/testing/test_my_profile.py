@@ -162,12 +162,7 @@ state = new_user_state()
 # This means: solved_with_hints, medium perceived difficulty
 for pid in matched_ids:
     tags = tag_lookup[pid]
-    update_mastery(
-        state, pid, tags,
-        used_hints=True,
-        looked_at_solution=False,
-        struggled=False,
-    )
+    update_mastery(state, pid, tags, quality=6)
 
 # ── Print results ─────────────────────────────────────────────────
 print(f"\n{'='*80}")

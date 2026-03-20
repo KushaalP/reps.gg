@@ -14,7 +14,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from lib.mastery import (
     new_user_state, update_mastery, get_subtopic_tier,
     get_topic_levels, get_overall_level,
-    classify_quality, compute_attempt_score,
+    compute_attempt_score,
 )
 
 random.seed(42)  # reproducible
@@ -129,7 +129,7 @@ def recommend_problem(state, seen, subtopics=None, mode="filling_gaps"):
 def simulate_quality(mastery, problem_elo):
     """
     Simulates realistic user performance based on mastery vs problem difficulty.
-    Higher mastery relative to problem = more likely clean solve.
+    Returns a 1-10 quality score.
     """
     expected_elo = 800 + (mastery / 100) * 1900
     gap = problem_elo - expected_elo  # positive = problem is harder than expected
@@ -137,28 +137,28 @@ def simulate_quality(mastery, problem_elo):
     r = random.random()
     if gap > 400:
         # Way above level
-        if r < 0.35: return {"struggled": True, "perceived": "hard"}
-        if r < 0.65: return {"solution": True, "perceived": "hard"}
-        if r < 0.85: return {"hints": True, "perceived": "hard"}
-        return {"perceived": "hard"}
+        if r < 0.35: return 1   # struggled
+        if r < 0.65: return 4   # solution
+        if r < 0.85: return 6   # hints
+        return 8                # clean
     elif gap > 150:
         # Somewhat above level
-        if r < 0.15: return {"struggled": True, "perceived": "hard"}
-        if r < 0.35: return {"solution": True, "perceived": "hard"}
-        if r < 0.60: return {"hints": True, "perceived": "medium"}
-        return {"perceived": "medium"}
+        if r < 0.15: return 2   # struggled
+        if r < 0.35: return 4   # solution
+        if r < 0.60: return 6   # hints
+        return 8                # clean
     elif gap > -150:
         # At level
-        if r < 0.05: return {"struggled": True, "perceived": "medium"}
-        if r < 0.15: return {"hints": True, "perceived": "medium"}
-        return {"perceived": "medium"}
+        if r < 0.05: return 2   # struggled
+        if r < 0.15: return 6   # hints
+        return 9                # clean
     elif gap > -400:
         # Below level
-        if r < 0.05: return {"hints": True, "perceived": "easy"}
-        return {"perceived": "easy"}
+        if r < 0.05: return 7   # minor hint
+        return 9                # clean
     else:
         # Way below level
-        return {"perceived": "easy"}
+        return 10               # trivial
 
 
 class Simulation:
@@ -170,8 +170,7 @@ class Simulation:
         self.seen = set()
         print_header(f"SIMULATION: {name}")
 
-    def attempt(self, problem_id, hints=False, solution=False, struggled=False,
-                perceived="medium", days_offset=1):
+    def attempt(self, problem_id, quality=9, days_offset=1):
         self.attempt_num += 1
         self.ts += days_offset * 86400
         self.seen.add(problem_id)
@@ -183,19 +182,18 @@ class Simulation:
         old_score = self.state["subtopics"].get(primary, {}).get("score", 0.0)
         old_tier = get_subtopic_tier(old_score)
 
-        update_mastery(self.state, problem_id, tags, hints, solution, struggled, perceived, now=self.ts)
+        update_mastery(self.state, problem_id, tags, quality=quality, now=self.ts)
 
         new_score = self.state["subtopics"][primary]["score"]
         new_tier = get_subtopic_tier(new_score)
         change = new_score - old_score
-        quality = classify_quality(hints, solution, struggled)
 
         tier_str = new_tier
         if new_tier != old_tier:
             tier_str = f"{old_tier}->{new_tier}!"
 
         direction = "+" if change >= 0 else ""
-        print(f"  #{self.attempt_num:<3} {title[:34]:<35} {primary[:24]:<25} {imp:>4.2f} {quality:<18} {perceived:<6} "
+        print(f"  #{self.attempt_num:<3} {title[:34]:<35} {primary[:24]:<25} {imp:>4.2f} q={quality:<2} "
               f"{direction}{change:>5.2f} {new_score:>6.1f} [{tier_str}]")
         return change
 
@@ -203,15 +201,8 @@ class Simulation:
         """Attempt with simulated quality based on mastery vs difficulty."""
         primary = problem["primary_subtopic"]["name"]
         mastery = self.state["subtopics"].get(primary, {}).get("score", 0.0)
-        result = simulate_quality(mastery, problem["difficulty"])
-        return self.attempt(
-            problem["id"],
-            hints=result.get("hints", False),
-            solution=result.get("solution", False),
-            struggled=result.get("struggled", False),
-            perceived=result["perceived"],
-            days_offset=days_offset,
-        )
+        quality = simulate_quality(mastery, problem["difficulty"])
+        return self.attempt(problem["id"], quality=quality, days_offset=days_offset)
 
     def set_mastery(self, subtopic, score):
         if subtopic not in self.state["subtopics"]:
@@ -327,7 +318,7 @@ print_table_header()
 hard_window = [p for p in by_subtopic.get(focus_sub, [])
                if p["difficulty"] > 1800 and p["id"] not in sim3.seen]
 for p in hard_window[:8]:
-    sim3.attempt(p["id"], struggled=True, perceived="hard")
+    sim3.attempt(p["id"], quality=1)
 
 trough = sim3.state["subtopics"][focus_sub]["score"]
 print(f"\n  Trough: {trough:.1f} [{get_subtopic_tier(trough)}]")
@@ -516,11 +507,11 @@ for i in range(500):
     # Easy problems: mostly clean solves, perceived as easy
     r = random.random()
     if r < 0.7:
-        sim8.attempt(problem["id"], perceived="easy")
+        sim8.attempt(problem["id"], quality=9)
     elif r < 0.9:
-        sim8.attempt(problem["id"], hints=True, perceived="easy")
+        sim8.attempt(problem["id"], quality=6)
     else:
-        sim8.attempt(problem["id"], solution=True, perceived="easy")
+        sim8.attempt(problem["id"], quality=4)
 
     if checkpoint_idx_8 < len(checkpoints_8) and (i + 1) == checkpoints_8[checkpoint_idx_8]:
         attempted_subs = [s for s, d in sim8.state["subtopics"].items() if d["attempts_count"] > 0]
@@ -541,14 +532,14 @@ floor_sub = "Primes / Sieve of Eratosthenes"
 print_subheader("Floor: struggling from 0 — should stay at 0")
 print_table_header()
 for p in by_subtopic.get(floor_sub, [])[:5]:
-    sim9.attempt(p["id"], struggled=True, perceived="hard")
+    sim9.attempt(p["id"], quality=1)
 
 ceil_sub = "Prefix Sums"
 sim9.set_mastery(ceil_sub, 97.0)
 print_subheader("Ceiling: near 100, clean solving hard problems — should cap at 100")
 print_table_header()
 for p in [pp for pp in by_subtopic.get(ceil_sub, []) if pp["difficulty"] > 1800][:8]:
-    sim9.attempt(p["id"], perceived="hard")
+    sim9.attempt(p["id"], quality=8)
 
 sim9.print_scores(only_nonzero=False)
 
@@ -628,7 +619,7 @@ for p in problems_with_secondaries[:30]:
     for sec in p.get("secondary_subtopics", []):
         sec_before[sec["name"]] = sim11.state["subtopics"].get(sec["name"], {}).get("score", 0.0)
 
-    sim11.attempt(p["id"], perceived="medium")
+    sim11.attempt(p["id"], quality=9)
 
     # Measure gains
     new_primary = sim11.state["subtopics"][primary]["score"]
@@ -674,11 +665,11 @@ for i in range(50):
 
 print_table_header()
 for p in problems_for_12:
-    sim12_clean.attempt(p["id"], perceived="medium")
+    sim12_clean.attempt(p["id"], quality=9)
 
 print_table_header()
 for p in problems_for_12:
-    sim12_solution.attempt(p["id"], solution=True, perceived="medium")
+    sim12_solution.attempt(p["id"], quality=4)
 
 overall_clean = get_overall_level(sim12_clean.state, taxonomy)
 overall_solution = get_overall_level(sim12_solution.state, taxonomy)
@@ -719,12 +710,12 @@ print(f"  Broad:  {broad_sub} (rate: {get_mastery_rate(broad_sub):.3f})")
 print_subheader(f"Narrow subtopic: {narrow_sub}")
 print_table_header()
 for p in by_subtopic.get(narrow_sub, [])[:12]:
-    sim13.attempt(p["id"], perceived="medium")
+    sim13.attempt(p["id"], quality=9)
 
 print_subheader(f"Broad subtopic: {broad_sub}")
 print_table_header()
 for p in by_subtopic.get(broad_sub, [])[:12]:
-    sim13.attempt(p["id"], perceived="medium")
+    sim13.attempt(p["id"], quality=9)
 
 narrow_score = sim13.state["subtopics"].get(narrow_sub, {}).get("score", 0)
 broad_score = sim13.state["subtopics"].get(broad_sub, {}).get("score", 0)
@@ -760,7 +751,7 @@ for start in starting_levels:
     old_tier = get_subtopic_tier(start)
     for p in test_problems[:5]:
         if p["id"] not in dr_seen:
-            update_mastery(dr_state, p["id"], p, False, False, False, "medium")
+            update_mastery(dr_state, p["id"], p, quality=9)
             dr_seen.add(p["id"])
 
     end_score = dr_state["subtopics"][test_sub]["score"]

@@ -1,12 +1,19 @@
 # Mastery Model Configuration
 # Separate from taxonomy — this controls progression tuning.
 
-# ── Quality Scores (base points per attempt) ────────────────────────
+# ── Quality Scores (base points per attempt, 1-10 scale) ────────────
+# 1-2: struggled (0 gain), 3-4: solution, 5-7: hints, 8-10: clean
 quality_scores:
-  solved_clean: 4.0
-  solved_with_hints: 3.25
-  solved_after_solution: 2.5
-  struggled: 0.0
+  1: 0.0       # No idea, couldn't start
+  2: 0.0       # Struggled, barely anything
+  3: 1.5       # Needed full solution
+  4: 2.5       # Mostly from solution, got some
+  5: 2.75      # Heavy hints, pieced it together
+  6: 3.0       # Some hints needed
+  7: 3.25      # Minor hint or nudge
+  8: 3.5       # Solved clean, not optimal
+  9: 3.75      # Solved clean, optimal
+  10: 4.0      # Instant, trivial
 
 # ── Difficulty Multiplier Constants ─────────────────────────────────
 difficulty_multiplier:

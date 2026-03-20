@@ -40,4 +40,7 @@ makes a lot of the math more simple, and has less noisy recos
     - potentially just increase preereq min mastery
     - overall it is important to maintain the depth vs breadth balance that smth like the nc150 does, recos need to reflect that
     - may need to reexamine the 10 slots approach, that maybe is too wide and not adaptive enough, potentially less slots and we can backlog until certain thresholds r met though to limit api calls
+    - spaced reptition through decay, option to move mastery down, maybe while deciding can offer example problems and range so they have good idea in a modal
+    - we can reenable even clean solves after a month since solve i think, smaller thresholds for fails
+    - can have start from begenning option, this option overrides and resets all in that category to unsolved
 
