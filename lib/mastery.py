@@ -8,6 +8,7 @@ mastery_change = quality_score × difficulty_multiplier × importance_gate × ma
 """
 
 import time
+import math
 import yaml
 import os
 
@@ -23,6 +24,12 @@ TIERS = [(t["min"], t["name"]) for t in _CONFIG["tiers"]]
 SECONDARY_DISCOUNT = _CONFIG["secondary_discount"]
 IMPORTANCE_THRESHOLD = _CONFIG["importance_threshold"]
 IMPORTANCE_DISCOUNT = _CONFIG["importance_discount"]
+
+_DECAY = _CONFIG["decay"]
+DECAY_GRACE_DAYS = _DECAY["grace_days"]
+DECAY_BASE_RATE = _DECAY["base_rate"]
+DECAY_MAX_TIER_DROP = _DECAY["max_tier_drop"]
+DECAY_RECOVERY_BOOST = _DECAY["recovery_boost"]
 
 _DR = _CONFIG["diminishing_returns"]
 DR_THRESHOLD = _DR["threshold"]
@@ -49,6 +56,53 @@ DEFAULT_MASTERY_RATE = 1.0  # fallback for subtopics not in config
 
 
 # ── Core functions ──────────────────────────────────────────────────
+
+def _decay_floor(stored_score: float) -> float:
+    """Compute the minimum score a subtopic can decay to (2 tiers below current)."""
+    # Find current tier index
+    tier_idx = 0
+    for i, (threshold, _) in enumerate(TIERS):
+        if stored_score >= threshold:
+            tier_idx = i
+    # Floor is 2 tiers below
+    floor_idx = max(0, tier_idx - DECAY_MAX_TIER_DROP)
+    return TIERS[floor_idx][0]
+
+
+def compute_decay_factor(days_inactive: float, mastery_rate: float = 1.0) -> float:
+    """Logarithmic decay factor scaled by subtopic mastery rate.
+    Narrow patterns (high mastery_rate) decay faster.
+    Returns 0.0-1.0 (1.0 = no decay)."""
+    if days_inactive <= DECAY_GRACE_DAYS:
+        return 1.0
+    effective_rate = DECAY_BASE_RATE * math.sqrt(mastery_rate)
+    return max(0.0, 1.0 - effective_rate * math.log(days_inactive / DECAY_GRACE_DAYS))
+
+
+def get_effective_score(stored_score: float, last_attempted: float,
+                        subtopic_name: str = None, now: float = None) -> float:
+    """Apply lazy decay to a stored score. Does not modify state."""
+    if last_attempted is None or stored_score <= 0:
+        return stored_score
+    if now is None:
+        now = time.time()
+    days_inactive = (now - last_attempted) / 86400
+    rate = get_mastery_rate(subtopic_name) if subtopic_name else DEFAULT_MASTERY_RATE
+    factor = compute_decay_factor(days_inactive, rate)
+    if factor >= 1.0:
+        return stored_score
+    floor = _decay_floor(stored_score)
+    return floor + (stored_score - floor) * factor
+
+
+def is_decayed(last_attempted: float, now: float = None) -> bool:
+    """Check if a subtopic has decayed (past grace period)."""
+    if last_attempted is None:
+        return False
+    if now is None:
+        now = time.time()
+    return (now - last_attempted) / 86400 > DECAY_GRACE_DAYS
+
 
 def get_mastery_rate(subtopic_name: str) -> float:
     return MASTERY_RATES.get(subtopic_name, DEFAULT_MASTERY_RATE)
@@ -130,15 +184,23 @@ def update_mastery(
 
     _ensure_subtopic(state, primary)
     current_mastery = state["subtopics"][primary]["score"]
+    last_attempted = state["subtopics"][primary]["last_attempted"]
+
+    # Use effective (decayed) score for difficulty multiplier calculation
+    effective = get_effective_score(current_mastery, last_attempted, primary, now)
 
     rate = get_mastery_rate(primary)
 
-    # Compute primary mastery change
+    # Compute primary mastery change (using effective score for difficulty context)
     change = compute_attempt_score(
-        quality, problem_elo, problem_importance, current_mastery, rate
+        quality, problem_elo, problem_importance, effective, rate
     )
 
-    # Update primary subtopic
+    # Recovery boost if subtopic has decayed
+    if is_decayed(last_attempted, now):
+        change *= DECAY_RECOVERY_BOOST
+
+    # Update primary subtopic (add to stored score, not effective)
     state["subtopics"][primary]["score"] = max(0, min(100, current_mastery + change))
     state["subtopics"][primary]["attempts_count"] += 1
     state["subtopics"][primary]["last_attempted"] = now
@@ -173,7 +235,9 @@ def update_mastery(
 
 # ── Aggregation ─────────────────────────────────────────────────────
 
-def get_topic_levels(state: dict, taxonomy: dict) -> dict:
+def get_topic_levels(state: dict, taxonomy: dict, now: float = None) -> dict:
+    if now is None:
+        now = time.time()
     topics = {}
     for topic in taxonomy["topics"]:
         topic_name = topic["name"]
@@ -182,7 +246,10 @@ def get_topic_levels(state: dict, taxonomy: dict) -> dict:
         for sub in topic["subtopics"]:
             sub_name = sub["name"]
             imp = sub["importance"]
-            score = state["subtopics"].get(sub_name, {}).get("score", 0.0)
+            sub_data = state["subtopics"].get(sub_name, {})
+            stored = sub_data.get("score", 0.0)
+            last = sub_data.get("last_attempted")
+            score = get_effective_score(stored, last, sub_name, now)
             weighted_sum += score * imp
             weight_total += imp
         avg = weighted_sum / weight_total if weight_total > 0 else 0.0

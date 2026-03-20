@@ -38,6 +38,15 @@ diminishing_returns:
   threshold: 40        # mastery score where tapering begins (Gold)
   max_reduction: 0.7   # at mastery 100, gains are (1 - 0.7) = 0.3x
 
+# ── Decay ─────────────────────────────────────────────────────────
+# Time-based mastery decay on stale subtopics. Logarithmic curve.
+# Lazy evaluation — computed on read, stored scores untouched.
+decay:
+  grace_days: 7              # no decay for first 7 days of inactivity
+  base_rate: 0.3             # k in: decay_factor = 1.0 - k * sqrt(mastery_rate) * ln(days / grace)
+  max_tier_drop: 2           # floor = tier_start 2 tiers below current
+  recovery_boost: 1.3        # 1.3x mastery gain when practicing a decayed subtopic
+
 # ── Tier Thresholds ─────────────────────────────────────────────────
 tiers:
   - { min: 0,  name: Bronze }
